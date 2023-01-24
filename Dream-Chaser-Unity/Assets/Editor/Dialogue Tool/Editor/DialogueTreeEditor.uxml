@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/Dialogue%20Tool/Editor/DialogueTreeEditor.uss?fileID=7433441132597879392&amp;guid=b284c6f2564f45e4c854983a4ce18036&amp;type=3#DialogueTreeEditor" />
+    <uie:Toolbar>
+        <uie:ToolbarMenu display-tooltip-when-elided="true" text="Assets" />
+        <uie:ToolbarButton text="Stress Relief Button" display-tooltip-when-elided="true" />
+    </uie:Toolbar>
+    <AISplitView fixed-pane-initial-dimension="154">
+        <ui:VisualElement name="inspector-view">
+            <ui:Label text="Inspector" display-tooltip-when-elided="true" style="background-color: rgb(32, 32, 32); -unity-font-style: bold;" />
+            <DialogueInspectorView />
+        </ui:VisualElement>
+        <ui:VisualElement name="editor-view">
+            <ui:Label text="Editor" display-tooltip-when-elided="true" style="-unity-text-outline-color: rgb(32, 32, 32); background-color: rgb(32, 32, 32); -unity-font-style: bold;" />
+            <DialogueTreeView focusable="true" name="DialogueTreeView" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </AISplitView>
+</ui:UXML>

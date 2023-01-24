@@ -1,0 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Tools.Trees.Dialogue
+{
+    public abstract class DialogueNode : ScriptableObject
+    {
+        public enum State
+        {
+            CUR,
+            FIN,
+            NXT
+        }
+
+        [HideInInspector] public bool started = false;
+        [HideInInspector] public string GUID;
+        [HideInInspector] public Vector2 position;
+        [HideInInspector] public State state = State.CUR;
+        [TextArea] public string Speaker;
+        [TextArea]public string Dialogue;
+        
+
+        public virtual DialogueNode Clone()
+        {
+            return Instantiate(this);
+        }
+        public abstract void OnStart();
+        public abstract void EndNode();
+    }
+}

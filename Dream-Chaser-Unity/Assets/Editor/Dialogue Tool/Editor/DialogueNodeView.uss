@@ -1,0 +1,187 @@
+#node-border {
+    background-color: rgb(56, 56, 56);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left-color: rgb(47, 47, 47);
+    border-right-color: rgb(47, 47, 47);
+    border-top-color: rgb(47, 47, 47);
+    border-bottom-color: rgb(47, 47, 47);
+}
+
+#input {
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+#output {
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+#selection-border {
+    border-left-color: rgb(0, 163, 214);
+    border-right-color: rgb(0, 163, 214);
+    border-top-color: rgb(0, 163, 214);
+    border-bottom-color: rgb(0, 163, 214);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+:hover > #selection-border {
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+:selected > #selection-border {
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+:hover:selected > #selection-border {
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+}
+
+.node {
+    width: 150px;
+}
+
+#title {
+    -unity-font-style: bold;
+    align-items: center;
+}
+
+#divider {
+    min-height: 1px;
+    min-width: 1px;
+}
+
+.root #node-border {
+    -unity-text-outline-color: rgb(56, 56, 56);
+    background-color: rgb(107, 170, 117);
+    color: rgb(42, 42, 42);
+    -unity-font-style: bold;
+}
+
+.root #text-field {
+    display: none;
+}
+
+.speech #title {
+    background-color: rgb(105, 48, 109);
+}
+
+.end #node-border {
+    background-color: rgb(219, 58, 52);
+}
+
+.end #text-field {
+    display: none;
+}
+
+.choice #title {
+    background-color: rgb(99, 176, 205);
+    color: rgb(42, 42, 42);
+}
+
+.option #title {
+    background-color: rgb(255, 200, 87);
+    color: rgb(48, 54, 49);
+}
+
+#node-state {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.running #node-state {
+    border-left-color: rgb(255, 184, 0);
+    border-right-color: rgb(255, 184, 0);
+    border-top-color: rgb(255, 184, 0);
+    border-bottom-color: rgb(255, 184, 0);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.next #node-state {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(197, 190, 0);
+    border-right-color: rgb(197, 190, 0);
+    border-top-color: rgb(197, 190, 0);
+    border-bottom-color: rgb(197, 190, 0);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.finished #node-state {
+    border-left-color: rgb(27, 159, 0);
+    border-right-color: rgb(27, 159, 0);
+    border-top-color: rgb(27, 159, 0);
+    border-bottom-color: rgb(27, 159, 0);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#speaker {
+    -unity-font-style: bold;
+    font-size: 14px;
+}
+
+.end #speech {
+    display: none;
+}
+
+.root #speech {
+    display: none;
+}
