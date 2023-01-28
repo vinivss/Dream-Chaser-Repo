@@ -13,6 +13,9 @@ public class DialogueTreeEditor : EditorWindow
 
     //SerializedObject treeObject;
     //SerializedProperty blacboardProperty;
+
+    //This function is for opening the window from the menu
+
     [MenuItem("Tools/Dialogue/Editor ...")]
     public static void OpenWindow()
     {
