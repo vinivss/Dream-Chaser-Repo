@@ -10,10 +10,11 @@ public class DialogueManager : MonoBehaviour
     [Tooltip("This is the dialogue that will be referenced for dialogue")]
     [SerializeField] DialogueTree dialogue;
     DialogueNode currentNode;
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI dialogueText;
+    [HideInInspector]public TextMeshProUGUI nameText;
+    [HideInInspector]public TextMeshProUGUI dialogueText;
     int ChoiceIndex;
     bool dialogueStarted = false;
+    GameObject DialogueBox;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,7 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueStarted = true;
             //create window for dialogue 
+            Instantiate(DialogueBox);
         }
 
 

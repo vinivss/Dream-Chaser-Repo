@@ -7,7 +7,10 @@ namespace Tools.Trees.Dialogue
     public class DialogueSpeechNode : DialogueNode
     {
         [HideInInspector]public DialogueNode child;
-        public string speaker;
+        [Space]
+        [Header("UI Editors")]
+        [Tooltip("Image displayed as character is talking")]
+        public Sprite Portrait;
         
         public override void OnStart()
         {

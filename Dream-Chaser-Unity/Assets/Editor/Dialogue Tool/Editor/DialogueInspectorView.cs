@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Tools.Trees.Dialogue;
 using UnityEngine.UIElements;
 using UnityEditor;
+using TMPro.EditorUtilities;
+
 
 public class DialogueInspectorView : VisualElement
 {

@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-
+using TMPro.EditorUtilities;
 namespace Tools.Trees.Dialogue
 {
     public abstract class DialogueNode : ScriptableObject
@@ -17,8 +18,11 @@ namespace Tools.Trees.Dialogue
         [HideInInspector] public string GUID;
         [HideInInspector] public Vector2 position;
         [HideInInspector] public State state = State.CUR;
+        [Header("Text Attributes")]
         [TextArea] public string Speaker;
         [TextArea]public string Dialogue;
+
+
         
 
         public virtual DialogueNode Clone()

@@ -16,7 +16,7 @@ namespace Tools.Trees.Dialogue
         public Port input;
         public Port output;
 
-        public DialogueNodeView(DialogueNode node) : base("Assets/Code/Tools/Dialogue Tool/Editor/DialogueNodeView.uxml")
+        public DialogueNodeView(DialogueNode node) : base("Assets/Editor/Dialogue Tool/Editor/DialogueNodeView.uxml")
         {
             this.node = node;
             this.title = node.name;
