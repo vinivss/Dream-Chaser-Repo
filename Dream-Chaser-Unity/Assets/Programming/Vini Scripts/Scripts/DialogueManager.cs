@@ -4,23 +4,33 @@ using System.Collections.Generic;
 using System;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections;
 
 public class DialogueManager : MonoBehaviour
 {
     [Tooltip("This is the dialogue that will be referenced for dialogue")]
     [SerializeField] DialogueTree dialogue;
     DialogueNode currentNode;
-    [HideInInspector]public TextMeshProUGUI nameText;
-    [HideInInspector]public TextMeshProUGUI dialogueText;
+    [Header("Dialogue Box Attributes")]
+    [Tooltip("Name Of Speaker")]
+    public TextMeshProUGUI nameText;
+    [Tooltip("Name Of Speaker")]
+    public TextMeshProUGUI dialogueText;
     int ChoiceIndex;
     bool dialogueStarted = false;
-    GameObject DialogueBox;
+    public GameObject DialogueBox;
+    public Transform DialogueBoxTransform;
+    Button NextButton;
     // Start is called before the first frame update
     void Start()
     {
-       currentNode = dialogue.RootNode;
 
-        DisplayDialogue();
+        if (dialogue != null)
+        {
+            currentNode = dialogue.RootNode;
+
+            DisplayDialogue();
+        }
     }
 
     private void DisplayDialogue()
@@ -29,26 +39,33 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueStarted = true;
             //create window for dialogue 
-            Instantiate(DialogueBox);
+            Instantiate(DialogueBox,DialogueBoxTransform);
         }
+        nameText = GameObject.Find("Speaker").GetComponent<TextMeshProUGUI>();
+        dialogueText = GameObject.Find("Dialogue").GetComponent<TextMeshProUGUI>();
+        NextButton = GameObject.Find("NextButton").GetComponent<Button>();
 
-
+        NextButton.GetComponent<Button>().onClick.AddListener(ChangeNode);
+        currentNode.state = DialogueNode.State.FIN;
+        ChangeNode();
     }
 
-    void ChangeNode()
+    public void ChangeNode()
     {
         if(currentNode.state == DialogueNode.State.FIN)
         {
               List<DialogueNode> Children =  dialogue.GetChildren(currentNode);
+            Debug.Log(Children);
 
             if(Children.Count == 1)
             {
                 currentNode = Children[0];
+                DisplayNextSentence();  
+                currentNode.state = DialogueNode.State.FIN; 
             }
             else if(Children.Count > 1)
             {
                 InstantiateChoices(Children);
-                
             }
             else
             {
@@ -58,6 +75,25 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    void DisplayNextSentence()
+    {
+        nameText.text = currentNode.Speaker;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence());
+    }
+
+    IEnumerator TypeSentence()
+    {
+      
+        dialogueText.text = "";
+
+        foreach(char letter in currentNode.Dialogue.ToCharArray())
+        {
+            dialogueText.text += letter;
+
+            yield return null;
+        }
+    }
     //creating and displaying UI settings.
     private void InstantiateChoices(List<DialogueNode> children)
     {
@@ -77,6 +113,6 @@ public class DialogueManager : MonoBehaviour
     //get the input
     private void CloseDialogue()
     {
-        throw new NotImplementedException();
+        DestroyImmediate(DialogueBox);
     }
 }
