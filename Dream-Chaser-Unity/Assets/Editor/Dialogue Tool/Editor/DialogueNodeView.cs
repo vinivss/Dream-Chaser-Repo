@@ -149,7 +149,7 @@ namespace Tools.Trees.Dialogue
         {
             DialogueChoiceNode choiceNode = node as DialogueChoiceNode;
 
-            if(choiceNode && choiceNode.children.Count > 1)
+            if(choiceNode && choiceNode.children.Count > 0)
             {
                 choiceNode.children.Sort(SortByVerticalPosition);
             }

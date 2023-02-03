@@ -1,5 +1,87 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8728500168584422854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ca86122f814e040b6be55c4c1287b2, type: 3}
+  m_Name: DialogueChoiceNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: c9b33f9d87381c841b044aa332397627
+  position: {x: 752, y: 16}
+  state: 0
+  Speaker: 
+  Dialogue: Do you agree
+  Portrait: {fileID: 0}
+  children:
+  - {fileID: -5521310441047510096}
+  - {fileID: -3099274855485436076}
+  - {fileID: -8430631260621414187}
+--- !u!114 &-8430631260621414187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 9e383ca062d64384e82c0ee4fdbdc0c4
+  position: {x: 1006, y: 272}
+  state: 0
+  Speaker: 
+  Dialogue: No
+  Portrait: {fileID: 0}
+  child: {fileID: -5552919116465630533}
+--- !u!114 &-5552919116465630533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: b4303d128cc5ce6489212235fdc32bd9
+  position: {x: 1221, y: 314.48}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  Portrait: {fileID: 0}
+--- !u!114 &-5521310441047510096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: bb9a7484fbf340648acd6e290d21df72
+  position: {x: 990.4853, y: -54.295025}
+  state: 0
+  Speaker: 
+  Dialogue: MMM
+  Portrait: {fileID: 0}
+  child: {fileID: 1872043101416601962}
 --- !u!114 &-3879519566108263675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18,8 +100,8 @@ MonoBehaviour:
   state: 1
   Speaker: 
   Dialogue: poopoo
+  Portrait: {fileID: 21300000, guid: 610ddb47e87034343aacbd86582132e2, type: 3}
   child: {fileID: -3437393164418869428}
-  Portrait: {fileID: 0}
 --- !u!114 &-3437393164418869428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,11 +117,31 @@ MonoBehaviour:
   started: 0
   GUID: 61228da627e645c4cb20cfeaf6b98b1e
   position: {x: 550, y: 16}
-  state: 0
+  state: 1
   Speaker: 
   Dialogue: peepep
-  child: {fileID: 8806866408030446662}
   Portrait: {fileID: 0}
+  child: {fileID: -8728500168584422854}
+--- !u!114 &-3099274855485436076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: cc1fdd19886c70a4f9491bfbe070dc04
+  position: {x: 998, y: 110}
+  state: 0
+  Speaker: 
+  Dialogue: Yes
+  Portrait: {fileID: 0}
+  child: {fileID: 6649025651529726142}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,7 +160,53 @@ MonoBehaviour:
   - {fileID: 5954005815241508537}
   - {fileID: -3879519566108263675}
   - {fileID: -3437393164418869428}
-  - {fileID: 8806866408030446662}
+  - {fileID: -8728500168584422854}
+  - {fileID: -5521310441047510096}
+  - {fileID: -3099274855485436076}
+  - {fileID: -8430631260621414187}
+  - {fileID: 1872043101416601962}
+  - {fileID: 6649025651529726142}
+  - {fileID: -5552919116465630533}
+  - {fileID: 3762875659159682863}
+--- !u!114 &1872043101416601962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 806810e1c7f54cd41bfb70c712e9b0a4
+  position: {x: 1278.72, y: -56}
+  state: 0
+  Speaker: 
+  Dialogue: Monke
+  Portrait: {fileID: 0}
+  child: {fileID: 3762875659159682863}
+--- !u!114 &3762875659159682863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 2124fffa5053bad48a622a050543f71d
+  position: {x: 1469.64, y: -28}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  Portrait: {fileID: 0}
 --- !u!114 &5954005815241508537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,8 +225,9 @@ MonoBehaviour:
   state: 1
   Speaker: 
   Dialogue: 
+  Portrait: {fileID: 0}
   child: {fileID: -3879519566108263675}
---- !u!114 &8806866408030446662
+--- !u!114 &6649025651529726142
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,8 +240,9 @@ MonoBehaviour:
   m_Name: DialogueEndNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: ed39adbdc39a5b54d83f308e2c2654d5
-  position: {x: 824, y: 54}
+  GUID: 937f66ac307775e4f9907203304454e4
+  position: {x: 1231, y: 153}
   state: 0
   Speaker: 
   Dialogue: 
+  Portrait: {fileID: 0}

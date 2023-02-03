@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections;
 
+
 public class DialogueManager : MonoBehaviour
 {
     [Tooltip("This is the dialogue that will be referenced for dialogue")]
@@ -18,8 +19,11 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     int ChoiceIndex;
     bool dialogueStarted = false;
+    [Header("Prefabs")]
     public GameObject DialogueBox;
     public Transform DialogueBoxTransform;
+    public GameObject ButtonPrefab;
+    public Transform LayoutTrans;
     Button NextButton;
     GameObject DialogueSprite;
     GameObject runTimeWindow;
@@ -72,6 +76,8 @@ public class DialogueManager : MonoBehaviour
             else if(Children.Count > 1)
             {
                 InstantiateChoices(Children);
+                DialogueSprite.GetComponent<Image>().sprite = currentNode.Portrait;
+                runTimeWindow.SetActive(false);
             } 
         }
     }
@@ -98,19 +104,44 @@ public class DialogueManager : MonoBehaviour
     //creating and displaying UI settings.
     private void InstantiateChoices(List<DialogueNode> children)
     {
+        int i = 0;
         // foreach child create a different button prefab with the text choice.
-
         //give each button an index which is called on Selected option that matches the option
+        foreach (DialogueOptionNode Node in children)
+        {
+            int x = i;
+            Button OptionButton = Instantiate(ButtonPrefab, LayoutTrans).GetComponent<Button>();
+            Debug.Log(i);
+            OptionButton.GetComponent<Button>().onClick.AddListener(delegate {SelectedOption(x);});
+            OptionButton.GetComponentInChildren<TextMeshProUGUI>().text = Node.Dialogue;
+            i++;
+        }
     }
 
     //event that will be called upon the clicking of a button
-    void SelectedOption(int index)
+    public void SelectedOption(int index)
     {
+        Debug.Log(index);
         //get index from button
         List<DialogueNode> Children =  dialogue.GetChildren(currentNode);
+        Debug.Log(Children.Count);
         currentNode = Children[index];
         currentNode.EndNode();
+        runTimeWindow.SetActive(false);
+        DeleteAllButtons();
+        runTimeWindow.SetActive(true);
+        ChangeNode();
     }
+
+    private void DeleteAllButtons()
+    {
+        GameObject[] Buttons = GameObject.FindGameObjectsWithTag("DialogueButts");
+        foreach (GameObject Button in Buttons)
+        {
+            DestroyImmediate(Button);
+        }
+    }
+
     //get the input
     private void CloseDialogue()
     {
