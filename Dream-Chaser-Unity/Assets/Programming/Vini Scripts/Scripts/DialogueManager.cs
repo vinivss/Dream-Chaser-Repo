@@ -21,10 +21,11 @@ public class DialogueManager : MonoBehaviour
     public GameObject DialogueBox;
     public Transform DialogueBoxTransform;
     Button NextButton;
+    GameObject DialogueSprite;
+    GameObject runTimeWindow;
     // Start is called before the first frame update
     void Start()
     {
-
         if (dialogue != null)
         {
             currentNode = dialogue.RootNode;
@@ -39,13 +40,14 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueStarted = true;
             //create window for dialogue 
-            Instantiate(DialogueBox,DialogueBoxTransform);
+            runTimeWindow = Instantiate(DialogueBox,DialogueBoxTransform);
         }
         nameText = GameObject.Find("Speaker").GetComponent<TextMeshProUGUI>();
         dialogueText = GameObject.Find("Dialogue").GetComponent<TextMeshProUGUI>();
         NextButton = GameObject.Find("NextButton").GetComponent<Button>();
 
         NextButton.GetComponent<Button>().onClick.AddListener(ChangeNode);
+        DialogueSprite = GameObject.Find("Speaking Sprite");
         currentNode.state = DialogueNode.State.FIN;
         ChangeNode();
     }
@@ -54,24 +56,23 @@ public class DialogueManager : MonoBehaviour
     {
         if(currentNode.state == DialogueNode.State.FIN)
         {
-              List<DialogueNode> Children =  dialogue.GetChildren(currentNode);
-            Debug.Log(Children);
+            List<DialogueNode> Children =  dialogue.GetChildren(currentNode);
 
             if(Children.Count == 1)
             {
                 currentNode = Children[0];
+                if(currentNode is DialogueEndNode)
+                {
+                    CloseDialogue();
+                }
+                DialogueSprite.GetComponent<Image>().sprite = currentNode.Portrait;
                 DisplayNextSentence();  
                 currentNode.state = DialogueNode.State.FIN; 
             }
             else if(Children.Count > 1)
             {
                 InstantiateChoices(Children);
-            }
-            else
-            {
-                CloseDialogue();
-            }
-            
+            } 
         }
     }
 
@@ -113,6 +114,6 @@ public class DialogueManager : MonoBehaviour
     //get the input
     private void CloseDialogue()
     {
-        DestroyImmediate(DialogueBox);
+        DestroyImmediate(runTimeWindow);
     }
 }

@@ -21,9 +21,12 @@ namespace Tools.Trees.Dialogue
         [Header("Text Attributes")]
         [TextArea] public string Speaker;
         [TextArea]public string Dialogue;
+        [Space]
+        [Header("UI Editors")]
+        [Tooltip("Image displayed as character is talking")]
+        public Sprite Portrait;
 
 
-        
 
         public virtual DialogueNode Clone()
         {
