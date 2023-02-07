@@ -40,8 +40,7 @@ public class DCMoveVin : MonoBehaviour
         if (moveDir != Vector3.zero) 
         transform.forward = moveDir;  
 
-        if(rb.velocity != Vector3.zero)
-        rb.AddForce(transform.forward * minForwardSpeed + Physics.gravity, ForceMode.Acceleration);
+       
 
 
     }
