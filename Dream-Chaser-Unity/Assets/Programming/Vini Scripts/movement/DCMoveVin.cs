@@ -37,7 +37,7 @@ public class DCMoveVin : MonoBehaviour
         Debug.DrawRay(transform.position, -transform.forward, Color.blue);
 
         moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0 , inManager.GetMoveValue().y + transform.forward.z);
-        if (moveDir != Vector3.zero) 
+
         transform.forward = moveDir;  
 
        
