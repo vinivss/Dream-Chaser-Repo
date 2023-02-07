@@ -25,4 +25,14 @@ public class ControlsManager : MonoBehaviour
     {
         return InputValue;
     }
+
+    public void OnEnable()
+    {
+        input.Enable();
+    }
+    public void OnDisable()
+    {
+        input.Disable();
+    }
+
 }
