@@ -102,6 +102,8 @@ namespace Tools.Trees.Dialogue
             }
         }
 
+
+#endif
         public List<DialogueNode> GetChildren(DialogueNode parent)
         {
             List<DialogueNode> children = new List<DialogueNode>();
@@ -124,11 +126,10 @@ namespace Tools.Trees.Dialogue
             DialogueOptionNode optionNode = parent as DialogueOptionNode;
             if (optionNode && optionNode.child != null)
             {
-                children.Add(optionNode.child); 
+                children.Add(optionNode.child);
             }
             return children;
         }
-#endif
         public void Traverse(DialogueNode node, System.Action<DialogueNode> visitor)
         {
             if(node)
