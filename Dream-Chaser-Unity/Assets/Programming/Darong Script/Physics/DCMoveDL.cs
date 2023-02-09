@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DCMoveVin : MonoBehaviour
+public class DCMoveDL : MonoBehaviour
 {
     //innate components gotten during Awake for functionality
     ControlsManager inManager;
@@ -19,6 +19,12 @@ public class DCMoveVin : MonoBehaviour
     [Tooltip("Maximum threshold before slowly rotating to front")]
     [SerializeField] float rotationThreshold;
 
+    [Header("slope check")]
+    public float playerHeight;
+    public float maxSlopeAngle;
+    public RaycastHit slopeDetected;
+
+
     private void Awake()
     {
         inManager = GetComponent<ControlsManager>();
@@ -28,6 +34,7 @@ public class DCMoveVin : MonoBehaviour
     //physics management
     private void FixedUpdate()
     {
+        onSlope();
         MoveCharacter();
     }
 
@@ -45,5 +52,25 @@ public class DCMoveVin : MonoBehaviour
 
 
     }
+
+    private bool onSlope()
+    {
+        //Debug.Log("check on slope");
+        if (Physics.Raycast(transform.position, Vector3.down, out slopeDetected, playerHeight * 0.5f + 0.3f))
+        {
+            float angle = Vector3.Angle(Vector3.up, slopeDetected.normal);
+            //Debug.Log("on slope");
+            return angle < maxSlopeAngle && angle != 0;
+        }
+
+        return false;
+
+    }
+
+    private Vector3 GetSlopeMoveDirection()
+    {
+        return Vector3.ProjectOnPlane(moveDir, slopeDetected.normal).normalized;
+    }
+
 
 }
