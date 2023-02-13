@@ -114,7 +114,7 @@ namespace Tools.Trees.Dialogue
                 children.Add(rootNode.child);
             }
             DialogueChoiceNode choiceNode = parent as DialogueChoiceNode;
-            if (choiceNode)
+            if (choiceNode && choiceNode.children != null)
             {
                 return choiceNode.children;
             }
