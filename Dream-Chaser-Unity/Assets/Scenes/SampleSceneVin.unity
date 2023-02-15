@@ -544,6 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1d90d251865ea4f8e653270d0c79f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cpPoints: 0
   lastCheckpointPosition: {x: 100, y: 2, z: 2}
   sceneStarted: 0
 --- !u!4 &412233268
@@ -1283,3 +1284,72 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1001 &2141516675335862037
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2141516674894966311, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141516674894966311, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141516674894966311, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141516674894966311, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.295828
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141516674894966311, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141516674894966311, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141516674894966311, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141516674894966311, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141516674894966311, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141516674894966311, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141516674894966311, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141516674894966330, guid: 046af4e2c72c4894f989be6116832797,
+        type: 3}
+      propertyPath: m_Name
+      value: Checkpoint
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 046af4e2c72c4894f989be6116832797, type: 3}

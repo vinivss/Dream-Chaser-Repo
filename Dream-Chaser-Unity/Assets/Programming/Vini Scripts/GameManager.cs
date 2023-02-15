@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     static GameManager managerInstance;
 
+    public int cpPoints;
     int pointsTotal;
     public Vector3 lastCheckpointPosition;
 
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
         {
             DestroyImmediate(gameObject);
         }
+        pointsTotal = cpPoints;
 
     }
 
