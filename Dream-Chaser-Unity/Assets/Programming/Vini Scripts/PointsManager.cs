@@ -6,7 +6,7 @@ using UnityEngine;
 public class PointsManager : MonoBehaviour
 {
     [Tooltip("Total points player has earned this level")]
-    int pointsTotal;
+    public int pointsTotal;
 
     public void AddPoints(int pointsToAdd)
     {
