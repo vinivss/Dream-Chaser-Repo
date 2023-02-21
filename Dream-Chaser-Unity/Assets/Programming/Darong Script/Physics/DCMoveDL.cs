@@ -47,16 +47,17 @@ public class DCMoveDL : MonoBehaviour
 
     private void Awake()
     {
+
         inManager = GetComponent<ControlsManager>();
+
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
+
+        rb.freezeRotation = true;                       // freeze at T pose
+
     }
     private void Update()
     {
         myInput();
-        //grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, GroundPlatform);
-        grounded = Physics.CheckSphere(groundCheck.position, .1f, GroundPlatform);
-        Debug.Log("Ground check: " + grounded);
 
         SpeedControl();
     }
@@ -68,6 +69,7 @@ public class DCMoveDL : MonoBehaviour
         MoveCharacter();
     }
 
+    // basic movement key
     private void myInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -88,16 +90,12 @@ public class DCMoveDL : MonoBehaviour
         */
 
         moveDir = orientation.forward * verticalInput + orientation.right * horizontalInput;
+
         //rb.AddForce(moveDir.normalized * moveSpeed * 10f, ForceMode.Force);
         rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);
 
 
-        // on ground
-        if (grounded)
-        {
-            rb.AddForce(moveDir.normalized * moveSpeed * 10f, ForceMode.Force);
-        }
-
+        // keep adding speed if on slope
         if (onSlope())
         {
             Debug.Log("on slope");
@@ -111,12 +109,11 @@ public class DCMoveDL : MonoBehaviour
     // slope detection (DL)
     private bool onSlope()
     {
-        Debug.Log("check on slope");
-        if (Physics.Raycast(transform.position, Vector3.down, out slopeDetected, playerHeight * 0.5f + 0.3f))
+
+        if (Physics.Raycast(transform.position, Vector3.down, out slopeDetected, playerHeight * 0.5f + 0.3f))   // shooting a ray from to the down to the platform
         {
-            float angle = Vector3.Angle(Vector3.up, slopeDetected.normal);
-            Debug.Log("on slope");
-            return angle < maxSlopeAngle && angle != 0;
+            float angle = Vector3.Angle(Vector3.up, slopeDetected.normal);                                      // get the angle from vector 3
+            return angle < maxSlopeAngle && angle != 0;                                                         // compare with the max angle
         }
 
         return false;
@@ -130,9 +127,10 @@ public class DCMoveDL : MonoBehaviour
 
     private void SpeedControl()
     {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        
+        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z); // get current velocity
 
-
+        // fix velocity if above the limit
         if (flatVel.magnitude > moveSpeed)
         {
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
@@ -141,5 +139,7 @@ public class DCMoveDL : MonoBehaviour
         }
 
     }
+
+    // coeffient
 
 }
