@@ -7,18 +7,18 @@ public class CollectiblePickup : MonoBehaviour
 
     public int pointsWorth;
     
-    PointsManager pointsManager;
+    GameManager gameManager;
 
     private void Awake()
     {
-        pointsManager = FindObjectOfType<PointsManager>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
-            pointsManager.AddPoints(pointsWorth);
+            gameManager.AddPoints(pointsWorth);
             Destroy(gameObject);
         }
     }
