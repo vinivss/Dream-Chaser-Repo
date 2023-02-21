@@ -108,6 +108,7 @@ public class DCMoveDL : MonoBehaviour
 
     }
 
+    // slope detection (DL)
     private bool onSlope()
     {
         Debug.Log("check on slope");
