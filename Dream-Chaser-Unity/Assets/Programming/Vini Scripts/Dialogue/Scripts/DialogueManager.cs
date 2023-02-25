@@ -5,7 +5,7 @@ using System;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
-
+using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -15,15 +15,21 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialogue Box Attributes")]
     [Tooltip("Name Of Speaker")]
     public TextMeshProUGUI nameText;
-    [Tooltip("Name Of Speaker")]
+    [Tooltip("Dialogue Text")]
     public TextMeshProUGUI dialogueText;
     int ChoiceIndex;
     bool dialogueStarted = false;
     [Header("Prefabs")]
+    [Tooltip("Prefab to be instantiated as dialogue box")]
     public GameObject DialogueBox;
+    [Tooltip("Where The Dialogue box will be anchored")]
     public Transform DialogueBoxTransform;
+    [Tooltip("Prefab to be instantiated as buttons")]
     public GameObject ButtonPrefab;
+    [Tooltip("Vertical transform")]
     public Transform LayoutTrans;
+    [Tooltip("what will happen at the end of the dialogue")]
+    public UnityEvent EndEvent;
     Button NextButton;
     GameObject DialogueSprite;
     GameObject runTimeWindow;
@@ -36,6 +42,7 @@ public class DialogueManager : MonoBehaviour
 
             DisplayDialogue();
         }
+        EndEvent = new UnityEvent();
     }
 
     private void DisplayDialogue()
@@ -145,6 +152,7 @@ public class DialogueManager : MonoBehaviour
     //get the input
     private void CloseDialogue()
     {
+        EndEvent.Invoke();
         DestroyImmediate(runTimeWindow);
     }
 }
