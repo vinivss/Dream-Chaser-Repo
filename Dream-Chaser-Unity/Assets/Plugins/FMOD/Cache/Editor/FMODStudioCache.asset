@@ -18,6 +18,34 @@ MonoBehaviour:
   lastModified: 638119350808882809
   FileSizes: []
   Exists: 1
+--- !u!114 &-3584499789904671277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MUS - Eri's Theme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MUS - Eri's Theme
+  Guid:
+    Data1: -75123881
+    Data2: 1113100890
+    Data3: 296328833
+    Data4: -791276211
+  Banks:
+  - {fileID: 8208779247005025296}
+  - {fileID: 1332569475076764455}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 160000
 --- !u!114 &-3291442250420513682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,15 +89,17 @@ MonoBehaviour:
   - {fileID: 4217042164962336275}
   - {fileID: 8208779247005025296}
   - {fileID: 2567945051572985674}
+  - {fileID: 1332569475076764455}
   EditorEvents:
   - {fileID: 210619096999271930}
   - {fileID: 2612424660054608056}
+  - {fileID: -3584499789904671277}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8208779247005025296}
   StringsBanks:
   - {fileID: 4217042164962336275}
-  cacheTime: 638126747251655679
+  cacheTime: 638132189113307772
   cacheVersion: 131601
 --- !u!114 &210619096999271930
 MonoBehaviour:
@@ -99,6 +129,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1332569475076764455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638132189113047610
+  FileSizes:
+  - Name: Desktop
+    Value: 6234816
+  Exists: 1
 --- !u!114 &2567945051572985674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,10 +164,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638126747251655679
+  lastModified: 638132189113307772
   FileSizes:
   - Name: Desktop
-    Value: 4112448
+    Value: 26400
   Exists: 1
 --- !u!114 &2579139679391456446
 MonoBehaviour:
@@ -159,7 +209,7 @@ MonoBehaviour:
     Data4: 1703026419
   Banks:
   - {fileID: 8208779247005025296}
-  - {fileID: 2567945051572985674}
+  - {fileID: 1332569475076764455}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -182,10 +232,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638126747251441033
+  lastModified: 638132189111858716
   FileSizes:
   - Name: Desktop
-    Value: 858
+    Value: 958
   Exists: 1
 --- !u!114 &7272460697298569667
 MonoBehaviour:
@@ -220,8 +270,8 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638126747251431056
+  lastModified: 638132189111559525
   FileSizes:
   - Name: Desktop
-    Value: 4112960
+    Value: 6261024
   Exists: 1
