@@ -33,16 +33,18 @@ public class DialogueManager : MonoBehaviour
     Button NextButton;
     GameObject DialogueSprite;
     GameObject runTimeWindow;
+    ControlsManager controlVN;
     // Start is called before the first frame update
     void Start()
     {
+        controlVN = FindObjectOfType<ControlsManager>().GetComponent<ControlsManager>();
         if (dialogue != null)
         {
             currentNode = dialogue.RootNode;
-
             DisplayDialogue();
         }
         EndEvent = new UnityEvent();
+ 
     }
 
     private void DisplayDialogue()
@@ -88,12 +90,19 @@ public class DialogueManager : MonoBehaviour
             } 
         }
     }
+    void Skip()
+    {
+            StopCoroutine(TypeSentence());
+            dialogueText.text = "";
+            dialogueText.text = currentNode.Dialogue; 
+    }
 
     void DisplayNextSentence()
     {
         nameText.text = currentNode.Speaker;
         StopAllCoroutines();
         StartCoroutine(TypeSentence());
+
     }
 
     IEnumerator TypeSentence()
@@ -103,6 +112,13 @@ public class DialogueManager : MonoBehaviour
 
         foreach(char letter in currentNode.Dialogue.ToCharArray())
         {
+
+            if (controlVN.GetAcceptValue())
+            {
+                Skip();
+                break;
+            }
+
             dialogueText.text += letter;
 
             yield return null;
@@ -124,6 +140,8 @@ public class DialogueManager : MonoBehaviour
             i++;
         }
     }
+
+
 
     //event that will be called upon the clicking of a button
     public void SelectedOption(int index)
