@@ -6,7 +6,6 @@ public class ControlsManager : MonoBehaviour
 {
     Vector2 InputValue;
     Inputs input;
-    bool AcceptPerformed = false;
 
     private void Awake()
     {
@@ -20,24 +19,13 @@ public class ControlsManager : MonoBehaviour
         {
             InputValue = Vector2.zero;
         };
-        input.Interacts.Accept.performed += ctx =>
-        {
-            AcceptPerformed = true;
-        };
-        input.Interacts.Accept.canceled += ctx =>
-        {
-            AcceptPerformed = false;
-        };
     }
 
     public Vector2 GetMoveValue()
     {
         return InputValue;
     }
-    public bool GetAcceptValue()
-    {
-        return AcceptPerformed;
-    }
+
     public void OnEnable()
     {
         input.Enable();

@@ -83,45 +83,6 @@
                     "isPartOfComposite": false
                 }
             ]
-        },
-        {
-            "name": "Interacts",
-            "id": "16bfde53-446d-4f61-aace-9c81e518f409",
-            "actions": [
-                {
-                    "name": "Accept",
-                    "type": "Button",
-                    "id": "c9395b6b-d5f7-40fb-9546-aae8fbd0ea89",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "a9b58d7f-60f6-410c-be31-10350062d7f6",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Accept",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c53f34cf-ed5f-402b-9ce8-58dae52ce459",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Accept",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
         }
     ],
     "controlSchemes": []

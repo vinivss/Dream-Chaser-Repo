@@ -22,10 +22,4 @@ public class CollectiblePickup : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(transform.position, transform.localScale);
-    }
 }

@@ -105,45 +105,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
-        },
-        {
-            ""name"": ""Interacts"",
-            ""id"": ""16bfde53-446d-4f61-aace-9c81e518f409"",
-            ""actions"": [
-                {
-                    ""name"": ""Accept"",
-                    ""type"": ""Button"",
-                    ""id"": ""c9395b6b-d5f7-40fb-9546-aae8fbd0ea89"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""a9b58d7f-60f6-410c-be31-10350062d7f6"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Accept"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c53f34cf-ed5f-402b-9ce8-58dae52ce459"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Accept"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
         }
     ],
     ""controlSchemes"": []
@@ -151,9 +112,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         // Movement
         m_Movement = asset.FindActionMap("Movement", throwIfNotFound: true);
         m_Movement_Move = m_Movement.FindAction("Move", throwIfNotFound: true);
-        // Interacts
-        m_Interacts = asset.FindActionMap("Interacts", throwIfNotFound: true);
-        m_Interacts_Accept = m_Interacts.FindAction("Accept", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -242,45 +200,8 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         }
     }
     public MovementActions @Movement => new MovementActions(this);
-
-    // Interacts
-    private readonly InputActionMap m_Interacts;
-    private IInteractsActions m_InteractsActionsCallbackInterface;
-    private readonly InputAction m_Interacts_Accept;
-    public struct InteractsActions
-    {
-        private @Inputs m_Wrapper;
-        public InteractsActions(@Inputs wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Accept => m_Wrapper.m_Interacts_Accept;
-        public InputActionMap Get() { return m_Wrapper.m_Interacts; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(InteractsActions set) { return set.Get(); }
-        public void SetCallbacks(IInteractsActions instance)
-        {
-            if (m_Wrapper.m_InteractsActionsCallbackInterface != null)
-            {
-                @Accept.started -= m_Wrapper.m_InteractsActionsCallbackInterface.OnAccept;
-                @Accept.performed -= m_Wrapper.m_InteractsActionsCallbackInterface.OnAccept;
-                @Accept.canceled -= m_Wrapper.m_InteractsActionsCallbackInterface.OnAccept;
-            }
-            m_Wrapper.m_InteractsActionsCallbackInterface = instance;
-            if (instance != null)
-            {
-                @Accept.started += instance.OnAccept;
-                @Accept.performed += instance.OnAccept;
-                @Accept.canceled += instance.OnAccept;
-            }
-        }
-    }
-    public InteractsActions @Interacts => new InteractsActions(this);
     public interface IMovementActions
     {
         void OnMove(InputAction.CallbackContext context);
-    }
-    public interface IInteractsActions
-    {
-        void OnAccept(InputAction.CallbackContext context);
     }
 }

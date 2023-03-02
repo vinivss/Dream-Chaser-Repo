@@ -5,7 +5,7 @@ using System;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.Events;
+
 
 public class DialogueManager : MonoBehaviour
 {
@@ -15,36 +15,27 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialogue Box Attributes")]
     [Tooltip("Name Of Speaker")]
     public TextMeshProUGUI nameText;
-    [Tooltip("Dialogue Text")]
+    [Tooltip("Name Of Speaker")]
     public TextMeshProUGUI dialogueText;
     int ChoiceIndex;
     bool dialogueStarted = false;
     [Header("Prefabs")]
-    [Tooltip("Prefab to be instantiated as dialogue box")]
     public GameObject DialogueBox;
-    [Tooltip("Where The Dialogue box will be anchored")]
     public Transform DialogueBoxTransform;
-    [Tooltip("Prefab to be instantiated as buttons")]
     public GameObject ButtonPrefab;
-    [Tooltip("Vertical transform")]
     public Transform LayoutTrans;
-    [Tooltip("what will happen at the end of the dialogue")]
-    public UnityEvent EndEvent;
     Button NextButton;
     GameObject DialogueSprite;
     GameObject runTimeWindow;
-    ControlsManager controlVN;
     // Start is called before the first frame update
     void Start()
     {
-        controlVN = FindObjectOfType<ControlsManager>().GetComponent<ControlsManager>();
         if (dialogue != null)
         {
             currentNode = dialogue.RootNode;
+
             DisplayDialogue();
         }
-        EndEvent = new UnityEvent();
- 
     }
 
     private void DisplayDialogue()
@@ -90,19 +81,12 @@ public class DialogueManager : MonoBehaviour
             } 
         }
     }
-    void Skip()
-    {
-            StopCoroutine(TypeSentence());
-            dialogueText.text = "";
-            dialogueText.text = currentNode.Dialogue; 
-    }
 
     void DisplayNextSentence()
     {
         nameText.text = currentNode.Speaker;
         StopAllCoroutines();
         StartCoroutine(TypeSentence());
-
     }
 
     IEnumerator TypeSentence()
@@ -112,13 +96,6 @@ public class DialogueManager : MonoBehaviour
 
         foreach(char letter in currentNode.Dialogue.ToCharArray())
         {
-
-            if (controlVN.GetAcceptValue())
-            {
-                Skip();
-                break;
-            }
-
             dialogueText.text += letter;
 
             yield return null;
@@ -140,8 +117,6 @@ public class DialogueManager : MonoBehaviour
             i++;
         }
     }
-
-
 
     //event that will be called upon the clicking of a button
     public void SelectedOption(int index)
@@ -170,7 +145,6 @@ public class DialogueManager : MonoBehaviour
     //get the input
     private void CloseDialogue()
     {
-        EndEvent.Invoke();
         DestroyImmediate(runTimeWindow);
     }
 }
