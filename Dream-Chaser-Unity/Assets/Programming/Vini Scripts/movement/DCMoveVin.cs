@@ -46,8 +46,7 @@ public class DCMoveVin : MonoBehaviour
         rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed* 100);
 
         if(rb.velocity.magnitude > 0.01f && rb.velocity.magnitude != 0)
-        {
-            Debug.Log("Penis");      
+        { 
             StartCoroutine(StopMove());
             
         }
