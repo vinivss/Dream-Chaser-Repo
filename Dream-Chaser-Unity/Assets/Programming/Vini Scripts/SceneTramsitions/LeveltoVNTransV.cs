@@ -4,10 +4,13 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// used for anything WITH A GAME MANAGER
+// this ideally for the 3d Levels back into 
+// the visual novel scenes.
 
 public class LeveltoVNTransV : MonoBehaviour
 {
-    public Scene VnScene;
+    public Object VnScene;
     GameManager Gm;
     private void Awake()
     {
