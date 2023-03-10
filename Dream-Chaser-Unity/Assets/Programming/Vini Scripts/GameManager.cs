@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public int cpPoints;
     int pointsTotal;
     public Vector3 lastCheckpointPosition;
+    public int cpCount;
+    
 
     public bool sceneStarted = false;
     private void Awake()
@@ -24,7 +26,7 @@ public class GameManager : MonoBehaviour
             DestroyImmediate(gameObject);
         }
         pointsTotal = cpPoints;
-
+        Debug.Log(cpPoints);
     }
 
     private void Start()
