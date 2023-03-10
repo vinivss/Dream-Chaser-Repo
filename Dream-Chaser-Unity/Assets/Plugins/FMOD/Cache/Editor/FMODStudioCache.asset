@@ -1,23 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8254998996222621543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Packages/FMOD Projects/Dream Chaser/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638119350808882809
-  FileSizes: []
-  Exists: 1
 --- !u!114 &-3584499789904671277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,33 +28,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 160000
---- !u!114 &-3291442250420513682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/HitObject
-  m_EditorClassIdentifier: 
-  Path: event:/HitObject
-  Guid:
-    Data1: 366761934
-    Data2: 1309970896
-    Data3: -1154113628
-    Data4: 276779348
-  Banks:
-  - {fileID: 7272460697298569667}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-1884516510812082661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,11 +82,7 @@ MonoBehaviour:
   - {fileID: 8208779247005025296}
   StringsBanks:
   - {fileID: 4217042164962336275}
-<<<<<<< HEAD
-  cacheTime: 638137336824111204
-=======
-  cacheTime: 638140109256517332
->>>>>>> JSTN-Branch-1.0
+  cacheTime: 638140115125064774
   cacheVersion: 131601
 --- !u!114 &210619096999271930
 MonoBehaviour:
@@ -176,11 +127,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-<<<<<<< HEAD
-  lastModified: 638137336824111204
-=======
-  lastModified: 638140109254458244
->>>>>>> JSTN-Branch-1.0
+  lastModified: 638140115125044827
   FileSizes:
   - Name: Desktop
     Value: 6234816
@@ -200,34 +147,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-<<<<<<< HEAD
-  lastModified: 638137336824111204
-=======
-  lastModified: 638140109256517332
->>>>>>> JSTN-Branch-1.0
+  lastModified: 638140115125064774
   FileSizes:
   - Name: Desktop
     Value: 109376
-  Exists: 1
---- !u!114 &2579139679391456446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Packages/FMOD Projects/Dream Chaser/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638119350808932679
-  FileSizes:
-  - Name: 
-    Value: 804
   Exists: 1
 --- !u!114 &2612424660054608056
 MonoBehaviour:
@@ -272,32 +195,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-<<<<<<< HEAD
-  lastModified: 638137336823642537
-=======
-  lastModified: 638140109253844795
->>>>>>> JSTN-Branch-1.0
+  lastModified: 638140115124541105
   FileSizes:
   - Name: Desktop
     Value: 998
-  Exists: 1
---- !u!114 &7272460697298569667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: Packages/FMOD Projects/Dream Chaser/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638119350810209267
-  FileSizes: []
   Exists: 1
 --- !u!114 &8208779247005025296
 MonoBehaviour:
@@ -314,11 +215,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-<<<<<<< HEAD
-  lastModified: 638137336823642537
-=======
-  lastModified: 638140109253824851
->>>>>>> JSTN-Branch-1.0
+  lastModified: 638140115124531132
   FileSizes:
   - Name: Desktop
     Value: 6261024
