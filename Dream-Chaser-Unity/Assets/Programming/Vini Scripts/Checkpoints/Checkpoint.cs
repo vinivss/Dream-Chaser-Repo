@@ -21,8 +21,11 @@ public class Checkpoint : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            gameManager.lastCheckpointPosition = transform.position;
-            pointsAtCheckpoint = gameManager.cpPoints;
+            if(gameManager.lastCheckpointPosition != transform.position){
+                gameManager.lastCheckpointPosition = transform.position;
+                pointsAtCheckpoint = gameManager.cpPoints;
+                gameManager.cpCount++;
+            }            
         }
     }
 }
