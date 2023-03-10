@@ -20,7 +20,6 @@ public class ObstacleColllision : MonoBehaviour
     IEnumerator ResetScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
- 
         yield return null;
     }
 }
