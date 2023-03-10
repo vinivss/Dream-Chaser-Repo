@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
+using FMOD.Studio;
 
 public class DCMoveVin : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class DCMoveVin : MonoBehaviour
     [Tooltip("Max Speed you can accelerate to")]
     [Min(0.0f)]public float maxSpeed;
 
+    //audio
+    private EventInstance windBlowing;
+    private int windVolume;
     
     private void Awake()
     {
@@ -27,10 +31,16 @@ public class DCMoveVin : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void Start(){ // added start to initialize audio instance
+        windBlowing = AudioManager.instance.CreateInstance(FMODEvents.instance.windBlowing);
+    }
+
     //physics management
     private void FixedUpdate()
     {
         MoveCharacter();
+
+        UpdateSound();
     }
 
     private void MoveCharacter()
@@ -57,5 +67,20 @@ public class DCMoveVin : MonoBehaviour
         inManager.OnDisable();
         yield return new WaitForSeconds(0.5f);
         inManager.OnEnable();
+    }
+
+    private void UpdateSound(){
+        //start wind event if player is moving
+        if(rb.velocity.x != 0){
+            //get playback state
+            PLAYBACK_STATE playbackState;
+            windBlowing.getPlaybackState(out playbackState);
+            if(playbackState.Equals(PLAYBACK_STATE.STOPPED)){
+                windBlowing.start();
+            }
+        }
+        else{
+            windBlowing.stop(STOP_MODE.ALLOWFADEOUT);
+        }
     }
 }

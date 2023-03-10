@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
             DestroyImmediate(gameObject);
         }
         pointsTotal = cpPoints;
-        Debug.Log(cpPoints);
     }
 
     private void Start()
