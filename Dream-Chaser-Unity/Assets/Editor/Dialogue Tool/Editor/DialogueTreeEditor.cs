@@ -19,7 +19,6 @@ public class DialogueTreeEditor : EditorWindow
     [MenuItem("Tools/Dialogue/Editor ...")]
     public static void OpenWindow()
     {
-        Debug.Log("should work");
         DialogueTreeEditor wnd = GetWindow<DialogueTreeEditor>();
         wnd.titleContent = new GUIContent("DialogueTreeEditor");
     }

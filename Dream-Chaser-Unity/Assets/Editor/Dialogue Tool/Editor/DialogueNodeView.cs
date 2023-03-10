@@ -15,6 +15,8 @@ namespace Tools.Trees.Dialogue
         public DialogueNode node;
         public Port input;
         public Port output;
+        public Port actionout;
+        public Port actionin;
 
         public DialogueNodeView(DialogueNode node) : base("Assets/Editor/Dialogue Tool/Editor/DialogueNodeView.uxml")
         {
@@ -26,7 +28,11 @@ namespace Tools.Trees.Dialogue
             style.top = node.position.y;
 
             CreateInputPorts();
+            CreateActionInputPorts();
+            CreateaActionOutputPorts();
             CreateOutputPorts();
+          
+           
             SetupClasses();
 
             TextField dialoguebox = this.Q<TextField>("Dialogue");
@@ -38,6 +44,8 @@ namespace Tools.Trees.Dialogue
             Speaker.Bind(new SerializedObject(node));
           
         }
+
+
 
         private void SetupClasses()
         {
@@ -60,6 +68,10 @@ namespace Tools.Trees.Dialogue
             else if (node is DialogueOptionNode)
             {
                 AddToClassList("option");
+            }
+            else if(node is DialogueActionNode)
+            {
+                AddToClassList("action");
             }
         }
 
@@ -126,6 +138,75 @@ namespace Tools.Trees.Dialogue
                 outputContainer.Add(output);
             }
         }
+        private void CreateActionInputPorts()
+        {
+            if (node is DialogueRootNode)
+            {
+            }
+            if(node is DialogueEndNode)
+            {
+            }
+            if (node is DialogueChoiceNode)
+            {
+                actionin = InstantiatePort(Orientation.Vertical, Direction.Input, Port.Capacity.Multi, typeof(bool));
+            }
+            if (node is DialogueSpeechNode)
+            {
+                actionin = InstantiatePort(Orientation.Vertical, Direction.Input, Port.Capacity.Multi, typeof(bool));
+            }
+
+            if (node is DialogueOptionNode)
+            {
+                actionin = InstantiatePort(Orientation.Vertical, Direction.Input, Port.Capacity.Multi, typeof(bool));
+            }
+            if(node is DialogueActionNode)
+            {
+            }
+            if(actionin != null)
+            {
+                actionin.portName = "";
+                actionin.style.flexDirection = FlexDirection.Row;
+                actionin.style.alignSelf = Align.FlexEnd;
+                actionin.portColor = Color.magenta;
+                actionin.Add(output);
+            }
+        }
+        private void CreateaActionOutputPorts()
+        {
+            if (node is DialogueRootNode)
+            {
+            }
+            if (node is DialogueEndNode)
+            {
+            }
+            if (node is DialogueChoiceNode)
+            {
+               
+            }
+            if (node is DialogueSpeechNode)
+            {
+
+            }
+
+            if (node is DialogueOptionNode)
+            {
+              
+            }
+            if(node is DialogueActionNode)
+            {
+                actionout = InstantiatePort(Orientation.Vertical, Direction.Output,Port.Capacity.Single, typeof(bool));
+            }
+
+            if (actionout != null)
+            {
+                actionout.portName = "";
+                actionout.style.flexDirection = FlexDirection.Row;
+                actionout.style.alignSelf = Align.FlexEnd;
+                actionout.portColor = Color.yellow;
+                actionout.Add(output);
+            }
+        }
+        
 
         public override void SetPosition(Rect newPos)
         {
