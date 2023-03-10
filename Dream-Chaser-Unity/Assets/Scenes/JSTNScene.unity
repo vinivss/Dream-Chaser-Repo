@@ -1022,7 +1022,6 @@ GameObject:
   m_Component:
   - component: {fileID: 330585546}
   - component: {fileID: 330585545}
-  - component: {fileID: 330585547}
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
   - component: {fileID: 330585550}
@@ -1083,7 +1082,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.22298968, y: 0.000000006668287, z: -0.0000000015253668, w: 0.9748208}
+  m_LocalRotation: {x: 0.22298971, y: -0.0000000757731, z: 0.000000017333054, w: 0.9748208}
   m_LocalPosition: {x: 0, y: 241.2, z: -411.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1091,18 +1090,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10}
---- !u!114 &330585547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &330585548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,6 +1230,16 @@ PrefabInstance:
     - target: {fileID: 7859200989550110478, guid: b8095beb53d919941b417b9b5467a509,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859200991358252176, guid: b8095beb53d919941b417b9b5467a509,
+        type: 3}
+      propertyPath: parameterName
+      value: wind_intensity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859200991358252176, guid: b8095beb53d919941b417b9b5467a509,
+        type: 3}
+      propertyPath: parameterValue
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7859200991358252183, guid: b8095beb53d919941b417b9b5467a509,
@@ -4110,7 +4107,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.22298968, y: 0.000000006668287, z: -0.0000000015253668, w: 0.9748208}
+  m_LocalRotation: {x: 0.22298971, y: -0.0000000757731, z: 0.000000017333054, w: 0.9748208}
   m_LocalPosition: {x: 0, y: 241.2, z: -411.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6329,13 +6326,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8420906e4ce677a43b593edd07edf0a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <ambience>k__BackingField:
+    Guid:
+      Data1: -1302213113
+      Data2: 1256571277
+      Data3: -748400978
+      Data4: 696840385
+    Path: event:/Ambience/Wind
   <windBlowing>k__BackingField:
     Guid:
-      Data1: -1289828063
-      Data2: 1198387821
-      Data3: -2022970441
-      Data4: 306880706
-    Path: event:/SFX/Wind
+      Data1: -1182773388
+      Data2: 1259529088
+      Data3: -1029958743
+      Data4: 1703026419
+    Path: event:/Music/Background
 --- !u!1001 &1882049270
 PrefabInstance:
   m_ObjectHideFlags: 0

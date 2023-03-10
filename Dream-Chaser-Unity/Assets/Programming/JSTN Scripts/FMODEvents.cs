@@ -5,8 +5,13 @@ using FMODUnity;
 
 public class FMODEvents : MonoBehaviour
 {
+    [field: Header("Ambience")]
+    [field: SerializeField] public EventReference ambience {get; private set; }
+    
     [field: Header("Wind SFX")]
     [field: SerializeField] public EventReference windBlowing {get; private set; }
+
+
     public static FMODEvents instance {get; private set;}
 
     private void Awake(){
