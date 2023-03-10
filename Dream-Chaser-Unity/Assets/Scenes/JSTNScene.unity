@@ -1022,7 +1022,6 @@ GameObject:
   m_Component:
   - component: {fileID: 330585546}
   - component: {fileID: 330585545}
-  - component: {fileID: 330585547}
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
   - component: {fileID: 330585550}
@@ -1091,18 +1090,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10}
---- !u!114 &330585547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &330585548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,6 +1230,16 @@ PrefabInstance:
     - target: {fileID: 7859200989550110478, guid: b8095beb53d919941b417b9b5467a509,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859200991358252176, guid: b8095beb53d919941b417b9b5467a509,
+        type: 3}
+      propertyPath: parameterName
+      value: wind_intensity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859200991358252176, guid: b8095beb53d919941b417b9b5467a509,
+        type: 3}
+      propertyPath: parameterValue
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7859200991358252183, guid: b8095beb53d919941b417b9b5467a509,
@@ -2280,6 +2277,7 @@ GameObject:
   - component: {fileID: 549029364}
   - component: {fileID: 549029365}
   - component: {fileID: 549029366}
+  - component: {fileID: 549029367}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -2298,7 +2296,8 @@ Transform:
   m_LocalPosition: {x: -28.279715, y: -8.958476, z: 32.084892}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1869077185}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2350,6 +2349,18 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &549029367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549029362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b76910997278145adf611343003552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &572223952 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f84df7d9307715c46be185a5c16bd6fd,
@@ -6271,6 +6282,64 @@ Transform:
   m_Father: {fileID: 1912668167}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1869077184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1869077185}
+  - component: {fileID: 1869077186}
+  m_Layer: 0
+  m_Name: FMODEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1869077185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869077184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 549029364}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1869077186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869077184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8420906e4ce677a43b593edd07edf0a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ambience>k__BackingField:
+    Guid:
+      Data1: -1302213113
+      Data2: 1256571277
+      Data3: -748400978
+      Data4: 696840385
+    Path: event:/Ambience/Wind
+  <windBlowing>k__BackingField:
+    Guid:
+      Data1: -1182773388
+      Data2: 1259529088
+      Data3: -1029958743
+      Data4: 1703026419
+    Path: event:/Music/Background
 --- !u!1001 &1882049270
 PrefabInstance:
   m_ObjectHideFlags: 0
