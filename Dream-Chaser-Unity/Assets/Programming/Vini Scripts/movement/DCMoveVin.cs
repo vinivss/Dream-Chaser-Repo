@@ -11,7 +11,7 @@ public class DCMoveVin : MonoBehaviour
 
     //priv hidden variables
     Vector3 moveDir;
-    private float val;
+    float velo;
 
     //Inspector Vars
     [Header("Movement Attributes")]
@@ -21,10 +21,11 @@ public class DCMoveVin : MonoBehaviour
     [SerializeField] float rotationThreshold;
     [Tooltip("Max Speed you can accelerate to")]
     [Min(0.0f)]public float maxSpeed;
-    
+
     //audio inspector vars
-    [SerializeField] private string parameterName;
+    [Header("Audio Attributes")]
     [Tooltip("The name of the FMOD Parameter function")]
+    [SerializeField]  string parameterName;
 
     private void Awake()
     {
@@ -67,7 +68,7 @@ public class DCMoveVin : MonoBehaviour
     }
 
     private void UpdateSound(){
-        val = rb.velocity.magnitude/maxSpeed*4;
-        AudioManager.instance.SetAmbienceParameter(parameterName, val);
+        velo = rb.velocity.magnitude/maxSpeed*4;
+        AudioManager.instance.SetAmbienceParameter(parameterName, velo);
     }
 }
