@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
+using FMOD.Studio;
 
 public class DCMoveVin : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class DCMoveVin : MonoBehaviour
 
     //priv hidden variables
     Vector3 moveDir;
+    float velo;
 
     //Inspector Vars
     [Header("Movement Attributes")]
@@ -20,7 +22,11 @@ public class DCMoveVin : MonoBehaviour
     [Tooltip("Max Speed you can accelerate to")]
     [Min(0.0f)]public float maxSpeed;
 
-    
+    //audio inspector vars
+    [Header("Audio Attributes")]
+    [Tooltip("The name of the FMOD Parameter function")]
+    [SerializeField]  string parameterName;
+
     private void Awake()
     {
         inManager = GetComponent<ControlsManager>();
@@ -31,6 +37,8 @@ public class DCMoveVin : MonoBehaviour
     private void FixedUpdate()
     {
         MoveCharacter();
+
+        UpdateSound();
     }
 
     private void MoveCharacter()
@@ -57,5 +65,10 @@ public class DCMoveVin : MonoBehaviour
         inManager.OnDisable();
         yield return new WaitForSeconds(0.5f);
         inManager.OnEnable();
+    }
+
+    private void UpdateSound(){
+        velo = rb.velocity.magnitude/maxSpeed*4;
+        AudioManager.instance.SetAmbienceParameter(parameterName, velo);
     }
 }
