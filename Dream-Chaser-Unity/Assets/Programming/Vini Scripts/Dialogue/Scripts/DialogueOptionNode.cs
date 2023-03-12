@@ -7,7 +7,8 @@ namespace Tools.Trees.Dialogue
     public class DialogueOptionNode : DialogueNode
     {
         [HideInInspector]public DialogueNode child;
-        
+        [HideInInspector] public List<DialogueNode> DialogueActions;
+
 
         public override void OnStart()
         {

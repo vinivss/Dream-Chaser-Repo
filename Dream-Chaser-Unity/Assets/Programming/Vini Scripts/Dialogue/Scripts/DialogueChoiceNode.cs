@@ -7,7 +7,7 @@ namespace Tools.Trees.Dialogue
     public class DialogueChoiceNode : DialogueNode
     {
        [HideInInspector] public List<DialogueNode> children;
-       
+       [HideInInspector] public List<DialogueNode> DialogueActions;
 
 
         public override void OnStart()
@@ -25,7 +25,7 @@ namespace Tools.Trees.Dialogue
         }
         public override void EndNode()
         {
-            throw new System.NotImplementedException();
+
         }
 
         public override DialogueNode Clone()
