@@ -17,15 +17,16 @@ MonoBehaviour:
   position: {x: 752, y: 16}
   state: 1
   Speaker: 
-  Dialogue: ' sadddddddddddddddddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssadaszxdcasxcazss,nmkjbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbasdopaspdiouwabsiop
+  Dialogue: sadddddddddddddddddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssadaszxdcasxcazss,nmkjbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbasdopaspdiouwabsiop
     dbnaqwodnawopdbn aipeoqwb deapqwiodebaqw9iud naoqwubdn aqw9[onde aqw9uden qw2[o0idebnqaeow9nde
     oqw9UBDO9AIUWED 9AWEDFH AW9EUHF AOS9EIUFH AESW89-FHD AESW9HFADES98FGH AWSE9-S8F
-    H'
+    H
   Portrait: {fileID: 0}
   children:
   - {fileID: -5521310441047510096}
   - {fileID: -3099274855485436076}
   - {fileID: -8430631260621414187}
+  DialogueActions: []
 --- !u!114 &-8430631260621414187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,12 +41,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   started: 0
   GUID: 9e383ca062d64384e82c0ee4fdbdc0c4
-  position: {x: 1006, y: 272}
+  position: {x: 998, y: 215}
   state: 0
   Speaker: 
   Dialogue: No
   Portrait: {fileID: 0}
   child: {fileID: -5552919116465630533}
+  DialogueActions:
+  - {fileID: 8865064485805870904}
+  - {fileID: 8865064485805870904}
 --- !u!114 &-5552919116465630533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,6 +89,7 @@ MonoBehaviour:
   Dialogue: MMM
   Portrait: {fileID: 0}
   child: {fileID: 1872043101416601962}
+  DialogueActions: []
 --- !u!114 &-3879519566108263675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +110,7 @@ MonoBehaviour:
   Dialogue: caca
   Portrait: {fileID: 21300000, guid: 610ddb47e87034343aacbd86582132e2, type: 3}
   child: {fileID: -3437393164418869428}
+  DialogueActions: []
 --- !u!114 &-3437393164418869428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +131,7 @@ MonoBehaviour:
   Dialogue: peepep
   Portrait: {fileID: 0}
   child: {fileID: -8728500168584422854}
+  DialogueActions: []
 --- !u!114 &-3099274855485436076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +152,7 @@ MonoBehaviour:
   Dialogue: Yes
   Portrait: {fileID: 0}
   child: {fileID: 6649025651529726142}
+  DialogueActions: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +179,7 @@ MonoBehaviour:
   - {fileID: 6649025651529726142}
   - {fileID: -5552919116465630533}
   - {fileID: 3762875659159682863}
+  - {fileID: 8865064485805870904}
 --- !u!114 &1872043101416601962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,6 +200,7 @@ MonoBehaviour:
   Dialogue: Monke
   Portrait: {fileID: 0}
   child: {fileID: 3762875659159682863}
+  DialogueActions: []
 --- !u!114 &3762875659159682863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +255,25 @@ MonoBehaviour:
   started: 0
   GUID: 937f66ac307775e4f9907203304454e4
   position: {x: 1231, y: 153}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  Portrait: {fileID: 0}
+--- !u!114 &8865064485805870904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42361e44371d2b445a0298f6ee70466a, type: 3}
+  m_Name: dialex
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 94343bf04ab6d224d83b8d86e94a8b32
+  position: {x: 737, y: 440}
   state: 0
   Speaker: 
   Dialogue: 

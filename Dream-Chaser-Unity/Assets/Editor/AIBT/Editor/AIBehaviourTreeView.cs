@@ -125,7 +125,7 @@ public class AIBehaviourTreeView : GraphView
     }
     public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
     {
-        //base.BuildContextualMenu(evt);
+ 
         {
             var types = TypeCache.GetTypesDerivedFrom<AIActionNode>();
             foreach (var type in types)
