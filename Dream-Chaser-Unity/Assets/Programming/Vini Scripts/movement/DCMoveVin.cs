@@ -94,6 +94,6 @@ public class DCMoveVin : MonoBehaviour
 
     private void UpdateSound(){
         velo = rb.velocity.magnitude/maxSpeed*4;
-        AudioManager.instance.SetAmbienceParameter(parameterName, velo);
+        AudioManager.instance.SetAmbienceParameter("wind_intensity", velo);
     }
 }
