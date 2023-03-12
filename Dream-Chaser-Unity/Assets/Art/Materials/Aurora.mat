@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Aurora
-  m_Shader: {fileID: -6465566751694194690, guid: f37f4713f814b0e489d6691917a28f45,
+  m_Shader: {fileID: -6465566751694194690, guid: 201e333a59056e440b183ddf2e574837,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -48,7 +48,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AuroraNoiseScale: 1.13
+    - _AuroraWobbleAmount: 0.1
+    - _AuroraWobbleDistance: 0.1
+    - _AuroraWobbleFrequency: 0.55
+    - _AuroraWobbleSpeed: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    m_Colors: []
+    m_Colors:
+    - _AuroraColor: {r: 0.25430757, g: 0.8584906, b: 0.55718327, a: 0}
   m_BuildTextureStacks: []
