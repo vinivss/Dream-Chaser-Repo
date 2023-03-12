@@ -26,6 +26,18 @@
     flex-shrink: 0;
 }
 
+#actionin {
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+#actionout {
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
 #selection-border {
     border-left-color: rgb(0, 163, 214);
     border-right-color: rgb(0, 163, 214);
@@ -184,4 +196,25 @@
 
 .root #speech {
     display: none;
+}
+
+.action#node-border {
+    background-color: rgb(255, 0, 194);
+}
+
+.action #text-field {
+    display: none;
+}
+
+.action #speech {
+    display: none;
+}
+
+.action #speaker {
+    display: none;
+    color: rgba(184, 4, 185, 255);
+}
+
+.action #title {
+    background-color: rgba(193, 16, 193, 255);
 }
