@@ -43,7 +43,6 @@ public class DialogueManager : MonoBehaviour
             currentNode = dialogue.RootNode;
             DisplayDialogue();
         }
-        EndEvent = new UnityEvent();
  
     }
 
@@ -171,6 +170,5 @@ public class DialogueManager : MonoBehaviour
     private void CloseDialogue()
     {
         EndEvent.Invoke();
-        DestroyImmediate(runTimeWindow);
     }
 }
