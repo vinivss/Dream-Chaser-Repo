@@ -131,10 +131,16 @@ public class DialogueTreeView : GraphView
         var types = TypeCache.GetTypesDerivedFrom<DialogueNode>();
         foreach(var type in types)
         {
-            if (type.Name != "DialogueRootNode")
+            if (type.Name != "DialogueRootNode" && !type.IsSubclassOf(typeof(DialogueActionNode)) && type.Name != "DialogueActionNode")
             {
                 evt.menu.AppendAction($"[Nodes]/ {type.Name}", (a) => CreateNode(type));
             }
+        }
+
+        var actiontypes =  TypeCache.GetTypesDerivedFrom<DialogueActionNode>();
+        foreach(var type in actiontypes)
+        {
+            evt.menu.AppendAction($"[Nodes]/ DialogueActionNodes/  {type.Name}", (a) => CreateNode(type));
         }
     }
 
