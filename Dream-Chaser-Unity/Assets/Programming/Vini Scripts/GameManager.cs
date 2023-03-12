@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public int cpPoints;
     int pointsTotal;
     public Vector3 lastCheckpointPosition;
-    public int cpCount;
+    public float cpCount;
     
 
     public bool sceneStarted = false;
