@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-124214771418574695
+--- !u!114 &-1633674268860182677
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skybox
-  m_Shader: {fileID: -6465566751694194690, guid: a290e0cd49b8bce4a8bcda9a17cd145d,
+  m_Name: Fog
+  m_Shader: {fileID: -6465566751694194690, guid: d4ea48c4a24615444b8b5e59f00e38f4,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -48,22 +48,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _CloudsEdge: 1
-    - _CloudsHeight: -0.18
-    - _CloudsSpeed: 1
-    - _FogHeight: 25
-    - _MoonMaskSize: 0
-    - _MoonSize: 0.395
+    - _FogAlphaClip: 0
+    - _FogDensity: 0.5
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _StarTwinkleSpeed: 1
-    - _StartDensity: 15
-    - _VanishingLine: 0.5
     m_Colors:
-    - _Color: {r: 0, g: 0, b: 0, a: 0}
-    - _Color1: {r: 0.12379847, g: 0.22404027, b: 0.6132076, a: 0}
-    - _Color2: {r: 0.32909238, g: 0.11299387, b: 0.6509434, a: 0}
-    - _HorizonColor: {r: 0.12379847, g: 0.22404027, b: 0.6132076, a: 0}
-    - _SkyColor: {r: 0.32909238, g: 0.11299387, b: 0.6509434, a: 0}
-    - _StarTwinkleSpeed: {r: 1, g: 0, b: 0, a: 0}
+    - _FogColor: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
   m_BuildTextureStacks: []
