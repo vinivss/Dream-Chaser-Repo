@@ -32,7 +32,7 @@ public class ControlsManager : MonoBehaviour
     }
     public bool JumpPerformed()
     {
-        return input.Movement.Move.IsPressed();
+        return input.Movement.Jump.IsPressed();
     }
     public void OnEnable()
     {
