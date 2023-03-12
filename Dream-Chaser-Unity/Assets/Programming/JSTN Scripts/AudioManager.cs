@@ -21,14 +21,16 @@ public class AudioManager : MonoBehaviour
             Debug.LogError("Found more than one Audio Manager in scene");
         }
         instance = this;
+    }
+
+    private void FixedUpdate()
+    {
         Debug.Log(gameManager.cpCount);
     }
 
     private void Start(){
         InitializeAmbience(FMODEvents.instance.ambience);
-        if(gameManager.sceneStarted){
-            InitializeMusic(FMODEvents.instance.music);
-        }
+        InitializeMusic(FMODEvents.instance.music);
     }
 
     private void InitializeAmbience(EventReference ambienceEventReference){
@@ -43,7 +45,7 @@ public class AudioManager : MonoBehaviour
 
     private void resequenceMusic(){
         musicEventInstances.setParameterByName("checkpoint", gameManager.cpCount);
-    }    
+    }
 
     public void SetAmbienceParameter(string parameterName, float parameterValue){
         ambienceEventInstances.setParameterByName(parameterName, parameterValue);
