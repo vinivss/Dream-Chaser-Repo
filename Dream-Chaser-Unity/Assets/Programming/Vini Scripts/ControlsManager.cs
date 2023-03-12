@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class ControlsManager : MonoBehaviour
 {
     Vector2 InputValue;
     Inputs input;
-    bool AcceptPerformed = false;
 
     private void Awake()
     {
@@ -20,14 +20,6 @@ public class ControlsManager : MonoBehaviour
         {
             InputValue = Vector2.zero;
         };
-        input.Interacts.Accept.performed += ctx =>
-        {
-            AcceptPerformed = true;
-        };
-        input.Interacts.Accept.canceled += ctx =>
-        {
-            AcceptPerformed = false;
-        };
     }
 
     public Vector2 GetMoveValue()
@@ -36,7 +28,11 @@ public class ControlsManager : MonoBehaviour
     }
     public bool GetAcceptValue()
     {
-        return AcceptPerformed;
+        return input.Interacts.Accept.IsPressed();
+    }
+    public bool JumpPerformed()
+    {
+        return input.Movement.Move.IsPressed();
     }
     public void OnEnable()
     {
