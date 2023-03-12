@@ -93,11 +93,11 @@ public class DialogueTreeEditor : EditorWindow
         {
             if(Selection.activeGameObject)
             {
-                DialogueTreeRunner runner = Selection.activeGameObject.GetComponent<DialogueTreeRunner>();
+                DialogueManager runner = Selection.activeGameObject.GetComponent<DialogueManager>();
 
                 if(runner)
                 {
-                    tree = runner.tree;
+                    tree = runner.dialogue;
                 }
             }
         }

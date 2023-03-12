@@ -6,7 +6,8 @@ namespace Tools.Trees.Dialogue
 {
     public class DialogueSpeechNode : DialogueNode
     {
-        [HideInInspector]public DialogueNode child;        
+        [HideInInspector]public DialogueNode child;
+        [HideInInspector] public List<DialogueNode> DialogueActions;
         public override void OnStart()
         {
             state = State.CUR;
@@ -28,6 +29,7 @@ namespace Tools.Trees.Dialogue
         {
             DialogueSpeechNode node = Instantiate(this);
             node.child = child;
+            node.DialogueActions = DialogueActions.ConvertAll(c  => c.Clone());
             return node;
         }
     }

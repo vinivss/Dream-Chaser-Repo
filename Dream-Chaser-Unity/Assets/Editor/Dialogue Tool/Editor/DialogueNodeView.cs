@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 using System;
 using UnityEditor;
+using System.Xml.Serialization;
 
 namespace Tools.Trees.Dialogue
 {
@@ -26,13 +27,13 @@ namespace Tools.Trees.Dialogue
 
             style.left = node.position.x;
             style.top = node.position.y;
-
-            CreateInputPorts();
-            CreateActionInputPorts();
-            CreateaActionOutputPorts();
+  
+            CreateInputPorts();        
             CreateOutputPorts();
-          
-           
+            CreateActionInputPorts();
+            CreateActionOutputPorts();
+
+
             SetupClasses();
 
             TextField dialoguebox = this.Q<TextField>("Dialogue");
@@ -138,7 +139,7 @@ namespace Tools.Trees.Dialogue
                 outputContainer.Add(output);
             }
         }
-        private void CreateActionInputPorts()
+        private void CreateActionOutputPorts()
         {
             if (node is DialogueRootNode)
             {
@@ -148,16 +149,16 @@ namespace Tools.Trees.Dialogue
             }
             if (node is DialogueChoiceNode)
             {
-                actionin = InstantiatePort(Orientation.Vertical, Direction.Input, Port.Capacity.Multi, typeof(bool));
+                actionin = InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Multi, typeof(bool));
             }
             if (node is DialogueSpeechNode)
             {
-                actionin = InstantiatePort(Orientation.Vertical, Direction.Input, Port.Capacity.Multi, typeof(bool));
+                actionin = InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Multi, typeof(bool));
             }
 
             if (node is DialogueOptionNode)
             {
-                actionin = InstantiatePort(Orientation.Vertical, Direction.Input, Port.Capacity.Multi, typeof(bool));
+                actionin = InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Multi, typeof(bool));
             }
             if(node is DialogueActionNode)
             {
@@ -168,10 +169,10 @@ namespace Tools.Trees.Dialogue
                 actionin.style.flexDirection = FlexDirection.Row;
                 actionin.style.alignSelf = Align.FlexEnd;
                 actionin.portColor = Color.magenta;
-                actionin.Add(output);
+                inputContainer.Add(actionin);
             }
         }
-        private void CreateaActionOutputPorts()
+        private void CreateActionInputPorts()
         {
             if (node is DialogueRootNode)
             {
@@ -194,16 +195,16 @@ namespace Tools.Trees.Dialogue
             }
             if(node is DialogueActionNode)
             {
-                actionout = InstantiatePort(Orientation.Vertical, Direction.Output,Port.Capacity.Single, typeof(bool));
+                actionout = InstantiatePort(Orientation.Vertical, Direction.Input,Port.Capacity.Single, typeof(bool));
             }
 
             if (actionout != null)
             {
                 actionout.portName = "";
                 actionout.style.flexDirection = FlexDirection.Row;
-                actionout.style.alignSelf = Align.FlexEnd;
+                actionout.style.alignSelf = Align.FlexStart;
                 actionout.portColor = Color.yellow;
-                actionout.Add(output);
+                outputContainer.Add(actionout);
             }
         }
         
@@ -234,6 +235,25 @@ namespace Tools.Trees.Dialogue
             {
                 choiceNode.children.Sort(SortByVerticalPosition);
             }
+            if (choiceNode && choiceNode.DialogueActions.Count > 0)
+            {
+                choiceNode.DialogueActions.Sort(SortByVerticalPosition);
+                return;
+            }
+
+
+            DialogueSpeechNode speechNode = node as DialogueSpeechNode;
+            if(speechNode && speechNode.DialogueActions.Count > 0)
+            {
+                speechNode.DialogueActions.Sort(SortByVerticalPosition);
+                return;
+            }
+            DialogueOptionNode optionNode = node as DialogueOptionNode;
+            if (optionNode && optionNode.DialogueActions.Count > 0)
+            {
+                optionNode.DialogueActions.Sort(SortByVerticalPosition);
+            }
+
         }
 
         private int SortByVerticalPosition(DialogueNode top, DialogueNode bot)

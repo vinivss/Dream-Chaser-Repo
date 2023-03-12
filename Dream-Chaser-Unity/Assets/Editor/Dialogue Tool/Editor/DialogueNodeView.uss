@@ -199,5 +199,22 @@
 }
 
 .action#node-border {
-    background-color: rgba(255, 0, 194, 255);
+    background-color: rgb(255, 0, 194);
+}
+
+.action #text-field {
+    display: none;
+}
+
+.action #speech {
+    display: none;
+}
+
+.action #speaker {
+    display: none;
+    color: rgba(184, 4, 185, 255);
+}
+
+.action #title {
+    background-color: rgba(193, 16, 193, 255);
 }
