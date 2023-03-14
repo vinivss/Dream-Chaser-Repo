@@ -23,7 +23,7 @@ namespace Tools.Trees.Dialogue
         [Space]
         [Header("UI Editors")]
         [Tooltip("Image displayed as character is talking")]
-        public Sprite Portrait;
+        public GameObject SceneLayout;
 
 
 
