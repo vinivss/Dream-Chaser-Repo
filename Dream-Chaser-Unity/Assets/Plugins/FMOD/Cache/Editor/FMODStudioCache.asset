@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638143280838123132
+  lastModified: 638143490173655541
   FileSizes:
   - Name: Desktop
-    Value: 1332
+    Value: 1398
   Exists: 1
 --- !u!114 &-5972516148558945771
 MonoBehaviour:
@@ -76,34 +76,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-982709713247594043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/MUS - Eri's Theme
-  m_EditorClassIdentifier: 
-  Path: event:/Music/MUS - Eri's Theme
-  Guid:
-    Data1: -75123881
-    Data2: 1113100890
-    Data3: 296328833
-    Data4: -791276211
-  Banks:
-  - {fileID: 2970579383246442668}
-  - {fileID: 245773220985535039}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 160000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,16 +96,17 @@ MonoBehaviour:
   - {fileID: 4113107717070607959}
   EditorEvents:
   - {fileID: -5972516148558945771}
-  - {fileID: -982709713247594043}
   - {fileID: 456619140731550496}
   - {fileID: 5794149715169583020}
   - {fileID: -2355113339956154833}
+  - {fileID: 2454207690425112379}
+  - {fileID: 8253379279612822854}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2970579383246442668}
   StringsBanks:
   - {fileID: -8715087220653833742}
-  cacheTime: 638143280838433144
+  cacheTime: 638143490174348728
   cacheVersion: 131601
 --- !u!114 &245773220985535039
 MonoBehaviour:
@@ -150,10 +123,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638143280838433144
+  lastModified: 638143490174098653
   FileSizes:
   - Name: Desktop
-    Value: 6243264
+    Value: 6837536
   Exists: 1
 --- !u!114 &456619140731550496
 MonoBehaviour:
@@ -236,6 +209,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &2454207690425112379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MUS-Eri's_Theme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MUS-Eri's_Theme
+  Guid:
+    Data1: -75123881
+    Data2: 1113100890
+    Data3: 296328833
+    Data4: -791276211
+  Banks:
+  - {fileID: 2970579383246442668}
+  - {fileID: 245773220985535039}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 160000
 --- !u!114 &2970579383246442668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,10 +252,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638140902238969550
+  lastModified: 638143490173632731
   FileSizes:
   - Name: Desktop
-    Value: 6261472
+    Value: 6855744
   Exists: 1
 --- !u!114 &4113107717070607959
 MonoBehaviour:
@@ -271,7 +272,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638140902239329548
+  lastModified: 638143490174348728
   FileSizes:
   - Name: Desktop
     Value: 26400
@@ -319,8 +320,36 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638140902238629573
+  lastModified: 638143490099117239
   FileSizes:
   - Name: Desktop
     Value: 84640
   Exists: 1
+--- !u!114 &8253379279612822854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MUS-PrebossLevel_Section1Only
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MUS-PrebossLevel_Section1Only
+  Guid:
+    Data1: -1966657342
+    Data2: 1304401125
+    Data3: -1102155083
+    Data4: -846236515
+  Banks:
+  - {fileID: 2970579383246442668}
+  - {fileID: 245773220985535039}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40975
