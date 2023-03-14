@@ -1082,7 +1082,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.22298971, y: -0.00000007577309, z: 0.00000001733305, w: 0.9748208}
+  m_LocalRotation: {x: 0.22298968, y: 0.000000006668287, z: -0.0000000015253668, w: 0.9748208}
   m_LocalPosition: {x: 0, y: 241.2, z: -411.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4012,7 +4012,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.22298971, y: -0.00000007577309, z: 0.00000001733305, w: 0.9748208}
+  m_LocalRotation: {x: 0.22298968, y: 0.000000006668287, z: -0.0000000015253668, w: 0.9748208}
   m_LocalPosition: {x: 0, y: 241.2, z: -411.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4715,56 +4715,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
-        type: 3}
-      propertyPath: <music>k__BackingField.Path
-      value: event:/Music/MUS-PrebossLevel_Section1Only
-      objectReference: {fileID: 0}
-    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
-        type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data1
-      value: -1966657342
-      objectReference: {fileID: 0}
-    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
-        type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data2
-      value: 1304401125
-      objectReference: {fileID: 0}
-    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
-        type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data3
-      value: -1102155083
-      objectReference: {fileID: 0}
-    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
-        type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data4
-      value: -846236515
-      objectReference: {fileID: 0}
-    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
-        type: 3}
-      propertyPath: <windBlowing>k__BackingField.Path
-      value: event:/SFX/HitObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
-        type: 3}
-      propertyPath: <windBlowing>k__BackingField.Guid.Data1
-      value: 366761934
-      objectReference: {fileID: 0}
-    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
-        type: 3}
-      propertyPath: <windBlowing>k__BackingField.Guid.Data2
-      value: 1309970896
-      objectReference: {fileID: 0}
-    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
-        type: 3}
-      propertyPath: <windBlowing>k__BackingField.Guid.Data3
-      value: -1154113628
-      objectReference: {fileID: 0}
-    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
-        type: 3}
-      propertyPath: <windBlowing>k__BackingField.Guid.Data4
-      value: 276779348
-      objectReference: {fileID: 0}
     - target: {fileID: 6345402916612921843, guid: 926d1024951264c46bef169f124c765b,
         type: 3}
       propertyPath: m_Name
@@ -4825,8 +4775,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6345402916612921847, guid: 926d1024951264c46bef169f124c765b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 926d1024951264c46bef169f124c765b, type: 3}
 --- !u!1 &1457899709
 GameObject:
