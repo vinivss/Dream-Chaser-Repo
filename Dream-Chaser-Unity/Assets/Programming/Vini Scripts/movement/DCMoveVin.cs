@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using FMOD.Studio;
 using System;
+using UnityEngine.Events;
 
 public class DCMoveVin : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class DCMoveVin : MonoBehaviour
     float velo;
     float jumpforce = 0;
     bool jumping;
+    bool isGrounded;
 
     //Inspector Vars
     [Header("Movement Attributes")]
@@ -28,11 +30,17 @@ public class DCMoveVin : MonoBehaviour
     [Min(0.0f)] public float minJump;
     [Tooltip("Maximum Jump Force")]
     public float maxJump;
-
+    [Tooltip("Ground Check Sphere")]
+    public Transform groundCheckPos;
+    [Min(0)]
+    [Tooltip("Radius of Sphere used in ground detection")]
+    [SerializeField] float groundDistance = 0.4f;
+    [Tooltip("layer for ground to be detected")]
+    [SerializeField] LayerMask groundMask;
     //audio inspector vars
     [Header("Audio Attributes")]
     [Tooltip("The name of the FMOD Parameter function")]
-    [SerializeField]  string parameterName;
+    public  UnityEvent parameterName;
 
     private void Awake()
     {
@@ -68,7 +76,6 @@ public class DCMoveVin : MonoBehaviour
 
     private void JumpPerformed()
     {
-        
         if(inManager.JumpPerformed())
         {
             jumping = true;
@@ -77,12 +84,22 @@ public class DCMoveVin : MonoBehaviour
 
             jumpforce += Time.deltaTime;
         }
-        else if(jumping == true && !inManager.JumpPerformed())
-        {
-            jumping = false;
-
+        else if(jumping == true && !inManager.JumpPerformed() && isGrounded == true)
+        {           
             rb.AddForce(Vector3.up * Mathf.Clamp(jumpforce, minJump, maxJump), ForceMode.Impulse);
+            jumping = false;
+            jumpforce = 0;
         }
+        CheckGround();
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(groundCheckPos.position, groundDistance);
+    }
+    private void CheckGround()
+    {
+        isGrounded = Physics.CheckSphere(groundCheckPos.position, groundDistance, groundMask);
     }
 
     IEnumerator StopMove()
