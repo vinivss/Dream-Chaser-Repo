@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{2268212e-12a3-4770-9f6a-026f27e2374f}">
+		<property name="name">
+			<value>respawn</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5d9d5d25-1d6a-45b2-80a1-c805055d75fc}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{deed8929-55cb-4c37-b6f0-e6920e7093f4}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{deed8929-55cb-4c37-b6f0-e6920e7093f4}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

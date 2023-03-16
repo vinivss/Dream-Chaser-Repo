@@ -11,8 +11,9 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Music")]
     [field: SerializeField] public EventReference music {get; private set; }
 
-    [field: Header("Wind SFX")]
-    [field: SerializeField] public EventReference windBlowing {get; private set; }
+    [field: Header("Reset SFX")]
+    [field: SerializeField] public EventReference reset {get; private set; }
+
 
 
     public static FMODEvents instance {get; private set;}
