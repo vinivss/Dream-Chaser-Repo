@@ -82,14 +82,15 @@ public class DialogueManager : MonoBehaviour
 
                 DisplayNextSentence();
                 if(currentNode.SceneLayout != null)
-                    Instantiate(currentNode.SceneLayout);
+                    currentNode.SceneLayout = Instantiate(currentNode.SceneLayout);
 
                 currentNode.state = DialogueNode.State.FIN;
             }
             else if (Children.Count > 1)
             {
                 InstantiateChoices(Children);
-                Instantiate(currentNode.SceneLayout);
+                if (currentNode.SceneLayout != null)
+                    currentNode.SceneLayout = Instantiate(currentNode.SceneLayout);
             }
         }
     }
@@ -131,7 +132,8 @@ public class DialogueManager : MonoBehaviour
     //creating and displaying UI settings.
     private void InstantiateChoices(List<DialogueNode> children)
     {
-        NextButton.enabled = false;
+        runTimeWindow.SetActive(false);
+      
         int i = 0;
         // foreach child create a different button prefab with the text choice.
         //give each button an index which is called on Selected option that matches the option
@@ -160,7 +162,6 @@ public class DialogueManager : MonoBehaviour
         runTimeWindow.SetActive(false);
         DeleteAllButtons();
         runTimeWindow.SetActive(true);
-        NextButton.enabled = true;
         ChangeNode();
     }
 
