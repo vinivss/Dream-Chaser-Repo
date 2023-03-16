@@ -63,17 +63,18 @@ public class DCMoveVin : MonoBehaviour
     private void FixedUpdate()
     {
         MoveCharacter();
-        UpdateSound();
-        if(!isGrounded)
+        CheckGround();
+        if (!isGrounded)
         {
+           
             rb.drag = airDrag;
-            rb.angularDrag = airDrag;
         }
         else
         {
             rb.drag = normDrag;
-            rb.angularDrag = normDrag;
         }
+        Debug.Log(rb.drag);
+        UpdateSound();
     }
 
     private void MoveCharacter()
@@ -110,7 +111,7 @@ public class DCMoveVin : MonoBehaviour
             jumping = false;
             jumpforce = 0;
         }
-        CheckGround();
+       
     }
     private void OnDrawGizmos()
     {
