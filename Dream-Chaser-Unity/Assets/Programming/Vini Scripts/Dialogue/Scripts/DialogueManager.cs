@@ -10,7 +10,7 @@ using UnityEngine.Events;
 public class DialogueManager : MonoBehaviour
 {
     [Tooltip("This is the dialogue that will be referenced for dialogue")]
-    [SerializeField] DialogueTree dialogue;
+    public DialogueTree dialogue;
     DialogueNode currentNode;
     [Header("Dialogue Box Attributes")]
     [Tooltip("Name Of Speaker")]
@@ -43,7 +43,6 @@ public class DialogueManager : MonoBehaviour
             currentNode = dialogue.RootNode;
             DisplayDialogue();
         }
-        EndEvent = new UnityEvent();
  
     }
 
@@ -100,8 +99,9 @@ public class DialogueManager : MonoBehaviour
     void DisplayNextSentence()
     {
         nameText.text = currentNode.Speaker;
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence());
+        Skip();
+        //StopAllCoroutines();
+        //StartCoroutine(TypeSentence());
 
     }
 
@@ -171,6 +171,5 @@ public class DialogueManager : MonoBehaviour
     private void CloseDialogue()
     {
         EndEvent.Invoke();
-        DestroyImmediate(runTimeWindow);
     }
 }
