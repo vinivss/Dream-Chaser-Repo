@@ -6,26 +6,25 @@ using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
-    static AudioManager AMInstance;
+//    static AudioManager AMInstance;
     GameManager gameManager;
     private List<EventInstance> eventInstances;
     private List<StudioEventEmitter> eventEmitters;
     private EventInstance ambienceEventInstances;
     private EventInstance musicEventInstances;
-
+    private EventInstance sfxEventInstances;
     
     public static AudioManager instance { get; private set;}
 
     private void Awake(){
-        if(AMInstance == null)
+        if(instance == null)
         {
-            AMInstance = this;
-            DontDestroyOnLoad(AMInstance);
+            instance = this;
+            DontDestroyOnLoad(instance);
             gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
             if (instance != null){
-                Debug.LogError("Found more than one Audio Manager in scene");
+                //Debug.LogError("Found more than one Audio Manager in scene");
             }
-        instance = this;
         }
         else
         {
@@ -41,7 +40,8 @@ public class AudioManager : MonoBehaviour
     private void Start(){
         InitializeAmbience(FMODEvents.instance.ambience);
         InitializeMusic(FMODEvents.instance.music);
-        resequenceMusic();
+        //InitializeSFX(FMODEvents.instance.reset);
+        //resequenceMusic();
         DontDestroyOnLoad(this.gameObject);
     }
 
@@ -56,7 +56,7 @@ public class AudioManager : MonoBehaviour
     }
 
     private void resequenceMusic(){
-        musicEventInstances.setParameterByName("checkpoint", gameManager.cpCount);
+        //musicEventInstances.setParameterByName("checkpoint", gameManager.cpCount);
     }
 
     public void SetAmbienceParameter(string parameterName, float parameterValue){
