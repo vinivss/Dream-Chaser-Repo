@@ -18,6 +18,7 @@ namespace Tools.Trees.Dialogue
         public Port output;
         public Port actionout;
         public Port actionin;
+       
 
         public DialogueNodeView(DialogueNode node) : base("Assets/Editor/Dialogue Tool/Editor/DialogueNodeView.uxml")
         {
@@ -43,7 +44,9 @@ namespace Tools.Trees.Dialogue
             Label Speaker = this.Q<Label>("Speaker");
             Speaker.bindingPath = "Speaker";
             Speaker.Bind(new SerializedObject(node));
-          
+
+
+
         }
 
 
