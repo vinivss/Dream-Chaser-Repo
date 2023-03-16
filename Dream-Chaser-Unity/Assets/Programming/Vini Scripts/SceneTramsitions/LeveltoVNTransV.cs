@@ -12,9 +12,11 @@ public class LeveltoVNTransV : MonoBehaviour
 {
     public Object VnScene;
     GameManager Gm;
+    AudioManager AudioMgr;
     private void Awake()
     {
         Gm = FindObjectOfType<GameManager>().GetComponent<GameManager>();
+        AudioMgr = FindObjectOfType<AudioManager>().GetComponent<AudioManager>();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -26,6 +28,7 @@ public class LeveltoVNTransV : MonoBehaviour
     public void ChangeScene()
     {
         DestroyImmediate(Gm);
+        DestroyImmediate(AudioMgr);
         SceneManager.LoadScene(VnScene.name);
     }
 }
