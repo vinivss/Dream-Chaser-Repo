@@ -4,7 +4,8 @@ using Tools.Trees.Dialogue;
 using UnityEngine.UIElements;
 using UnityEditor;
 using TMPro.EditorUtilities;
-
+using UnityEditor.UIElements;
+using UnityEngine;
 
 public class DialogueInspectorView : VisualElement
 {
@@ -28,6 +29,7 @@ public class DialogueInspectorView : VisualElement
                 editor.OnInspectorGUI();
             }
         });
+        editor.serializedObject.ApplyModifiedProperties();
         Add(container);
     }
 }
