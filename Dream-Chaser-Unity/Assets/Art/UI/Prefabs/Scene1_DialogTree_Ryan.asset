@@ -15,7 +15,7 @@ MonoBehaviour:
   started: 0
   GUID: 43fada491f1ceb3478ebae60c61c9fc1
   position: {x: 3501.6802, y: -90.640015}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: "Thanks, I\u2019ve been working on it, can\u2019t work in a coffee shop
     and make bad coffee, you know?"
@@ -58,7 +58,7 @@ MonoBehaviour:
   started: 0
   GUID: 68e29a5a9a65cb04f808e6ac10ccd83f
   position: {x: 1364, y: 73}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "Oh, don\u2019t worry, it\u2019s no problem\u2026"
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
@@ -100,7 +100,7 @@ MonoBehaviour:
   started: 0
   GUID: bf26f98009ccba04086da89a83e25736
   position: {x: 3356.2705, y: -343.68234}
-  state: 0
+  state: 1
   Speaker: 
   Dialogue: Talk about gardening
   Portrait: {fileID: 0}
@@ -143,10 +143,10 @@ MonoBehaviour:
   started: 0
   GUID: 868cf1a2e3c6d424cb7148065b97321c
   position: {x: 4086.2002, y: -78.520004}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
-  Dialogue: "I don\u2019t want to put any words in your mouth, but\u2026maybe you
-    don\u2019t need them."
+  Dialogue: 'Still, I think sometimes its important to take time for yourself. Please
+    don''t hurt yourself trying to help them. '
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
   child: {fileID: 6354100053114449498}
   DialogueActions: []
@@ -210,7 +210,7 @@ MonoBehaviour:
   started: 0
   GUID: 4777fef9f448d574a8ee3045cad1dc13
   position: {x: 747.5338, y: -186.7956}
-  state: 0
+  state: 1
   Speaker: Narrator
   Dialogue: 'One who can help give people the strength they need to change.
 
@@ -233,7 +233,7 @@ MonoBehaviour:
   started: 0
   GUID: ebe6c831984277e41a408fbd99ddf42c
   position: {x: 1559.0396, y: 87}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: (After redoing the coffee, I head over to Eri with the replacement. This
     time, I am extra careful to not even let the cup wobble a single time.)
@@ -255,7 +255,7 @@ MonoBehaviour:
   started: 0
   GUID: 2861b280755d55240b855f001daef840
   position: {x: 2193.6775, y: -662.1275}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: Hey Eri, nice to see you. Hope you enjoy your coffee.
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
@@ -276,7 +276,7 @@ MonoBehaviour:
   started: 0
   GUID: 64a8f6b373c5abd408fd074b8b1cb7a8
   position: {x: 3698.2705, y: -388.68228}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: Not really. I can't really gather up the motivation for any of it.
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
@@ -319,7 +319,7 @@ MonoBehaviour:
   started: 0
   GUID: 451079f2d18b9164aab4328b2b650fb1
   position: {x: 3874.2002, y: -90.520004}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: "You don\u2019t always have to do something, you know. Not if it\u2019ll
     only make you feel worse. \r\n\n\n"
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   started: 0
   GUID: eed7d5454de71eb43bbdab96950f409b
-  position: {x: 6078.9956, y: -32.18172}
+  position: {x: 6106.239, y: -25.748962}
   state: 0
   Speaker: 
   Dialogue: 
@@ -360,7 +360,7 @@ MonoBehaviour:
   started: 0
   GUID: 28f3d879509950449a55f10420539e5e
   position: {x: 3542.2705, y: -356.6823}
-  state: 0
+  state: 1
   Speaker: Ash, The Dream Chaser
   Dialogue: How has gardening been going recently? Growing anything exciting recently?
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
@@ -401,7 +401,7 @@ MonoBehaviour:
   started: 0
   GUID: 29e08445b6c370a4bb648af98fbfeba0
   position: {x: 606, y: 81}
-  state: 0
+  state: 1
   Speaker: Narrator
   Dialogue: "They have been called an angel, a spirit, even a demon. One who can
     enter people\u2019s dreams, and help make them brighter. \n\n"
@@ -425,7 +425,7 @@ MonoBehaviour:
   position: {x: 4258.9194, y: -79.04547}
   state: 0
   Speaker: Ash, the Dream Chaser
-  Dialogue: ...
+  Dialogue: I just hope you take care of yourself, that's all.
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
   child: {fileID: -169872913331882759}
   DialogueActions: []
@@ -467,7 +467,7 @@ MonoBehaviour:
   started: 0
   GUID: 8ab91ce5ff42bda49961b480d24f6f79
   position: {x: 2366.6401, y: 76}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: Did something happen with your partner?
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
@@ -488,7 +488,7 @@ MonoBehaviour:
   started: 0
   GUID: 148b1ece8612322489ff9d8adec79751
   position: {x: 960.31793, y: -131.4435}
-  state: 0
+  state: 1
   Speaker: Narrator
   Dialogue: With the ability to enter the dreams of humans, the Dream Chaser frees
     them from the demons and darkness that can keep them trapped and stagnant both
@@ -511,7 +511,7 @@ MonoBehaviour:
   started: 0
   GUID: 691bf1c9b5115ea48943b670a7e9b6a2
   position: {x: 987.69183, y: 218.79019}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: "(I rapidly turn with my cup away from the coffee machine and towards
     my customers, and suddenly\u2026)\r\n"
@@ -533,7 +533,7 @@ MonoBehaviour:
   started: 0
   GUID: 943b449730c9bb64581c33333fe473f2
   position: {x: 1767.0997, y: -44.67997}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: 'Sorry for the delay. Your coffee.
 
@@ -556,7 +556,7 @@ MonoBehaviour:
   started: 0
   GUID: 3e17f48ebb57a094d84032bae71c2bd7
   position: {x: 3704.6802, y: 31.359985}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "You know, maybe there\u2019s no way I can help at this point\u2026but
     it feels like there\u2019s got to be something I can do. \r\n"
@@ -578,7 +578,7 @@ MonoBehaviour:
   started: 0
   GUID: a372547054e53844fbe0af06a633ab36
   position: {x: 2341.0276, y: -285.02795}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: "You don\u2019t have to say anything if you don\u2019t want to. If you\u2019d
     rather just have your coffee in peace, that\u2019s fine. "
@@ -600,7 +600,7 @@ MonoBehaviour:
   started: 0
   GUID: 7424dd123ebc70041a7c94b83d44eca5
   position: {x: 3704.6802, y: -93.640015}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "(He laughs a bit, the change in topic seeming to lift his spirits for
     a moment. But that moment doesn\u2019t last too long, as Eri speaks again.)\r\n\n"
@@ -643,7 +643,7 @@ MonoBehaviour:
   started: 0
   GUID: ae9ccda6c779e134a88e39a29b526d70
   position: {x: 2724.6802, y: -56.640015}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "Thanks. \n"
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
@@ -685,7 +685,7 @@ MonoBehaviour:
   started: 0
   GUID: 9ede30588fef486458c36fb186dac9a7
   position: {x: 2732.6802, y: 72.359985}
-  state: 0
+  state: 1
   Speaker: 
   Dialogue: "(He takes another sip of his coffee, and there\u2019s a small pause
     before I decide to continue.)\r\n"
@@ -707,7 +707,7 @@ MonoBehaviour:
   started: 0
   GUID: 2ac834d5dac749b46bdaced248fa1e77
   position: {x: 3318.6802, y: 34.359985}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "What you\u2019re doing now is helping enough, don\u2019t worry. \n"
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
@@ -728,7 +728,7 @@ MonoBehaviour:
   started: 0
   GUID: e1644e83d9b92c946b2ac1d8231d894f
   position: {x: 3111.6802, y: -68.640015}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: "That\u2019s\u2026\r\n"
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
@@ -749,7 +749,7 @@ MonoBehaviour:
   started: 0
   GUID: b318d5389f974a943b2975f5b6c7cb39
   position: {x: 1835.2427, y: -418.46332}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: "(I look around briefly. It\u2019s nearly closing, and there aren\u2019t
     that many people left in the cafe\u2026and Eri seems kind of down, so I should
@@ -775,7 +775,7 @@ MonoBehaviour:
   started: 0
   GUID: b4612e5153c3652418b559a95913d7a2
   position: {x: 3110.6802, y: 52.359985}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: "(I think I need to do some scoping out myself, just to make sure\u2026Sounds
     like it's getting to the point where I might have to intervene.)"
@@ -797,7 +797,7 @@ MonoBehaviour:
   started: 0
   GUID: b9e6eda54966b5749a22846715bf31a1
   position: {x: 2352.8757, y: -56}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "It\u2019s just\u2026 (Eri pauses, looking outside for a moment, then
     takes a drink of the coffee before finally continuing.) \r\n"
@@ -841,7 +841,7 @@ MonoBehaviour:
   started: 0
   GUID: 13736bb492f2aef47890cb9f312aaa83
   position: {x: 1976.9958, y: 89.00397}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: "Hey, I know you aren\u2019t usually around at this time. Is everything
     alright?\r\n"
@@ -863,7 +863,7 @@ MonoBehaviour:
   started: 0
   GUID: 7625e4facae2eac4a84075501073e364
   position: {x: 220, y: 100}
-  state: 0
+  state: 1
   Speaker: Narrator
   Dialogue: 'And during all that time, by their side, there has been a being who
     has helped them achieve their dreams. '
@@ -907,9 +907,9 @@ MonoBehaviour:
   started: 0
   GUID: e44627610d6fdaa408dd36db743ec1a6
   position: {x: 3874.2002, y: 67.479996}
-  state: 0
+  state: 1
   Speaker: Eri
-  Dialogue: "But if not\u2026then what? My partner needs me. I think. \rI hope.\n"
+  Dialogue: "But if not\u2026then what? My partner needs me. I think. \n\rI hope.\n"
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
   child: {fileID: -8078899551701104238}
   DialogueActions: []
@@ -928,7 +928,7 @@ MonoBehaviour:
   started: 0
   GUID: f250e47f99781284ca9605764b44b385
   position: {x: 2228.8474, y: -549.715}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: I will. Hoping it will take my mind off things, honestly.
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
@@ -949,7 +949,7 @@ MonoBehaviour:
   started: 0
   GUID: 94aaa67aa3bb8b24cbd148f9c85aedef
   position: {x: 2823.4575, y: -506.45883}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: 'Do you want to talk about it at all? Or would you rather talk about
     something less stressful, like gardening?
@@ -996,7 +996,7 @@ MonoBehaviour:
   started: 0
   GUID: 34ed1394dba5b80428bb1ef753aba617
   position: {x: 1350, y: -51.04}
-  state: 0
+  state: 1
   Speaker: Dream Chaser
   Dialogue: "I\u2019m sorry. I\u2019ll get you another one as soon as I can.  \r\n"
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
@@ -1066,10 +1066,10 @@ MonoBehaviour:
   position: {x: 4341.4087, y: -177.21872}
   state: 0
   Speaker: Eri
-  Dialogue: "\u2026 (He finishes his coffee. It seems that neither of us really want
-    to say something more, and let the silence happen.)\r"
+  Dialogue: Yeah, course... (He stops talking for a moment, finishing his coffee.
+    It seems that neither of us really want to say something for a moment.)
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
-  child: {fileID: 3320696170911570699}
+  child: {fileID: 1476252417564816611}
   DialogueActions: []
 --- !u!114 &-125048141773432308
 MonoBehaviour:
@@ -1195,7 +1195,6 @@ MonoBehaviour:
   - {fileID: 8760159878917085492}
   - {fileID: 8470434303401769457}
   - {fileID: 5944068731047851449}
-  - {fileID: 3320696170911570699}
   - {fileID: -527758239433634007}
   - {fileID: -2648149333716829742}
   - {fileID: 1083303538180566854}
@@ -1263,7 +1262,7 @@ MonoBehaviour:
   started: 0
   GUID: 677225b53348d0b4ab20fdf41c133dfa
   position: {x: 1540, y: -47}
-  state: 0
+  state: 1
   Speaker: Narrator
   Dialogue: "They may seem like a quite mediocre barista\u2026but that is, in fact,
     the Dream Chaser. When spending time in a human form, they have decided to go
@@ -1286,7 +1285,7 @@ MonoBehaviour:
   started: 0
   GUID: e7224f2d9f49e864db2592230446a4fc
   position: {x: 2536.6802, y: 62.359985}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: "Well, you can stay here until closing at least. And maybe a little after,
     if I petition my boss about it. \r\n"
@@ -1353,7 +1352,8 @@ MonoBehaviour:
   state: 0
   Speaker: Eri
   Dialogue: "This was nice, honestly\u2026it\u2019s good to have somebody to talk
-    about this stuff with, who I can spend time with and not worry about anything.\n\r\n"
+    about this stuff with, who I can spend time with and not worry about all that
+    stuff.\n\r\n"
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
   child: {fileID: 2764826509749838608}
   DialogueActions: []
@@ -1372,7 +1372,7 @@ MonoBehaviour:
   started: 0
   GUID: 62c5285191f085246b3a6b3448b00cfd
   position: {x: 3302.6802, y: -76.640015}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: "That's really terrible\u2026I wish I could help somehow\u2026"
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
@@ -1457,7 +1457,7 @@ MonoBehaviour:
   started: 0
   GUID: 8ba6dda9abd86dd4683ebab40f0e4c4c
   position: {x: 592, y: -28.36}
-  state: 0
+  state: 1
   Speaker: Narrator
   Dialogue: 'The Dream Chaser. '
   Portrait: {fileID: 0}
@@ -1478,7 +1478,7 @@ MonoBehaviour:
   started: 0
   GUID: d34aad1347f50804bae40985e7fd5ee2
   position: {x: 1190.6781, y: 217.18115}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: (I barely keep the cup from meeting its demise with a careful catch,
     but the brown puddle it made on the floor makes it clear I still need to remake
@@ -1501,7 +1501,7 @@ MonoBehaviour:
   started: 0
   GUID: ca3c0bfe9b83e0e42aa2a83323c9bc76
   position: {x: 412, y: 99}
-  state: 0
+  state: 1
   Speaker: Narrator
   Dialogue: "They have appeared in many different stories and legends, often under
     different names and in different appearances, but one name seems to be repeated
@@ -1526,9 +1526,9 @@ MonoBehaviour:
   position: {x: 4484.2, y: -86.520004}
   state: 0
   Speaker: Ash, the Dream Chaser
-  Dialogue: "Feel free to come anytime you feel this way, or really, just any time
-    at all when we\u2019re not closed. I\u2019ll find the time to talk. And the coffee
-    will be even better next time too.\n"
+  Dialogue: "I'm glad. Feel free to come again anytime you feel this way, or really,
+    just any time at all when we\u2019re not closed. I\u2019ll find the time to talk.
+    And the coffee will be even better next time too.\n"
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
   child: {fileID: 1730121424556685140}
   DialogueActions: []
@@ -1547,7 +1547,7 @@ MonoBehaviour:
   started: 0
   GUID: fb44a380a8fa3b44c82d1bbd06086055
   position: {x: 1175, y: 71}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: '(In my haste, my hands bump into each other. At this point, the coffee
     cup decides this is its best chance to escape, beginning a rapid tumult towards
@@ -1572,33 +1572,12 @@ MonoBehaviour:
   started: 0
   GUID: 904a9118213a6f44092369c354533275
   position: {x: 804.8501, y: 72.594025}
-  state: 0
+  state: 1
   Speaker: Narrator
   Dialogue: "And even in the present day, they continue chasing down dreams and helping
     whoever they can\u2026\r\n"
   Portrait: {fileID: 0}
   child: {fileID: 5026680587791989245}
-  DialogueActions: []
---- !u!114 &3320696170911570699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: ffec7a75b510e014580907165ff77e90
-  position: {x: 4534.6777, y: -284.20996}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: ... (It's a nice silence, peaceful for both of us.
-  Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
-  child: {fileID: 1476252417564816611}
   DialogueActions: []
 --- !u!114 &3947664813604923666
 MonoBehaviour:
@@ -1615,7 +1594,7 @@ MonoBehaviour:
   started: 0
   GUID: 152045b34846ccd4a9a5f59c1c4bbd66
   position: {x: 3304.775, y: 176.95401}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "The coffee\u2019s better than last time, too. Guess the second time\u2019s
     the charm. \r"
@@ -1658,7 +1637,7 @@ MonoBehaviour:
   started: 0
   GUID: d5fb462a2bfecb541b632697088f62ef
   position: {x: 2419.4624, y: -533.0975}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: I guess you could say that. It's more, well...
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
@@ -1679,7 +1658,7 @@ MonoBehaviour:
   started: 0
   GUID: 7a9d927f66dab47438d5c7f2950d86f8
   position: {x: 2534.6802, y: -58.640015}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "Well\u2026nothing really happened, it\u2019s just\u2026I guess a lot
     of things have been piling up.\r\n"
@@ -1723,7 +1702,7 @@ MonoBehaviour:
   started: 0
   GUID: 3820b887aee3edc45b59b5e7fa072d82
   position: {x: 996, y: 75}
-  state: 0
+  state: 1
   Speaker: 'Ash, the Dream Chaser '
   Dialogue: Oh, sorry, I'll be right there!
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
@@ -1744,7 +1723,7 @@ MonoBehaviour:
   started: 0
   GUID: 178404d401b378c46ade594fb9064545
   position: {x: 3012.2705, y: -479.68234}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: Well, maybe
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
@@ -1765,7 +1744,7 @@ MonoBehaviour:
   started: 0
   GUID: 539ce5023cf6130419bca4e381585d3e
   position: {x: 1769, y: 96}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "Thanks\u2026"
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
@@ -1786,7 +1765,7 @@ MonoBehaviour:
   started: 0
   GUID: ce653901e30503d44a41c3d2948300b2
   position: {x: 2400.655, y: -666.5475}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: Oh, is everything alright? Did you have a rough day?
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
@@ -1807,7 +1786,7 @@ MonoBehaviour:
   started: 0
   GUID: f85bd52bfc7195340b9cd9ea5f89b52e
   position: {x: 3098.4907, y: 174.94263}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: (Perhaps Eri's being trapped in their dreams just like they feel now...)
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
@@ -1828,7 +1807,7 @@ MonoBehaviour:
   started: 0
   GUID: 47974f93d727c4f4aace938553d72ce1
   position: {x: 412, y: -27.839996}
-  state: 0
+  state: 1
   Speaker: Narrator
   Dialogue: "One who supports humans through their struggles, and fights off the
     darkness in their nightmares. \r\n"
@@ -1850,7 +1829,7 @@ MonoBehaviour:
   started: 0
   GUID: e4f32fce7a7062447b7cc1152088b019
   position: {x: 2940.8374, y: -53.702503}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "I dunno\u2026It feels like nothing\u2019s going to work out at this
     point. "
@@ -1874,7 +1853,7 @@ MonoBehaviour:
   position: {x: 4079.2002, y: 81.479996}
   state: 0
   Speaker: Eri
-  Dialogue: "Maybe, but, I dunno\u2026"
+  Dialogue: "I guess, but, I dunno\u2026"
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
   child: {fileID: -4453740407367212071}
   DialogueActions: []
@@ -1914,7 +1893,7 @@ MonoBehaviour:
   started: 0
   GUID: de3e674067a826140a6d417399ec12f9
   position: {x: 3178.2705, y: -497.68228}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: "(Yeah, maybe I should try to change the subject and talk about something
     lighter for a bit. But what\u2026?)\r\n"
@@ -1981,7 +1960,7 @@ MonoBehaviour:
   started: 0
   GUID: d23fc34751e0b7b44a60b018a0f98545
   position: {x: 1942.3275, y: -71.33293}
-  state: 0
+  state: 1
   Speaker: 
   Dialogue: Do a Calm Greeting
   Portrait: {fileID: 0}
@@ -2002,7 +1981,7 @@ MonoBehaviour:
   started: 0
   GUID: 8e739e9aa78a8a94a937a064ca40a44e
   position: {x: 3513.6802, y: 19.359985}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "Yeah, that\u2019s for sure. "
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
@@ -2023,7 +2002,7 @@ MonoBehaviour:
   started: 0
   GUID: beca32cb91efdfa47abb848c23dc5508
   position: {x: 2164.0088, y: -50.81714}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "It\u2019s nothing, really. Well, maybe it\u2019s not quite nothing,
     but\u2026 (sigh) \r\n"
@@ -2045,7 +2024,7 @@ MonoBehaviour:
   started: 0
   GUID: 58dfa49f795440e4f919863f9d9b5773
   position: {x: 2030.7902, y: -584.903}
-  state: 0
+  state: 1
   Speaker: 
   Dialogue: Do a Friendly Greeting
   Portrait: {fileID: 0}
@@ -2087,7 +2066,7 @@ MonoBehaviour:
   started: 0
   GUID: e45e352880f843d47bfa120b1c73c1a2
   position: {x: 2466.4417, y: -208.66339}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: "I don\u2019t really feel like being at the apartment right now."
   Portrait: {fileID: 21300000, guid: 4fec0a4330210470da163de714914696, type: 3}
@@ -2108,7 +2087,7 @@ MonoBehaviour:
   started: 0
   GUID: fb6d383ee7e96a647ae36187bca52690
   position: {x: 786, y: -50}
-  state: 0
+  state: 1
   Speaker: Narrator
   Dialogue: 'By doing so, they help people be able to move forward once awake.
 
@@ -2131,7 +2110,7 @@ MonoBehaviour:
   started: 0
   GUID: 673fa989ff4ec454399d5aa542fc9da1
   position: {x: 4075.2703, y: -465.6823}
-  state: 0
+  state: 1
   Speaker: Eri
   Dialogue: (He lets out a light sigh.) At this point, even gardening feels wrapped
     up in all the relationship stuff.
@@ -2174,7 +2153,7 @@ MonoBehaviour:
   started: 0
   GUID: 4df3505737ded2f408ff82a676560d7a
   position: {x: 1172, y: -55}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: Ahhhh! The coffee!
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
@@ -2195,7 +2174,7 @@ MonoBehaviour:
   started: 0
   GUID: c5933ed0a5bc64b4d806de328241a639
   position: {x: 3888.2703, y: -440.68234}
-  state: 0
+  state: 1
   Speaker: Ash, the Dream Chaser
   Dialogue: That's too bad...
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
@@ -2219,7 +2198,7 @@ MonoBehaviour:
   state: 0
   Speaker: Ash, the Dream Chaser
   Dialogue: "(I mean, the weather is something everyone is willing to talk about,
-    right?)\r Well, at least it's nice and sunny today, right? \r\n"
+    right?)\r \nWell, at least it's nice and sunny today, right? \r\n"
   Portrait: {fileID: 21300000, guid: f695e50e2b5684e72b265197bec147d8, type: 3}
   child: {fileID: 7474388183046033759}
   DialogueActions: []
