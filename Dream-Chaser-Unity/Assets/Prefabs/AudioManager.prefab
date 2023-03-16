@@ -58,7 +58,7 @@ MonoBehaviour:
       Data3: -1102155083
       Data4: -846236515
     Path: event:/Music/MUS-PrebossLevel_Section1Only
-  <windBlowing>k__BackingField:
+  <reset>k__BackingField:
     Guid:
       Data1: 366761934
       Data2: 1309970896
@@ -74,7 +74,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6345402916612921845}
-  - component: {fileID: 6345402916612921844}
   - component: {fileID: 6345402916612921846}
   m_Layer: 0
   m_Name: AudioManager
@@ -99,24 +98,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6345402916612921844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6345402916612921843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoadEvent: 1
-  UnloadEvent: 2
-  Banks:
-  - Master
-  CollisionTag: 
-  PreloadSamples: 0
 --- !u!114 &6345402916612921846
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ public class FMODEvents : MonoBehaviour
 
     private void Awake(){
         if(instance != null){
-            Debug.LogError("Found more than one Audio Manager in scene");
+            //Debug.LogError("Found more than one Audio Manager in scene");
         }
         instance = this;
     }
