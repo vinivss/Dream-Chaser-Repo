@@ -14,6 +14,7 @@ public class ObstacleColllision : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.ambience, this.transform.position);
         StartCoroutine(ResetScene());
     }
 

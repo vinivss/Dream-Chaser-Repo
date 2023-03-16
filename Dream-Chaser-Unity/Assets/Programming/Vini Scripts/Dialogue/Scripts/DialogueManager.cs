@@ -30,8 +30,7 @@ public class DialogueManager : MonoBehaviour
     public Transform LayoutTrans;
     [Tooltip("what will happen at the end of the dialogue")]
     public UnityEvent EndEvent;
-    Button NextButton;
-    GameObject DialogueSprite;
+    Button NextButton;  
     GameObject runTimeWindow;
     ControlsManager controlVN;
     // Start is called before the first frame update
@@ -59,34 +58,35 @@ public class DialogueManager : MonoBehaviour
         NextButton = GameObject.Find("NextButton").GetComponent<Button>();
 
         NextButton.GetComponent<Button>().onClick.AddListener(ChangeNode);
-        DialogueSprite = GameObject.Find("Speaking Sprite");
+
         currentNode.state = DialogueNode.State.FIN;
         ChangeNode();
     }
 
     public void ChangeNode()
     {
-        if(currentNode.state == DialogueNode.State.FIN)
+        if (currentNode.state == DialogueNode.State.FIN)
         {
-            List<DialogueNode> Children =  dialogue.GetChildren(currentNode);
+            Destroy(currentNode.SceneLayout);
+            List<DialogueNode> Children = dialogue.GetChildren(currentNode);
 
-            if(Children.Count == 1)
+            if (Children.Count == 1)
             {
                 currentNode = Children[0];
-                if(currentNode is DialogueEndNode)
+                if (currentNode is DialogueEndNode)
                 {
                     CloseDialogue();
                 }
-                DialogueSprite.GetComponent<Image>().sprite = currentNode.Portrait;
-                DisplayNextSentence();  
-                currentNode.state = DialogueNode.State.FIN; 
+
+                DisplayNextSentence();
+                Instantiate(currentNode.SceneLayout);
+                currentNode.state = DialogueNode.State.FIN;
             }
-            else if(Children.Count > 1)
+            else if (Children.Count > 1)
             {
                 InstantiateChoices(Children);
-                DialogueSprite.GetComponent<Image>().sprite = currentNode.Portrait;
-                runTimeWindow.SetActive(false);
-            } 
+                Instantiate(currentNode.SceneLayout);
+            }
         }
     }
     void Skip()
