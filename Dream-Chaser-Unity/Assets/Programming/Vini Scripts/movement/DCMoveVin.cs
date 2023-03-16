@@ -4,6 +4,7 @@ using UnityEngine.UIElements;
 using FMOD.Studio;
 using System;
 using UnityEngine.Events;
+using Cinemachine;
 
 public class DCMoveVin : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class DCMoveVin : MonoBehaviour
     float jumpforce = 0;
     bool jumping;
     bool isGrounded;
+    CinemachineVirtualCamera Cam;
+    float startFOV;
 
     //Inspector Vars
     [Header("Movement Attributes")]
@@ -37,6 +40,12 @@ public class DCMoveVin : MonoBehaviour
     [SerializeField] float groundDistance = 0.4f;
     [Tooltip("layer for ground to be detected")]
     [SerializeField] LayerMask groundMask;
+    [Tooltip("Air Heavy stuff")]
+    [SerializeField] float airDrag;
+    [Tooltip("Normal heavy stuff")]
+    [SerializeField] float normDrag;
+    [Tooltip("DC Model")]
+    [SerializeField] float turnSpeed;
     //audio inspector vars
     [Header("Audio Attributes")]
     [Tooltip("The name of the FMOD Parameter function")]
@@ -46,6 +55,8 @@ public class DCMoveVin : MonoBehaviour
     {
         inManager = GetComponent<ControlsManager>();
         rb = GetComponent<Rigidbody>();
+        Cam = FindObjectOfType<CinemachineVirtualCamera>();
+        startFOV = Cam.m_Lens.FieldOfView;
     }
 
     //physics management
@@ -53,6 +64,16 @@ public class DCMoveVin : MonoBehaviour
     {
         MoveCharacter();
         UpdateSound();
+        if(!isGrounded)
+        {
+            rb.drag = airDrag;
+            rb.angularDrag = airDrag;
+        }
+        else
+        {
+            rb.drag = normDrag;
+            rb.angularDrag = normDrag;
+        }
     }
 
     private void MoveCharacter()
@@ -60,17 +81,16 @@ public class DCMoveVin : MonoBehaviour
         Debug.DrawRay(transform.position, transform.forward, Color.red);
         Debug.DrawRay(transform.position, -transform.forward, Color.blue);
 
-        moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, inManager.GetMoveValue().y + transform.forward.z);
-        if(moveDir != Vector3.zero)
-        transform.forward = moveDir;
-
+     
+        if (moveDir != Vector3.zero)
+        {
+            Quaternion rotGoal =Quaternion.LookRotation(moveDir);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotGoal, turnSpeed);
+        }
+        moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.5f, 1.0f));
         rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);
         rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed* 100);
-
-        //if(rb.velocity.magnitude > 0.01f && rb.velocity.magnitude != 0)
-        //{ 
-        //    StartCoroutine(StopMove());           
-        //}
+        Cam.m_Lens.FieldOfView = Mathf.Clamp(rb.velocity.z, startFOV, 95.0f);
         JumpPerformed();
     }
 
@@ -102,12 +122,6 @@ public class DCMoveVin : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheckPos.position, groundDistance, groundMask);
     }
 
-    IEnumerator StopMove()
-    {
-        inManager.OnDisable();
-        yield return new WaitForSeconds(0.5f);
-        inManager.OnEnable();
-    }
 
     private void UpdateSound(){
         velo = rb.velocity.magnitude/maxSpeed*4;
