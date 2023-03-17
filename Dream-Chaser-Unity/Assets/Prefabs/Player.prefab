@@ -3131,8 +3131,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c02beef04c06ad488d4827fba5264db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dissolveRenderer:
-  - {fileID: 2894180218471558045}
+  myMaterials:
+  - {fileID: 2100000, guid: 9f82b5009e008574e9e9dcb54c2ae3b4, type: 2}
+  - {fileID: 2100000, guid: 4c9a42e9689100649b2afdf278a70f24, type: 2}
+  - {fileID: 2100000, guid: 1e709d9942b6b08428b1ed3466e8228e, type: 2}
+  - {fileID: 2100000, guid: 645c942e4366eed44b8c7a91e66366dc, type: 2}
+  - {fileID: 2100000, guid: bc67cfe21f1660849bef645f1e8ab1af, type: 2}
+  - {fileID: 2100000, guid: 98d2bcf6c4434d94ca49e8e135596969, type: 2}
+  - {fileID: 2100000, guid: ca8a3bddf0abe674db907e2c8a2e5080, type: 2}
 --- !u!1 &2894180219964257359
 GameObject:
   m_ObjectHideFlags: 0

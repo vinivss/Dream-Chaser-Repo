@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class OnDeathDissolve : MonoBehaviour
 {
-   [SerializeField] private Renderer[] dissolveRenderer = new Renderer[0];
-   Material[] myMaterials;
+   [SerializeField] Material[] myMaterials;
 
     private float targetDissolveValue = 0.9f;
     private float currentDissolveValue = 0.0f;
@@ -15,7 +14,11 @@ public class OnDeathDissolve : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myMaterials = GetComponent<Renderer>().materials;
+        currentDissolveValue = 0.0f;
+        foreach (Material material in myMaterials)
+        {
+            material.SetFloat("_DissolveAmount", currentDissolveValue);
+        }
     }
 
     // Update is called once per frame
@@ -25,9 +28,9 @@ public class OnDeathDissolve : MonoBehaviour
         {
             Debug.Assert(dissolveEnabled);
             currentDissolveValue = Mathf.Lerp(currentDissolveValue, targetDissolveValue, dissolveSpeed * Time.deltaTime);
-            foreach (Renderer renderer in dissolveRenderer)
+            foreach (Material material in myMaterials)
             {
-                renderer.material.SetFloat("_DissolveAmount", currentDissolveValue);
+                material.SetFloat("_DissolveAmount", currentDissolveValue);
             }
         }
     }
