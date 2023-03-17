@@ -10,7 +10,7 @@ public class DCMoveVin : MonoBehaviour
 {
     //innate components gotten during Awake for functionality
     ControlsManager inManager;
-    Rigidbody rb;
+    [HideInInspector]public Rigidbody rb;
 
     //priv hidden variables
     Vector3 moveDir;
