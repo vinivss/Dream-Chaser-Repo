@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class OnDeathDissolve : MonoBehaviour
 {
-    [SerializeField] private DCMoveVin dissolveAmount = null;
-    [SerializeField] private Renderer[] dissolveRenderer = new Renderer[0];
+   [SerializeField] private Renderer[] dissolveRenderer = new Renderer[0];
 
     private float targetDissolveValue = 0.9f;
     private float currentDissolveValue = 0.0f;
     private float dissolveSpeed = 2f;
 
+    bool dissolveEnabled = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,16 +20,20 @@ public class OnDeathDissolve : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentDissolveValue = Mathf.Lerp(currentDissolveValue, targetDissolveValue, dissolveSpeed * Time.deltaTime);
-
-        foreach (Renderer renderer in dissolveRenderer)
+        if (dissolveEnabled)
         {
-            renderer.material.SetFloat("_DissolveAmount", currentDissolveValue);
+            Debug.Assert(dissolveEnabled);
+            currentDissolveValue = Mathf.Lerp(currentDissolveValue, targetDissolveValue, dissolveSpeed * Time.deltaTime);
+            foreach (Renderer renderer in dissolveRenderer)
+            {
+
+                renderer.material.SetFloat("_DissolveAmount", currentDissolveValue);
+            }
         }
     }
 
-    private void OnPlayerDeath()
+    public void OnPlayerDeath()
     {
-        //targetDissolveValue = 
+        dissolveEnabled = true;
     }
 }
