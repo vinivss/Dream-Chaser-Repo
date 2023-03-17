@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638145129446982548
+  lastModified: 638146414403326433
   FileSizes:
   - Name: Desktop
-    Value: 1398
+    Value: 1444
   Exists: 1
 --- !u!114 &-5972516148558945771
 MonoBehaviour:
@@ -48,6 +48,35 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6706
+--- !u!114 &-4565091505396251184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/3D-PrebossLevel
+  m_EditorClassIdentifier: 
+  Path: event:/Music/3D-PrebossLevel
+  Guid:
+    Data1: -574369179
+    Data2: 1104974713
+    Data3: -790107989
+    Data4: 2011872163
+  Banks:
+  - {fileID: 2970579383246442668}
+  - {fileID: 245773220985535039}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 109864156386168514}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 185071
 --- !u!114 &-2355113339956154833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,13 +130,43 @@ MonoBehaviour:
   - {fileID: -2355113339956154833}
   - {fileID: 2454207690425112379}
   - {fileID: 8253379279612822854}
+  - {fileID: -4565091505396251184}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2970579383246442668}
   StringsBanks:
   - {fileID: -8715087220653833742}
-  cacheTime: 638145129447501428
+  cacheTime: 638146414403957824
   cacheVersion: 131601
+--- !u!114 &109864156386168514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/3D-PrebossLevel/checkpoint
+  m_EditorClassIdentifier: 
+  Name: checkpoint
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 4016449167
+    data2: 2620829399
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Checkpoint1
+  - Checkpoint2
+  - Checkpoint3
+  - Checkpoint4
+  - Checkpoint5
+  Exists: 1
 --- !u!114 &245773220985535039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +182,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638145129447491524
+  lastModified: 638146414403957824
   FileSizes:
   - Name: Desktop
-    Value: 6837536
+    Value: 9672864
   Exists: 1
 --- !u!114 &456619140731550496
 MonoBehaviour:
@@ -252,10 +311,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638145129446972603
+  lastModified: 638146414403326433
   FileSizes:
   - Name: Desktop
-    Value: 6855744
+    Value: 9691616
   Exists: 1
 --- !u!114 &4113107717070607959
 MonoBehaviour:
@@ -272,10 +331,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638145129447501428
+  lastModified: 638146414403957824
   FileSizes:
   - Name: Desktop
-    Value: 26400
+    Value: 26720
   Exists: 1
 --- !u!114 &5794149715169583020
 MonoBehaviour:
@@ -320,7 +379,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638145129446443978
+  lastModified: 638146414402700545
   FileSizes:
   - Name: Desktop
     Value: 84640
