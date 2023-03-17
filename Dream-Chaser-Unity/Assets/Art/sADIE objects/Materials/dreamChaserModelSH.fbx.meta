@@ -3,7 +3,42 @@ guid: 0bbba14235b429a43bde1adde4f98640
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fingies
+    second: {fileID: 2100000, guid: 98d2bcf6c4434d94ca49e8e135596969, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hair_Cowl
+    second: {fileID: 2100000, guid: ca8a3bddf0abe674db907e2c8a2e5080, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Legs
+    second: {fileID: 2100000, guid: c7560fb2bd0f58b48ad144dcdbb6e4d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shoes
+    second: {fileID: 2100000, guid: 4c9a42e9689100649b2afdf278a70f24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyeballs
+    second: {fileID: 2100000, guid: bc67cfe21f1660849bef645f1e8ab1af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head_shoulders_armshands
+    second: {fileID: 2100000, guid: 1e709d9942b6b08428b1ed3466e8228e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: spooky eye
+    second: {fileID: 2100000, guid: 645c942e4366eed44b8c7a91e66366dc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

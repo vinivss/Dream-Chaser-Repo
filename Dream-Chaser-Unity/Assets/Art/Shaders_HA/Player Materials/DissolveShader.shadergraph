@@ -16,15 +16,6 @@
             "m_Id": "7e411fc6605f4823a7b358a489f5f18b"
         },
         {
-            "m_Id": "b2434f1bf50d49e688019ebd267c7ec1"
-        },
-        {
-            "m_Id": "1870a65e3d4843d48d130cb8d2130156"
-        },
-        {
-            "m_Id": "8c5e865a99d54a80a1518a0ba0335714"
-        },
-        {
             "m_Id": "b82394a21cf34db8ae3a72f3239f827f"
         }
     ],
@@ -528,35 +519,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
-    "m_ObjectId": "1870a65e3d4843d48d130cb8d2130156",
-    "m_Guid": {
-        "m_GuidSerialized": "18a4bce1-2083-4fa4-bfd8-a3e06b8cf99c"
-    },
-    "m_Name": "CharacterNormal",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "CharacterNormal",
-    "m_DefaultReferenceName": "_CharacterNormal",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
-        "m_Guid": ""
-    },
-    "isMainTexture": false,
-    "useTilingAndOffset": false,
-    "m_Modifiable": true,
-    "m_DefaultType": 0
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "199c3d14b0134b2c81bba378a5d25d5a",
     "m_Id": 2,
@@ -1020,15 +982,6 @@
     "m_Name": "",
     "m_ChildObjectList": [
         {
-            "m_Id": "b2434f1bf50d49e688019ebd267c7ec1"
-        },
-        {
-            "m_Id": "1870a65e3d4843d48d130cb8d2130156"
-        },
-        {
-            "m_Id": "8c5e865a99d54a80a1518a0ba0335714"
-        },
-        {
             "m_Id": "b82394a21cf34db8ae3a72f3239f827f"
         },
         {
@@ -1214,35 +1167,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
-    "m_ObjectId": "8c5e865a99d54a80a1518a0ba0335714",
-    "m_Guid": {
-        "m_GuidSerialized": "35e92b65-a542-4299-b112-420c216fb0c8"
-    },
-    "m_Name": "CharacterRoughness",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "CharacterRoughness",
-    "m_DefaultReferenceName": "_CharacterRoughness",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
-        "m_Guid": ""
-    },
-    "isMainTexture": false,
-    "useTilingAndOffset": false,
-    "m_Modifiable": true,
-    "m_DefaultType": 0
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "90e0275e5000496c956e93bf813f7c7f",
     "m_Id": 2,
@@ -1410,35 +1334,6 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.Smoothness"
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
-    "m_ObjectId": "b2434f1bf50d49e688019ebd267c7ec1",
-    "m_Guid": {
-        "m_GuidSerialized": "bd0be1ce-7bdb-43c3-8838-5e8f0dc963ce"
-    },
-    "m_Name": "CharacterColor",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "CharacterColor",
-    "m_DefaultReferenceName": "_CharacterColor",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
-        "m_Guid": ""
-    },
-    "isMainTexture": false,
-    "useTilingAndOffset": false,
-    "m_Modifiable": true,
-    "m_DefaultType": 0
 }
 
 {

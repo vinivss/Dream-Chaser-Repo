@@ -1002,13 +1002,13 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5508551277811371556, guid: 6411f25eb554ad645b4d9526e5acdb40, type: 3}
-  - {fileID: 4217796364934669478, guid: 6411f25eb554ad645b4d9526e5acdb40, type: 3}
-  - {fileID: -872103134723078482, guid: 6411f25eb554ad645b4d9526e5acdb40, type: 3}
-  - {fileID: 7421285552824759322, guid: 6411f25eb554ad645b4d9526e5acdb40, type: 3}
-  - {fileID: 7656476388640128449, guid: 6411f25eb554ad645b4d9526e5acdb40, type: 3}
-  - {fileID: -1652985680720461056, guid: 6411f25eb554ad645b4d9526e5acdb40, type: 3}
-  - {fileID: -1919689469342016950, guid: 6411f25eb554ad645b4d9526e5acdb40, type: 3}
+  - {fileID: 2100000, guid: 9f82b5009e008574e9e9dcb54c2ae3b4, type: 2}
+  - {fileID: 2100000, guid: 4c9a42e9689100649b2afdf278a70f24, type: 2}
+  - {fileID: 2100000, guid: 1e709d9942b6b08428b1ed3466e8228e, type: 2}
+  - {fileID: 2100000, guid: 645c942e4366eed44b8c7a91e66366dc, type: 2}
+  - {fileID: 2100000, guid: bc67cfe21f1660849bef645f1e8ab1af, type: 2}
+  - {fileID: 2100000, guid: 98d2bcf6c4434d94ca49e8e135596969, type: 2}
+  - {fileID: 2100000, guid: ca8a3bddf0abe674db907e2c8a2e5080, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2743,7 +2743,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2894180219568969094}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.9, y: 256.8, z: -450.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2961,6 +2961,7 @@ GameObject:
   - component: {fileID: 7926516453522463404}
   - component: {fileID: 7926516453522463405}
   - component: {fileID: 7926516453522463406}
+  - component: {fileID: 5578034474796647533}
   m_Layer: 0
   m_Name: StandinCollBox
   m_TagString: Player
@@ -3118,6 +3119,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b62390af34d3cc4a92ee6a589f795c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5578034474796647533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2894180219864403202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c02beef04c06ad488d4827fba5264db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dissolveRenderer:
+  - {fileID: 2894180218471558045}
 --- !u!1 &2894180219964257359
 GameObject:
   m_ObjectHideFlags: 0
