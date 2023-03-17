@@ -10,7 +10,7 @@ public class DCMoveVin : MonoBehaviour
 {
     //innate components gotten during Awake for functionality
     ControlsManager inManager;
-    Rigidbody rb;
+    [HideInInspector]public Rigidbody rb;
 
     //priv hidden variables
     Vector3 moveDir;
@@ -20,6 +20,7 @@ public class DCMoveVin : MonoBehaviour
     bool isGrounded;
     CinemachineVirtualCamera Cam;
     float startFOV;
+    OnDeathDissolve DissolveScript;
 
     //Inspector Vars
     [Header("Movement Attributes")]
@@ -57,23 +58,26 @@ public class DCMoveVin : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Cam = FindObjectOfType<CinemachineVirtualCamera>();
         startFOV = Cam.m_Lens.FieldOfView;
+        DissolveScript = GetComponent<OnDeathDissolve>();
     }
 
     //physics management
     private void FixedUpdate()
     {
-        MoveCharacter();
-        CheckGround();
-        if (!isGrounded)
+        if (rb != null)
         {
-           
-            rb.drag = airDrag;
+            MoveCharacter();
+            CheckGround();
+            if (!isGrounded)
+            {
+
+                rb.drag = airDrag;
+            }
+            else
+            {
+                rb.drag = normDrag;
+            }
         }
-        else
-        {
-            rb.drag = normDrag;
-        }
-        Debug.Log(rb.drag);
         UpdateSound();
     }
 
@@ -127,5 +131,12 @@ public class DCMoveVin : MonoBehaviour
     private void UpdateSound(){
         velo = rb.velocity.magnitude/maxSpeed*4;
         AudioManager.instance.SetAmbienceParameter("wind_intensity", velo);
+    }
+
+    public void PlayerDeath()
+    {
+        rb.isKinematic = true;
+        inManager.OnDisable();
+        DissolveScript.OnPlayerDeath();
     }
 }

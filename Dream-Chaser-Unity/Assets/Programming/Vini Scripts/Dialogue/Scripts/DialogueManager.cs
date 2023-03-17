@@ -19,6 +19,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     int ChoiceIndex;
     bool dialogueStarted = false;
+    [Tooltip("Scene Background")]
+    public GameObject Background;
     [Header("Prefabs")]
     [Tooltip("Prefab to be instantiated as dialogue box")]
     public GameObject DialogueBox;
@@ -30,6 +32,9 @@ public class DialogueManager : MonoBehaviour
     public Transform LayoutTrans;
     [Tooltip("what will happen at the end of the dialogue")]
     public UnityEvent EndEvent;
+
+
+    GameObject runtimeSceneLayout;
     Button NextButton;  
     GameObject runTimeWindow;
     ControlsManager controlVN;
@@ -67,8 +72,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentNode.state == DialogueNode.State.FIN)
         {
-            if (currentNode.SceneLayout != null)
-                DestroyImmediate(currentNode.SceneLayout);
+            if (runtimeSceneLayout != null)
+                DestroyImmediate(runtimeSceneLayout);
 
             List<DialogueNode> Children = dialogue.GetChildren(currentNode);
 
@@ -82,7 +87,7 @@ public class DialogueManager : MonoBehaviour
 
                 DisplayNextSentence();
                 if(currentNode.SceneLayout != null)
-                    currentNode.SceneLayout = Instantiate(currentNode.SceneLayout);
+                   runtimeSceneLayout = Instantiate(currentNode.SceneLayout, Background.transform);
 
                 currentNode.state = DialogueNode.State.FIN;
             }
@@ -90,7 +95,7 @@ public class DialogueManager : MonoBehaviour
             {
                 InstantiateChoices(Children);
                 if (currentNode.SceneLayout != null)
-                    currentNode.SceneLayout = Instantiate(currentNode.SceneLayout);
+                   runtimeSceneLayout = Instantiate(currentNode.SceneLayout, Background.transform);
             }
         }
     }
