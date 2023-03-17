@@ -24,7 +24,7 @@ namespace Tools.Trees.Dialogue
         [Space]
         [Header("UI Editors")]
         [Tooltip("Image displayed as character is talking")]
-        [DataMember]public GameObject SceneLayout;
+        public GameObject SceneLayout;
 
 
 
