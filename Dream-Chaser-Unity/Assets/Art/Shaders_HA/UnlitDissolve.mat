@@ -7,12 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FS_Fire_V3
-  m_Shader: {fileID: -6465566751694194690, guid: 3a8db702dd153cc44ac1e423202c8ea0,
+  m_Name: UnlitDissolve
+  m_Shader: {fileID: -6465566751694194690, guid: c9afe6459352464498dfb14b24305771,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -21,7 +21,15 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
+    - _CharacterColor:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CharacterNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CharacterRoughness:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -39,19 +47,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FullScreenIntensity: 0.23
-    - _Power: 2
+    - _DissolveAmount: 0
+    - _DissolveScale: 30
+    - _DissolveWidth: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 2.27
-    - _Speed: 1
-    - _VignetteIntensity: 0.82
-    - _VignetteRadiusPower: 8.7
     m_Colors:
-    - _MainColor: {r: 1.9852809, g: 0.112800054, b: 0, a: 0}
-    - _NoiseTiling: {r: 0.2, g: 12, b: 0, a: 0}
+    - _ColorTint: {r: 0.6509434, g: 0.24195436, b: 0.24195436, a: 0}
+    - _DissolveColor: {r: 0.4200754, g: 0.2082591, b: 0.9433962, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &2184299220325347858
+--- !u!114 &8638262134218013062
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
