@@ -51,13 +51,20 @@ MonoBehaviour:
       Data3: -748400978
       Data4: 696840385
     Path: event:/Ambience/Wind
-  <windBlowing>k__BackingField:
+  <music>k__BackingField:
     Guid:
-      Data1: -1182773388
-      Data2: 1259529088
-      Data3: -1029958743
-      Data4: 1703026419
-    Path: event:/Music/Background
+      Data1: -1966657342
+      Data2: 1304401125
+      Data3: -1102155083
+      Data4: -846236515
+    Path: event:/Music/MUS-PrebossLevel_Section1Only
+  <reset>k__BackingField:
+    Guid:
+      Data1: 366761934
+      Data2: 1309970896
+      Data3: -1154113628
+      Data4: 276779348
+    Path: event:/SFX/HitObject
 --- !u!1 &6345402916612921843
 GameObject:
   m_ObjectHideFlags: 0
@@ -67,8 +74,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6345402916612921845}
-  - component: {fileID: 6345402916612921844}
-  - component: {fileID: 6345402916612921847}
   - component: {fileID: 6345402916612921846}
   m_Layer: 0
   m_Name: AudioManager
@@ -93,54 +98,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6345402916612921844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6345402916612921843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoadEvent: 1
-  UnloadEvent: 2
-  Banks:
-  - Master
-  CollisionTag: 
-  PreloadSamples: 0
---- !u!114 &6345402916612921847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6345402916612921843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -75123881
-      Data2: 1113100890
-      Data3: 296328833
-      Data4: -791276211
-    Path: event:/Music/MUS - Eri's Theme
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!114 &6345402916612921846
 MonoBehaviour:
   m_ObjectHideFlags: 0

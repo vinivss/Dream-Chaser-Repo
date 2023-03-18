@@ -13,6 +13,6 @@ public class PlayWind : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.windBlowing, this.transform.position);
+        //AudioManager.instance.PlayOneShot(FMODEvents.instance.windBlowing, this.transform.position);
     }
 }

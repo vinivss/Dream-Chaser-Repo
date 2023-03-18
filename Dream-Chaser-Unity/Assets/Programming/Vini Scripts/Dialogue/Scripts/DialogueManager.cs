@@ -19,6 +19,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     int ChoiceIndex;
     bool dialogueStarted = false;
+    [Tooltip("Scene Background")]
+    public GameObject Background;
     [Header("Prefabs")]
     [Tooltip("Prefab to be instantiated as dialogue box")]
     public GameObject DialogueBox;
@@ -30,8 +32,10 @@ public class DialogueManager : MonoBehaviour
     public Transform LayoutTrans;
     [Tooltip("what will happen at the end of the dialogue")]
     public UnityEvent EndEvent;
-    Button NextButton;
-    GameObject DialogueSprite;
+
+
+    GameObject runtimeSceneLayout;
+    Button NextButton;  
     GameObject runTimeWindow;
     ControlsManager controlVN;
     // Start is called before the first frame update
@@ -59,34 +63,40 @@ public class DialogueManager : MonoBehaviour
         NextButton = GameObject.Find("NextButton").GetComponent<Button>();
 
         NextButton.GetComponent<Button>().onClick.AddListener(ChangeNode);
-        DialogueSprite = GameObject.Find("Speaking Sprite");
+
         currentNode.state = DialogueNode.State.FIN;
         ChangeNode();
     }
 
     public void ChangeNode()
     {
-        if(currentNode.state == DialogueNode.State.FIN)
+        if (currentNode.state == DialogueNode.State.FIN)
         {
-            List<DialogueNode> Children =  dialogue.GetChildren(currentNode);
+            if (runtimeSceneLayout != null)
+                DestroyImmediate(runtimeSceneLayout);
 
-            if(Children.Count == 1)
+            List<DialogueNode> Children = dialogue.GetChildren(currentNode);
+
+            if (Children.Count == 1)
             {
                 currentNode = Children[0];
-                if(currentNode is DialogueEndNode)
+                if (currentNode is DialogueEndNode)
                 {
                     CloseDialogue();
                 }
-                DialogueSprite.GetComponent<Image>().sprite = currentNode.Portrait;
-                DisplayNextSentence();  
-                currentNode.state = DialogueNode.State.FIN; 
+
+                DisplayNextSentence();
+                if(currentNode.SceneLayout != null)
+                   runtimeSceneLayout = Instantiate(currentNode.SceneLayout, Background.transform);
+
+                currentNode.state = DialogueNode.State.FIN;
             }
-            else if(Children.Count > 1)
+            else if (Children.Count > 1)
             {
                 InstantiateChoices(Children);
-                DialogueSprite.GetComponent<Image>().sprite = currentNode.Portrait;
-                runTimeWindow.SetActive(false);
-            } 
+                if (currentNode.SceneLayout != null)
+                   runtimeSceneLayout = Instantiate(currentNode.SceneLayout, Background.transform);
+            }
         }
     }
     void Skip()
@@ -127,6 +137,8 @@ public class DialogueManager : MonoBehaviour
     //creating and displaying UI settings.
     private void InstantiateChoices(List<DialogueNode> children)
     {
+        runTimeWindow.SetActive(false);
+      
         int i = 0;
         // foreach child create a different button prefab with the text choice.
         //give each button an index which is called on Selected option that matches the option

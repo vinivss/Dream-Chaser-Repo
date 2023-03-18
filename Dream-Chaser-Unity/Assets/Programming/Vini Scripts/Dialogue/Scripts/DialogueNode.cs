@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using TMPro;
 using UnityEngine;
 namespace Tools.Trees.Dialogue
@@ -23,7 +24,7 @@ namespace Tools.Trees.Dialogue
         [Space]
         [Header("UI Editors")]
         [Tooltip("Image displayed as character is talking")]
-        public Sprite Portrait;
+        public GameObject SceneLayout;
 
 
 

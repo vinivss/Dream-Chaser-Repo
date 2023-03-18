@@ -30,6 +30,7 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{9dc375c3-77a8-4295-952e-3b508a53cf8d}</destination>
+			<destination>{93cd722f-bb40-46c2-bcb0-1302f870c7ba}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{5533b3b5-f17f-406a-9198-bd1e2b6876f2}</destination>
@@ -72,6 +73,11 @@
 			<destination>{50957881-7f54-4bc5-ad8e-f4db882f1570}</destination>
 		</relationship>
 	</object>
+	<object class="ParameterProxy" id="{93cd722f-bb40-46c2-bcb0-1302f870c7ba}">
+		<relationship name="preset">
+			<destination>{deed8929-55cb-4c37-b6f0-e6920e7093f4}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{9de1ad39-7494-46a4-846a-218a1795ca74}">
 		<relationship name="effectChain">
 			<destination>{d1bc034b-d419-4280-b0af-a579e4c43f34}</destination>
@@ -96,17 +102,28 @@
 	<object class="MixerBusPanner" id="{a58fe3ba-c9ad-4e3d-a722-7f226dee5453}" />
 	<object class="MixerBusEffectChain" id="{d1bc034b-d419-4280-b0af-a579e4c43f34}">
 		<relationship name="effects">
+			<destination>{19de0203-de9d-4759-8802-1c3d89bd58fe}</destination>
 			<destination>{3bef94aa-d54f-41e2-858e-497d12ec372c}</destination>
 			<destination>{74062af7-e04e-48ca-a414-e40c64046a66}</destination>
+			<destination>{0b38fadf-b76f-4dda-92e8-a5361a81b228}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{86b4c714-8133-4ff9-933a-6d3d27ee3948}" />
 	<object class="SingleSound" id="{7e179176-ff30-447b-9e0e-be4ef1121d92}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{4db9872a-47db-48e2-936d-0221b73c4c74}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{dd46de03-bf6b-4243-b70b-5766893554ce}" />
+	<object class="TremoloEffect" id="{19de0203-de9d-4759-8802-1c3d89bd58fe}">
+		<property name="frequency">
+			<value>2.60000014</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{3bef94aa-d54f-41e2-858e-497d12ec372c}" />
 	<object class="SpatialiserEffect" id="{74062af7-e04e-48ca-a414-e40c64046a66}" />
+	<object class="SFXReverbEffect" id="{0b38fadf-b76f-4dda-92e8-a5361a81b228}" />
 </objects>

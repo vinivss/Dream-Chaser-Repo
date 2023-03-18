@@ -14,12 +14,15 @@ public class ObstacleColllision : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.ambience, this.transform.position);
+        FindObjectOfType<DCMoveVin>().PlayerDeath();
         StartCoroutine(ResetScene());
+       
     }
 
     IEnumerator ResetScene()
     {
+        yield return new WaitForSecondsRealtime(3f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        yield return null;
     }
 }

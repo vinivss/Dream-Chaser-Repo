@@ -18,6 +18,7 @@ namespace Tools.Trees.Dialogue
         public Port output;
         public Port actionout;
         public Port actionin;
+       
 
         public DialogueNodeView(DialogueNode node) : base("Assets/Editor/Dialogue Tool/Editor/DialogueNodeView.uxml")
         {
@@ -43,7 +44,9 @@ namespace Tools.Trees.Dialogue
             Label Speaker = this.Q<Label>("Speaker");
             Speaker.bindingPath = "Speaker";
             Speaker.Bind(new SerializedObject(node));
-          
+
+
+
         }
 
 
@@ -231,18 +234,23 @@ namespace Tools.Trees.Dialogue
         {
             DialogueChoiceNode choiceNode = node as DialogueChoiceNode;
 
-            if(choiceNode && choiceNode.children.Count > 0)
+            if (choiceNode && choiceNode.children.Count > 0)
             {
                 choiceNode.children.Sort(SortByVerticalPosition);
+                return;
             }
-            if (choiceNode && choiceNode.DialogueActions.Count > 0)
+
+        }
+        internal void SortAtions()
+        {
+            DialogueChoiceNode choiceNode = node as DialogueChoiceNode;
+            if (choiceNode.DialogueActions.Count > 0)
             {
                 choiceNode.DialogueActions.Sort(SortByVerticalPosition);
                 return;
             }
-
-
             DialogueSpeechNode speechNode = node as DialogueSpeechNode;
+            Debug.Assert(speechNode != null);
             if(speechNode && speechNode.DialogueActions.Count > 0)
             {
                 speechNode.DialogueActions.Sort(SortByVerticalPosition);
