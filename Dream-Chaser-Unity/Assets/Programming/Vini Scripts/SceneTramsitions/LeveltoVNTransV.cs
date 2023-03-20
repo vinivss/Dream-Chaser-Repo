@@ -29,6 +29,6 @@ public class LeveltoVNTransV : MonoBehaviour
     {
         DestroyImmediate(Gm);       
         DestroyImmediate(AudioMgr);
-        SceneManager.LoadScene(VnScene.name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

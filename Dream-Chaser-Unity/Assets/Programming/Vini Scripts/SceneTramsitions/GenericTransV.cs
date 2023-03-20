@@ -15,6 +15,6 @@ public class GenericTransV : MonoBehaviour
     // Update is called once per frame
     public void ChangeScene()
     {
-        SceneManager.LoadScene(GenScene.name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
