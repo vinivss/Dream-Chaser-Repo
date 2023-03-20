@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638146047019764482
+  lastModified: 638148606039538096
   FileSizes:
   - Name: Desktop
-    Value: 1444
+    Value: 1494
   Exists: 1
 --- !u!114 &-5972516148558945771
 MonoBehaviour:
@@ -131,12 +131,13 @@ MonoBehaviour:
   - {fileID: 2454207690425112379}
   - {fileID: 8253379279612822854}
   - {fileID: -4565091505396251184}
+  - {fileID: 5682549895402705972}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2970579383246442668}
   StringsBanks:
   - {fileID: -8715087220653833742}
-  cacheTime: 638146047020416143
+  cacheTime: 638148606042505280
   cacheVersion: 131601
 --- !u!114 &109864156386168514
 MonoBehaviour:
@@ -182,7 +183,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638146047020404194
+  lastModified: 638148606041138935
   FileSizes:
   - Name: Desktop
     Value: 9672864
@@ -311,7 +312,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638146047019754487
+  lastModified: 638148606039508174
   FileSizes:
   - Name: Desktop
     Value: 9691616
@@ -331,11 +332,38 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638146047020416143
+  lastModified: 638148606042505280
   FileSizes:
   - Name: Desktop
-    Value: 26720
+    Value: 67680
   Exists: 1
+--- !u!114 &5682549895402705972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/OnDeath
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/OnDeath
+  Guid:
+    Data1: -45974116
+    Data2: 1319878154
+    Data3: 637883576
+    Data4: -1402116632
+  Banks:
+  - {fileID: 4113107717070607959}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4101
 --- !u!114 &5794149715169583020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,7 +407,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638146047019136120
+  lastModified: 638148606038206640
   FileSizes:
   - Name: Desktop
     Value: 84640
