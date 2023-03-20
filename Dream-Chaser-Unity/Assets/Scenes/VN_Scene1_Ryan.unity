@@ -526,6 +526,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: CafeBackground
       objectReference: {fileID: 0}
+    - target: {fileID: 8555359066976391763, guid: a374d3a8bb5c1ff45a6b73ab053c43f3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 4090.225
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555359066976391763, guid: a374d3a8bb5c1ff45a6b73ab053c43f3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1898.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555359066976391763, guid: a374d3a8bb5c1ff45a6b73ab053c43f3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.945
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555359066976391763, guid: a374d3a8bb5c1ff45a6b73ab053c43f3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0002861
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a374d3a8bb5c1ff45a6b73ab053c43f3, type: 3}
 --- !u!224 &877010369 stripped
@@ -853,7 +873,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

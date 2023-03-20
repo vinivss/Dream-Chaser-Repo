@@ -740,7 +740,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -950,6 +950,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BGOBJ
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555359066976391763, guid: a374d3a8bb5c1ff45a6b73ab053c43f3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 4110.933
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555359066976391763, guid: a374d3a8bb5c1ff45a6b73ab053c43f3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1898.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555359066976391763, guid: a374d3a8bb5c1ff45a6b73ab053c43f3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 8.833
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555359066976391763, guid: a374d3a8bb5c1ff45a6b73ab053c43f3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00016785
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a374d3a8bb5c1ff45a6b73ab053c43f3, type: 3}
