@@ -34,12 +34,19 @@ public class AudioManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(gameManager.cpCount >= 6){
+            Debug.Log("Restarted");
+            ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            InitializeMusic(FMODEvents.instance.vnOST);
+            gameManager.cpCount = 0;
+        }
         //Debug.Log(gameManager.cpCount);
     }
 
     private void Start(){
         InitializeAmbience(FMODEvents.instance.ambience);
-        InitializeMusic(FMODEvents.instance.music);
+        InitializeMusic(FMODEvents.instance.levelMusic);
         //InitializeSFX(FMODEvents.instance.reset);
         //resequenceMusic();
         DontDestroyOnLoad(this.gameObject);
@@ -71,4 +78,18 @@ public class AudioManager : MonoBehaviour
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
         return eventInstance;
     }
+
+    /*public void Stop(EventInstance Event,bool Fade)
+    {
+        if(Fade)
+        {
+            Event.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+        else
+        {
+            Event.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
+        }
+        
+    }*/
 }

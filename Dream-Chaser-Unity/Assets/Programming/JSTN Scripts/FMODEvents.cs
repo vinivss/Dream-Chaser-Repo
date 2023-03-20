@@ -9,10 +9,14 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference ambience {get; private set; }
     
     [field: Header("Music")]
-    [field: SerializeField] public EventReference music {get; private set; }
+    [field: SerializeField] public EventReference levelMusic {get; private set; }
 
     [field: Header("Reset SFX")]
     [field: SerializeField] public EventReference reset {get; private set; }
+
+    [field: Header("VN Theme")]
+    [field: SerializeField] public EventReference vnOST {get; private set; }
+    
 
 
 

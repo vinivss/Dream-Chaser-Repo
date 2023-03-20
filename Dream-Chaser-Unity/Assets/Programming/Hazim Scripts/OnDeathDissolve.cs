@@ -37,6 +37,7 @@ public class OnDeathDissolve : MonoBehaviour
 
     public void OnPlayerDeath()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.reset, this.transform.position);
         dissolveEnabled = true;
     }
 }

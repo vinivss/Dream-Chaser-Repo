@@ -13,7 +13,6 @@ public class PlayerRespawn : MonoBehaviour
 
         if(gameManager.sceneStarted)
         {
-            AudioManager.instance.PlayOneShot(FMODEvents.instance.reset, this.transform.position);
             transform.position = gameManager.lastCheckpointPosition;
         }
         else
