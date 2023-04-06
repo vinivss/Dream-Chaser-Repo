@@ -62,7 +62,7 @@ public class SubEventTimes : MonoBehaviour
             return sum;
         }
         if((int) paramNum == 7){
-            testInstance = RuntimeManager.CreateInstance("{94dccdeb-35c1-4992-a1a1-1448faa95312}}");
+            testInstance = RuntimeManager.CreateInstance("{94dccdeb-35c1-4992-a1a1-1448faa95312}");
             testInstance.getDescription(out eventDescription);
             eventDescription.getLength(out int lengthInMilliseconds);
             float sum = (float) lengthInMilliseconds / 1000.0f;
