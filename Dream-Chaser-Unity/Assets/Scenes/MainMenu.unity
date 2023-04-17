@@ -708,7 +708,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1264785333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6981dc40f608fe4ca48709bbfc742b0, type: 3}
+  m_Script: {fileID: 11500000, guid: d4805a3a73be6f34389b82b15e6b6003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1636563675
@@ -805,7 +805,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1708620546}
   - component: {fileID: 1708620547}
-  - component: {fileID: 1708620548}
   m_Layer: 0
   m_Name: Events
   m_TagString: Untagged
@@ -854,18 +853,6 @@ MonoBehaviour:
       Data3: 766976919
       Data4: -39068787
     Path: event:/Music/Main Menu
---- !u!114 &1708620548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708620545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4805a3a73be6f34389b82b15e6b6003, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2080810005
 GameObject:
   m_ObjectHideFlags: 0

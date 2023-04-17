@@ -43,7 +43,7 @@ public class MenuAudioManager : MonoBehaviour
     }
 
     private void Start(){
-        fadeOut = 12;
+        fadeOut = 8;
         parameterCount = 0;
         InitializeAmbience(MenuEvents.instance.ambience);
         InitializeMusic(MenuEvents.instance.menuMusic);
@@ -63,13 +63,13 @@ public class MenuAudioManager : MonoBehaviour
             int timelinePosition;
             musicEventInstances.getTimelinePosition(out timelinePosition);
             float currentTime = (float)timelinePosition / 1000.0f;
-            //Debug.Log("Current time in sub-event: " + currentTime);
+            Debug.Log("Current time in sub-event: " + currentTime + ", " + (currentTime/length*100) + "%, Current Param is " + (int) parameterCount);
             //Debug.Log(length);
             if(currentTime >= length - fadeOut){
                 musicEventInstances.setTimelinePosition(0);
-                newNum = Random.Range(0f,9f);
+                newNum = Random.Range(0,31);
                 if(parameterCount != newNum){
-                    newNum = Random.Range(0f,9f);
+                    newNum = Random.Range(0,31);
                 }                    
                 SetMusic(newNum);
                 length = subEventTimes.getSubTime(newNum);
