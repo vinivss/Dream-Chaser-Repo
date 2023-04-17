@@ -8,10 +8,6 @@ public class InteractionTrigger : MonoBehaviour
     [Tooltip("Event That will be activated ontrigger enter")]
     public UnityEvent TriggerEvent;
 
-    private void Start()
-    {
-        TriggerEvent = new UnityEvent();
-    }
 
     private void OnTriggerEnter(Collider other)
     {
