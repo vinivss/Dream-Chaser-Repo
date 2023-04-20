@@ -20,7 +20,7 @@ namespace Tools.Trees.Dialogue
         [HideInInspector] public State state = State.CUR;
         [Header("Text Attributes")]
         [TextArea] public string Speaker;
-        [TextArea]public string Dialogue;
+        [TextArea (0,3)]public string Dialogue;
         [Space]
         [Header("UI Editors")]
         [Tooltip("Image displayed as character is talking")]
