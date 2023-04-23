@@ -189,6 +189,7 @@ public class DialogueManager : MonoBehaviour
     //get the input
     private void CloseDialogue()
     {
+        Destroy(GameObject.FindGameObjectWithTag("DialogueBox"));
         EndEvent.Invoke();
     }
 }
