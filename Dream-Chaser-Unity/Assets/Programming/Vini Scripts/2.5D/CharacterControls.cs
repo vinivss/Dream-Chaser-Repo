@@ -20,6 +20,7 @@ public class CharacterControls : MonoBehaviour
     Vector3 moveDir;
     Rigidbody rb;
     ControlsManager  inputs;
+    public bool interact;
     Vector2 currentMove;
     private Vector3 slopeMoveDir;
     private RaycastHit slopeHit;
@@ -44,6 +45,7 @@ public class CharacterControls : MonoBehaviour
     private void FixedUpdate()
     {
         MoveCharacter();
+        interact = inputs.GetAcceptValue();
     }
 
 

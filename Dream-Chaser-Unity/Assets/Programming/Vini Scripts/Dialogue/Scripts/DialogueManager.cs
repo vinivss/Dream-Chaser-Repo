@@ -11,14 +11,15 @@ public class DialogueManager : MonoBehaviour
 {
     [Tooltip("This is the dialogue that will be referenced for dialogue")]
     public DialogueTree dialogue;
+    [Tooltip("Is this a 2.5D Scene?")]
+    public bool TwoDScene = false;
     DialogueNode currentNode;
     [Header("Dialogue Box Attributes")]
     [Tooltip("Name Of Speaker")]
     public TextMeshProUGUI nameText;
     [Tooltip("Dialogue Text")]
     public TextMeshProUGUI dialogueText;
-    int ChoiceIndex;
-    bool dialogueStarted = false;
+    [HideInInspector]public bool dialogueStarted = false;
     [Tooltip("Scene Background")]
     public GameObject Background;
     [Header("Prefabs")]
@@ -34,6 +35,7 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent EndEvent;
 
 
+   
     GameObject runtimeSceneLayout;
     Button NextButton;  
     GameObject runTimeWindow;
@@ -42,7 +44,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         controlVN = FindObjectOfType<ControlsManager>().GetComponent<ControlsManager>();
-        if (dialogue != null)
+        if (dialogue != null && !dialogueStarted)
         {
             currentNode = dialogue.RootNode;
             DisplayDialogue();
@@ -50,10 +52,15 @@ public class DialogueManager : MonoBehaviour
  
     }
 
-    private void DisplayDialogue()
+    public void DisplayDialogue()
     {
+
         if(dialogueStarted == false)
         {
+            if(currentNode == null)
+            {
+                currentNode = dialogue.RootNode;
+            }
             dialogueStarted = true;
             //create window for dialogue 
             runTimeWindow = Instantiate(DialogueBox,DialogueBoxTransform);
