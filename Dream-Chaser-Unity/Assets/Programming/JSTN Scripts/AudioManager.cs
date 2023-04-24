@@ -41,14 +41,15 @@ public class AudioManager : MonoBehaviour
             InitializeMusic(FMODEvents.instance.vnOST);
             gameManager.cpCount = 0;
         }
-        //Debug.Log(gameManager.cpCount);
+        resequenceMusic();
+        Debug.Log(gameManager.cpCount);
     }
 
     private void Start(){
         InitializeAmbience(FMODEvents.instance.ambience);
         InitializeMusic(FMODEvents.instance.levelMusic);
         //InitializeSFX(FMODEvents.instance.reset);
-        //resequenceMusic();
+        resequenceMusic();
         DontDestroyOnLoad(this.gameObject);
     }
 
@@ -63,7 +64,7 @@ public class AudioManager : MonoBehaviour
     }
 
     private void resequenceMusic(){
-        //musicEventInstances.setParameterByName("checkpoint", gameManager.cpCount);
+        musicEventInstances.setParameterByName("checkpoint", gameManager.cpCount);
     }
 
     public void SetAmbienceParameter(string parameterName, float parameterValue){
