@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8712435994109447212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 772bbda59fcafc348870498cc32ad05e
+  position: {x: 326, y: 121}
+  state: 0
+  Speaker: Johnathan McBusiness
+  Dialogue: ...
+  SceneLayout: {fileID: 0}
+  child: {fileID: 1865382668175234655}
+  DialogueActions: []
+--- !u!114 &-4015504851230829320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: b8fa16c00c69b5e47afd0792ba0839b1
+  position: {x: 315, y: -111}
+  state: 0
+  Speaker: Johnathan McBusiness
+  Dialogue: "I haven\u2019t had anything to eat today except an old pasta salad left
+    in the company fridge in the breakroom. "
+  SceneLayout: {fileID: 0}
+  child: {fileID: -359447206234052007}
+  DialogueActions: []
+--- !u!114 &-3228772798574822316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: a950bd55a4fc65a4a89a1d5288f5dd34
+  position: {x: 154, y: -96.79999}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Here\u2019s your coffee! Can I get you anything else?"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -4015504851230829320}
+  DialogueActions: []
+--- !u!114 &-2722128697123504775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 481beb939b0ad834b9651b5a217d93a7
+  position: {x: 160.48, y: 118}
+  state: 0
+  Speaker: Ash
+  Dialogue: Do you want a pastry?
+  SceneLayout: {fileID: 0}
+  child: {fileID: -8712435994109447212}
+  DialogueActions: []
+--- !u!114 &-2443560495432443004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 8154c49477c0d8f49a320722c8ae43a3
+  position: {x: 319, y: -0.47998047}
+  state: 0
+  Speaker: Johnathan McBusiness
+  Dialogue: "They were throwing it out and I hadn\u2019t had time to get a proper
+    lunch\u2026"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -2722128697123504775}
+  DialogueActions: []
+--- !u!114 &-359447206234052007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: dfbf19db3a5e5ee4fae71723acc9e9ac
+  position: {x: 155, y: 14}
+  state: 0
+  Speaker: Ash
+  Dialogue: Oh god...
+  SceneLayout: {fileID: 0}
+  child: {fileID: -2443560495432443004}
+  DialogueActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37aa8c975bd8e0f49848dc44b360140a, type: 3}
+  m_Name: JM_AFTERNOON
+  m_EditorClassIdentifier: 
+  RootNode: {fileID: 545225139374196125}
+  treeState: 0
+  nodes:
+  - {fileID: 545225139374196125}
+  - {fileID: -3228772798574822316}
+  - {fileID: -4015504851230829320}
+  - {fileID: -359447206234052007}
+  - {fileID: -2443560495432443004}
+  - {fileID: -2722128697123504775}
+  - {fileID: -8712435994109447212}
+  - {fileID: 1865382668175234655}
+--- !u!114 &545225139374196125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47f7753ababa6141bc7adf96c693c02, type: 3}
+  m_Name: DialogueRootNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: d2574409fd406a34da779a671abfb1bf
+  position: {x: -24, y: 41}
+  state: 1
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+  child: {fileID: -3228772798574822316}
+--- !u!114 &1865382668175234655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: ad92acf17efaa8b418ca3a589a08a65a
+  position: {x: 328, y: 236}
+  state: 0
+  Speaker: Johnathan McBusiness
+  Dialogue: Yes...
+  SceneLayout: {fileID: 0}
+  child: {fileID: 0}
+  DialogueActions: []
