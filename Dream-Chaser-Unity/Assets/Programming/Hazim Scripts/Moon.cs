@@ -10,10 +10,11 @@ public class Moon : MonoBehaviour
         // Set Moon shader to be in the position of the main direct light
         Shader.SetGlobalVector("_MoonDirection", transform.forward);
     }
-
+    /*
     // Update is called once per frame
     void Update()
     {
         
     }
+    */
 }
