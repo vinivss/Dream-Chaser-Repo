@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8991156663326241593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 6265fe5c719e083479de34edd9427303
+  position: {x: 144, y: 99}
+  state: 0
+  Speaker: Ash
+  Dialogue: Oh man!
+  SceneLayout: {fileID: 0}
+  child: {fileID: -90264284205840776}
+  DialogueActions: []
+--- !u!114 &-8657754960055098356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: d80fd7ce90d9e054fb401123cc0d2d17
+  position: {x: 145, y: 1}
+  state: 0
+  Speaker: Ash
+  Dialogue: "Here\u2019s your coffee! How are you?"
+  SceneLayout: {fileID: 0}
+  child: {fileID: 2688476715336149918}
+  DialogueActions: []
+--- !u!114 &-90264284205840776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 124a73917a796f640bf8a2f80917f72d
+  position: {x: 299, y: 100}
+  state: 0
+  Speaker: Spencer Fencer
+  Dialogue: "Yeah.. I had a dream that I was a swordfish? And that I was really stupid\u2026
+    It was weird..."
+  SceneLayout: {fileID: 0}
+  child: {fileID: 4184608219814348305}
+  DialogueActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37aa8c975bd8e0f49848dc44b360140a, type: 3}
+  m_Name: SF_MORNING
+  m_EditorClassIdentifier: 
+  RootNode: {fileID: 8787497777543331350}
+  treeState: 0
+  nodes:
+  - {fileID: 8787497777543331350}
+  - {fileID: 2688476715336149918}
+  - {fileID: -8657754960055098356}
+  - {fileID: -8991156663326241593}
+  - {fileID: -90264284205840776}
+  - {fileID: 4184608219814348305}
+--- !u!114 &2688476715336149918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 884eb7193fe15c0409c82b388eb2e69b
+  position: {x: 298, y: 3}
+  state: 0
+  Speaker: Spencer Fencer
+  Dialogue: "I\u2019m good, I pushed myself at the gym and fell asleep as soon as
+    I got home.\r"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -8991156663326241593}
+  DialogueActions: []
+--- !u!114 &4184608219814348305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 7ffe35574b7e5a646a35b870b4c10269
+  position: {x: 539, y: 108}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+--- !u!114 &8787497777543331350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47f7753ababa6141bc7adf96c693c02, type: 3}
+  m_Name: DialogueRootNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: d30bc4073f519ab4fad8990bf08d101e
+  position: {x: 0, y: 0}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+  child: {fileID: -8657754960055098356}
