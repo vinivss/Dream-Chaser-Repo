@@ -43,6 +43,25 @@ MonoBehaviour:
   SceneLayout: {fileID: 0}
   child: {fileID: -359447206234052007}
   DialogueActions: []
+--- !u!114 &-3818835042151179367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 246d984401ef09645857210070d01b1d
+  position: {x: 486, y: 264}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
 --- !u!114 &-3228772798574822316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +170,7 @@ MonoBehaviour:
   - {fileID: -2722128697123504775}
   - {fileID: -8712435994109447212}
   - {fileID: 1865382668175234655}
+  - {fileID: -3818835042151179367}
 --- !u!114 &545225139374196125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,5 +210,5 @@ MonoBehaviour:
   Speaker: Johnathan McBusiness
   Dialogue: Yes...
   SceneLayout: {fileID: 0}
-  child: {fileID: 0}
+  child: {fileID: -3818835042151179367}
   DialogueActions: []

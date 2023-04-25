@@ -41,8 +41,27 @@ MonoBehaviour:
   Dialogue: '*sigh* You''re no fun... But I guess it''s a bit rude of me to assume
     things of random people.'
   SceneLayout: {fileID: 0}
-  child: {fileID: 0}
+  child: {fileID: -2451364889189614730}
   DialogueActions: []
+--- !u!114 &-2451364889189614730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 3837b3ee5940a0d4caecbbfec5839f2d
+  position: {x: 557, y: 232}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
 --- !u!114 &-1506308650075827005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +105,7 @@ MonoBehaviour:
   - {fileID: -3784742098158382196}
   - {fileID: 5601997931208379366}
   - {fileID: -3718899952560025541}
+  - {fileID: -2451364889189614730}
 --- !u!114 &1704341718918488024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +167,7 @@ MonoBehaviour:
   Speaker: 
   Dialogue: 
   SceneLayout: {fileID: 0}
-  child: {fileID: 0}
+  child: {fileID: -1506308650075827005}
 --- !u!114 &7600109035199548048
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -62,7 +62,7 @@ MonoBehaviour:
   Dialogue: "Yeah.. I had a dream that I was a swordfish? And that I was really stupid\u2026
     It was weird..."
   SceneLayout: {fileID: 0}
-  child: {fileID: 0}
+  child: {fileID: 4184608219814348305}
   DialogueActions: []
 --- !u!114 &11400000
 MonoBehaviour:
@@ -84,6 +84,7 @@ MonoBehaviour:
   - {fileID: -8657754960055098356}
   - {fileID: -8991156663326241593}
   - {fileID: -90264284205840776}
+  - {fileID: 4184608219814348305}
 --- !u!114 &2688476715336149918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,6 +107,25 @@ MonoBehaviour:
   SceneLayout: {fileID: 0}
   child: {fileID: -8991156663326241593}
   DialogueActions: []
+--- !u!114 &4184608219814348305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 7ffe35574b7e5a646a35b870b4c10269
+  position: {x: 539, y: 108}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
 --- !u!114 &8787497777543331350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,4 +145,4 @@ MonoBehaviour:
   Speaker: 
   Dialogue: 
   SceneLayout: {fileID: 0}
-  child: {fileID: 0}
+  child: {fileID: -8657754960055098356}

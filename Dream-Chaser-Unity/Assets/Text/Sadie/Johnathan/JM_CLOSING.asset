@@ -63,7 +63,7 @@ MonoBehaviour:
   Dialogue: "Maybe next time I should get an herbal tea\u2026 six espresso shots
     might be too many."
   SceneLayout: {fileID: 0}
-  child: {fileID: 0}
+  child: {fileID: 1337728391135826086}
   DialogueActions: []
 --- !u!114 &-359447206234052007
 MonoBehaviour:
@@ -108,6 +108,7 @@ MonoBehaviour:
   - {fileID: -4015504851230829320}
   - {fileID: -359447206234052007}
   - {fileID: -2443560495432443004}
+  - {fileID: 1337728391135826086}
 --- !u!114 &545225139374196125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,3 +129,22 @@ MonoBehaviour:
   Dialogue: 
   SceneLayout: {fileID: 0}
   child: {fileID: -3228772798574822316}
+--- !u!114 &1337728391135826086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: b4011986d4c44d249b017e47974d48fb
+  position: {x: 582, y: 49}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}

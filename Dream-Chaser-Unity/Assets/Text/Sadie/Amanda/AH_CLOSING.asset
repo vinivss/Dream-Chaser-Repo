@@ -19,7 +19,7 @@ MonoBehaviour:
   Speaker: Ash
   Dialogue: Mhm yeah okay bye!
   SceneLayout: {fileID: 0}
-  child: {fileID: 0}
+  child: {fileID: 1799396784240216177}
   DialogueActions: []
 --- !u!114 &-3784742098158382196
 MonoBehaviour:
@@ -86,6 +86,7 @@ MonoBehaviour:
   - {fileID: 5601997931208379366}
   - {fileID: 5062185900081371771}
   - {fileID: -5478968372193961158}
+  - {fileID: 1799396784240216177}
 --- !u!114 &1704341718918488024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,6 +108,25 @@ MonoBehaviour:
   SceneLayout: {fileID: 0}
   child: {fileID: 5062185900081371771}
   DialogueActions: []
+--- !u!114 &1799396784240216177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: fe4ab8d24e02e8e47bcaa9074d0e3086
+  position: {x: 364, y: 338}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
 --- !u!114 &5062185900081371771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +188,7 @@ MonoBehaviour:
   Speaker: 
   Dialogue: 
   SceneLayout: {fileID: 0}
-  child: {fileID: 0}
+  child: {fileID: -1506308650075827005}
 --- !u!114 &7600109035199548048
 MonoBehaviour:
   m_ObjectHideFlags: 0
