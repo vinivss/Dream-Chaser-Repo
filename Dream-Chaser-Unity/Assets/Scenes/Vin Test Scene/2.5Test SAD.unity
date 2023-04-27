@@ -407,7 +407,7 @@ MonoBehaviour:
         m_MethodName: StartDialogue
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 694894db1df38b94bbead5cf07c8f977,
+          m_ObjectArgument: {fileID: 11400000, guid: 2566c48fb5dc15844a16b38d8a0a64b2,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: Tools.Trees.Dialogue.DialogueTree, Assembly-CSharp
           m_IntArgument: 0
@@ -423,7 +423,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623321256}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5, y: 4.3, z: 5}

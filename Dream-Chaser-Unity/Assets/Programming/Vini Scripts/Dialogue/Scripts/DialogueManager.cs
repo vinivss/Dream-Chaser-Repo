@@ -57,10 +57,9 @@ public class DialogueManager : MonoBehaviour
 
         if(dialogueStarted == false)
         {
-            if(currentNode == null)
-            {
-                currentNode = dialogue.RootNode;
-            }
+
+            currentNode = dialogue.RootNode;
+          
             dialogueStarted = true;
             //create window for dialogue 
             runTimeWindow = Instantiate(DialogueBox,DialogueBoxTransform);
@@ -189,7 +188,9 @@ public class DialogueManager : MonoBehaviour
     //get the input
     private void CloseDialogue()
     {
+      
         Destroy(GameObject.FindGameObjectWithTag("DialogueBox"));
+        dialogueStarted = false;
         EndEvent.Invoke();
     }
 }

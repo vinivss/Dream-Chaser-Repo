@@ -10,7 +10,7 @@ public class TwopointFiveDinteractionVin : MonoBehaviour
     [Tooltip("What witl this interaction do?")] public UnityEvent InteractionEvent;
     CharacterControls Player;
     bool isIn;
-    
+    bool interacted;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +29,7 @@ public class TwopointFiveDinteractionVin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            interacted = false;
             isIn = false;
             InteractBubble?.SetActive(false);
         }
@@ -37,8 +38,9 @@ public class TwopointFiveDinteractionVin : MonoBehaviour
     {
         if(isIn == true)
         {
-            if(Player.interact == true)
+            if(Player.interact == true && interacted == false)
             {
+                interacted=true;
                 InteractionEvent.Invoke();
             }
         }
