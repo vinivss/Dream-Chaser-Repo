@@ -65,7 +65,7 @@ Material:
     - _Cull: 0
     - _DissolveScale: 30
     - _DstBlend: 10
-    - _FireTransparency: 1
+    - _FireTransparency: 0.5
     - _Float: 0.22
     - _LimitToHair: -0.03
     - _QueueControl: 0
@@ -80,8 +80,8 @@ Material:
     - _BaseColor: {r: 0.97647053, g: 0.7176471, b: 0.7333333, a: 1}
     - _BottomColor: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 0.10704865, g: 0.6492766, b: 0.9150943, a: 0}
-    - _Color1: {r: 0.8584906, g: 0.07613026, b: 0.07613026, a: 0.078431375}
-    - _Color2: {r: 0.4388957, g: 0.07194728, b: 0.8113208, a: 0.078431375}
+    - _Color1: {r: 0.85882354, g: 0.07450981, b: 0.07450981, a: 1}
+    - _Color2: {r: 0.4388957, g: 0.07194728, b: 0.8113208, a: 1}
     - _DissolveSpeed: {r: -0.5, g: 0, b: 0, a: 0}
     - _FireSpeed: {r: -1, g: 0, b: 0, a: 0}
     - _TopColor: {r: 1, g: 1, b: 1, a: 0}
