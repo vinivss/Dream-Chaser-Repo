@@ -20,8 +20,8 @@ public class MenuAudioManager : MonoBehaviour
     private float fadeOut;
 
 
-    private EventInstance ambienceEventInstances;
-    private EventInstance musicEventInstances;
+    public EventInstance ambienceEventInstances;
+    public EventInstance musicEventInstances;
     float parameterCount;
     
     public static MenuAudioManager instance { get; private set;}
