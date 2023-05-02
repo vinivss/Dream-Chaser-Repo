@@ -2108,7 +2108,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.2430007, y: 0.07868438, z: -0.019780489, w: 0.96662724}
+  m_LocalRotation: {x: 0.24300215, y: 0.078613244, z: -0.019762605, w: 0.966633}
   m_LocalPosition: {x: 1.9, y: 260.3, z: -454.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9516,7 +9516,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.2430007, y: 0.07868438, z: -0.019780489, w: 0.96662724}
+  m_LocalRotation: {x: 0.24300215, y: 0.078613244, z: -0.019762605, w: 0.966633}
   m_LocalPosition: {x: 1.9, y: 260.3, z: -454.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27255,9 +27255,9 @@ MonoBehaviour:
   rb: {fileID: 0}
   minForwardSpeed: 25
   rotationThreshold: 180
-  maxSpeed: 90
+  maxSpeed: 50
   minJump: 20
-  maxJump: 200
+  maxJump: 100
   groundCheckPos: {fileID: 1294946545}
   groundDistance: 0.4
   groundMask:
@@ -27265,7 +27265,8 @@ MonoBehaviour:
     m_Bits: 64
   airDrag: 0.25
   normDrag: 0.5
-  turnSpeed: 0.15
+  turnSpeed: 0.05
+  height: 5
   parameterName:
     m_PersistentCalls:
       m_Calls: []
