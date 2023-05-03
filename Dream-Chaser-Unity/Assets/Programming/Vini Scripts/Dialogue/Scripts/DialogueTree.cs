@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+
 namespace Tools.Trees.Dialogue
 {
     [CreateAssetMenu (fileName = "Dialogue Tree", menuName = "Tools/Dialogue/New Dialogue Tree", order = 0)]
@@ -43,7 +44,39 @@ namespace Tools.Trees.Dialogue
             Undo.DestroyObjectImmediate(node);
             AssetDatabase.SaveAssets();
         }
+        public void AddAction(DialogueNode parent, DialogueNode child)
+        {
+            if (child is DialogueActionNode)
+            {
+                DialogueRootNode rootNode = parent as DialogueRootNode;
+                if (rootNode)
+                {
 
+                }
+                DialogueChoiceNode choiceNode = parent as DialogueChoiceNode;
+                if (choiceNode)
+                {
+                    Undo.RecordObject(choiceNode, "Dialogue add Child");
+                    choiceNode.children.Add(child);
+                    EditorUtility.SetDirty(choiceNode);
+                }
+                DialogueSpeechNode speechNode = parent as DialogueSpeechNode;
+                if (speechNode)
+                {
+                    Undo.RecordObject(speechNode, "Dialogue add Action");
+                    speechNode.DialogueActions.Add(child);
+                    EditorUtility.SetDirty(speechNode);
+                }
+
+                DialogueOptionNode optionNode = parent as DialogueOptionNode;
+                if (optionNode)
+                {
+                    Undo.RecordObject(optionNode, "Dialogue add Action");
+                    optionNode.DialogueActions.Add(child);
+                    EditorUtility.SetDirty(optionNode);
+                }
+            }
+        }
         public void AddChild(DialogueNode parent, DialogueNode child)
         {
             DialogueRootNode rootNode = parent as DialogueRootNode;
@@ -56,51 +89,24 @@ namespace Tools.Trees.Dialogue
             DialogueChoiceNode choiceNode = parent as DialogueChoiceNode;
             if(choiceNode)
             {
-                if (child is DialogueOptionNode)
-                {
-                    Undo.RecordObject(choiceNode, "Dialogue add Child");
-                    choiceNode.children.Add(child);
-                    EditorUtility.SetDirty(choiceNode);
-                }
-                else if(child is DialogueActionNode)
-                {
                     Undo.RecordObject(choiceNode, "Dialogue add Action");
                     choiceNode.DialogueActions.Add(child);
                     EditorUtility.SetDirty(choiceNode);
-                }
-
             }
             DialogueSpeechNode speechNode = parent as DialogueSpeechNode;
             if(speechNode)
             {
-                if (child is not DialogueActionNode)
-                {
                     Undo.RecordObject(speechNode, "Dialogue add Child");
                     speechNode.child = child;
                     EditorUtility.SetDirty(speechNode);
-                }
-                else
-                {
-                    Undo.RecordObject(speechNode, "Dialogue add Action");
-                    speechNode.DialogueActions.Add(child);
-                }
             }
 
             DialogueOptionNode optionNode = parent as DialogueOptionNode;
             if(optionNode)
             {
-                if (child is not DialogueActionNode)
-                {
                     Undo.RecordObject(optionNode, "Dialogue add Child");
                     optionNode.child = child;
                     EditorUtility.SetDirty(optionNode);
-                }
-                else
-                {
-                    Undo.RecordObject(optionNode, "Dialogue add Action");
-                    optionNode.DialogueActions.Add(child);
-                    EditorUtility.SetDirty(optionNode);
-                }
             }
         }
 
@@ -157,6 +163,28 @@ namespace Tools.Trees.Dialogue
             }
             return children;
         }
+
+        public List<DialogueNode> GetActions(DialogueNode parent)
+        {
+            List<DialogueNode> Actions = new List<DialogueNode>();
+
+            DialogueChoiceNode choiceNode = parent as DialogueChoiceNode;
+            if (choiceNode && choiceNode.children != null)
+            {
+                return choiceNode.DialogueActions;
+            }
+            DialogueSpeechNode speechNode = parent as DialogueSpeechNode;
+            if (speechNode && speechNode.child != null)
+            {
+                return speechNode.DialogueActions;
+            }
+            DialogueOptionNode optionNode = parent as DialogueOptionNode;
+            if (optionNode && optionNode.child != null)
+            {
+                return optionNode.DialogueActions;
+            }
+            return Actions;
+        }    
 
         public void Traverse(DialogueNode node, System.Action<DialogueNode> visitor)
         {

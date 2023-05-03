@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.Events;
+using UnityEditor.Experimental.GraphView;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -70,8 +71,38 @@ public class DialogueManager : MonoBehaviour
 
         NextButton.GetComponent<Button>().onClick.AddListener(ChangeNode);
 
+        PerformActions();
+
         currentNode.state = DialogueNode.State.FIN;
         ChangeNode();
+    }
+
+    private void PerformActions()
+    {
+        DialogueSpeechNode speechNode = currentNode as DialogueSpeechNode;
+        if(speechNode)
+        {
+            foreach (DialogueActionNode n in speechNode.DialogueActions)
+            {
+                n.Action();
+            }
+        }
+        DialogueChoiceNode choiceNode = currentNode as DialogueChoiceNode;
+        if (choiceNode)
+        {
+            foreach (DialogueActionNode n in choiceNode.DialogueActions)
+            {
+                n.Action();
+            }
+        }
+        DialogueOptionNode optionNode = currentNode as DialogueOptionNode;
+        if(optionNode)
+        {
+            foreach(DialogueActionNode n in optionNode.DialogueActions)
+            {
+                n.Action();
+            }
+        }
     }
 
     public void ChangeNode()
