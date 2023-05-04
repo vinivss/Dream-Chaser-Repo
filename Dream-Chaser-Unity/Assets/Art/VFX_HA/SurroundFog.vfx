@@ -17,9 +17,9 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: 726
+    x: 725
     y: -190
-    width: 641
+    width: 642
     height: 1941
 --- !u!114 &114350483966674976
 MonoBehaviour:
@@ -105,7 +105,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 300
+      m_SerializableObject: 1000
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -161,7 +161,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 12
+      m_SerializableObject: 20
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -175,7 +175,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 16
+      m_SerializableObject: 50
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -359,7 +359,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.AABox, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"center":{"x":-1.1458187103271485,"y":1.4014233350753785,"z":32.92411804199219},"size":{"x":98.50019836425781,"y":3.960069179534912,"z":101.8268051147461}}'
+      m_SerializableObject: '{"center":{"x":66.47500610351563,"y":1.4017210006713868,"z":248.27554321289063},"size":{"x":785.6672973632813,"y":3.960069179534912,"z":637.9622192382813}}'
     m_Space: 0
   m_Property:
     name: bounds
@@ -1440,7 +1440,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:
@@ -1494,7 +1494,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 300
+      m_SerializableObject: 1000
     m_Space: 2147483647
   m_Property:
     name: o
@@ -1982,7 +1982,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.AABox, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"center":{"x":-0.8500396013259888,"y":0.0,"z":28.22229766845703},"size":{"x":99.91615295410156,"y":1.0,"z":95.24955749511719}}'
+      m_SerializableObject: '{"center":{"x":23.98992919921875,"y":0.000048651792894816026,"z":246.00762939453126},"size":{"x":687.73095703125,"y":1.0,"z":628.9869384765625}}'
     m_Space: 0
   m_Property:
     name: Box
@@ -2277,7 +2277,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:
@@ -2331,7 +2331,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 12
+      m_SerializableObject: 20
     m_Space: 2147483647
   m_Property:
     name: o
@@ -2357,7 +2357,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:
@@ -2411,7 +2411,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 16
+      m_SerializableObject: 50
     m_Space: 2147483647
   m_Property:
     name: o
@@ -2476,7 +2476,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.TSphere, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"transform":{"position":{"x":-1.6172938346862794,"y":0.0,"z":2.442030906677246},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":5.948446273803711,"y":5.948446273803711,"z":5.948446273803711}},"radius":1.0}'
+      m_SerializableObject: '{"transform":{"position":{"x":20.62856674194336,"y":-0.000004714769602287561,"z":-67.17747497558594},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":5.948446273803711,"y":5.948446273803711,"z":5.948446273803711}},"radius":6.436487674713135}'
     m_Space: 0
   m_Property:
     name: sphere
@@ -3864,7 +3864,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661614679}
       inputSlot: {fileID: 8926484042661614689}
-    position: {x: 725.60004, y: 1680.8}
+    position: {x: 724.8, y: 1680.8}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661614679
