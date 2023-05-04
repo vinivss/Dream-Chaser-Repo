@@ -67,9 +67,9 @@ public class MenuAudioManager : MonoBehaviour
             //Debug.Log(length);
             if(currentTime >= length - fadeOut){
                 musicEventInstances.setTimelinePosition(0);
-                newNum = Random.Range(0,31);
+                newNum = Random.Range(0,22);
                 if(parameterCount != newNum){
-                    newNum = Random.Range(0,31);
+                    newNum = Random.Range(0,22);
                 }                    
                 SetMusic(newNum);
                 length = subEventTimes.getSubTime(newNum);

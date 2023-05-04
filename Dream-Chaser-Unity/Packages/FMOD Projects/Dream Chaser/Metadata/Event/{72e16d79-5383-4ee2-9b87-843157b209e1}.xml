@@ -54,7 +54,7 @@
 	<object class="MarkerTrack" id="{d53951d7-f7f0-4a31-be8f-6641ff772600}" />
 	<object class="GroupTrack" id="{190f3fb4-c24e-4c10-b229-3f7f32d848f9}">
 		<relationship name="modules">
-			<destination>{ee70ee4d-2a92-45fc-9806-9bedfba76c36}</destination>
+			<destination>{7ab4a80e-5c84-4e0b-8e87-1acd3b92c9d8}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{4b85f58d-64da-4dc3-a8a0-11535219317d}</destination>
@@ -62,7 +62,7 @@
 	</object>
 	<object class="Timeline" id="{9c3723f4-67ed-4c85-83b1-29ed32f8df6f}">
 		<relationship name="modules">
-			<destination>{ee70ee4d-2a92-45fc-9806-9bedfba76c36}</destination>
+			<destination>{7ab4a80e-5c84-4e0b-8e87-1acd3b92c9d8}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{d223e69e-c870-46cd-a3a3-a7ab93ac340f}">
@@ -82,18 +82,15 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7ad60ae2-c063-4fed-bac3-31367007461f}" />
-	<object class="SingleSound" id="{ee70ee4d-2a92-45fc-9806-9bedfba76c36}">
+	<object class="SingleSound" id="{7ab4a80e-5c84-4e0b-8e87-1acd3b92c9d8}">
 		<property name="start">
 			<value>6</value>
 		</property>
 		<property name="length">
 			<value>244.56</value>
 		</property>
-		<relationship name="modulators">
-			<destination>{97933a7f-eda3-4010-8d40-1e9bee28509e}</destination>
-		</relationship>
 		<relationship name="audioFile">
-			<destination>{1e457714-9ea7-432b-9fce-d9fcff534dae}</destination>
+			<destination>{6f495a9d-b6cd-4c68-90b3-6ae1b634e5ab}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{4b85f58d-64da-4dc3-a8a0-11535219317d}">
@@ -117,17 +114,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{0438b66f-8109-4277-888e-3c892f9808bb}" />
 	<object class="MixerBusFader" id="{fc5a5a03-1499-4950-9017-7d0809df9afd}" />
-	<object class="ADSRModulator" id="{97933a7f-eda3-4010-8d40-1e9bee28509e}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>volume</value>
-		</property>
-		<property name="initialValue">
-			<value>-80</value>
-		</property>
-		<property name="finalValue">
-			<value>-80</value>
-		</property>
-	</object>
 	<object class="MixerBusEffectChain" id="{2a9b11bc-d965-457d-a291-511e0d23ec27}">
 		<relationship name="effects">
 			<destination>{204527db-4b0b-45c8-bf62-43961512cb48}</destination>
