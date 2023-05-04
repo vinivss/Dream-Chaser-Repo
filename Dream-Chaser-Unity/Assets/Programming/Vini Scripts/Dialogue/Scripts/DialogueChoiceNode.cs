@@ -32,6 +32,7 @@ namespace Tools.Trees.Dialogue
         {
             DialogueChoiceNode node = Instantiate(this);
             node.children = children.ConvertAll(c => c.Clone());
+            node.DialogueActions = DialogueActions.ConvertAll(c => c.Clone());
             return node;
         }
     }

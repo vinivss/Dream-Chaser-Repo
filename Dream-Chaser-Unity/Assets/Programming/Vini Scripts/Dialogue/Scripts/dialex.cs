@@ -13,6 +13,10 @@ public class dialex : DialogueActionNode
     {
         throw new System.NotImplementedException();
     }
+    public override void Action()
+    {
+        Debug.Log("Penis");
+    }
 
 
 }

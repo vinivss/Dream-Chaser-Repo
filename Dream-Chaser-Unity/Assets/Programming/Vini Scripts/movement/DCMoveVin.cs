@@ -47,6 +47,11 @@ public class DCMoveVin : MonoBehaviour
     [SerializeField] float normDrag;
     [Tooltip("DC Model")]
     [SerializeField] float turnSpeed;
+    [Tooltip("Player Height")]
+    [SerializeField] float height;
+
+
+
     //audio inspector vars
     [Header("Audio Attributes")]
     [Tooltip("The name of the FMOD Parameter function")]
@@ -75,6 +80,7 @@ public class DCMoveVin : MonoBehaviour
             }
             else
             {
+                Debug.Log("on ground");
                 rb.drag = normDrag;
             }
         }
@@ -94,7 +100,8 @@ public class DCMoveVin : MonoBehaviour
         }
         moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.5f, 1.0f));
         rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);
-        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed* 100);
+        FixBouncing();
+        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         //Cam.m_Lens.FieldOfView = Mathf.Clamp(rb.velocity.z, startFOV, 95.0f);
         JumpPerformed();
     }
@@ -138,5 +145,27 @@ public class DCMoveVin : MonoBehaviour
         rb.isKinematic = true;
         inManager.OnDisable();
         DissolveScript.OnPlayerDeath();
+    }
+
+    private void FixBouncing()
+    {
+
+        if (!jumping && !isGrounded)
+        {
+            Debug.Log("bouncing");
+
+            var ray = new Ray(transform.position, Vector3.down);
+
+            Physics.Raycast(ray, out RaycastHit hitInfo, 0.5f);
+
+            var slopeRotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
+
+            var adjustedVelocity = slopeRotation * rb.velocity;
+
+            rb.velocity = adjustedVelocity;
+            
+
+        }
+
     }
 }

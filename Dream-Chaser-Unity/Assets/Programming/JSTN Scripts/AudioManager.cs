@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour
             gameManager.cpCount = 0;
         }
         resequenceMusic();
-        Debug.Log(gameManager.cpCount);
+        //Debug.Log(gameManager.cpCount);
     }
 
     private void Start(){
