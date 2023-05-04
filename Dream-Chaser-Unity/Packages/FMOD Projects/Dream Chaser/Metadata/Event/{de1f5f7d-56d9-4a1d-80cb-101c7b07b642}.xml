@@ -57,8 +57,7 @@
 	<object class="MarkerTrack" id="{056210c6-1c79-481b-9047-02753e9248e6}" />
 	<object class="GroupTrack" id="{9b639dd5-2d47-43e5-b83f-2267b83daec6}">
 		<relationship name="modules">
-			<destination>{38ea49a1-b4ed-42e5-bc9a-5734843f1ee9}</destination>
-			<destination>{4507e767-930f-4f3c-9c8d-ba26fcb3ff3d}</destination>
+			<destination>{f576c82e-2c06-4ace-b48e-5eb8a68cda7b}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{19486ba3-61ab-4471-bf05-23f08926a6b8}</destination>
@@ -66,8 +65,7 @@
 	</object>
 	<object class="Timeline" id="{9a0839f1-4666-4257-8d29-bbc584ebb24a}">
 		<relationship name="modules">
-			<destination>{38ea49a1-b4ed-42e5-bc9a-5734843f1ee9}</destination>
-			<destination>{4507e767-930f-4f3c-9c8d-ba26fcb3ff3d}</destination>
+			<destination>{f576c82e-2c06-4ace-b48e-5eb8a68cda7b}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{786c981f-e707-4a9b-b811-36a857780911}">
@@ -95,26 +93,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{77af57eb-31a1-44d0-80b0-37a115102c69}" />
-	<object class="SingleSound" id="{38ea49a1-b4ed-42e5-bc9a-5734843f1ee9}">
+	<object class="SingleSound" id="{f576c82e-2c06-4ace-b48e-5eb8a68cda7b}">
 		<property name="length">
-			<value>56</value>
+			<value>164.11199999999999</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{30206df9-9b8b-4a34-8cce-572fd979c633}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{4507e767-930f-4f3c-9c8d-ba26fcb3ff3d}">
-		<property name="start">
-			<value>56</value>
-		</property>
-		<property name="length">
-			<value>102</value>
-		</property>
-		<property name="timelockedOffset">
-			<value>56</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{30206df9-9b8b-4a34-8cce-572fd979c633}</destination>
+			<destination>{1beed8e5-5a69-4027-b0c1-b6dfe8a6c0df}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{19486ba3-61ab-4471-bf05-23f08926a6b8}">

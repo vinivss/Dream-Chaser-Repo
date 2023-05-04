@@ -54,7 +54,7 @@
 	<object class="MarkerTrack" id="{a8ccef2e-5da5-469c-86c9-3888b676fdc2}" />
 	<object class="GroupTrack" id="{84066b6b-871d-4b1e-8c6d-bbdf19f01c90}">
 		<relationship name="modules">
-			<destination>{dcd6defb-bea8-4abe-83cf-f6caeecbdde4}</destination>
+			<destination>{9a7a4256-cf61-47a6-b8f6-5135837d0e51}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{02f222ac-8427-4b20-8d8b-c57bcc420ea7}</destination>
@@ -62,7 +62,7 @@
 	</object>
 	<object class="Timeline" id="{73593fdc-b223-43b6-bb19-490a76e30f45}">
 		<relationship name="modules">
-			<destination>{dcd6defb-bea8-4abe-83cf-f6caeecbdde4}</destination>
+			<destination>{9a7a4256-cf61-47a6-b8f6-5135837d0e51}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{14a5937c-e209-48b6-9ba7-394f093119bc}">
@@ -82,18 +82,15 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5d1924d5-79d3-434e-8c80-90edbf79616c}" />
-	<object class="SingleSound" id="{dcd6defb-bea8-4abe-83cf-f6caeecbdde4}">
+	<object class="SingleSound" id="{9a7a4256-cf61-47a6-b8f6-5135837d0e51}">
 		<property name="start">
 			<value>7</value>
 		</property>
 		<property name="length">
 			<value>250.584</value>
 		</property>
-		<relationship name="modulators">
-			<destination>{9f915718-ccc8-4399-8e8c-b8a684fe8e7e}</destination>
-		</relationship>
 		<relationship name="audioFile">
-			<destination>{bf1a3fee-0e45-41d9-be11-ac3d698748ed}</destination>
+			<destination>{ea12cfb7-6d28-4411-856b-d7b55f6b54dc}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{02f222ac-8427-4b20-8d8b-c57bcc420ea7}">
@@ -120,17 +117,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{93121bee-468c-40e9-8e64-39e5af368ef2}" />
 	<object class="MixerBusFader" id="{f2e36afb-2562-4424-9d48-cc80c44a0a29}" />
-	<object class="ADSRModulator" id="{9f915718-ccc8-4399-8e8c-b8a684fe8e7e}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>volume</value>
-		</property>
-		<property name="initialValue">
-			<value>-80</value>
-		</property>
-		<property name="finalValue">
-			<value>-80</value>
-		</property>
-	</object>
 	<object class="ADSRModulator" id="{bcd19db5-92d3-48ea-94b3-49e3f5e97eed}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
