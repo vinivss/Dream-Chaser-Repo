@@ -23,14 +23,19 @@ Material:
   m_Name: FireTrail
   m_Shader: {fileID: -6465566751694194690, guid: c294c11e51211c74587accaf0572ed99,
     type: 3}
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _ALPHATEST_ON
+  - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - DepthOnly
+  - SHADOWCASTER
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -52,20 +57,30 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaClip: 1
+    - _Blend: 0
     - _BottomGraident: 0.35
+    - _CastShadows: 0
     - _ColorBlend: 0
+    - _Cull: 0
     - _DissolveScale: 30
+    - _DstBlend: 10
     - _FireTransparency: 0.5
     - _Float: 0.22
     - _LimitToHair: -0.03
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _SrcBlend: 5
+    - _Surface: 1
     - _TopGraident: 0.65
+    - _ZTest: 4
+    - _ZWrite: 0
+    - _ZWriteControl: 0
     m_Colors:
     - _BaseColor: {r: 0.97647053, g: 0.7176471, b: 0.7333333, a: 1}
     - _BottomColor: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 0.10704865, g: 0.6492766, b: 0.9150943, a: 0}
-    - _Color1: {r: 0.8584906, g: 0.07613026, b: 0.07613026, a: 1}
+    - _Color1: {r: 0.85882354, g: 0.07450981, b: 0.07450981, a: 1}
     - _Color2: {r: 0.4388957, g: 0.07194728, b: 0.8113208, a: 1}
     - _DissolveSpeed: {r: -0.5, g: 0, b: 0, a: 0}
     - _FireSpeed: {r: -1, g: 0, b: 0, a: 0}
