@@ -45,12 +45,12 @@ public class AudioManager : MonoBehaviour
         resequenceMusic();
 
         //Pause Fade out
-        if(Input.GetKeyDown(KeyCode.Escape) && pause.pauseFlag) {
-            // Code to execute when Escape key is pressed
-            Debug.Log("Initiate Pause");
-        } else if(Input.GetKeyDown(KeyCode.Escape) && !pause.pauseFlag) {
-            Debug.Log("Exit Pause");
-        }
+        // if(Input.GetKeyDown(KeyCode.Escape) && pause.pauseFlag) {
+        //     // Code to execute when Escape key is pressed
+        //     Debug.Log("Initiate Pause");
+        // } else if(Input.GetKeyDown(KeyCode.Escape) && !pause.pauseFlag) {
+        //     Debug.Log("Exit Pause");
+        // }
 
     }
 
