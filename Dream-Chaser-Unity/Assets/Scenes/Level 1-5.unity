@@ -2108,7 +2108,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.24298665, y: 0.07936803, z: -0.019952353, w: 0.96657133}
+  m_LocalRotation: {x: 0.24298102, y: 0.0796398, z: -0.020020673, w: 0.966549}
   m_LocalPosition: {x: 1.9, y: 260.3, z: -454.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4446,6 +4446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47420ce6f42227044958d18313ef98b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   refreshRate: 0
   playerTransform: {fileID: 5056017516929436352}
   vfx: {fileID: 905892916}
@@ -8022,6 +8023,7 @@ GameObject:
   - component: {fileID: 905892917}
   - component: {fileID: 905892916}
   - component: {fileID: 905892915}
+  - component: {fileID: 905892918}
   m_Layer: 0
   m_Name: SurroundFog
   m_TagString: Untagged
@@ -8121,6 +8123,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &905892918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905892914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54d5d149bf9304eb0f9e5d9c90095e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1950309741}
 --- !u!114 &909665817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9673,7 +9688,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.24298665, y: 0.07936803, z: -0.019952353, w: 0.96657133}
+  m_LocalRotation: {x: 0.24298102, y: 0.0796398, z: -0.020020673, w: 0.966549}
   m_LocalPosition: {x: 1.9, y: 260.3, z: -454.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
