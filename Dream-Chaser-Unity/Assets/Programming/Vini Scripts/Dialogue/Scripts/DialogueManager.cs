@@ -1,12 +1,11 @@
 using UnityEngine;
 using Tools.Trees.Dialogue;
 using System.Collections.Generic;
-using System;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.Events;
-using UnityEditor.Experimental.GraphView;
+
 
 public class DialogueManager : MonoBehaviour
 {
@@ -71,7 +70,6 @@ public class DialogueManager : MonoBehaviour
 
         NextButton.GetComponent<Button>().onClick.AddListener(ChangeNode);
 
-        PerformActions();
 
         currentNode.state = DialogueNode.State.FIN;
         ChangeNode();
@@ -84,7 +82,10 @@ public class DialogueManager : MonoBehaviour
         {
             foreach (DialogueActionNode n in speechNode.DialogueActions)
             {
-                n.Action();
+                while (!n.finished)
+                {
+                    n.OnStart();
+                }
             }
         }
         DialogueChoiceNode choiceNode = currentNode as DialogueChoiceNode;
@@ -92,7 +93,10 @@ public class DialogueManager : MonoBehaviour
         {
             foreach (DialogueActionNode n in choiceNode.DialogueActions)
             {
-                n.Action();
+                while (!n.finished)
+                {
+                    n.OnStart();
+                }
             }
         }
         DialogueOptionNode optionNode = currentNode as DialogueOptionNode;
@@ -100,7 +104,10 @@ public class DialogueManager : MonoBehaviour
         {
             foreach(DialogueActionNode n in optionNode.DialogueActions)
             {
-                n.Action();
+                while (!n.finished)
+                {
+                    n.OnStart();
+                }
             }
         }
     }
@@ -134,6 +141,7 @@ public class DialogueManager : MonoBehaviour
                 if (currentNode.SceneLayout != null)
                    runtimeSceneLayout = Instantiate(currentNode.SceneLayout, Background.transform);
             }
+            PerformActions();
         }
     }
     void Skip()

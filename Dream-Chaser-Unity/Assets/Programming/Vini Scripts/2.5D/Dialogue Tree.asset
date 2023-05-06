@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42361e44371d2b445a0298f6ee70466a, type: 3}
   m_Name: dialex
   m_EditorClassIdentifier: 
-  started: 0
+  started: 1
   GUID: 5acd8d01dc78c2f42af29b080fed8f29
-  position: {x: 83, y: 161}
-  state: 0
+  position: {x: 83, y: 167}
+  state: 1
   Speaker: 
   Dialogue: 
   SceneLayout: {fileID: 0}
+  finished: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,6 +38,7 @@ MonoBehaviour:
   - {fileID: 8755326392620362422}
   - {fileID: 495814174138848124}
   - {fileID: -5002401449315185901}
+  - {fileID: 1134120546014258620}
 --- !u!114 &495814174138848124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,14 +54,33 @@ MonoBehaviour:
   started: 0
   GUID: 4dca26a6729de0746a42c767615b413b
   position: {x: 259, y: -127}
-  state: 0
+  state: 1
   Speaker: 
-  Dialogue: 
+  Dialogue: TESTING 1, 2
   SceneLayout: {fileID: 0}
-  child: {fileID: -5002401449315185901}
+  child: {fileID: 1134120546014258620}
   DialogueActions:
   - {fileID: -5002401449315185901}
   - {fileID: -5002401449315185901}
+--- !u!114 &1134120546014258620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: a0a660cc496ad8946b62e97cfbe2dc54
+  position: {x: 674.1431, y: -57.9999}
+  state: 1
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
 --- !u!114 &8755326392620362422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,7 +96,7 @@ MonoBehaviour:
   started: 0
   GUID: 849ceb0942d5fed44afa7180c7d9eb3e
   position: {x: 0, y: 0}
-  state: 0
+  state: 1
   Speaker: 
   Dialogue: 
   SceneLayout: {fileID: 0}
