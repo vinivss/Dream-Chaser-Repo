@@ -7,7 +7,7 @@ public class ScreenShakeVN : DialogueActionNode
 {
     public override void Action()
     {
-        CinemachineVirtualCamera
+        CinemachineVirtualCamera cinema;
         EndNode();
     }
 
