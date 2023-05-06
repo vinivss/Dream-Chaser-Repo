@@ -152,7 +152,7 @@ public class DCMoveVin : MonoBehaviour
 
         if (!jumping && !isGrounded)
         {
-            Debug.Log("bouncing");
+            //Debug.Log("bouncing");
 
             var ray = new Ray(transform.position, Vector3.down);
 

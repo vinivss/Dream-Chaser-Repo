@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
 {
 //    static AudioManager AMInstance;
     GameManager gameManager;
+    pause_scene pause;
     private List<EventInstance> eventInstances;
     private List<StudioEventEmitter> eventEmitters;
     private EventInstance ambienceEventInstances;
@@ -34,15 +35,23 @@ public class AudioManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //Level Complete
         if(gameManager.cpCount >= 6){
-            Debug.Log("Restarted");
             ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             InitializeMusic(FMODEvents.instance.vnOST);
             gameManager.cpCount = 0;
         }
         resequenceMusic();
-        //Debug.Log(gameManager.cpCount);
+
+        //Pause Fade out
+        // if(Input.GetKeyDown(KeyCode.Escape) && pause.pauseFlag) {
+        //     // Code to execute when Escape key is pressed
+        //     Debug.Log("Initiate Pause");
+        // } else if(Input.GetKeyDown(KeyCode.Escape) && !pause.pauseFlag) {
+        //     Debug.Log("Exit Pause");
+        // }
+
     }
 
     private void Start(){
