@@ -20,7 +20,10 @@ public class Clickndrag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     }
     public void OnPointerDown(PointerEventData eventData)
     {
-        spriteRenderer.sprite = sprites[1];
+        if (sprites.Length > 0)
+        {
+            spriteRenderer.sprite = sprites[1];
+        }
         Debug.Log("pointer Click");
     }
 
@@ -39,7 +42,10 @@ public class Clickndrag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     }
     public void OnEndDrag(PointerEventData eventData)
     {
-        spriteRenderer.sprite = sprites[1];
+        if (sprites.Length > 0)
+        {
+            spriteRenderer.sprite = sprites[1];
+        }
         Debug.Log("Dragoff");
         canvasGroup.blocksRaycasts = true;
     }
