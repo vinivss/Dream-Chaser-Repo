@@ -30,6 +30,9 @@ namespace Coffee
         public RecipeIngredients[] RecipeIngreds;
         [Header("CookingMethod")]
         public CookingMethod cookingMethod;
+        [Header("Sprite")]
+        public Sprite Sprite;
+
 
 
     }

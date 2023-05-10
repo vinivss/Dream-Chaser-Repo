@@ -15,6 +15,11 @@ public class CoffeeMaker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.CompareTag("Cup"))
+        {
+            manager.currentRecipe.cookingMethod = cookingMethod;
+            return;
+        }
         Ingredients ingredients = collision.GetComponent<IngredientManager>().ingredient;
         if(ingredients)
         {

@@ -7,8 +7,8 @@ using UnityEngine;
 public class CoffeeManager : MonoBehaviour
 {
     public RecipeBook recipeBook;
-    Recipe currentRecipe;
-    [HideInInspector]public Recipe CookedRecipe;
+    public Recipe currentRecipe;
+    public Recipe CookedRecipe;
 
     public void OnCook()
     {
