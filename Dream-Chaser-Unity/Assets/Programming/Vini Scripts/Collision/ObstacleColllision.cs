@@ -14,10 +14,11 @@ public class ObstacleColllision : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.ambience, this.transform.position);
-        FindObjectOfType<DCMoveVin>().PlayerDeath();
-        StartCoroutine(ResetScene());
-       
+        if (this.tag != "Collectible") {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.ambience, this.transform.position);
+            FindObjectOfType<DCMoveVin>().PlayerDeath();
+            StartCoroutine(ResetScene());
+        }
     }
 
     IEnumerator ResetScene()
