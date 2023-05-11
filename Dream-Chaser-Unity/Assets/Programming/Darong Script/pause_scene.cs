@@ -44,15 +44,13 @@ public class pause_scene : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         pauseFlag = true;
-        audio.musicEventInstances.setParameterByName("pause", 1);
     }
 
     public void resume()
     {
-        audio.Resume();
+        StartCoroutine(audio.Resume());        
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         pauseFlag = false;
-        audio.musicEventInstances.setParameterByName("pause", 0);
     }
 }

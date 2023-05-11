@@ -80,7 +80,7 @@ public class DCMoveVin : MonoBehaviour
             }
             else
             {
-                Debug.Log("on ground");
+                //Debug.Log("on ground");
                 rb.drag = normDrag;
             }
         }

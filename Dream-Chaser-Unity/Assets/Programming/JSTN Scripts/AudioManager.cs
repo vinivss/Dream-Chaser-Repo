@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
 //    static AudioManager AMInstance;
     GameManager gameManager;
     pause_scene pause;
+    DCMoveVin controls;
     private List<EventInstance> eventInstances;
     private List<StudioEventEmitter> eventEmitters;
     private EventInstance ambienceEventInstances;
@@ -26,6 +27,7 @@ public class AudioManager : MonoBehaviour
             DontDestroyOnLoad(instance);
             gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
             pause = FindObjectOfType<pause_scene>().GetComponent<pause_scene>();
+            controls = FindObjectOfType<DCMoveVin>().GetComponent<DCMoveVin>();
             if (instance != null){
                 //Debug.LogError("Found more than one Audio Manager in scene");
             }
@@ -46,6 +48,9 @@ public class AudioManager : MonoBehaviour
             gameManager.cpCount = 0;
         }
         resequenceMusic();
+        if(Input.GetKeyDown(KeyCode.Space) /*&& controls.isGrounded*/){
+            RuntimeManager.PlayOneShot("event:/SFX/Jump", this.transform.position);
+        }
     }
 
     private void Start(){
@@ -88,31 +93,30 @@ public class AudioManager : MonoBehaviour
         resumeEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);        
         pauseEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         pauseEventInstances.start();
+        musicEventInstances.setParameterByName("pause", 1);
     }
     
-    public void Resume()
+    public IEnumerator Resume()
     {
         pauseEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         resumeEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         resumeEventInstances.start();
+        yield return new WaitForSeconds(1.0f); // Everything after this line executes after delayTime
+        musicEventInstances.setParameterByName("pause", 0);
+    }
+
+    public float Timer(float start, float delay){ //returns the percentage of timer complete
+        float endTime = start + delay;
+        if(delay > start){
+            return Time.time/endTime;
+        }else{
+            return 0f;
+        }
+
     }
 
     public EventInstance CreateInstance(EventReference eventReference){
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
         return eventInstance;
     }
-
-    /*public void Stop(EventInstance Event,bool Fade)
-    {
-        if(Fade)
-        {
-            Event.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        }
-        else
-        {
-            Event.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-
-        }
-        
-    }*/
 }
