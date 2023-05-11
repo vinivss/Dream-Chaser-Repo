@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2531711821125273948}
   - component: {fileID: 2531711821125273949}
   - component: {fileID: 2531711821125273938}
+  - component: {fileID: 4454436308656446916}
   m_Layer: 0
   m_Name: SurroundFog
   m_TagString: Untagged
@@ -50,13 +51,13 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 15000
+      - m_Value: 10000
         m_Name: FogAmount
         m_Overridden: 1
       - m_Value: 40
         m_Name: FogSizeMin
         m_Overridden: 1
-      - m_Value: 60
+      - m_Value: 50
         m_Name: FogSizeMax
         m_Overridden: 1
     m_Vector2f:
@@ -90,8 +91,8 @@ VisualEffect:
       - m_Value:
           serializedVersion: 2
           key0: {r: 1, g: 1, b: 1, a: 0}
-          key1: {r: 0.5, g: 0.5, b: 0.5, a: 0.11764706}
-          key2: {r: 0, g: 0, b: 0, a: 0.11764706}
+          key1: {r: 0.5, g: 0.5, b: 0.5, a: 0.078431375}
+          key2: {r: 0, g: 0, b: 0, a: 0.078431375}
           key3: {r: 0, g: 0, b: 0, a: 0}
           key4: {r: 0, g: 0, b: 0, a: 0}
           key5: {r: 0, g: 0, b: 0, a: 0}
@@ -162,3 +163,16 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4454436308656446916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531711821125273939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54d5d149bf9304eb0f9e5d9c90095e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
