@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17861907, g: 0.17258662, b: 0.4060503, a: 1}
+  m_IndirectSpecularColor: {r: 0.99999905, g: 0, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2108,7 +2108,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.24300215, y: 0.078613244, z: -0.019762605, w: 0.966633}
+  m_LocalRotation: {x: 0.24298102, y: 0.0796398, z: -0.020020673, w: 0.966549}
   m_LocalPosition: {x: 1.9, y: 260.3, z: -454.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7042,6 +7042,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
         type: 3}
+      propertyPath: <pause>k__BackingField.Path
+      value: event:/SFX/OnPause
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
+        type: 3}
       propertyPath: <reset>k__BackingField.Path
       value: event:/SFX/OnDeath
       objectReference: {fileID: 0}
@@ -7052,8 +7057,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
         type: 3}
+      propertyPath: <resume>k__BackingField.Path
+      value: event:/SFX/OnResume
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
+        type: 3}
       propertyPath: <levelMusic>k__BackingField.Path
       value: event:/Music/PrebossLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
+        type: 3}
+      propertyPath: <pause>k__BackingField.Guid.Data1
+      value: 1023206685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
+        type: 3}
+      propertyPath: <pause>k__BackingField.Guid.Data2
+      value: 1334976358
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
+        type: 3}
+      propertyPath: <pause>k__BackingField.Guid.Data3
+      value: 49336212
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
+        type: 3}
+      propertyPath: <pause>k__BackingField.Guid.Data4
+      value: 456605170
       objectReference: {fileID: 0}
     - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
         type: 3}
@@ -7094,6 +7124,26 @@ PrefabInstance:
         type: 3}
       propertyPath: <vnOST>k__BackingField.Guid.Data4
       value: -791276211
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
+        type: 3}
+      propertyPath: <resume>k__BackingField.Guid.Data1
+      value: -2077909081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
+        type: 3}
+      propertyPath: <resume>k__BackingField.Guid.Data2
+      value: 1272813767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
+        type: 3}
+      propertyPath: <resume>k__BackingField.Guid.Data3
+      value: -1551397224
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
+        type: 3}
+      propertyPath: <resume>k__BackingField.Guid.Data4
+      value: 1075404695
       objectReference: {fileID: 0}
     - target: {fileID: 6345402915761325763, guid: 926d1024951264c46bef169f124c765b,
         type: 3}
@@ -9649,7 +9699,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.24300215, y: 0.078613244, z: -0.019762605, w: 0.966633}
+  m_LocalRotation: {x: 0.24298102, y: 0.0796398, z: -0.020020673, w: 0.966549}
   m_LocalPosition: {x: 1.9, y: 260.3, z: -454.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27724,6 +27774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8500654a95897b941a147c10b0052625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: {fileID: 0}
   pauseMenu: {fileID: 1668462159}
   pauseFlag: 0
 --- !u!4 &7959434559391486302 stripped
