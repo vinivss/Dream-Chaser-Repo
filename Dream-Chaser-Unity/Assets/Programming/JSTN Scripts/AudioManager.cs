@@ -12,8 +12,10 @@ public class AudioManager : MonoBehaviour
     private List<EventInstance> eventInstances;
     private List<StudioEventEmitter> eventEmitters;
     private EventInstance ambienceEventInstances;
-    private EventInstance musicEventInstances;
-    private EventInstance sfxEventInstances;
+    public EventInstance musicEventInstances;
+    
+    private EventInstance pauseEventInstances;
+    private EventInstance resumeEventInstances;
     
     public static AudioManager instance { get; private set;}
 
@@ -23,6 +25,7 @@ public class AudioManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(instance);
             gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
+            pause = FindObjectOfType<pause_scene>().GetComponent<pause_scene>();
             if (instance != null){
                 //Debug.LogError("Found more than one Audio Manager in scene");
             }
@@ -43,21 +46,12 @@ public class AudioManager : MonoBehaviour
             gameManager.cpCount = 0;
         }
         resequenceMusic();
-
-        //Pause Fade out
-        // if(Input.GetKeyDown(KeyCode.Escape) && pause.pauseFlag) {
-        //     // Code to execute when Escape key is pressed
-        //     Debug.Log("Initiate Pause");
-        // } else if(Input.GetKeyDown(KeyCode.Escape) && !pause.pauseFlag) {
-        //     Debug.Log("Exit Pause");
-        // }
-
     }
 
     private void Start(){
         InitializeAmbience(FMODEvents.instance.ambience);
-        InitializeMusic(FMODEvents.instance.levelMusic);
-        //InitializeSFX(FMODEvents.instance.reset);
+        InitializeMusic(FMODEvents.instance.levelMusic);        
+        InitializeSFX(FMODEvents.instance.pause, FMODEvents.instance.resume);
         resequenceMusic();
         DontDestroyOnLoad(this.gameObject);
     }
@@ -65,6 +59,11 @@ public class AudioManager : MonoBehaviour
     private void InitializeAmbience(EventReference ambienceEventReference){
         ambienceEventInstances = CreateInstance(ambienceEventReference);
         ambienceEventInstances.start();
+    }
+
+    private void InitializeSFX(EventReference pauseEventReference, EventReference resumeEventReference){
+        pauseEventInstances = CreateInstance(pauseEventReference);
+        resumeEventInstances = CreateInstance(resumeEventReference);
     }
 
     private void InitializeMusic(EventReference musicEventReference){
@@ -82,6 +81,20 @@ public class AudioManager : MonoBehaviour
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos){
         RuntimeManager.PlayOneShot(sound, worldPos);
+    }
+
+    public void Pause()
+    {
+        resumeEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);        
+        pauseEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        pauseEventInstances.start();
+    }
+    
+    public void Resume()
+    {
+        pauseEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        resumeEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        resumeEventInstances.start();
     }
 
     public EventInstance CreateInstance(EventReference eventReference){
