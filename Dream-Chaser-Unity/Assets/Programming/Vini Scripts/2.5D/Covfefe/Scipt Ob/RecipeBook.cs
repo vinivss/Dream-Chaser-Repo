@@ -5,15 +5,17 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
+
 [CreateAssetMenu(fileName = "Recipe Book", menuName = "Coffee/Create Recipe Book")]
 public class RecipeBook : ScriptableObject
 {
     public List<Recipe> recipes;
-
+#if UNITY_EDITOR
     private void OnEnable()
     {
         recipes = GetAllInstances<Recipe>();
     }
+
     public static List<T> GetAllInstances<T>() where T : Recipe
     {
         string[] guids = AssetDatabase.FindAssets("t:" + typeof(T).Name);  //FindAssets uses tags check documentation for more info
@@ -26,5 +28,7 @@ public class RecipeBook : ScriptableObject
 
         return a.ToList<T>();
 
+
     }
+#endif
 }
