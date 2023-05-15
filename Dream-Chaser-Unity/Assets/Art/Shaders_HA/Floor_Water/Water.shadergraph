@@ -287,6 +287,9 @@
         },
         {
             "m_Id": "89dc7cceba0941838e1010da1ec3eb6f"
+        },
+        {
+            "m_Id": "604f8c990d4c4494949e014401926a05"
         }
     ],
     "m_GroupDatas": [
@@ -1258,6 +1261,9 @@
         "m_Blocks": [
             {
                 "m_Id": "02091386e56748ba90c2cc3c657aa727"
+            },
+            {
+                "m_Id": "604f8c990d4c4494949e014401926a05"
             }
         ]
     },
@@ -2017,7 +2023,7 @@
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,
-        "y": 20.0
+        "y": 30.0
     }
 }
 
@@ -2426,7 +2432,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "268a16e4f119425abf8c56551bc47037",
     "m_Id": 0,
-    "m_DisplayName": "FoamTiling",
+    "m_DisplayName": "WaveTiling",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -2876,10 +2882,10 @@
     "m_Guid": {
         "m_GuidSerialized": "2dc2e2e6-84ba-4d35-bd53-6d6a1fdd1fd5"
     },
-    "m_Name": "FoamBlend",
+    "m_Name": "WaveBlend",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "FoamBlend",
-    "m_DefaultReferenceName": "_FoamBlend",
+    "m_RefNameGeneratedByDisplayName": "WaveBlend",
+    "m_DefaultReferenceName": "_WaveBlend",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -3477,7 +3483,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "4b94a705796347459cff45c46a395e6a",
     "m_Id": 0,
-    "m_DisplayName": "FoamColor",
+    "m_DisplayName": "WaveColor",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -3703,6 +3709,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "53d8f1a986564234bd2e61d24dabadaf",
+    "m_Id": 0,
+    "m_DisplayName": "Alpha",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Alpha",
+    "m_StageCapability": 2,
+    "m_Value": 1.0,
+    "m_DefaultValue": 1.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.ColorRGBMaterialSlot",
     "m_ObjectId": "53f4acfdbfdc4420838239aeb35e90c5",
     "m_Id": 0,
@@ -3811,7 +3832,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "5c57303337c2427a860ccacb17afc990",
     "m_Id": 0,
-    "m_DisplayName": "FoamTexture",
+    "m_DisplayName": "WaveTexture",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -3957,6 +3978,39 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
+    "m_ObjectId": "604f8c990d4c4494949e014401926a05",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "SurfaceDescription.Alpha",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 0.0,
+            "y": 0.0,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "53d8f1a986564234bd2e61d24dabadaf"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SerializedDescriptor": "SurfaceDescription.Alpha"
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "6086bd4888724a4e851274510906ad9f",
     "m_Group": {
@@ -3998,7 +4052,7 @@
         "m_Id": "85f2f36762d44543880d5db714462856"
     },
     "m_AllowMaterialOverride": false,
-    "m_SurfaceType": 0,
+    "m_SurfaceType": 1,
     "m_ZTestMode": 4,
     "m_ZWriteControl": 0,
     "m_AlphaMode": 0,
@@ -4439,7 +4493,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "70038142fd1c440e8efb13a7f5b17405",
     "m_Id": 0,
-    "m_DisplayName": "FoamSpeed",
+    "m_DisplayName": "WaveSpeed",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -4510,7 +4564,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "7053be4597814aa79b60b001d2a9b4af",
     "m_Id": 0,
-    "m_DisplayName": "FoamDirection",
+    "m_DisplayName": "WaveDirection",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -4768,7 +4822,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "7bbfae63fb224c03b93a166c8fb31578",
     "m_Id": 0,
-    "m_DisplayName": "FoamDistortion",
+    "m_DisplayName": "WaveDistortion",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -5377,10 +5431,10 @@
     "m_Guid": {
         "m_GuidSerialized": "2eebe3ab-e983-4492-bbb8-80c27d80abcf"
     },
-    "m_Name": "FoamSpeed",
+    "m_Name": "WaveSpeed",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "FoamSpeed",
-    "m_DefaultReferenceName": "_FoamSpeed",
+    "m_RefNameGeneratedByDisplayName": "WaveSpeed",
+    "m_DefaultReferenceName": "_WaveSpeed",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -5588,10 +5642,10 @@
     "m_Guid": {
         "m_GuidSerialized": "3dc4fae5-7313-41ea-b3d6-86db1be5cc6f"
     },
-    "m_Name": "FoamDistortion",
+    "m_Name": "WaveDistortion",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "FoamDistortion",
-    "m_DefaultReferenceName": "_FoamDistortion",
+    "m_RefNameGeneratedByDisplayName": "WaveDistortion",
+    "m_DefaultReferenceName": "_WaveDistortion",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -5714,7 +5768,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "a0a3aa4835504f07ae18ebdfe8cfa3af",
     "m_Id": 0,
-    "m_DisplayName": "FoamBlend",
+    "m_DisplayName": "WaveBlend",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -6130,10 +6184,10 @@
     "m_Guid": {
         "m_GuidSerialized": "3a4544cc-5a46-44cc-845c-92585a09acfa"
     },
-    "m_Name": "FoamTiling",
+    "m_Name": "WaveTiling",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "FoamTiling",
-    "m_DefaultReferenceName": "_FoamTiling",
+    "m_RefNameGeneratedByDisplayName": "WaveTiling",
+    "m_DefaultReferenceName": "_WaveTiling",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -6186,10 +6240,10 @@
     "m_Guid": {
         "m_GuidSerialized": "b95afa69-6e16-47b0-a746-434ed5f45099"
     },
-    "m_Name": "FoamTexture",
+    "m_Name": "WaveTexture",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "FoamTexture",
-    "m_DefaultReferenceName": "_FoamTexture",
+    "m_RefNameGeneratedByDisplayName": "WaveTexture",
+    "m_DefaultReferenceName": "_WaveTexture",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -6381,7 +6435,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "bb3da11d99e34069a77bc852f076dad1",
     "m_Id": 0,
-    "m_DisplayName": "FoamTiling",
+    "m_DisplayName": "WaveTiling",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -6482,10 +6536,10 @@
     "m_Guid": {
         "m_GuidSerialized": "74efe1a7-d98e-4cc3-a169-435378764966"
     },
-    "m_Name": "FoamColor",
+    "m_Name": "WaveColor",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "FoamColor",
-    "m_DefaultReferenceName": "_FoamColor",
+    "m_RefNameGeneratedByDisplayName": "WaveColor",
+    "m_DefaultReferenceName": "_WaveColor",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -7614,10 +7668,10 @@
     "m_Guid": {
         "m_GuidSerialized": "f7fb3870-a184-4b3d-b0c7-85464f5b55bd"
     },
-    "m_Name": "FoamDirection",
+    "m_Name": "WaveDirection",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "FoamDirection",
-    "m_DefaultReferenceName": "_FoamDirection",
+    "m_RefNameGeneratedByDisplayName": "WaveDirection",
+    "m_DefaultReferenceName": "_WaveDirection",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
