@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{485f782b-c802-43f0-8c81-bb3fd8209312}">
 		<property name="name">
-			<value>MainLevelMusic</value>
+			<value>TempMainLevelMusic</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -108,6 +108,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{2b81c868-9ade-4bb7-8c75-9af3056c99b2}" />
 	<object class="EventSound" id="{aa2af437-620e-41e5-bc64-fb0cdaea9f9b}">
+		<property name="start">
+			<value>1</value>
+		</property>
 		<relationship name="modulators">
 			<destination>{6e7f1ae2-5ca3-4e4b-aebc-7d09c271b483}</destination>
 		</relationship>
@@ -117,7 +120,7 @@
 	</object>
 	<object class="EventSound" id="{fefb8e8a-be9a-4a26-aa3b-c03439514e49}">
 		<property name="start">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{fb96b7b7-b565-41d2-8b0e-6bbcd3a956fc}</destination>
@@ -128,7 +131,7 @@
 	</object>
 	<object class="EventSound" id="{87cd6d8d-fd7a-4fcc-a870-7185f0b405d8}">
 		<property name="start">
-			<value>2</value>
+			<value>3</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{798159a9-c723-4dbc-9397-dfb62b816ce4}</destination>
@@ -139,7 +142,7 @@
 	</object>
 	<object class="EventSound" id="{96bc0949-8a32-4e1f-a6b9-28be67f63802}">
 		<property name="start">
-			<value>3</value>
+			<value>4</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{6eb886f8-e1f8-4931-a666-d9934dd8e2f6}</destination>
@@ -150,7 +153,7 @@
 	</object>
 	<object class="EventSound" id="{f1a33eee-3d9d-4185-aa3e-daaa2ee98153}">
 		<property name="start">
-			<value>4</value>
+			<value>5</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{bb6e4457-24b5-4a69-8120-950342bcb689}</destination>

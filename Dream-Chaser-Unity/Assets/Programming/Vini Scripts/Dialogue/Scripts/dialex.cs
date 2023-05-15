@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class dialex : DialogueActionNode
 {
-    public override void EndNode()
+    public override void Action()
     {
-        throw new System.NotImplementedException();
-    }
-
-    public override void OnStart()
-    {
-        throw new System.NotImplementedException();
+        Debug.Log("Penis");
+        EndNode();
     }
 
 

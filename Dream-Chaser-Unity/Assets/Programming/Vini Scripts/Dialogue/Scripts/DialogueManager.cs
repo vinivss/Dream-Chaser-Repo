@@ -1,24 +1,25 @@
 using UnityEngine;
 using Tools.Trees.Dialogue;
 using System.Collections.Generic;
-using System;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.Events;
 
+
 public class DialogueManager : MonoBehaviour
 {
     [Tooltip("This is the dialogue that will be referenced for dialogue")]
     public DialogueTree dialogue;
+    [Tooltip("Is this a 2.5D Scene?")]
+    public bool TwoDScene = false;
     DialogueNode currentNode;
     [Header("Dialogue Box Attributes")]
     [Tooltip("Name Of Speaker")]
     public TextMeshProUGUI nameText;
     [Tooltip("Dialogue Text")]
     public TextMeshProUGUI dialogueText;
-    int ChoiceIndex;
-    bool dialogueStarted = false;
+    [HideInInspector]public bool dialogueStarted = false;
     [Tooltip("Scene Background")]
     public GameObject Background;
     [Header("Prefabs")]
@@ -34,6 +35,7 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent EndEvent;
 
 
+   
     GameObject runtimeSceneLayout;
     Button NextButton;  
     GameObject runTimeWindow;
@@ -42,7 +44,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         controlVN = FindObjectOfType<ControlsManager>().GetComponent<ControlsManager>();
-        if (dialogue != null)
+        if (dialogue != null && !dialogueStarted)
         {
             currentNode = dialogue.RootNode;
             DisplayDialogue();
@@ -50,10 +52,14 @@ public class DialogueManager : MonoBehaviour
  
     }
 
-    private void DisplayDialogue()
+    public void DisplayDialogue()
     {
+
         if(dialogueStarted == false)
         {
+
+            currentNode = dialogue.RootNode;
+          
             dialogueStarted = true;
             //create window for dialogue 
             runTimeWindow = Instantiate(DialogueBox,DialogueBoxTransform);
@@ -64,8 +70,46 @@ public class DialogueManager : MonoBehaviour
 
         NextButton.GetComponent<Button>().onClick.AddListener(ChangeNode);
 
+
         currentNode.state = DialogueNode.State.FIN;
         ChangeNode();
+    }
+
+    private void PerformActions()
+    {
+        DialogueSpeechNode speechNode = currentNode as DialogueSpeechNode;
+        if(speechNode)
+        {
+            foreach (DialogueActionNode n in speechNode.DialogueActions)
+            {
+                while (!n.finished)
+                {
+                    n.OnStart();
+                }
+            }
+        }
+        DialogueChoiceNode choiceNode = currentNode as DialogueChoiceNode;
+        if (choiceNode)
+        {
+            foreach (DialogueActionNode n in choiceNode.DialogueActions)
+            {
+                while (!n.finished)
+                {
+                    n.OnStart();
+                }
+            }
+        }
+        DialogueOptionNode optionNode = currentNode as DialogueOptionNode;
+        if(optionNode)
+        {
+            foreach(DialogueActionNode n in optionNode.DialogueActions)
+            {
+                while (!n.finished)
+                {
+                    n.OnStart();
+                }
+            }
+        }
     }
 
     public void ChangeNode()
@@ -97,6 +141,7 @@ public class DialogueManager : MonoBehaviour
                 if (currentNode.SceneLayout != null)
                    runtimeSceneLayout = Instantiate(currentNode.SceneLayout, Background.transform);
             }
+            PerformActions();
         }
     }
     void Skip()
@@ -182,6 +227,9 @@ public class DialogueManager : MonoBehaviour
     //get the input
     private void CloseDialogue()
     {
+      
+        Destroy(GameObject.FindGameObjectWithTag("DialogueBox"));
+        dialogueStarted = false;
         EndEvent.Invoke();
     }
 }

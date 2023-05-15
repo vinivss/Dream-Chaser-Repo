@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5478968372193961158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 72d70a19af51d1f42baa8378b913fdca
+  position: {x: 180, y: 310}
+  state: 0
+  Speaker: Ash
+  Dialogue: Mhm yeah okay bye!
+  SceneLayout: {fileID: 0}
+  child: {fileID: 1799396784240216177}
+  DialogueActions: []
+--- !u!114 &-3784742098158382196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: a7ea0563cb1b73b4ba73ab4a8dc6fd42
+  position: {x: 343.8375, y: -67.995}
+  state: 0
+  Speaker: Amanda Huggins
+  Dialogue: Oh I did and it was GREAT! It's made me realize I should be a Matchmaker!
+  SceneLayout: {fileID: 0}
+  child: {fileID: 5601997931208379366}
+  DialogueActions: []
+--- !u!114 &-1506308650075827005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: af246bc8d5dbbe34282287e13e0656ed
+  position: {x: 177.42, y: -68.15751}
+  state: 0
+  Speaker: Ash
+  Dialogue: "Here\u2019s your coffee, did you finish your book?"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -3784742098158382196}
+  DialogueActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37aa8c975bd8e0f49848dc44b360140a, type: 3}
+  m_Name: AH_CLOSING
+  m_EditorClassIdentifier: 
+  RootNode: {fileID: 6842069940954490633}
+  treeState: 0
+  nodes:
+  - {fileID: 6842069940954490633}
+  - {fileID: 1704341718918488024}
+  - {fileID: 7600109035199548048}
+  - {fileID: -1506308650075827005}
+  - {fileID: -3784742098158382196}
+  - {fileID: 5601997931208379366}
+  - {fileID: 5062185900081371771}
+  - {fileID: -5478968372193961158}
+  - {fileID: 1799396784240216177}
+--- !u!114 &1704341718918488024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 41dabc317b6ba334ca29a41893d08ebb
+  position: {x: 178, y: 202}
+  state: 0
+  Speaker: Ash
+  Dialogue: OH nono I'm good thank you.
+  SceneLayout: {fileID: 0}
+  child: {fileID: 5062185900081371771}
+  DialogueActions: []
+--- !u!114 &1799396784240216177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: fe4ab8d24e02e8e47bcaa9074d0e3086
+  position: {x: 364, y: 338}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+--- !u!114 &5062185900081371771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 436b6ec21e68c2d4b8f71bdc367eb936
+  position: {x: 362.28, y: 205}
+  state: 0
+  Speaker: Amanda Huggins
+  Dialogue: Are you sure? Well if you ever change your mind lemme know!
+  SceneLayout: {fileID: 0}
+  child: {fileID: -5478968372193961158}
+  DialogueActions: []
+--- !u!114 &5601997931208379366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: f2a5e509c7e9e9e46b76818b868a0e18
+  position: {x: 180.3775, y: 78.449974}
+  state: 0
+  Speaker: Ash
+  Dialogue: Good for you!
+  SceneLayout: {fileID: 0}
+  child: {fileID: 7600109035199548048}
+  DialogueActions: []
+--- !u!114 &6842069940954490633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47f7753ababa6141bc7adf96c693c02, type: 3}
+  m_Name: DialogueRootNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 1f6a914102b83414cbf6d8b6cd1c1594
+  position: {x: 0, y: 0}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+  child: {fileID: -1506308650075827005}
+--- !u!114 &7600109035199548048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: dd1fa4ac151b9b348867007af4c5c72d
+  position: {x: 355.59253, y: 80.42501}
+  state: 0
+  Speaker: Amanda Huggins
+  Dialogue: So if you're ever looking for a partner...
+  SceneLayout: {fileID: 0}
+  child: {fileID: 1704341718918488024}
+  DialogueActions: []

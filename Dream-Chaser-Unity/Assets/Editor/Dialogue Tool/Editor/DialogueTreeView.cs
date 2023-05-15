@@ -55,17 +55,29 @@ public class DialogueTreeView : GraphView
 
         tree.nodes.ForEach(n =>
         {
+            
             var children = tree.GetChildren(n);
+            var actions = tree.GetActions(n);
 
             children.ForEach(c =>
             {
                 DialogueNodeView parentView = findNodeView(n);
                 DialogueNodeView childView = findNodeView(c);
-
-
+            if (childView.input != null && parentView != null)
+                {
                     Edge edge = parentView.output.ConnectTo(childView.input);
                     AddElement(edge);
+                }
             });
+            actions.ForEach(c =>
+            {
+                DialogueNodeView parentView = findNodeView(n);
+                DialogueNodeView childView = findNodeView(c);
+                Edge edge = parentView.actionin.ConnectTo(childView.actionout);
+                AddElement(edge);
+            });
+
+
         });
     }
 
@@ -105,6 +117,7 @@ public class DialogueTreeView : GraphView
                 DialogueNodeView parentview = edge.output.node as DialogueNodeView;
                 DialogueNodeView childView = edge.input.node as DialogueNodeView;
                 tree.AddChild(parentview.node, childView.node);
+                tree.AddAction(parentview.node, childView.node);
             });
         }
 
