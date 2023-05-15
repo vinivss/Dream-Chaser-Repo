@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class pause_scene : MonoBehaviour
 {
+    public AudioManager audio;
     public GameObject pauseMenu;
-    public bool pauseFlag = false;
+    public bool pauseFlag;
     // Start is called before the first frame update
     void Start()
     {
+        audio = FindObjectOfType<AudioManager>().GetComponent<AudioManager>();
+        pauseFlag = false;
         pauseMenu.SetActive(false);
     }
 
@@ -28,9 +33,14 @@ public class pause_scene : MonoBehaviour
         }
     }
 
+    public bool getPauseState(bool paused){
+        pauseFlag = paused;
+        return paused;
+    }
+
     public void pause()
     {
-        
+        audio.Pause();
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         pauseFlag = true;
@@ -38,7 +48,7 @@ public class pause_scene : MonoBehaviour
 
     public void resume()
     {
-        
+        StartCoroutine(audio.Resume());        
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         pauseFlag = false;

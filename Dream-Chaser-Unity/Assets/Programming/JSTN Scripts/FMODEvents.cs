@@ -17,8 +17,11 @@ public class FMODEvents : MonoBehaviour
     [field: Header("VN Theme")]
     [field: SerializeField] public EventReference vnOST {get; private set; }
     
-
-
+    [field: Header("Pause SFX")]
+    [field: SerializeField] public EventReference pause {get; private set; }
+    
+    [field: Header("Resume SFX")]
+    [field: SerializeField] public EventReference resume {get; private set; }
 
     public static FMODEvents instance {get; private set;}
 

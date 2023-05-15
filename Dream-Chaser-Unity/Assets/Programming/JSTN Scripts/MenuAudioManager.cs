@@ -77,15 +77,6 @@ public class MenuAudioManager : MonoBehaviour
             }                        
         }
     }
-    
-    private void plskillme(){
-/*        subEventInstances = musicDescription.getInstances();
-        foreach (EventInstance subEventInstance in subEventInstances){
-            float length = subEventInstance.getTimelineLength();
-            Debug.Log("Subevent length: " + length);
-        }
-*/
-    }
 
     //initializes the looping background noise
     private void InitializeAmbience(EventReference ambienceEventReference){
