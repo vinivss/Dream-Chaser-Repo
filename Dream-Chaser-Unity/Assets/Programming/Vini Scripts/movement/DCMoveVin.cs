@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 using FMOD.Studio;
+using FMODUnity;
 using System;
 using UnityEngine.Events;
 using Cinemachine;
@@ -121,6 +122,7 @@ public class DCMoveVin : MonoBehaviour
             rb.AddForce(Vector3.up * Mathf.Clamp(jumpforce, minJump, maxJump), ForceMode.Impulse);
             jumping = false;
             jumpforce = 0;
+            RuntimeManager.PlayOneShot("event:/SFX/Jump", this.transform.position);
         }
        
     }
