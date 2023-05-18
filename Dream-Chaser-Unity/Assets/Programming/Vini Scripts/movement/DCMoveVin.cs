@@ -93,6 +93,7 @@ public class DCMoveVin : MonoBehaviour
         Debug.DrawRay(transform.position, transform.forward, Color.red);
         Debug.DrawRay(transform.position, -transform.forward, Color.blue);
 
+       
      
         if (moveDir != Vector3.zero)
         {
@@ -102,7 +103,14 @@ public class DCMoveVin : MonoBehaviour
         moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.5f, 1.0f));
         rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);
         FixBouncing();
-        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+        if (inManager.GetMoveValue().y == -1)
+        {
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, minForwardSpeed);
+        }
+        else
+        {
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+        }
         //Cam.m_Lens.FieldOfView = Mathf.Clamp(rb.velocity.z, startFOV, 95.0f);
         JumpPerformed();
     }
