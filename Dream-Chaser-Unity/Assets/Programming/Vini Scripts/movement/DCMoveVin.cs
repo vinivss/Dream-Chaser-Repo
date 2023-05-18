@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 using FMOD.Studio;
-using FMODUnity;
 using System;
 using UnityEngine.Events;
 using Cinemachine;
@@ -27,6 +26,7 @@ public class DCMoveVin : MonoBehaviour
     [Header("Movement Attributes")]
     [Tooltip("Minimum Forward Velocity")]
     [SerializeField] float minForwardSpeed;
+    [SerializeField] float deceleration;
     [Tooltip("Maximum threshold before slowly rotating to front")]
     [SerializeField] float rotationThreshold;
     [Tooltip("Max Speed you can accelerate to")]
@@ -100,7 +100,15 @@ public class DCMoveVin : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, rotGoal, turnSpeed);
         }
         moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.5f, 1.0f));
-        rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);
+        if (inManager.GetMoveValue().y < 0)
+        {
+            rb.AddForce((moveDir * deceleration) + Physics.gravity, ForceMode.Acceleration);
+        }
+        else
+        {
+            rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);
+        }
+        //rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);
         FixBouncing();
         rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         //Cam.m_Lens.FieldOfView = Mathf.Clamp(rb.velocity.z, startFOV, 95.0f);
@@ -122,7 +130,6 @@ public class DCMoveVin : MonoBehaviour
             rb.AddForce(Vector3.up * Mathf.Clamp(jumpforce, minJump, maxJump), ForceMode.Impulse);
             jumping = false;
             jumpforce = 0;
-            RuntimeManager.PlayOneShot("event:/SFX/Jump", this.transform.position);
         }
        
     }
