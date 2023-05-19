@@ -104,7 +104,7 @@ public class DCMoveVin : MonoBehaviour
         FixBouncing();
         if (inManager.GetMoveValue().y < 0.0f && isGrounded)
         {
-            rb.AddForce(-transform.forward * (minForwardSpeed -5), ForceMode.Acceleration);
+            rb.AddForce(-transform.forward * (minForwardSpeed / 2), ForceMode.Acceleration);
         }
         else
         {
