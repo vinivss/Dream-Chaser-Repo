@@ -5219,7 +5219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294946544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.88, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54290,14 +54290,14 @@ MonoBehaviour:
   minJump: 20
   maxJump: 100
   groundCheckPos: {fileID: 1294946545}
-  groundDistance: 0.4
+  groundDistance: 3
   groundMask:
     serializedVersion: 2
     m_Bits: 64
   airDrag: 0.25
   normDrag: 0.25
   turnSpeed: 0.075
-  height: 5
+  height: 2
   parameterName:
     m_PersistentCalls:
       m_Calls: []
