@@ -24,20 +24,20 @@ public class Clickndrag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
         {
             spriteRenderer.sprite = sprites[1];
         }
-        Debug.Log("pointer Click");
+       // Debug.Log("pointer Click");
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         
-        Debug.Log("Dragon");
+        //Debug.Log("Dragon");
         canvasGroup.blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         //spriteRenderer.sprite = sprites[1];
-        Debug.Log("Dragging");
+        //Debug.Log("Dragging");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
     public void OnEndDrag(PointerEventData eventData)
@@ -46,7 +46,7 @@ public class Clickndrag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
         {
             spriteRenderer.sprite = sprites[1];
         }
-        Debug.Log("Dragoff");
+        //Debug.Log("Dragoff");
         canvasGroup.blocksRaycasts = true;
     }
 
