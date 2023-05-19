@@ -9,7 +9,13 @@ public class CoffeeManager : MonoBehaviour
     public RecipeBook recipeBook;
     public Recipe currentRecipe;
     public Recipe CookedRecipe;
+    public Transform drinkSpawnPoint;
 
+    private void Awake()
+    {
+        currentRecipe =  ScriptableObject.CreateInstance("Recipe") as Recipe;
+       
+    }
     public void OnCook()
     {
         foreach(Recipe r in recipeBook.recipes)
@@ -26,25 +32,20 @@ public class CoffeeManager : MonoBehaviour
     }
     public void AddIngredient(Ingredients ingredient)
     {
-        int j = 0;
-        if(currentRecipe.RecipeIngreds.Length == 0)
-        {
-            currentRecipe.RecipeIngreds[0].ingredientsNeeded = ingredient;
-            currentRecipe.RecipeIngreds[0].ingredientsCount += 1;
 
-        }
         foreach(Recipe.RecipeIngredients i in currentRecipe.RecipeIngreds)
         {
             if(i.ingredientsNeeded.GetType() == ingredient.GetType())
             {
-                currentRecipe.RecipeIngreds[j].ingredientsCount += 1;
-                break;
+                var ingredneed = i;
+                ingredneed.ingredientsCount += 1;
+                return;
             }
-            j++;
         }
         Recipe.RecipeIngredients recipeIngredients = new Recipe.RecipeIngredients();
         recipeIngredients.ingredientsNeeded = ingredient;
         recipeIngredients.ingredientsCount += 1;
-        currentRecipe.RecipeIngreds.Append(recipeIngredients);
+        currentRecipe.RecipeIngreds.Add(recipeIngredients);
+        Debug.Log(currentRecipe.RecipeIngreds.Count);
     }
 }

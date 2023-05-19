@@ -27,7 +27,7 @@ namespace Coffee
             public int ingredientsCount;        
         }
         [Header("Ingredients :")]
-        public RecipeIngredients[] RecipeIngreds;
+        public List<RecipeIngredients> RecipeIngreds = new List<RecipeIngredients>();
         [Header("CookingMethod")]
         public CookingMethod cookingMethod;
         [Header("Sprite")]
