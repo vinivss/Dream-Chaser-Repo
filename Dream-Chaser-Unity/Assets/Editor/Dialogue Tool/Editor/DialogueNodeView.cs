@@ -242,7 +242,7 @@ namespace Tools.Trees.Dialogue
             }
 
         }
-        internal void SortAtions()
+        internal void SortActions()
         {
             DialogueChoiceNode choiceNode = node as DialogueChoiceNode;
             if (choiceNode.DialogueActions.Count > 0)
