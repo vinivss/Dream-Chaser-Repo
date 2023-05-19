@@ -235,8 +235,9 @@ namespace Tools.Trees.Dialogue
            
             DialogueChoiceNode choiceNode = node as DialogueChoiceNode;
 
-            if (choiceNode != null && choiceNode.children.Count > 0)
+            if (choiceNode != null)
             {
+                if (choiceNode.children.Count > 0)
                 choiceNode.children.Sort(SortByVerticalPosition);
                 return;
             }
