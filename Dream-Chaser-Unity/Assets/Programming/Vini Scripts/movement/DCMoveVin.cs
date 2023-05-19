@@ -99,12 +99,12 @@ public class DCMoveVin : MonoBehaviour
             Quaternion rotGoal =Quaternion.LookRotation(moveDir);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotGoal, turnSpeed);
         }
-        moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.5f, 1.0f));
+        moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.3f, 1.0f));
         rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);
         FixBouncing();
-        if (inManager.GetMoveValue().y == -1)
+        if (inManager.GetMoveValue().y < 0.0f && isGrounded)
         {
-            rb.velocity = Vector3.ClampMagnitude(rb.velocity, minForwardSpeed);
+            rb.AddForce(-transform.forward * minForwardSpeed, ForceMode.Acceleration);
         }
         else
         {
