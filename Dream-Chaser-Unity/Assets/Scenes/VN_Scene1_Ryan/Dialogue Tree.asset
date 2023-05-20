@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5596764094702150545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 7ac49fbbb72c5444aa6083bc37574883
+  position: {x: 1164, y: 97}
+  state: 0
+  Speaker: 
+  Dialogue: ponus
+  SceneLayout: {fileID: 0}
+  child: {fileID: 0}
+  DialogueActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37aa8c975bd8e0f49848dc44b360140a, type: 3}
+  m_Name: Dialogue Tree
+  m_EditorClassIdentifier: 
+  RootNode: {fileID: 4252710907685602510}
+  treeState: 0
+  nodes:
+  - {fileID: 4252710907685602510}
+  - {fileID: 500555059784556985}
+  - {fileID: 7624460545373818430}
+  - {fileID: 8651914912079525041}
+  - {fileID: -5596764094702150545}
+--- !u!114 &500555059784556985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: c3b560e0233b4e34c97bfdd58ea74c6c
+  position: {x: 265, y: -50}
+  state: 1
+  Speaker: 
+  Dialogue: asdas
+  SceneLayout: {fileID: 0}
+  child: {fileID: 7624460545373818430}
+  DialogueActions: []
+--- !u!114 &4252710907685602510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47f7753ababa6141bc7adf96c693c02, type: 3}
+  m_Name: DialogueRootNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: b8e29a7aee6341046b4df7be3061f920
+  position: {x: 0, y: 0}
+  state: 1
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+  child: {fileID: 500555059784556985}
+--- !u!114 &7624460545373818430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ca86122f814e040b6be55c4c1287b2, type: 3}
+  m_Name: DialogueChoiceNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: ffd1aa069877b90438224aaee4d3fcbc
+  position: {x: 611, y: -125}
+  state: 1
+  Speaker: 
+  Dialogue: sdasd
+  SceneLayout: {fileID: 0}
+  children:
+  - {fileID: 8651914912079525041}
+  - {fileID: -5596764094702150545}
+  DialogueActions: []
+--- !u!114 &8651914912079525041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: de19241f7848b4b4b9fd18658a42d05b
+  position: {x: 1109, y: -192}
+  state: 0
+  Speaker: 
+  Dialogue: penis
+  SceneLayout: {fileID: 0}
+  child: {fileID: 0}
+  DialogueActions: []
