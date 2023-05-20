@@ -93,33 +93,24 @@ public class DCMoveVin : MonoBehaviour
         Debug.DrawRay(transform.position, transform.forward, Color.red);
         Debug.DrawRay(transform.position, -transform.forward, Color.blue);
 
+       
      
         if (moveDir != Vector3.zero)
         {
             Quaternion rotGoal =Quaternion.LookRotation(moveDir);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotGoal, turnSpeed);
         }
-
-        //moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.5f, 1.0f));
-        //rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);
-        
-        if (inManager.GetMoveValue().y < 0)
+        moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.3f, 1.0f));
+        rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);
+        FixBouncing();
+        if (inManager.GetMoveValue().y < 0.0f && isGrounded)
         {
-            moveDir = new Vector3(inManager.GetMoveValue().x , 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.5f, 1.0f));
-            rb.AddForce((moveDir * deceleration) + Physics.gravity, ForceMode.Acceleration);
-            Vector3 v = rb.velocity;
-            v.z = Mathf.Clamp(v.z, minForwardSpeed, maxSpeed);
-            rb.velocity = v;
+            rb.AddForce(-transform.forward * (minForwardSpeed / 2), ForceMode.Acceleration);
         }
         else
         {
-            moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.5f, 1.0f));
-            rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);            
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         }
-
-
-        FixBouncing();
-        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         //Cam.m_Lens.FieldOfView = Mathf.Clamp(rb.velocity.z, startFOV, 95.0f);
         JumpPerformed();
     }

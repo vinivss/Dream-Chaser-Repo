@@ -6,6 +6,7 @@ public class CoffeeMaker : MonoBehaviour
 {
     public Coffee.Recipe.CookingMethod cookingMethod = Recipe.CookingMethod.Machine;
     CoffeeManager manager;
+    public Transform CompleteWaypoint;
 
     // Start is called before the first frame update
     void Start()
@@ -15,15 +16,29 @@ public class CoffeeMaker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Cup"))
+        Debug.Log("IN");
+        if (collision.CompareTag("Cup"))
         {
             manager.currentRecipe.cookingMethod = cookingMethod;
+            Clickndrag clickndrag = collision.GetComponent<Clickndrag>();
+            clickndrag.enabled = false;
+            manager.drinkSpawnPoint = CompleteWaypoint;
+            collision.transform.position = CompleteWaypoint.transform.position;
+            collision.transform.SetAsLastSibling();
+            CanvasGroup Coll = collision.GetComponent<CanvasGroup>();
+           
+            if (Coll != null)
+                Coll.interactable = false;
             return;
         }
-        Ingredients ingredients = collision.GetComponent<IngredientManager>().ingredient;
-        if(ingredients)
+        else
         {
-            manager.AddIngredient(ingredients);
+            Ingredients ingredients = collision.GetComponent<IngredientManager>().ingredient;
+            if (ingredients != null)
+            {
+                manager.AddIngredient(ingredients);
+                Destroy(collision.gameObject);
+            }
         }
     }
 }

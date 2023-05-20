@@ -6,7 +6,7 @@ namespace Tools.Trees.Dialogue
 {
     public class DialogueChoiceNode : DialogueNode
     {
-       [HideInInspector] public List<DialogueNode> children;
+       [HideInInspector] public List<DialogueNode> children = new List<DialogueNode>();
        [HideInInspector] public List<DialogueNode> DialogueActions;
 
 

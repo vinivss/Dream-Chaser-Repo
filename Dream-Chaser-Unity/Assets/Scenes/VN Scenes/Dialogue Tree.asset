@@ -1,26 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5002401449315185901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42361e44371d2b445a0298f6ee70466a, type: 3}
-  m_Name: dialex
-  m_EditorClassIdentifier: 
-  started: 1
-  GUID: 5acd8d01dc78c2f42af29b080fed8f29
-  position: {x: 83, y: 167}
-  state: 1
-  Speaker: 
-  Dialogue: 
-  SceneLayout: {fileID: 0}
-  finished: 1
---- !u!114 &-2358772355768694548
+--- !u!114 &-5596764094702150545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33,13 +13,13 @@ MonoBehaviour:
   m_Name: DialogueOptionNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 650076a5d69d49a4f8232660fc4a637d
-  position: {x: 719, y: 33}
+  GUID: 7ac49fbbb72c5444aa6083bc37574883
+  position: {x: 1164, y: 97}
   state: 0
   Speaker: 
-  Dialogue: 
+  Dialogue: ponus
   SceneLayout: {fileID: 0}
-  child: {fileID: 1134120546014258620}
+  child: {fileID: 0}
   DialogueActions: []
 --- !u!114 &11400000
 MonoBehaviour:
@@ -53,16 +33,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37aa8c975bd8e0f49848dc44b360140a, type: 3}
   m_Name: Dialogue Tree
   m_EditorClassIdentifier: 
-  RootNode: {fileID: 8755326392620362422}
+  RootNode: {fileID: 4252710907685602510}
   treeState: 0
   nodes:
-  - {fileID: 8755326392620362422}
-  - {fileID: 495814174138848124}
-  - {fileID: -5002401449315185901}
-  - {fileID: 1134120546014258620}
-  - {fileID: 4412056203561482781}
-  - {fileID: -2358772355768694548}
---- !u!114 &495814174138848124
+  - {fileID: 4252710907685602510}
+  - {fileID: 500555059784556985}
+  - {fileID: 7624460545373818430}
+  - {fileID: 8651914912079525041}
+  - {fileID: -5596764094702150545}
+--- !u!114 &500555059784556985
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,60 +54,15 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 4dca26a6729de0746a42c767615b413b
-  position: {x: 259, y: -127}
+  GUID: c3b560e0233b4e34c97bfdd58ea74c6c
+  position: {x: 265, y: -50}
   state: 1
   Speaker: 
-  Dialogue: TESTING 1, 2
+  Dialogue: asdas
   SceneLayout: {fileID: 0}
-  child: {fileID: 4412056203561482781}
-  DialogueActions:
-  - {fileID: -5002401449315185901}
-  - {fileID: -5002401449315185901}
---- !u!114 &1134120546014258620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
-  m_Name: DialogueEndNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: a0a660cc496ad8946b62e97cfbe2dc54
-  position: {x: 923, y: -41}
-  state: 1
-  Speaker: 
-  Dialogue: 
-  SceneLayout: {fileID: 0}
---- !u!114 &4412056203561482781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24ca86122f814e040b6be55c4c1287b2, type: 3}
-  m_Name: DialogueChoiceNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 8ad118b789f230f48b8e2d181ad90742
-  position: {x: 503, y: -119}
-  state: 0
-  Speaker: 
-  Dialogue: 
-  SceneLayout: {fileID: 0}
-  children: []
-  DialogueActions:
-  - {fileID: -2358772355768694548}
-  - {fileID: -2358772355768694548}
-  - {fileID: -2358772355768694548}
---- !u!114 &8755326392620362422
+  child: {fileID: 7624460545373818430}
+  DialogueActions: []
+--- !u!114 &4252710907685602510
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,10 +75,54 @@ MonoBehaviour:
   m_Name: DialogueRootNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 849ceb0942d5fed44afa7180c7d9eb3e
+  GUID: b8e29a7aee6341046b4df7be3061f920
   position: {x: 0, y: 0}
   state: 1
   Speaker: 
   Dialogue: 
   SceneLayout: {fileID: 0}
-  child: {fileID: 495814174138848124}
+  child: {fileID: 500555059784556985}
+--- !u!114 &7624460545373818430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ca86122f814e040b6be55c4c1287b2, type: 3}
+  m_Name: DialogueChoiceNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: ffd1aa069877b90438224aaee4d3fcbc
+  position: {x: 611, y: -125}
+  state: 1
+  Speaker: 
+  Dialogue: sdasd
+  SceneLayout: {fileID: 0}
+  children:
+  - {fileID: 8651914912079525041}
+  - {fileID: -5596764094702150545}
+  DialogueActions: []
+--- !u!114 &8651914912079525041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: de19241f7848b4b4b9fd18658a42d05b
+  position: {x: 1109, y: -192}
+  state: 0
+  Speaker: 
+  Dialogue: penis
+  SceneLayout: {fileID: 0}
+  child: {fileID: 0}
+  DialogueActions: []
