@@ -73,8 +73,11 @@ public class DialogueTreeView : GraphView
             {
                 DialogueNodeView parentView = findNodeView(n);
                 DialogueNodeView childView = findNodeView(c);
+            if (childView.input != null && parentView != null)
+                {
                 Edge edge = parentView.actionin.ConnectTo(childView.actionout);
                 AddElement(edge);
+                }
             });
 
 
