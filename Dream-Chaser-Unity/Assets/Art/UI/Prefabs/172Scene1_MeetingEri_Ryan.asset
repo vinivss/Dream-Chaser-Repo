@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9197495853393402372
+--- !u!114 &-9125796762834851078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13,57 +13,15 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 94f95ad191c8d664c9d7c60bf534e88f
-  position: {x: 1350, y: 259}
-  state: 0
-  Speaker: Eri
-  Dialogue: "Hi, sorry to be a bother but can I get\u2014"
-  SceneLayout: {fileID: 0}
-  child: {fileID: -8388072321062331294}
-  DialogueActions: []
---- !u!114 &-9134476912276679151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: a4377f3eeb893f84c9aa54c215fe1bcf
-  position: {x: 2807.3977, y: 171}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "Oh no it\u2019s okay! I\u2019d be a little spooked too, I suppose."
-  SceneLayout: {fileID: 0}
-  child: {fileID: 3211070447463424801}
-  DialogueActions: []
---- !u!114 &-8778217560643546216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 0ef780616b8b4a140b806ae853712376
-  position: {x: 1495, y: 36}
+  GUID: a9d61590efde2fd4aadbcadd1c6a63d2
+  position: {x: 950.71436, y: 352.5542}
   state: 1
-  Speaker: Narrator
-  Dialogue: Totally normal.
+  Speaker: Ash
+  Dialogue: (He looked really sad for a second there.)
   SceneLayout: {fileID: 0}
-  child: {fileID: 8844868499979559701}
+  child: {fileID: 2252568968735985861}
   DialogueActions: []
---- !u!114 &-8686080984293367483
+--- !u!114 &-8959344014219776515
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -76,863 +34,15 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: f283f07d2b81e5f419ea69d6e5c1dc74
-  position: {x: 1119, y: -70}
-  state: 1
-  Speaker: Narrator
-  Dialogue: "They\u2019ve been called many things, angel, spirit, even demon. They
-    can enter people\u2019s dreams and make them a little brighter."
-  SceneLayout: {fileID: 0}
-  child: {fileID: -4082247585445955813}
-  DialogueActions: []
---- !u!114 &-8388072321062331294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 2ae257bfc0f112b4da077efcdfaa07dd
-  position: {x: 1527, y: 253.28}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: A caramel macchiato?
-  SceneLayout: {fileID: 0}
-  child: {fileID: -3590402512999220311}
-  DialogueActions: []
---- !u!114 &-7850302102733387723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 5dbe50c5a237e4a4397549b52d4de6d8
-  position: {x: 1488, y: -81}
-  state: 1
-  Speaker: Narrator
-  Dialogue: The Dream Chaser frees people from their inner demons even to this day.
-  SceneLayout: {fileID: 0}
-  child: {fileID: 2534761036011653681}
-  DialogueActions: []
---- !u!114 &-6908449046061812349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 396d66414b745fd48a1bf9c6a0ac13cb
-  position: {x: 942, y: 55}
+  GUID: 14020a72d5083444b83e01f491724893
+  position: {x: 1157.097, y: 84.95626}
   state: 1
   Speaker: Eri
   Dialogue: "Oh, no worries. It\u2019s no problem\u2026 take your time."
   SceneLayout: {fileID: 0}
-  child: {fileID: 4577392858489644243}
+  child: {fileID: -4616238756728671428}
   DialogueActions: []
---- !u!114 &-6872049703930337427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 02467253e9b668c4088dfef20e359140
-  position: {x: 2429.401, y: 199}
-  state: 0
-  Speaker: Narrator
-  Dialogue: (Eri tries not to make any eye contact as you get started on his drink)
-  SceneLayout: {fileID: 0}
-  child: {fileID: -5100489045412089649}
-  DialogueActions: []
---- !u!114 &-6237221556349488833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 7fbccd72705f0d14f95ee114e14c57d2
-  position: {x: 200, y: 504}
-  state: 0
-  Speaker: Eri
-  Dialogue: "I\u2019m so sorry but I have to go like\u2026. Right now."
-  SceneLayout: {fileID: 0}
-  child: {fileID: -1313804158208776621}
-  DialogueActions: []
---- !u!114 &-6226446480325100208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 4dff9ad22fdd01143bfb77e6a4671049
-  position: {x: 937, y: -59}
-  state: 1
-  Speaker: Narrator
-  Dialogue: The Dream Chaser.
-  SceneLayout: {fileID: 0}
-  child: {fileID: -8686080984293367483}
-  DialogueActions: []
---- !u!114 &-6173935169853234927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 8164df5c8d08fcc419f9460ca5e1958e
-  position: {x: 762, y: -47}
-  state: 1
-  Speaker: Narrator
-  Dialogue: "They have taken many different names and different forms, but the most
-    common name is\u2026"
-  SceneLayout: {fileID: 0}
-  child: {fileID: -6226446480325100208}
-  DialogueActions: []
---- !u!114 &-5982099567612732482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 967b2b89e8a488a489f007900a9758d7
-  position: {x: 946, y: 172}
-  state: 1
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "Oh I\u2019m sorry to hear that, you were always so excited to talk about
-    that garden what happened?"
-  SceneLayout: {fileID: 0}
-  child: {fileID: -5319784643528285037}
-  DialogueActions: []
---- !u!114 &-5862616654818576080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 45a8e0f64a7dfc24eb0d71edea529530
-  position: {x: 1502, y: 505}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "(Maybe he\u2019s just got a lot on his mind. Couldn\u2019t hurt to check
-    though\u2026)"
-  SceneLayout: {fileID: 0}
-  child: {fileID: 1735723202157872949}
-  DialogueActions: []
---- !u!114 &-5319784643528285037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: ad654f61f047bb14ca6c58dd1c65f734
-  position: {x: 1120, y: 155}
-  state: 1
-  Speaker: Eri
-  Dialogue: ' Well, my partner and I decided that it was best if I dropped it. It
-    makes the house look bad, stands out too much. '
-  SceneLayout: {fileID: 0}
-  child: {fileID: 8312758083119474915}
-  DialogueActions: []
---- !u!114 &-5100489045412089649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 7874770b799069d4488e4ce0ae11c415
-  position: {x: 2612.358, y: 187}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: (Why is he apologizing?)
-  SceneLayout: {fileID: 0}
-  child: {fileID: -9134476912276679151}
-  DialogueActions: []
---- !u!114 &-4892626325616725558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 6a6d17a6c6719584ca7c8ddcc894a9f3
-  position: {x: 2799.3599, y: 328}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "Hey, it\u2019s okay, don't worry about it."
-  SceneLayout: {fileID: 0}
-  child: {fileID: 3211070447463424801}
-  DialogueActions: []
---- !u!114 &-4587417455433584832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: d063628baa25a154b8339abf8677c6b2
-  position: {x: 396, y: 96}
-  state: 1
-  Speaker: Narrator
-  Dialogue: ...and failing.
-  SceneLayout: {fileID: 0}
-  child: {fileID: 3833675329702743629}
-  DialogueActions: []
---- !u!114 &-4461725536074130346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 89eb44b7352deb34286abb5057856a59
-  position: {x: 1350, y: 388.68}
-  state: 0
-  Speaker: Eri
-  Dialogue: "Hi, sorry to be a bother but can I get\u2014"
-  SceneLayout: {fileID: 0}
-  child: {fileID: -4151696087344151578}
-  DialogueActions: []
---- !u!114 &-4151696087344151578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 5802def936ce14842b1e9a7336a8bf03
-  position: {x: 1529, y: 390}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: A Matcha Latte?
-  SceneLayout: {fileID: 0}
-  child: {fileID: 6076861815327671766}
-  DialogueActions: []
---- !u!114 &-4082247585445955813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 89a87c651a493574992f7c08edf48e0d
-  position: {x: 1308, y: -73}
-  state: 1
-  Speaker: Narrator
-  Dialogue: Sometimes, that little push, that scrap of light, is all you need to
-    get through hardship, to give people the strength they need to change.
-  SceneLayout: {fileID: 0}
-  child: {fileID: -7850302102733387723}
-  DialogueActions: []
---- !u!114 &-4067246482476917805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 75e3b5d85f39a2840ac7185540b8e567
-  position: {x: 2431.4756, y: 319}
-  state: 0
-  Speaker: Narrator
-  Dialogue: Eri looks at the ground.
-  SceneLayout: {fileID: 0}
-  child: {fileID: 4227316244783286975}
-  DialogueActions: []
---- !u!114 &-3655663508932072426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 4080dea6b6ba6ca4b83d19b50fe482f9
-  position: {x: 20, y: 334.15997}
-  state: 1
-  Speaker: Ash, the Dream Chaser
-  Dialogue: (He looked really sad for a second there.)
-  SceneLayout: {fileID: 0}
-  child: {fileID: 7313660005248504483}
-  DialogueActions: []
---- !u!114 &-3590402512999220311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 8932fc6aa7cd7724d99effdf90538d6c
-  position: {x: 1701.24, y: 229}
-  state: 0
-  Speaker: Eri
-  Dialogue: "Yeah! Oh god I must have come up so many times for you to remember I\u2019m
-    sorry."
-  SceneLayout: {fileID: 0}
-  child: {fileID: -2528036418800050098}
-  DialogueActions: []
---- !u!114 &-2528036418800050098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 98aca28ee3c31f541a6e49229a977c94
-  position: {x: 1874, y: 231}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: (Oh no that was supposed to be nice not scary)
-  SceneLayout: {fileID: 0}
-  child: {fileID: 9040835745615606653}
-  DialogueActions: []
---- !u!114 &-2429666395266975222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 2e180d4b5f218184285e3729ad18c987
-  position: {x: 1112, y: 500}
-  state: 0
-  Speaker: Narrator
-  Dialogue: "But that\u2019s not really what\u2019s on your mind."
-  SceneLayout: {fileID: 0}
-  child: {fileID: 3211405384637581782}
-  DialogueActions: []
---- !u!114 &-1945898293290072935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 1608aa084df76394d864b507bd520911
-  position: {x: 386, y: -29.759995}
-  state: 1
-  Speaker: Narrator
-  Dialogue: After living our little lives and growing through our conflicts, we rest.
-    And when we rest, we dream.
-  SceneLayout: {fileID: 0}
-  child: {fileID: 6972781405137335083}
-  DialogueActions: []
---- !u!114 &-1313804158208776621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: dafd66314e40dd445bf348b44535d9ea
-  position: {x: 398, y: 492}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: Oh! Ok no problem is everything okay?
-  SceneLayout: {fileID: 0}
-  child: {fileID: 7713403666338047995}
-  DialogueActions: []
---- !u!114 &-722747302097013921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: bccd76450509d3e45bc5e18eb1d25d64
-  position: {x: 748, y: 61}
-  state: 1
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "So sorry, I\u2019ll get started on a new one as fast as possible!"
-  SceneLayout: {fileID: 0}
-  child: {fileID: -6908449046061812349}
-  DialogueActions: []
---- !u!114 &-298318926738229354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 202be518f561b9a4b8b60866173b8ea2
-  position: {x: 2049.8, y: 345}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "It\u2019s no problem, this is my job."
-  SceneLayout: {fileID: 0}
-  child: {fileID: 91840647470373621}
-  DialogueActions: []
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37aa8c975bd8e0f49848dc44b360140a, type: 3}
-  m_Name: NewScene1_DialogueTree_Ryan
-  m_EditorClassIdentifier: 
-  RootNode: {fileID: 3200454272355404102}
-  treeState: 0
-  nodes:
-  - {fileID: 3200454272355404102}
-  - {fileID: 1863063705147224226}
-  - {fileID: -1945898293290072935}
-  - {fileID: 6972781405137335083}
-  - {fileID: -6173935169853234927}
-  - {fileID: -6226446480325100208}
-  - {fileID: -8686080984293367483}
-  - {fileID: -4082247585445955813}
-  - {fileID: -7850302102733387723}
-  - {fileID: 2534761036011653681}
-  - {fileID: 2048176523851220938}
-  - {fileID: -4587417455433584832}
-  - {fileID: 3833675329702743629}
-  - {fileID: -722747302097013921}
-  - {fileID: -6908449046061812349}
-  - {fileID: 4577392858489644243}
-  - {fileID: 7354815363591648119}
-  - {fileID: -8778217560643546216}
-  - {fileID: 8844868499979559701}
-  - {fileID: 720817480943243728}
-  - {fileID: 6823926600969813021}
-  - {fileID: 5229293262707493569}
-  - {fileID: 7834658294731652654}
-  - {fileID: -5982099567612732482}
-  - {fileID: -5319784643528285037}
-  - {fileID: 8312758083119474915}
-  - {fileID: 5075469775729145022}
-  - {fileID: -3655663508932072426}
-  - {fileID: 7313660005248504483}
-  - {fileID: 1865771695258929462}
-  - {fileID: 1685112761115788070}
-  - {fileID: 6905943784413118122}
-  - {fileID: 461954537718256417}
-  - {fileID: 470034391223960281}
-  - {fileID: 7921533884107675208}
-  - {fileID: -9197495853393402372}
-  - {fileID: -4461725536074130346}
-  - {fileID: -8388072321062331294}
-  - {fileID: -3590402512999220311}
-  - {fileID: -2528036418800050098}
-  - {fileID: 9040835745615606653}
-  - {fileID: 4672191130922980066}
-  - {fileID: -6872049703930337427}
-  - {fileID: -5100489045412089649}
-  - {fileID: -9134476912276679151}
-  - {fileID: -4151696087344151578}
-  - {fileID: 6076861815327671766}
-  - {fileID: 6266585671163380571}
-  - {fileID: -298318926738229354}
-  - {fileID: 91840647470373621}
-  - {fileID: -4067246482476917805}
-  - {fileID: 4227316244783286975}
-  - {fileID: -4892626325616725558}
-  - {fileID: 3211070447463424801}
-  - {fileID: -6237221556349488833}
-  - {fileID: -1313804158208776621}
-  - {fileID: 7713403666338047995}
-  - {fileID: 3692365358231425771}
-  - {fileID: 3272238075398677487}
-  - {fileID: -2429666395266975222}
-  - {fileID: 3211405384637581782}
-  - {fileID: -5862616654818576080}
-  - {fileID: 1735723202157872949}
-  - {fileID: 1269320907039648092}
---- !u!114 &91840647470373621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: c8e7bd4ed40b39a4898c48fff69242a3
-  position: {x: 2228.921, y: 322}
-  state: 0
-  Speaker: Eri
-  Dialogue: "Oh god you\u2019re right what am I saying haha."
-  SceneLayout: {fileID: 0}
-  child: {fileID: -4067246482476917805}
-  DialogueActions: []
---- !u!114 &461954537718256417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24ca86122f814e040b6be55c4c1287b2, type: 3}
-  m_Name: DialogueChoiceNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: d06f06114f997b64989cbf1e8c008073
-  position: {x: 928, y: 325}
-  state: 1
-  Speaker: Narrator
-  Dialogue: "Eri picks a table and stays there most of the day. When he does come
-    back, it\u2019s for the same drink over and over. He wants a\u2026"
-  SceneLayout: {fileID: 0}
-  children: []
-  DialogueActions:
-  - {fileID: 470034391223960281}
-  - {fileID: 7921533884107675208}
---- !u!114 &470034391223960281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
-  m_Name: DialogueOptionNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 6e83ab427072f3f40a521ad33d37e858
-  position: {x: 1160, y: 245.63998}
-  state: 0
-  Speaker: 
-  Dialogue: A caramel macchiato
-  SceneLayout: {fileID: 0}
-  child: {fileID: -9197495853393402372}
-  DialogueActions: []
---- !u!114 &720817480943243728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 4027b7a1b20d6b34b99a0f3020e11fca
-  position: {x: 201, y: 218}
-  state: 1
-  Speaker: Eri
-  Dialogue: "I uh\u2026 It\u2019s been fine. I woke up and came right over when I
-    noticed that it was open so early."
-  SceneLayout: {fileID: 0}
-  child: {fileID: 6823926600969813021}
-  DialogueActions: []
---- !u!114 &1269320907039648092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
-  m_Name: DialogueEndNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: f6dbe0fedb5d1ae44a90c4cd2532cad4
-  position: {x: 1921.8398, y: 531}
-  state: 0
-  Speaker: 
-  Dialogue: 
-  SceneLayout: {fileID: 0}
---- !u!114 &1685112761115788070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 537f611f93c459a49970c97d078240f9
-  position: {x: 576, y: 331}
-  state: 1
-  Speaker: Ash, the Dream Chaser
-  Dialogue: Of course, take care! Holler if you need anything.
-  SceneLayout: {fileID: 0}
-  child: {fileID: 6905943784413118122}
-  DialogueActions: []
---- !u!114 &1735723202157872949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 6ed0544392cac35449a18b1f4d0590b0
-  position: {x: 1709.52, y: 512}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: (Guess I should go check out his dreams.)
-  SceneLayout: {fileID: 0}
-  child: {fileID: 1269320907039648092}
-  DialogueActions: []
---- !u!114 &1863063705147224226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 9a91490b3ec92d94cbdda08d397f8526
-  position: {x: 200, y: -11.52002}
-  state: 1
-  Speaker: Narrator
-  Dialogue: The mind is vast and unknowable. We are molded by our experiences, by
-    chemistry, by family and friends, by wants and desires, by hardship and celebration.
-  SceneLayout: {fileID: 0}
-  child: {fileID: -1945898293290072935}
-  DialogueActions: []
---- !u!114 &1865771695258929462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: c609edd759f8cf345a843d4dabf80f7e
-  position: {x: 399, y: 335}
-  state: 1
-  Speaker: Eri
-  Dialogue: Oh right, heh. Thanks. Appreciate it.
-  SceneLayout: {fileID: 0}
-  child: {fileID: 1685112761115788070}
-  DialogueActions: []
---- !u!114 &2048176523851220938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: a99079f5309b6624b9cd986242933922
-  position: {x: 201, y: 119}
-  state: 1
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "OH GOD THERE\u2019S COFFEE EVERYWHERE!"
-  SceneLayout: {fileID: 0}
-  child: {fileID: -4587417455433584832}
-  DialogueActions: []
---- !u!114 &2534761036011653681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: c21e1d352d349b149939482868402f21
-  position: {x: 24, y: 108}
-  state: 1
-  Speaker: Narrator
-  Dialogue: "But not even a primordial being of ancient power can avoid the trappings
-    of capitalism. So we find our Dream Chaser working a minimum wage job, trying
-    their best\u2026"
-  SceneLayout: {fileID: 0}
-  child: {fileID: 2048176523851220938}
-  DialogueActions: []
---- !u!114 &3200454272355404102
+--- !u!114 &-8944016186886250486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -945,14 +55,14 @@ MonoBehaviour:
   m_Name: DialogueRootNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 8b7afc3499ecb4a438492b897278c740
+  GUID: 04d082fed6dd2e14fab31ba4c195717a
   position: {x: 0, y: 0}
   state: 1
   Speaker: 
   Dialogue: 
   SceneLayout: {fileID: 0}
-  child: {fileID: 1863063705147224226}
---- !u!114 &3211070447463424801
+  child: {fileID: -5309238378544342649}
+--- !u!114 &-8568525081480394350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -965,17 +75,15 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: f0452f417b3cae04da85a32178932a78
-  position: {x: 26, y: 501}
-  state: 0
-  Speaker: Narrator
-  Dialogue: As you brew the coffee, Eri looks down at his phone and begins to look
-    anxious. He glances at you, then the phone then back at you before approaching
-    again.
+  GUID: 0043aa6be0e5f6e4e85cf4b2852c1857
+  position: {x: 217.88074, y: 450.49854}
+  state: 1
+  Speaker: Ash
+  Dialogue: Of course, take care! Holler if you need anything.
   SceneLayout: {fileID: 0}
-  child: {fileID: -6237221556349488833}
+  child: {fileID: 602279632729156668}
   DialogueActions: []
---- !u!114 &3211405384637581782
+--- !u!114 &-8507415322188167532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -988,16 +96,15 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 0be9b26be0c22c4489e182e09d5bd184
-  position: {x: 1311.76, y: 512.48}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "(He was really off all day. I wonder what was up with him\u2026 I just
-    hope he\u2019s okay.)"
+  GUID: e7c25458f51f2744b860c923e63a016e
+  position: {x: 583.42303, y: 335.06415}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Oh\u2026what about your job?"
   SceneLayout: {fileID: 0}
-  child: {fileID: -5862616654818576080}
+  child: {fileID: -3370395151832039790}
   DialogueActions: []
---- !u!114 &3272238075398677487
+--- !u!114 &-7454615305994728507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1006,21 +113,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 7502dc69f2fc76d4785259e6a933c200
-  position: {x: 927, y: 502}
+  GUID: 03e47d2214b1add46a9955e09076c5a8
+  position: {x: 1651.2263, y: 704.1045}
   state: 0
-  Speaker: Narrator
-  Dialogue: "Eri quickly grabs his things and leaves, looking more and more anxious
-    as he leaves. His coffee is left behind and you\u2019re not really sure what
-    to do with it."
+  Speaker: 
+  Dialogue: 
   SceneLayout: {fileID: 0}
-  child: {fileID: -2429666395266975222}
-  DialogueActions: []
---- !u!114 &3692365358231425771
+--- !u!114 &-6626387422917718525
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1033,36 +136,17 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 5d986b4f77d9d3447bf5d21419531b98
-  position: {x: 751, y: 475}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: Oh, ok yeah totally goodbye!
-  SceneLayout: {fileID: 0}
-  child: {fileID: 3272238075398677487}
-  DialogueActions: []
---- !u!114 &3833675329702743629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 87331789e05b0d940b43b94dd7b6e5b8
-  position: {x: 572, y: 82}
+  GUID: 8241f50252dbc8541942f5ac16b479f2
+  position: {x: 2.7529826, y: 118.18738}
   state: 1
   Speaker: Narrator
-  Dialogue: You are the Dream Chaser, and you are not great at making coffee.
+  Dialogue: (Sometimes, that little push, that scrap of light, is all you need to
+    get through hardship, to give people the strength they need to change. The Dream
+    Chaser frees people from their inner demons even to this day.)
   SceneLayout: {fileID: 0}
-  child: {fileID: -722747302097013921}
+  child: {fileID: -823309346485826306}
   DialogueActions: []
---- !u!114 &4227316244783286975
+--- !u!114 &-5528964241518029803
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1075,15 +159,15 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 34b7ebfe625f32746a4b5d054c23d929
-  position: {x: 2603.7195, y: 316.48}
+  GUID: dca52104b322ddd428a7d244042c1b90
+  position: {x: 1803.263, y: 535.48206}
   state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "(What\u2019s going on with him?)"
+  Speaker: Ash
+  Dialogue: "It\u2019s no problem, this is my job."
   SceneLayout: {fileID: 0}
-  child: {fileID: -4892626325616725558}
+  child: {fileID: 4947941798127749393}
   DialogueActions: []
---- !u!114 &4577392858489644243
+--- !u!114 &-5436861685716122522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1096,16 +180,105 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 73c26a0c1efd04d4eb4123e96a2770b0
-  position: {x: 1120, y: 39}
+  GUID: bc74054032e5ffa4a89f93a899bac86c
+  position: {x: 1315.6968, y: 695.35944}
   state: 1
   Speaker: Ash, the Dream Chaser
+  Dialogue: "(Maybe he\u2019s just got a lot on his mind. Couldn\u2019t hurt to check
+    though\u2026)"
+  SceneLayout: {fileID: 0}
+  child: {fileID: 0}
+  DialogueActions: []
+--- !u!114 &-5309238378544342649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: ca197e79f05228247bbeb94577d574aa
+  position: {x: 265, y: 17}
+  state: 1
+  Speaker: Narrator
+  Dialogue: (The mind is vast and unknowable. We are molded by our experiences, by
+    chemistry, by family and friends, by wants and desires, by hardship and celebration.)
+  SceneLayout: {fileID: 0}
+  child: {fileID: 8793680898974015499}
+  DialogueActions: []
+--- !u!114 &-5031098323728105069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ca86122f814e040b6be55c4c1287b2, type: 3}
+  m_Name: DialogueChoiceNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 7541f0470e0e74b4c8398ea276f1f0b5
+  position: {x: 595.6661, y: 460.99258}
+  state: 1
+  Speaker: Narrator
+  Dialogue: "(Eri picks a table and stays there most of the day. When he does come
+    back, it\u2019s for the same drink over and over. He wants a\u2026)"
+  SceneLayout: {fileID: 0}
+  children:
+  - {fileID: -3668310903980620648}
+  - {fileID: 1165011251567929758}
+  DialogueActions: []
+--- !u!114 &-4940411812454746833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: fae7d14cc527b3943853f1c567930102
+  position: {x: 575.58746, y: 216.13173}
+  state: 1
+  Speaker: Ash
+  Dialogue: "While the coffee is brewing, how\u2019s your day been?"
+  SceneLayout: {fileID: 0}
+  child: {fileID: 7061785406782886894}
+  DialogueActions: []
+--- !u!114 &-4616238756728671428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 4444bc9faba88a04094f538e71042aee
+  position: {x: 14.996026, y: 231.87279}
+  state: 1
+  Speaker: Ash
   Dialogue: "Thank you so much for your patience. I swear this one won\u2019t have
     coffee grounds in it."
   SceneLayout: {fileID: 0}
-  child: {fileID: 7354815363591648119}
+  child: {fileID: 8969782577876773543}
   DialogueActions: []
---- !u!114 &4672191130922980066
+--- !u!114 &-4574548778418306659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1118,257 +291,15 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 624b951ec6036ad4a9917ffe474987bb
-  position: {x: 2229.36, y: 205}
-  state: 0
-  Speaker: Eri
-  Dialogue: Haha, of course! How silly of me, apologies for fretting.
-  SceneLayout: {fileID: 0}
-  child: {fileID: -6872049703930337427}
-  DialogueActions: []
---- !u!114 &5075469775729145022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 96ebc2015ad8bed48a30583eeb4c55fb
-  position: {x: 1498, y: 156}
-  state: 1
-  Speaker: Eri
-  Dialogue: "The job was\u2026 not good for us. I wasn\u2019t spending enough time
-    with my partner and they felt neglected so I quit."
-  SceneLayout: {fileID: 0}
-  child: {fileID: -3655663508932072426}
-  DialogueActions: []
---- !u!114 &5229293262707493569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 6bd4741a125b52642b319276a1186f8b
-  position: {x: 572, y: 204}
-  state: 1
-  Speaker: Eri
-  Dialogue: "Yeah, things have been kind of weird lately but\u2026but now that I
-    don\u2019t have a job anymore and I\u2019ve stopped gardening\u2026"
-  SceneLayout: {fileID: 0}
-  child: {fileID: 7834658294731652654}
-  DialogueActions: []
---- !u!114 &6076861815327671766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 8d996b0fef7708d42b5cbee4f040c547
-  position: {x: 1705.36, y: 353}
-  state: 0
-  Speaker: Eri
-  Dialogue: "Heh I guess that wasn\u2019t much of a surprise huh? Sorry for bothering
-    you so much you probably have a lot of other things to do."
-  SceneLayout: {fileID: 0}
-  child: {fileID: 6266585671163380571}
-  DialogueActions: []
---- !u!114 &6266585671163380571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 478e445528ca5b34e9cab8559dc60a8a
-  position: {x: 1882.3998, y: 362}
-  state: 0
-  Speaker: Ash, the Dream Chaser
-  Dialogue: (Why is he so skittish?)
-  SceneLayout: {fileID: 0}
-  child: {fileID: -298318926738229354}
-  DialogueActions: []
---- !u!114 &6823926600969813021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 42cc10ba52f8fde4da5839735b4dca02
-  position: {x: 400, y: 227}
-  state: 1
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "I\u2019m glad you were able to stop by today! I feel like I haven\u2019t
-    seen you around in a while."
-  SceneLayout: {fileID: 0}
-  child: {fileID: 5229293262707493569}
-  DialogueActions: []
---- !u!114 &6905943784413118122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 698607d11bcafa54f97d0654e2a4c90f
-  position: {x: 748, y: 323}
-  state: 1
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "(Something was off there\u2026 Maybe I\u2019ll keep an eye on him just
-    in case.)"
-  SceneLayout: {fileID: 0}
-  child: {fileID: 461954537718256417}
-  DialogueActions: []
---- !u!114 &6972781405137335083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: a4a4f80ebc27c1e4d9932ad917a66f50
-  position: {x: 563, y: -43}
+  GUID: 4c059b730b850b547a81203c9d0da452
+  position: {x: 981.5495, y: -41.984123}
   state: 1
   Speaker: Narrator
-  Dialogue: Since humans were able to fear the dark and dream of what lurked within,
-    we have been accompanied by a being of kindness who has helped us fight off that
-    darkness, someone who supports humans through their struggles.
+  Dialogue: (The Dream Chaser.)
   SceneLayout: {fileID: 0}
-  child: {fileID: -6173935169853234927}
+  child: {fileID: 8515137264094672602}
   DialogueActions: []
---- !u!114 &7313660005248504483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 66b21fbf42223a544a1cc3771d5444de
-  position: {x: 201, y: 318.91998}
-  state: 1
-  Speaker: Ash, the Dream Chaser
-  Dialogue: Oh looks like your coffee is done, here ya go!
-  SceneLayout: {fileID: 0}
-  child: {fileID: 1865771695258929462}
-  DialogueActions: []
---- !u!114 &7354815363591648119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: a814584db6501614abdc2cd902c9cae7
-  position: {x: 1305, y: 36}
-  state: 1
-  Speaker: Narrator
-  Dialogue: Nothing like a totally normal human conversation between two humans,
-    one of which is definitely not an ancient being undercover as a human in order
-    to find more people to help with their life problems through unknowable dream
-    magic.
-  SceneLayout: {fileID: 0}
-  child: {fileID: -8778217560643546216}
-  DialogueActions: []
---- !u!114 &7713403666338047995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 1e787139f1dff8545b59fe02a1de38d9
-  position: {x: 574, y: 482}
-  state: 0
-  Speaker: Eri
-  Dialogue: "Yeah I just\u2026I\u2019ve been away for too long I uh\u2026 I just
-    have to go."
-  SceneLayout: {fileID: 0}
-  child: {fileID: 3692365358231425771}
-  DialogueActions: []
---- !u!114 &7834658294731652654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 8b0224ae6161745498ddb4270cd4105c
-  position: {x: 749, y: 190}
-  state: 1
-  Speaker: Eri
-  Dialogue: Well. I have a lot more time on my hands.
-  SceneLayout: {fileID: 0}
-  child: {fileID: -5982099567612732482}
-  DialogueActions: []
---- !u!114 &7921533884107675208
+--- !u!114 &-3668310903980620648
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1381,15 +312,479 @@ MonoBehaviour:
   m_Name: DialogueOptionNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: eeb89bf2e5aadc54c86de6573a525f9d
-  position: {x: 1155, y: 387.36}
+  GUID: ef606b6192dd7374b8d9f73f518c4e91
+  position: {x: 845.774, y: 457.49457}
+  state: 1
+  Speaker: 
+  Dialogue: A Caramel Macchiato
+  SceneLayout: {fileID: 0}
+  child: {fileID: -644146502201448992}
+  DialogueActions: []
+--- !u!114 &-3504167572435934268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: cfcd7258073134f44a913cf79c296d72
+  position: {x: 952.4634, y: 231.87279}
+  state: 1
+  Speaker: Ash
+  Dialogue: "I\u2019m glad you were able to stop by today! I feel like I haven\u2019t
+    seen you around in a while."
+  SceneLayout: {fileID: 0}
+  child: {fileID: 7930649620633966309}
+  DialogueActions: []
+--- !u!114 &-3376364712809813950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 6a0e5c000d2edaa4ea39a5e4d9a24d35
+  position: {x: 1221.8103, y: 557.1879}
+  state: 0
+  Speaker: Ash
+  Dialogue: A Matcha Latte?
+  SceneLayout: {fileID: 0}
+  child: {fileID: 4062277365484236426}
+  DialogueActions: []
+--- !u!114 &-3370395151832039790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 32a65aa3c3d9f1746ad731a258fbe125
+  position: {x: 746.6403, y: 331.56613}
+  state: 1
+  Speaker: Eri
+  Dialogue: "The job was\u2026 not good for us. I wasn\u2019t spending enough time
+    with my partner and they felt neglected so I quit."
+  SceneLayout: {fileID: 0}
+  child: {fileID: -9125796762834851078}
+  DialogueActions: []
+--- !u!114 &-2861959353448552767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 223f62c5dc2f4334abeb13af3679a710
+  position: {x: 613, y: 9}
+  state: 1
+  Speaker: Narrator
+  Dialogue: (Since humans were able to fear the dark and dream of what lurked within,
+    we have been accompanied by a being of kindness who has helped us fight off that
+    darkness, someone who supports humans through their struggles.)
+  SceneLayout: {fileID: 0}
+  child: {fileID: -1171819843961670723}
+  DialogueActions: []
+--- !u!114 &-1825832602698715604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 19486384bd2b5a1449dcc7d77f661469
+  position: {x: 35.634327, y: 466.2396}
+  state: 1
+  Speaker: Eri
+  Dialogue: Oh right, heh. Thanks. Appreciate it.
+  SceneLayout: {fileID: 0}
+  child: {fileID: -8568525081480394350}
+  DialogueActions: []
+--- !u!114 &-1171819843961670723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 28a86ea51195d1149a05681904855c26
+  position: {x: 781.52, y: -18}
+  state: 1
+  Speaker: Narrator
+  Dialogue: "(They have taken many different names and different forms, but the most
+    common name is\u2026)"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -4574548778418306659}
+  DialogueActions: []
+--- !u!114 &-1142284822309339233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: d338b5c4473feab48a058a7a4fffe62e
+  position: {x: 978.6984, y: 104.195335}
+  state: 1
+  Speaker: Ash
+  Dialogue: "So sorry, I\u2019ll get started on a new one as fast as possible!"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -8959344014219776515}
+  DialogueActions: []
+--- !u!114 &-823309346485826306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: f17c6d8ca74f796479ceac1a04564c38
+  position: {x: 208.5536, y: 116.03171}
+  state: 1
+  Speaker: Narrator
+  Dialogue: "(But not even a primordial being of ancient power can avoid the trappings
+    of capitalism. So we find our Dream Chaser working a minimum wage job, trying
+    their best\u2026)\r\n"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -286836776555052626}
+  DialogueActions: []
+--- !u!114 &-783785280290611396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 11b41382fe6a67e4bb387c7d99a1765a
+  position: {x: 27.588867, y: 349.05618}
+  state: 1
+  Speaker: Eri
+  Dialogue: Well. I have a lot more time on my hands.
+  SceneLayout: {fileID: 0}
+  child: {fileID: 4302567742010118435}
+  DialogueActions: []
+--- !u!114 &-697037220723203565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: fee88267fb7da4748abe3b636ef6fcee
+  position: {x: 1225.5182, y: 431.2595}
+  state: 1
+  Speaker: Ash
+  Dialogue: A caramel macchiato?
+  SceneLayout: {fileID: 0}
+  child: {fileID: 1679997622492329343}
+  DialogueActions: []
+--- !u!114 &-644146502201448992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: e3a123b906b68754a8f6ceb1aec422e0
+  position: {x: 1037.5178, y: 453.49002}
+  state: 1
+  Speaker: Eri
+  Dialogue: "Hi, sorry to be a bother but can I get\u2014"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -697037220723203565}
+  DialogueActions: []
+--- !u!114 &-581651590567227970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 48268a6838bd8ff4ab1612f797f09524
+  position: {x: 611.4071, y: 123.4344}
+  state: 1
+  Speaker: Narrator
+  Dialogue: (...and failing.)
+  SceneLayout: {fileID: 0}
+  child: {fileID: 1009479084034699459}
+  DialogueActions: []
+--- !u!114 &-286836776555052626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 7cda8bacb41f9734a868d739773a48b8
+  position: {x: 422.51447, y: 119.93633}
+  state: 1
+  Speaker: Ash
+  Dialogue: "OH GOD THERE\u2019S COFFEE EVERYWHERE!"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -581651590567227970}
+  DialogueActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37aa8c975bd8e0f49848dc44b360140a, type: 3}
+  m_Name: 172Scene1_MeetingEri_Ryan
+  m_EditorClassIdentifier: 
+  RootNode: {fileID: -8944016186886250486}
+  treeState: 0
+  nodes:
+  - {fileID: -8944016186886250486}
+  - {fileID: -5309238378544342649}
+  - {fileID: 8793680898974015499}
+  - {fileID: -2861959353448552767}
+  - {fileID: -1171819843961670723}
+  - {fileID: -4574548778418306659}
+  - {fileID: 8515137264094672602}
+  - {fileID: -6626387422917718525}
+  - {fileID: -823309346485826306}
+  - {fileID: -286836776555052626}
+  - {fileID: -581651590567227970}
+  - {fileID: 1009479084034699459}
+  - {fileID: -1142284822309339233}
+  - {fileID: -8959344014219776515}
+  - {fileID: -4616238756728671428}
+  - {fileID: 8969782577876773543}
+  - {fileID: 4778011625958951800}
+  - {fileID: -4940411812454746833}
+  - {fileID: 7061785406782886894}
+  - {fileID: -3504167572435934268}
+  - {fileID: 7930649620633966309}
+  - {fileID: -783785280290611396}
+  - {fileID: 4302567742010118435}
+  - {fileID: 1158415598775882545}
+  - {fileID: -8507415322188167532}
+  - {fileID: -3370395151832039790}
+  - {fileID: -9125796762834851078}
+  - {fileID: 2252568968735985861}
+  - {fileID: -1825832602698715604}
+  - {fileID: -8568525081480394350}
+  - {fileID: 602279632729156668}
+  - {fileID: -5031098323728105069}
+  - {fileID: -3668310903980620648}
+  - {fileID: 1165011251567929758}
+  - {fileID: 3568993431016765137}
+  - {fileID: -644146502201448992}
+  - {fileID: -697037220723203565}
+  - {fileID: -3376364712809813950}
+  - {fileID: 4062277365484236426}
+  - {fileID: 1679997622492329343}
+  - {fileID: 6291286699855847582}
+  - {fileID: 7326903354804204189}
+  - {fileID: 6197866413177194720}
+  - {fileID: -5528964241518029803}
+  - {fileID: 7217692971960127030}
+  - {fileID: 4947941798127749393}
+  - {fileID: 4196465230992016433}
+  - {fileID: 4391503614240195441}
+  - {fileID: 5405427564062265935}
+  - {fileID: 7133114543412533769}
+  - {fileID: 4922004457930992220}
+  - {fileID: 3980707124144570775}
+  - {fileID: 4914228724069346109}
+  - {fileID: 2280398317274850194}
+  - {fileID: 242187080314863902}
+  - {fileID: 5327394292563188999}
+  - {fileID: 8783885137310559384}
+  - {fileID: 4004810135017408093}
+  - {fileID: 6204868274395477201}
+  - {fileID: -5436861685716122522}
+  - {fileID: 2253602552801157925}
+  - {fileID: -7454615305994728507}
+--- !u!114 &242187080314863902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: e92398d84c892c24daaac85f70bea669
+  position: {x: 395.25092, y: 755.4781}
+  state: 1
+  Speaker: Ash
+  Dialogue: Oh! Ok no problem is everything okay?
+  SceneLayout: {fileID: 0}
+  child: {fileID: 5327394292563188999}
+  DialogueActions: []
+--- !u!114 &602279632729156668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 9e41be7c83ab2694abf5a3b48d0f427a
+  position: {x: 411.23508, y: 462.247}
+  state: 1
+  Speaker: Ash
+  Dialogue: "(Something was off there\u2026 Maybe I\u2019ll keep an eye on him just
+    in case.)"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -5031098323728105069}
+  DialogueActions: []
+--- !u!114 &1009479084034699459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: b89fe088223e2714caa6743d82703439
+  position: {x: 791.55475, y: 97.19931}
+  state: 1
+  Speaker: Narrator
+  Dialogue: (You are the Dream Chaser, and you are not great at making coffee.)
+  SceneLayout: {fileID: 0}
+  child: {fileID: -1142284822309339233}
+  DialogueActions: []
+--- !u!114 &1158415598775882545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 204076dba12289b48a68f4c0ec55c590
+  position: {x: 380.53833, y: 343.80917}
+  state: 1
+  Speaker: Eri
+  Dialogue: 'Well, my partner and I decided that it was best if I dropped it. It
+    makes the house look bad, stands out too much. '
+  SceneLayout: {fileID: 0}
+  child: {fileID: -8507415322188167532}
+  DialogueActions: []
+--- !u!114 &1165011251567929758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 134145d92b8216848bba32be767804f0
+  position: {x: 854.519, y: 586.921}
   state: 0
   Speaker: 
   Dialogue: A Matcha Latte
   SceneLayout: {fileID: 0}
-  child: {fileID: -4461725536074130346}
+  child: {fileID: 3568993431016765137}
   DialogueActions: []
---- !u!114 &8312758083119474915
+--- !u!114 &1679997622492329343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1402,15 +797,16 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: b1d87cfd68741f447b78e862c67974e6
-  position: {x: 1304, y: 154}
+  GUID: 828d88be67f4706498385289689ca09b
+  position: {x: 1420.2174, y: 408.5224}
   state: 1
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "Oh\u2026what about your job?"
+  Speaker: Eri
+  Dialogue: "Yeah! Oh god I must have come up so many times for you to remember I\u2019m
+    sorry."
   SceneLayout: {fileID: 0}
-  child: {fileID: 5075469775729145022}
+  child: {fileID: 6291286699855847582}
   DialogueActions: []
---- !u!114 &8844868499979559701
+--- !u!114 &2252568968735985861
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1423,15 +819,15 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 8c9b548aae1903845b414d30371f3f4b
-  position: {x: 20, y: 212}
+  GUID: ed48d29c0969b2b428a251bd8ae9ee7b
+  position: {x: 1151.8501, y: 342.06018}
   state: 1
-  Speaker: Ash, the Dream Chaser
-  Dialogue: "While the coffee is brewing, how\u2019s your day been?"
+  Speaker: Ash
+  Dialogue: "Oh looks like your coffee is done, here ya go!\r"
   SceneLayout: {fileID: 0}
-  child: {fileID: 720817480943243728}
+  child: {fileID: -1825832602698715604}
   DialogueActions: []
---- !u!114 &9040835745615606653
+--- !u!114 &2253602552801157925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1444,12 +840,573 @@ MonoBehaviour:
   m_Name: DialogueSpeechNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 831d11767ce6311419c073743c8cf18d
-  position: {x: 2046, y: 228}
+  GUID: 769e37c13da46fe49ac726da58d49c81
+  position: {x: 1477.5149, y: 700.60645}
   state: 0
   Speaker: Ash, the Dream Chaser
+  Dialogue: (Guess I should go check out his dreams.)
+  SceneLayout: {fileID: 0}
+  child: {fileID: -7454615305994728507}
+  DialogueActions: []
+--- !u!114 &2280398317274850194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: b2c79d6291923b642bf88e2334cd8535
+  position: {x: 209.9999, y: 778.2032}
+  state: 1
+  Speaker: Eri
+  Dialogue: "I\u2019m so sorry but I have to go like\u2026. Right now."
+  SceneLayout: {fileID: 0}
+  child: {fileID: 242187080314863902}
+  DialogueActions: []
+--- !u!114 &3568993431016765137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 0565c98068b13bd4098d13e9ef66535a
+  position: {x: 1053.0079, y: 576.243}
+  state: 0
+  Speaker: Eri
+  Dialogue: "Hi, sorry to be a bother but can I get\u2014"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -3376364712809813950}
+  DialogueActions: []
+--- !u!114 &3980707124144570775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 6f524dcf979ab3245981038346af88b2
+  position: {x: 2530.4866, y: 480.23172}
+  state: 0
+  Speaker: Ash
+  Dialogue: "Hey, it\u2019s okay, don't worry about it."
+  SceneLayout: {fileID: 0}
+  child: {fileID: 4914228724069346109}
+  DialogueActions: []
+--- !u!114 &4004810135017408093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 27793f7906adcf640868806eee92550e
+  position: {x: 943.71826, y: 712.8495}
+  state: 1
+  Speaker: Narrator
+  Dialogue: "(Eri quickly grabs his things and leaves, looking more and more anxious
+    as he leaves. His coffee is left behind and you\u2019re not really sure what
+    to do with it. But that\u2019s not really what\u2019s on your mind.)"
+  SceneLayout: {fileID: 0}
+  child: {fileID: 6204868274395477201}
+  DialogueActions: []
+--- !u!114 &4062277365484236426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 48f42067733c3d64eb8b8eef885be80d
+  position: {x: 1428.053, y: 567.6819}
+  state: 0
+  Speaker: Eri
+  Dialogue: "Heh I guess that wasn\u2019t much of a surprise huh? Sorry for bothering
+    you so much you probably have a lot of other things to do."
+  SceneLayout: {fileID: 0}
+  child: {fileID: 7326903354804204189}
+  DialogueActions: []
+--- !u!114 &4196465230992016433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 218091b4e0f4b8e40940c9c5ab98efc6
+  position: {x: 2172.849, y: 315.8251}
+  state: 1
+  Speaker: Narrator
+  Dialogue: (Eri tries not to make any eye contact as you get started on his drink)
+  SceneLayout: {fileID: 0}
+  child: {fileID: 4391503614240195441}
+  DialogueActions: []
+--- !u!114 &4302567742010118435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 1b8b62ae2cf8ad245987f4bb4beed453
+  position: {x: 218.93013, y: 354.30322}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Oh I\u2019m sorry to hear that, you were always so excited to talk about
+    that garden what happened?"
+  SceneLayout: {fileID: 0}
+  child: {fileID: 1158415598775882545}
+  DialogueActions: []
+--- !u!114 &4391503614240195441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 5eb41b474c1ad7643a770227d1e1a129
+  position: {x: 2353.4172, y: 312.3271}
+  state: 1
+  Speaker: Ash
+  Dialogue: (Why is he apologizing?)
+  SceneLayout: {fileID: 0}
+  child: {fileID: 5405427564062265935}
+  DialogueActions: []
+--- !u!114 &4778011625958951800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 9f61597e498b38844be7dc2f585cb246
+  position: {x: 382.28732, y: 217.88074}
+  state: 1
+  Speaker: Narrator
+  Dialogue: (Totally normal.)
+  SceneLayout: {fileID: 0}
+  child: {fileID: -4940411812454746833}
+  DialogueActions: []
+--- !u!114 &4914228724069346109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 4c4990e30dc701148a571d039626cdae
+  position: {x: -3.0776122, y: 726.3815}
+  state: 1
+  Speaker: Narrator
+  Dialogue: (As you brew the coffee, Eri looks down at his phone and begins to look
+    anxious. He glances at you, then the phone then back at you before approaching
+    again.)
+  SceneLayout: {fileID: 0}
+  child: {fileID: 2280398317274850194}
+  DialogueActions: []
+--- !u!114 &4922004457930992220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 09fc5f1ab433f2a4bb2e8d8898303886
+  position: {x: 2353.907, y: 483.7297}
+  state: 0
+  Speaker: Ash
+  Dialogue: "(What\u2019s going on with him?)"
+  SceneLayout: {fileID: 0}
+  child: {fileID: 3980707124144570775}
+  DialogueActions: []
+--- !u!114 &4947941798127749393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: a47fbf6f4412792409f513c4d6a64861
+  position: {x: 1980.1794, y: 513.46277}
+  state: 0
+  Speaker: Eri
+  Dialogue: "Oh god you\u2019re right what am I saying haha."
+  SceneLayout: {fileID: 0}
+  child: {fileID: 7133114543412533769}
+  DialogueActions: []
+--- !u!114 &5327394292563188999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 100f6e547af260b46b0b51ee2b305d77
+  position: {x: 562.43494, y: 742.5826}
+  state: 1
+  Speaker: Eri
+  Dialogue: "Yeah I just\u2026I\u2019ve been away for too long I uh\u2026 I just
+    have to go.\r\n"
+  SceneLayout: {fileID: 0}
+  child: {fileID: 8783885137310559384}
+  DialogueActions: []
+--- !u!114 &5405427564062265935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 545fef62fb2623a409672aa00429ad7c
+  position: {x: 2539.3018, y: 305.33102}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Oh no it\u2019s okay! I\u2019d be a little spooked too, I suppose."
+  SceneLayout: {fileID: 0}
+  child: {fileID: 4914228724069346109}
+  DialogueActions: []
+--- !u!114 &6197866413177194720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 344fe35de18b8a943bd5bf66d5803ef4
+  position: {x: 1802.9001, y: 345.55817}
+  state: 1
+  Speaker: Ash
   Dialogue: "No, don\u2019t worry! I\u2019m just new to customer service. I\u2019m
     uh\u2026 Trying to memorize the menu better."
   SceneLayout: {fileID: 0}
-  child: {fileID: 4672191130922980066}
+  child: {fileID: 7217692971960127030}
+  DialogueActions: []
+--- !u!114 &6204868274395477201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 25a7eec9753d882439d8ac9c38c07213
+  position: {x: 1125.6149, y: 704.10443}
+  state: 1
+  Speaker: Ash, the Dream Chaser
+  Dialogue: "(He was really off all day. I wonder what was up with him\u2026 I just
+    hope he\u2019s okay.)"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -5436861685716122522}
+  DialogueActions: []
+--- !u!114 &6291286699855847582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 52caeb70301b27b41a19b0354ee02f7e
+  position: {x: 1606.7316, y: 373.54227}
+  state: 1
+  Speaker: Ash
+  Dialogue: (Oh no that was supposed to be nice not scary)
+  SceneLayout: {fileID: 0}
+  child: {fileID: 6197866413177194720}
+  DialogueActions: []
+--- !u!114 &7061785406782886894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: d932acd3c864e2246ac709077d29737f
+  position: {x: 753.07666, y: 224.87675}
+  state: 1
+  Speaker: Eri
+  Dialogue: "I uh\u2026 It\u2019s been fine. I woke up and came right over when I
+    noticed that it was open so early."
+  SceneLayout: {fileID: 0}
+  child: {fileID: -3504167572435934268}
+  DialogueActions: []
+--- !u!114 &7133114543412533769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 0d071ae42e41eec48882c216a67a4cbe
+  position: {x: 2169.7717, y: 490.79565}
+  state: 0
+  Speaker: Narrator
+  Dialogue: (Eri looks at the ground.)
+  SceneLayout: {fileID: 0}
+  child: {fileID: 4922004457930992220}
+  DialogueActions: []
+--- !u!114 &7217692971960127030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 3d8f0aea39142fa4d8db6640141f9173
+  position: {x: 1982.012, y: 322.50998}
+  state: 1
+  Speaker: Eri
+  Dialogue: Haha, of course! How silly of me, apologies for fretting.
+  SceneLayout: {fileID: 0}
+  child: {fileID: 4196465230992016433}
+  DialogueActions: []
+--- !u!114 &7326903354804204189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 35cbc1b2b375857419ef2cbee0ca675a
+  position: {x: 1618.9747, y: 530.9528}
+  state: 0
+  Speaker: Ash
+  Dialogue: (Why is he so skittish?)
+  SceneLayout: {fileID: 0}
+  child: {fileID: -5528964241518029803}
+  DialogueActions: []
+--- !u!114 &7930649620633966309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 5a1c3edb3b4d7a9448eceb955cb073ba
+  position: {x: 1143.7347, y: 210.8847}
+  state: 1
+  Speaker: Eri
+  Dialogue: "Yeah, things have been kind of weird lately but\u2026but now that I
+    don\u2019t have a job anymore and I\u2019ve stopped gardening\u2026"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -783785280290611396}
+  DialogueActions: []
+--- !u!114 &8515137264094672602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: b54e1d1ecec296f4a8e3c7624947999d
+  position: {x: 1141.7058, y: -42.721184}
+  state: 1
+  Speaker: Narrator
+  Dialogue: "(They\u2019ve been called many things, angel, spirit, even demon. They
+    can enter people\u2019s dreams and make them a little brighter.) "
+  SceneLayout: {fileID: 0}
+  child: {fileID: -6626387422917718525}
+  DialogueActions: []
+--- !u!114 &8783885137310559384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 361f90ed754b9414c85a558861c3ab08
+  position: {x: 765.31964, y: 744.3316}
+  state: 1
+  Speaker: Ash
+  Dialogue: Oh, ok yeah totally goodbye!
+  SceneLayout: {fileID: 0}
+  child: {fileID: 4004810135017408093}
+  DialogueActions: []
+--- !u!114 &8793680898974015499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 69de5f54f64de3d4990793ef8b69accf
+  position: {x: 432, y: 15}
+  state: 1
+  Speaker: Narrator
+  Dialogue: (After living our little lives and growing through our conflicts, we
+    rest. And when we rest, we dream.)
+  SceneLayout: {fileID: 0}
+  child: {fileID: -2861959353448552767}
+  DialogueActions: []
+--- !u!114 &8969782577876773543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: cba565f4042e33342b8b8a372dc0edf4
+  position: {x: 202.13968, y: 237.1198}
+  state: 1
+  Speaker: Narrator
+  Dialogue: (Nothing like a totally normal human conversation between two humans,
+    one of which is definitely not an ancient being undercover as a human in order
+    to find more people to help with their life problems through unknowable dream
+    magic.)
+  SceneLayout: {fileID: 0}
+  child: {fileID: 4778011625958951800}
   DialogueActions: []
