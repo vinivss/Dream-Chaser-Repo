@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7208d0f81e86434ba7b5a9e7c5cb246, type: 3}
   m_Name: Arabica
   m_EditorClassIdentifier: 
-  RecipeIngreds: []
+  RecipeIngreds:
+  - ingredientsNeeded: {fileID: 11400000, guid: d3be0e67b581af641ac28a3ce6211308,
+      type: 2}
+    ingredientsCount: 2
   cookingMethod: 0
   Sprite: {fileID: 0}

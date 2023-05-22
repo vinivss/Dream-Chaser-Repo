@@ -1,4 +1,5 @@
 using Coffee;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ public class CoffeeManager : MonoBehaviour
     private void Awake()
     {
         currentRecipe =  ScriptableObject.CreateInstance("Recipe") as Recipe;
+      
        
     }
     public void OnCook()
@@ -22,14 +24,38 @@ public class CoffeeManager : MonoBehaviour
         {
             if(r.cookingMethod == currentRecipe.cookingMethod)
             {
-                if(r.RecipeIngreds == currentRecipe.RecipeIngreds)
+               
+                if(CheckIngredients(r))
                 {
+                    Debug.Log("Coooked");
                     CookedRecipe = r;
+                    Debug.Log(CookedRecipe.name);
                     break;
                 }
             }
         }
     }
+
+    private bool CheckIngredients(Recipe recipeToCheck)
+    {
+        if(recipeToCheck.RecipeIngreds.Count != currentRecipe.RecipeIngreds.Count)
+        {
+            return false;
+        }
+        recipeToCheck.RecipeIngreds.Sort();
+        currentRecipe.RecipeIngreds.Sort();
+
+        for (int i = 0; i < recipeToCheck.RecipeIngreds.Count; i++)
+        {
+            if (recipeToCheck.RecipeIngreds[i].ingredientsNeeded != currentRecipe.RecipeIngreds[i].ingredientsNeeded || recipeToCheck.RecipeIngreds[i].ingredientsCount != currentRecipe.RecipeIngreds[i].ingredientsCount)
+            {
+                return false;
+            }
+        }
+        return true;
+
+    }
+
     public void AddIngredient(Ingredients ingredient)
     {
 
