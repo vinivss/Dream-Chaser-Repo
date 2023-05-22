@@ -283,7 +283,7 @@ MonoBehaviour:
   EndEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2020323931}
+      - m_Target: {fileID: 2020323933}
         m_TargetAssemblyTypeName: GenericTransV, Assembly-CSharp
         m_MethodName: ChangeScene
         m_Mode: 1
@@ -292,7 +292,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level 1-5
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!4 &417052120
@@ -940,7 +940,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2020323932}
-  - component: {fileID: 2020323931}
+  - component: {fileID: 2020323933}
   m_Layer: 0
   m_Name: Transition to VN
   m_TagString: Untagged
@@ -948,19 +948,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2020323931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2020323930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8078e84f58f1844ab4fb884beae53d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GenScene: {fileID: 102900000, guid: 7cbef997f32421e4e9adbf456591beac, type: 3}
 --- !u!4 &2020323932
 Transform:
   m_ObjectHideFlags: 0
@@ -976,3 +963,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2020323933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020323930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8078e84f58f1844ab4fb884beae53d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GenScene: {fileID: 102900000, guid: 71a340edfac58e346bd21994b2620ef4, type: 3}
