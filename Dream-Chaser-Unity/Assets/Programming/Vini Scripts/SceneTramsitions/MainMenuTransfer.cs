@@ -10,7 +10,7 @@ public class MainMenuTransfer : MonoBehaviour
     MenuAudioManager menuAudio;
     private void Awake()
     {
-        menuAudio = FindObjectOfType<MenuAudioManager>().GetComponent<MenuAudioManager>();
+        menuAudio = FindObjectOfType<MenuAudioManager>();
     }
     public void TransferScene(string SceneName)
     {
