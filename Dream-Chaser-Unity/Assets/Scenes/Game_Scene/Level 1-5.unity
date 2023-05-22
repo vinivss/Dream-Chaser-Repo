@@ -131,10 +131,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 37495427}
-  - component: {fileID: 37495430}
-  - component: {fileID: 37495429}
-  - component: {fileID: 37495428}
+  - component: {fileID: 27249883}
+  - component: {fileID: 27249882}
+  - component: {fileID: 27249881}
+  - component: {fileID: 27249884}
   m_Layer: 0
   m_Name: Plane (3)
   m_TagString: Untagged
@@ -142,7 +142,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &37495427
+--- !u!114 &27249881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27249880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f24b0655d0ec043b59822f7e8a1cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VnScene: VN_SadieScene2_Ryan
+--- !u!65 &27249882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27249880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 500, y: 200, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &27249883
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,11 +180,38 @@ Transform:
   m_LocalScale: {x: 4, y: 4.014, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 280646518}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 12, y: 0, z: 0}
---- !u!64 &37495428
-MeshCollider:
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &27249884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27249880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ed53eab8e6c8148960990305439dc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 27249881}
+        m_TargetAssemblyTypeName: LeveltoVNTransV, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+--- !u!114 &34674859
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2177,8 +2230,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.24358018, y: 0.041586764, z: -0.0104545085, w: 0.9689324}
-  m_LocalPosition: {x: 1.9, y: 626.3, z: -1080}
+  m_LocalRotation: {x: 0.24357276, y: 0.04226974, z: -0.0106262015, w: 0.9689028}
+  m_LocalPosition: {x: 1.9, y: 260.3, z: -454.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8007,8 +8060,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.24358018, y: 0.041586764, z: -0.0104545085, w: 0.9689324}
-  m_LocalPosition: {x: 1.9, y: 626.3, z: -1080}
+  m_LocalRotation: {x: 0.24357276, y: 0.04226974, z: -0.0106262015, w: 0.9689028}
+  m_LocalPosition: {x: 1.9, y: 260.3, z: -454.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
