@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 
 public class LeveltoVNTransV : MonoBehaviour
 {
-    public Object VnScene;
+    public string VnScene;
     GameManager Gm;
     AudioManager AudioMgr;
     private void Awake()
@@ -18,17 +18,17 @@ public class LeveltoVNTransV : MonoBehaviour
         Gm = FindObjectOfType<GameManager>().GetComponent<GameManager>();
         AudioMgr = FindObjectOfType<AudioManager>().GetComponent<AudioManager>();
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            ChangeScene();
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if(other.CompareTag("Player"))
+    //    {
+    //        ChangeScene();
+    //    }
+    //}
     public void ChangeScene()
     {
         DestroyImmediate(Gm);       
         DestroyImmediate(AudioMgr);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(VnScene);
     }
 }
