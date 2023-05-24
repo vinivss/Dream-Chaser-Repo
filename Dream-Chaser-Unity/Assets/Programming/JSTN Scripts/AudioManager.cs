@@ -121,7 +121,14 @@ public class AudioManager : MonoBehaviour
         }else{
             return 0f;
         }
+    }
 
+    public void killAudioManager(){
+        resumeEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);        
+        pauseEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);        
+        ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        DestroyImmediate(gameObject);
     }
 
     public EventInstance CreateInstance(EventReference eventReference){
