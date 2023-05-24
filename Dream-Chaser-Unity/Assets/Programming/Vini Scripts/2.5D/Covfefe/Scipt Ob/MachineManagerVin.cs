@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MachineManagerVin : MonoBehaviour
 {
-    List<GameObject> coffeeMakerList;
+    public List<GameObject> coffeeMakerList;
     [Min(0)]   int index = 0;
     GameObject currMach;
 
@@ -21,7 +21,6 @@ public class MachineManagerVin : MonoBehaviour
             if (index == 0)
             {
                 index = coffeeMakerList.Count - 1;
-                Instantiate(coffeeMakerList[index], this.transform);
             }
             else
             {
@@ -34,6 +33,10 @@ public class MachineManagerVin : MonoBehaviour
             if(index == coffeeMakerList.Count -1 )
             {
                 index = 0;
+            }
+            else
+            {
+                index++;
             }
         }
         currMach = Instantiate(coffeeMakerList[index], this.transform);
