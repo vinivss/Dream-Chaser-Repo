@@ -1,0 +1,41 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MachineManagerVin : MonoBehaviour
+{
+    List<GameObject> coffeeMakerList;
+    [Min(0)]   int index = 0;
+    GameObject currMach;
+
+    private void Start()
+    {
+        currMach = Instantiate(coffeeMakerList[0], this.transform);
+    }
+    // Start is called before the first; frame update
+    public void ChangeMachine(bool Left)
+    {
+        Destroy(currMach);
+        if(Left == true)
+        {
+            if (index == 0)
+            {
+                index = coffeeMakerList.Count - 1;
+                Instantiate(coffeeMakerList[index], this.transform);
+            }
+            else
+            {
+                index--;
+                
+            }
+        }
+        else
+        {
+            if(index == coffeeMakerList.Count -1 )
+            {
+                index = 0;
+            }
+        }
+        currMach = Instantiate(coffeeMakerList[index], this.transform);
+    }
+}
