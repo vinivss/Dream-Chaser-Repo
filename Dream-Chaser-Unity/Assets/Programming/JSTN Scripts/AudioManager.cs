@@ -110,7 +110,7 @@ public class AudioManager : MonoBehaviour
         pauseEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         resumeEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         resumeEventInstances.start();
-        yield return new WaitForSeconds(1.0f); // Everything after this line executes after delayTime
+        yield return new WaitForSeconds(1.0f);
         musicEventInstances.setParameterByName("pause", 0);
     }
 

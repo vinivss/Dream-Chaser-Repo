@@ -26,6 +26,7 @@ public class DCMoveVin : MonoBehaviour
     [Header("Movement Attributes")]
     [Tooltip("Minimum Forward Velocity")]
     [SerializeField] float minForwardSpeed;
+    [SerializeField] float deceleration;
     [Tooltip("Maximum threshold before slowly rotating to front")]
     [SerializeField] float rotationThreshold;
     [Tooltip("Max Speed you can accelerate to")]
