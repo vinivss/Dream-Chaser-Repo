@@ -10,16 +10,13 @@ public class MainMenuTransfer : MonoBehaviour
     MenuAudioManager menuAudio;
     private void Awake()
     {
-        menuAudio = FindObjectOfType<MenuAudioManager>();
+        menuAudio = FindObjectOfType<MenuAudioManager>().GetComponent<MenuAudioManager>();
     }
     public void TransferScene(string SceneName)
-    {
-        if (menuAudio != null)
-        {
-            menuAudio.ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            menuAudio.musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            DestroyImmediate(menuAudio);
-        }
+    {    
+        menuAudio.ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        menuAudio.musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        DestroyImmediate(menuAudio);
         SceneManager.LoadScene(SceneName);
     }
 }

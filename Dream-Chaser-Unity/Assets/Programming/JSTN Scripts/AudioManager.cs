@@ -25,12 +25,9 @@ public class AudioManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(instance);
-            if(gameManager != null)
-            { 
             gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
-            }
-            pause = FindObjectOfType<pause_scene>();
-            controls = FindObjectOfType<DCMoveVin>();
+            pause = FindObjectOfType<pause_scene>().GetComponent<pause_scene>();
+            controls = FindObjectOfType<DCMoveVin>().GetComponent<DCMoveVin>();
             if (instance != null){
                 //Debug.LogError("Found more than one Audio Manager in scene");
             }
@@ -43,17 +40,12 @@ public class AudioManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-
         //Level Complete
-        if (gameManager != null)
-        {
-            if (gameManager.cpCount >= 6)
-            {
-                ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                InitializeMusic(FMODEvents.instance.vnOST);
-                gameManager.cpCount = 0;
-            }
+        if(gameManager.cpCount >= 6){
+            ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            InitializeMusic(FMODEvents.instance.vnOST);
+            gameManager.cpCount = 0;
         }
         resequenceMusic();
         if(Input.GetKeyDown(KeyCode.Space) /*&& controls.isGrounded*/){
@@ -85,7 +77,6 @@ public class AudioManager : MonoBehaviour
     }
 
     private void resequenceMusic(){
-        if(gameManager != null)
         musicEventInstances.setParameterByName("checkpoint", gameManager.cpCount);
     }
 
