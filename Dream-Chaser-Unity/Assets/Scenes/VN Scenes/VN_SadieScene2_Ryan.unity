@@ -238,6 +238,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &285307357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 285307358}
+  - component: {fileID: 285307359}
+  m_Layer: 0
+  m_Name: GameCrash(OnlyForEndofBuild)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &285307358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285307357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 78.23426, y: -408.32968, z: 917.2689}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &285307359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285307357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 199e9e082de382949ae75cc6608db64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &417052118
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,9 +327,9 @@ MonoBehaviour:
   EndEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2020323931}
-        m_TargetAssemblyTypeName: GenericTransV, Assembly-CSharp
-        m_MethodName: ChangeScene
+      - m_Target: {fileID: 285307359}
+        m_TargetAssemblyTypeName: KillitwithFire, Assembly-CSharp
+        m_MethodName: Crash
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -294,7 +338,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
 --- !u!4 &417052120
 Transform:
   m_ObjectHideFlags: 0
