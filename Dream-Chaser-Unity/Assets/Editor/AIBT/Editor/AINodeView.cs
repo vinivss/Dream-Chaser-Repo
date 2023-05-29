@@ -16,7 +16,7 @@ namespace Tools.Trees.AI
         public Port input;
         public Port output;
 
-        public AINodeView(AINode node): base ("Assets/Code/Tools/AIBT/Editor/AINodeView.uxml")
+        public AINodeView(AINode node): base ("Assets/Editor/AIBT/Editor/AINodeView.uxml")
         {
             this.node = node;
             this.title = node.name;
