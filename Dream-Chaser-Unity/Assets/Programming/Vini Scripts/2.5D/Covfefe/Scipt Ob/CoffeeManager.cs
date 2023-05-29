@@ -11,11 +11,12 @@ public class CoffeeManager : MonoBehaviour
     public Recipe currentRecipe;
     public Recipe CookedRecipe;
     public Transform drinkSpawnPoint;
+    GameManager manager;
 
     private void Awake()
     {
         currentRecipe =  ScriptableObject.CreateInstance("Recipe") as Recipe;
-      
+        manager = FindObjectOfType<GameManager>();
        
     }
     public void OnCook()
