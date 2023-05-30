@@ -31,6 +31,7 @@ public class CoffeeManager : MonoBehaviour
                     Debug.Log("Coooked");
                     CookedRecipe = r;
                     Debug.Log(CookedRecipe.name);
+                    manager.CurrentCarryingRecipe = CookedRecipe;
                     break;
                 }
             }
