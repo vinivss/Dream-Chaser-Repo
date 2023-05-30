@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
+using Coffee;
 public class GameManager : MonoBehaviour
 {
     static GameManager managerInstance;
@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     int pointsTotal;
     public Vector3 lastCheckpointPosition;
     public float cpCount;
-    
+    public Recipe CurrentCarryingRecipe;
 
     public bool sceneStarted = false;
     private void Awake()
@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
     }
+
 
     public void AddPoints(int pointsToAdd)
     {
