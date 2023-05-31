@@ -13,6 +13,7 @@ public class LeveltoVNTransV : MonoBehaviour
     public string VnScene;
     GameManager Gm;
     AudioManager AudioMgr;
+    public GameObject LoadingScreen;
     private void Awake()
     {
         Gm = FindObjectOfType<GameManager>().GetComponent<GameManager>();
@@ -27,8 +28,17 @@ public class LeveltoVNTransV : MonoBehaviour
     //}
     public void ChangeScene()
     {
-        DestroyImmediate(Gm);       
+        DestroyImmediate(Gm);
         DestroyImmediate(AudioMgr);
-        SceneManager.LoadScene(VnScene);
+        StartCoroutine(LoadSceneAsync());
+    }
+    IEnumerator LoadSceneAsync()
+    {
+        LoadingScreen = Instantiate(LoadingScreen);
+        AsyncOperation op = SceneManager.LoadSceneAsync(VnScene);
+        while(!op.isDone)
+        {
+            yield return null;
+        }
     }
 }

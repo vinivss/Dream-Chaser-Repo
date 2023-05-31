@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8565410879630940098}
   - component: {fileID: 8565410879630940100}
   m_Layer: 5
-  m_Name: Siphon
+  m_Name: Kettle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bc40307689376694c9a3a787ade0640b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6e02a399d3e7b24aa2f80f648a6e017, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -118,8 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aa13e5b8ad72c7409e250939f406d6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookingMethod: 0
+  cookingMethod: 2
   CompleteWaypoint: {fileID: 8565410879730175294}
+  Arrows: []
 --- !u!225 &8565410879630940100
 CanvasGroup:
   m_ObjectHideFlags: 0

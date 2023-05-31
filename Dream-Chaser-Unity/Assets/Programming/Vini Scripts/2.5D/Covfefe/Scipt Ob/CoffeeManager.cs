@@ -3,7 +3,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CoffeeManager : MonoBehaviour
 {
@@ -12,6 +14,9 @@ public class CoffeeManager : MonoBehaviour
     public Recipe CookedRecipe;
     public Transform drinkSpawnPoint;
     GameManager manager;
+    public GameObject[] Arrows;
+    public GameObject WinningBanner;
+    public TextMeshProUGUI WinningNameText;
 
     private void Awake()
     {
@@ -31,6 +36,11 @@ public class CoffeeManager : MonoBehaviour
                     Debug.Log("Coooked");
                     CookedRecipe = r;
                     Debug.Log(CookedRecipe.name);
+                    manager.CurrentCarryingRecipe = CookedRecipe;
+                    WinningBanner.SetActive(true);
+                    WinningBanner.GetComponentInChildren<Image>().sprite = CookedRecipe.Sprite;
+                    WinningNameText.text = CookedRecipe.name;
+                    
                     break;
                 }
             }
