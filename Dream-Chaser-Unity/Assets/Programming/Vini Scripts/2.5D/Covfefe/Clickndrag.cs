@@ -61,7 +61,10 @@ public class Clickndrag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
         Debug.Log("enter");
 
             Debug.Log(eventData.hovered.Count);
+        if (eventData.pointerEnter.GetComponent<IngredientManager>().ingredient != null)
+        {
             Ingredients currentIngred = eventData.pointerEnter.GetComponent<IngredientManager>().ingredient;
+
 
 
             StartCoroutine(DescriptionTimer(timeBeforeFadein));
@@ -72,10 +75,12 @@ public class Clickndrag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
                 HoverBox.transform.position = eventData.pointerEnter.transform.position + new Vector3(Offset.x, Offset.y);
                 HoverBox.GetComponentInChildren<TextMeshProUGUI>().text = currentIngred.description;
             }
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        StartCoroutine(DescriptionTimer(timeBeforeFadein));
         HoverBox.SetActive(false);
         
     }
