@@ -10,25 +10,35 @@ using UnityEngine.SceneManagement;
 
 public class LeveltoVNTransV : MonoBehaviour
 {
-    public Object VnScene;
+    public string VnScene;
     GameManager Gm;
     AudioManager AudioMgr;
+    public GameObject LoadingScreen;
     private void Awake()
     {
         Gm = FindObjectOfType<GameManager>().GetComponent<GameManager>();
         AudioMgr = FindObjectOfType<AudioManager>().GetComponent<AudioManager>();
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            ChangeScene();
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if(other.CompareTag("Player"))
+    //    {
+    //        ChangeScene();
+    //    }
+    //}
     public void ChangeScene()
     {
-        DestroyImmediate(Gm);       
+        DestroyImmediate(Gm);
         DestroyImmediate(AudioMgr);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(LoadSceneAsync());
+    }
+    IEnumerator LoadSceneAsync()
+    {
+        LoadingScreen = Instantiate(LoadingScreen);
+        AsyncOperation op = SceneManager.LoadSceneAsync(VnScene);
+        while(!op.isDone)
+        {
+            yield return null;
+        }
     }
 }

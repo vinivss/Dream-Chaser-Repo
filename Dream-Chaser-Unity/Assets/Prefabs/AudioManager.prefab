@@ -51,20 +51,41 @@ MonoBehaviour:
       Data3: -748400978
       Data4: 696840385
     Path: event:/Ambience/Wind
-  <music>k__BackingField:
+  <levelMusic>k__BackingField:
     Guid:
-      Data1: -1966657342
-      Data2: 1304401125
-      Data3: -1102155083
-      Data4: -846236515
-    Path: event:/Music/MUS-PrebossLevel_Section1Only
+      Data1: 1275187851
+      Data2: 1305604034
+      Data3: 272426674
+      Data4: -1905252202
+    Path: event:/Music/PrebossLevel
   <reset>k__BackingField:
     Guid:
-      Data1: 366761934
-      Data2: 1309970896
-      Data3: -1154113628
-      Data4: 276779348
-    Path: event:/SFX/HitObject
+      Data1: -45974116
+      Data2: 1319878154
+      Data3: 637883576
+      Data4: -1402116632
+    Path: event:/SFX/OnDeath
+  <vnOST>k__BackingField:
+    Guid:
+      Data1: -75123881
+      Data2: 1113100890
+      Data3: 296328833
+      Data4: -791276211
+    Path: event:/Music/MUS-Eri's_Theme
+  <pause>k__BackingField:
+    Guid:
+      Data1: 1023206685
+      Data2: 1334976358
+      Data3: 49336212
+      Data4: 456605170
+    Path: event:/SFX/OnPause
+  <resume>k__BackingField:
+    Guid:
+      Data1: -2077909081
+      Data2: 1272813767
+      Data3: -1551397224
+      Data4: 1075404695
+    Path: event:/SFX/OnResume
 --- !u!1 &6345402916612921843
 GameObject:
   m_ObjectHideFlags: 0

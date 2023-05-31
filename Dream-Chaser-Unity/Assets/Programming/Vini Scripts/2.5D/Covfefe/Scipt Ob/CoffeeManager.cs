@@ -1,50 +1,88 @@
 using Coffee;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CoffeeManager : MonoBehaviour
 {
     public RecipeBook recipeBook;
     public Recipe currentRecipe;
     public Recipe CookedRecipe;
+    public Transform drinkSpawnPoint;
+    GameManager manager;
+    public GameObject[] Arrows;
+    public GameObject WinningBanner;
+    public TextMeshProUGUI WinningNameText;
 
+    private void Awake()
+    {
+        currentRecipe =  ScriptableObject.CreateInstance("Recipe") as Recipe;
+        manager = FindObjectOfType<GameManager>();
+       
+    }
     public void OnCook()
     {
         foreach(Recipe r in recipeBook.recipes)
         {
             if(r.cookingMethod == currentRecipe.cookingMethod)
             {
-                if(r.RecipeIngreds == currentRecipe.RecipeIngreds)
+               
+                if(CheckIngredients(r))
                 {
+                    Debug.Log("Coooked");
                     CookedRecipe = r;
+                    Debug.Log(CookedRecipe.name);
+                    manager.CurrentCarryingRecipe = CookedRecipe;
+                    WinningBanner.SetActive(true);
+                    WinningBanner.GetComponentInChildren<Image>().sprite = CookedRecipe.Sprite;
+                    WinningNameText.text = CookedRecipe.name;
+                    
                     break;
                 }
             }
         }
     }
+
+    private bool CheckIngredients(Recipe recipeToCheck)
+    {
+        if(recipeToCheck.RecipeIngreds.Count != currentRecipe.RecipeIngreds.Count)
+        {
+            return false;
+        }
+        recipeToCheck.RecipeIngreds.Sort();
+        currentRecipe.RecipeIngreds.Sort();
+
+        for (int i = 0; i < recipeToCheck.RecipeIngreds.Count; i++)
+        {
+            if (recipeToCheck.RecipeIngreds[i].ingredientsNeeded != currentRecipe.RecipeIngreds[i].ingredientsNeeded || recipeToCheck.RecipeIngreds[i].ingredientsCount != currentRecipe.RecipeIngreds[i].ingredientsCount)
+            {
+                return false;
+            }
+        }
+        return true;
+
+    }
+
     public void AddIngredient(Ingredients ingredient)
     {
-        int j = 0;
-        if(currentRecipe.RecipeIngreds.Length == 0)
-        {
-            currentRecipe.RecipeIngreds[0].ingredientsNeeded = ingredient;
-            currentRecipe.RecipeIngreds[0].ingredientsCount += 1;
 
-        }
         foreach(Recipe.RecipeIngredients i in currentRecipe.RecipeIngreds)
         {
             if(i.ingredientsNeeded.GetType() == ingredient.GetType())
             {
-                currentRecipe.RecipeIngreds[j].ingredientsCount += 1;
-                break;
+                var ingredneed = i;
+                ingredneed.ingredientsCount += 1;
+                return;
             }
-            j++;
         }
         Recipe.RecipeIngredients recipeIngredients = new Recipe.RecipeIngredients();
         recipeIngredients.ingredientsNeeded = ingredient;
         recipeIngredients.ingredientsCount += 1;
-        currentRecipe.RecipeIngreds.Append(recipeIngredients);
+        currentRecipe.RecipeIngreds.Add(recipeIngredients);
+        Debug.Log(currentRecipe.RecipeIngreds.Count);
     }
 }

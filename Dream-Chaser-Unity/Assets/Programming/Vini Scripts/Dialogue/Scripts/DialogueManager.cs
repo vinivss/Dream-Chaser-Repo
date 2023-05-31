@@ -141,7 +141,7 @@ public class DialogueManager : MonoBehaviour
                 if (currentNode.SceneLayout != null)
                    runtimeSceneLayout = Instantiate(currentNode.SceneLayout, Background.transform);
             }
-            PerformActions();
+           // PerformActions();
         }
     }
     void Skip()

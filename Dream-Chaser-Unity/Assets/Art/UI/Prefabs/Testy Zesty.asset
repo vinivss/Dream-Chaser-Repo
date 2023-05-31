@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6860677619273221595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: e25c836250551f447a6d3cc310707e25
+  position: {x: 694, y: 58}
+  state: 1
+  Speaker: 
+  Dialogue: Zutton!
+  SceneLayout: {fileID: 0}
+  child: {fileID: 1315810397573927660}
+  DialogueActions: []
+--- !u!114 &-2021969576517241920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: cf972bc631c2d394caebc7a3c29d4c83
+  position: {x: 227, y: -17.839996}
+  state: 1
+  Speaker: 
+  Dialogue: I love choices!!!
+  SceneLayout: {fileID: 0}
+  child: {fileID: 5721169856356544718}
+  DialogueActions: []
+--- !u!114 &-1013854354682104059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 99f27df46e0b2b747a84cd15559e8b48
+  position: {x: 1056, y: -34.839996}
+  state: 1
+  Speaker: 
+  Dialogue: The end
+  SceneLayout: {fileID: 0}
+  child: {fileID: -691535823493756268}
+  DialogueActions: []
+--- !u!114 &-691535823493756268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 36d71ac8038216544b3bb5f40020c584
+  position: {x: 1269, y: -17}
+  state: 1
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37aa8c975bd8e0f49848dc44b360140a, type: 3}
+  m_Name: Testy Zesty
+  m_EditorClassIdentifier: 
+  RootNode: {fileID: 7802873196026080463}
+  treeState: 0
+  nodes:
+  - {fileID: 7802873196026080463}
+  - {fileID: -2021969576517241920}
+  - {fileID: 5721169856356544718}
+  - {fileID: 7378600932013131748}
+  - {fileID: -6860677619273221595}
+  - {fileID: 7466533684839781385}
+  - {fileID: 1315810397573927660}
+  - {fileID: -1013854354682104059}
+  - {fileID: -691535823493756268}
+--- !u!114 &1315810397573927660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 1ec84f4092e9d104e8965fce3c1f589b
+  position: {x: 932, y: 74}
+  state: 1
+  Speaker: 
+  Dialogue: You zlicked it!
+  SceneLayout: {fileID: 0}
+  child: {fileID: -1013854354682104059}
+  DialogueActions: []
+--- !u!114 &5721169856356544718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ca86122f814e040b6be55c4c1287b2, type: 3}
+  m_Name: DialogueChoiceNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: add39bffc76484842a67157be6c7f9e2
+  position: {x: 482, y: -6.1600037}
+  state: 1
+  Speaker: 
+  Dialogue: Especially when they work
+  SceneLayout: {fileID: 0}
+  children:
+  - {fileID: 7378600932013131748}
+  - {fileID: -6860677619273221595}
+  DialogueActions: []
+--- !u!114 &7378600932013131748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 9231a75548568f74d96a91ced29d691a
+  position: {x: 700, y: -34.800003}
+  state: 0
+  Speaker: 
+  Dialogue: Button!
+  SceneLayout: {fileID: 0}
+  child: {fileID: 7466533684839781385}
+  DialogueActions: []
+--- !u!114 &7466533684839781385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 833d01de0b8708e449c959d48590e393
+  position: {x: 873, y: -60.479996}
+  state: 0
+  Speaker: 
+  Dialogue: 'You clicked it
+
+
+'
+  SceneLayout: {fileID: 0}
+  child: {fileID: -1013854354682104059}
+  DialogueActions: []
+--- !u!114 &7802873196026080463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47f7753ababa6141bc7adf96c693c02, type: 3}
+  m_Name: DialogueRootNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 8d239533f38c5834b87f69ae5d39bea7
+  position: {x: 0, y: 0}
+  state: 1
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+  child: {fileID: -2021969576517241920}
