@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
 
     [SerializeField] public int hp;
-    public bool isAlive;
+
 
     public void underAttack()
     {
@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     public bool healthCheck()
     {
-
+        Debug.Log(hp);
         return hp > 10 ? true : false;
     }
 }

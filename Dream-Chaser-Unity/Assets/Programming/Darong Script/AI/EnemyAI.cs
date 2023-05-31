@@ -7,8 +7,10 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float startingHealth;
     [SerializeField] private float lowHealthThreshHold;
     [SerializeField] private DCMoveVin player;
-    [SerializeField] private PlayerHealth player_health;
+    [SerializeField] public PlayerHealth player_health;
 
+    [SerializeField] private Transform[] projectileSpawnLocation;
+    [SerializeField] private GameObject bulletPrefab;
 
     private float currentHealth;
 
@@ -27,14 +29,25 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        attack();
+        Debug.Log(player_health.healthCheck());
+        if (!player_health.healthCheck())
+        {
+            Destroy(gameObject);
+        }
     }
 
 
     public void attack()
     {
-        if (player_health.healthCheck())
+        if (player_health.healthCheck() && Input.GetKeyDown(KeyCode.Space))
         {
-            player_health.underAttack();
+            foreach (Transform SpawnBullets in projectileSpawnLocation)
+            {
+                Instantiate(bulletPrefab, SpawnBullets.position, transform.rotation);
+            }
+             // check for player collision;
+
         }
         else
         {

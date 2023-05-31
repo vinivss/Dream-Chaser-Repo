@@ -10,6 +10,7 @@ public class AIAttack : AIActionNode
 
     private float _attackTime = 1f;
     private float _attackCounter = 0f;
+
     protected override void OnStart()
     {
 
