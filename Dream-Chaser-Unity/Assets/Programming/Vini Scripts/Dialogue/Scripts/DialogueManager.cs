@@ -37,7 +37,7 @@ public class DialogueManager : MonoBehaviour
 
    
     GameObject runtimeSceneLayout;
-    Button NextButton;  
+    public Button NextButton;  
     GameObject runTimeWindow;
     ControlsManager controlVN;
     // Start is called before the first frame update
