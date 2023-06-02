@@ -25,9 +25,11 @@ public class AudioManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(instance);
-            gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
-            pause = FindObjectOfType<pause_scene>().GetComponent<pause_scene>();
-            controls = FindObjectOfType<DCMoveVin>().GetComponent<DCMoveVin>();
+            if(gameManager == null) { 
+                gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
+            }
+            pause = FindObjectOfType<pause_scene>();
+            controls = FindObjectOfType<DCMoveVin>();
             if (instance != null){
                 //Debug.LogError("Found more than one Audio Manager in scene");
             }
@@ -40,12 +42,15 @@ public class AudioManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+
         //Level Complete
-        if(gameManager.cpCount >= 6){
-            ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            InitializeMusic(FMODEvents.instance.vnOST);
-            gameManager.cpCount = 0;
+        if (gameManager != null) {
+            if (gameManager.cpCount >= 6) {
+                ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                InitializeMusic(FMODEvents.instance.vnOST);
+                gameManager.cpCount = 0;
+            }
         }
         resequenceMusic();
         if(Input.GetKeyDown(KeyCode.Space) /*&& controls.isGrounded*/){
@@ -77,6 +82,7 @@ public class AudioManager : MonoBehaviour
     }
 
     private void resequenceMusic(){
+        if(gameManager != null)
         musicEventInstances.setParameterByName("checkpoint", gameManager.cpCount);
     }
 
@@ -101,7 +107,7 @@ public class AudioManager : MonoBehaviour
         pauseEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         resumeEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         resumeEventInstances.start();
-        yield return new WaitForSeconds(1.0f); // Everything after this line executes after delayTime
+        yield return new WaitForSeconds(1.0f);
         musicEventInstances.setParameterByName("pause", 0);
     }
 
@@ -113,6 +119,15 @@ public class AudioManager : MonoBehaviour
             return 0f;
         }
 
+    }
+
+    public void killAudioManager()
+    {
+        resumeEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        pauseEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        DestroyImmediate(gameObject);
     }
 
     public EventInstance CreateInstance(EventReference eventReference){

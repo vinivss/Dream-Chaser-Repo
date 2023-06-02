@@ -90,7 +90,7 @@ namespace Tools.Trees.Dialogue
             if(choiceNode)
             {
                     Undo.RecordObject(choiceNode, "Dialogue add Action");
-                    choiceNode.DialogueActions.Add(child);
+                    choiceNode.children.Add(child);
                     EditorUtility.SetDirty(choiceNode);
             }
             DialogueSpeechNode speechNode = parent as DialogueSpeechNode;

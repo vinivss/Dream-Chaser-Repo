@@ -26,6 +26,7 @@ public class DCMoveVin : MonoBehaviour
     [Header("Movement Attributes")]
     [Tooltip("Minimum Forward Velocity")]
     [SerializeField] float minForwardSpeed;
+    [SerializeField] float deceleration;
     [Tooltip("Maximum threshold before slowly rotating to front")]
     [SerializeField] float rotationThreshold;
     [Tooltip("Max Speed you can accelerate to")]
@@ -56,6 +57,8 @@ public class DCMoveVin : MonoBehaviour
     [Header("Audio Attributes")]
     [Tooltip("The name of the FMOD Parameter function")]
     public  UnityEvent parameterName;
+
+    [SerializeField] public bool isAlive = true;
 
     private void Awake()
     {
@@ -92,16 +95,24 @@ public class DCMoveVin : MonoBehaviour
         Debug.DrawRay(transform.position, transform.forward, Color.red);
         Debug.DrawRay(transform.position, -transform.forward, Color.blue);
 
+       
      
         if (moveDir != Vector3.zero)
         {
             Quaternion rotGoal =Quaternion.LookRotation(moveDir);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotGoal, turnSpeed);
         }
-        moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.5f, 1.0f));
+        moveDir = new Vector3(inManager.GetMoveValue().x + transform.forward.x, 0, Mathf.Clamp(inManager.GetMoveValue().y + transform.forward.z, 0.3f, 1.0f));
         rb.AddForce((moveDir * minForwardSpeed) + Physics.gravity, ForceMode.Acceleration);
         FixBouncing();
-        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+        if (inManager.GetMoveValue().y < 0.0f && isGrounded)
+        {
+            rb.AddForce(-transform.forward * (minForwardSpeed / 2), ForceMode.Acceleration);
+        }
+        else
+        {
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+        }
         //Cam.m_Lens.FieldOfView = Mathf.Clamp(rb.velocity.z, startFOV, 95.0f);
         JumpPerformed();
     }
@@ -134,7 +145,6 @@ public class DCMoveVin : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheckPos.position, groundDistance, groundMask);
     }
 
-
     private void UpdateSound(){
         velo = rb.velocity.magnitude/maxSpeed*4;
         AudioManager.instance.SetAmbienceParameter("wind_intensity", velo);
@@ -142,6 +152,7 @@ public class DCMoveVin : MonoBehaviour
 
     public void PlayerDeath()
     {
+        isAlive = false;
         rb.isKinematic = true;
         inManager.OnDisable();
         DissolveScript.OnPlayerDeath();
