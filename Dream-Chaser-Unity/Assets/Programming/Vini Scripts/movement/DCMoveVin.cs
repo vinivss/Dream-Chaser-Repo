@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 using FMOD.Studio;
-using FMODUnity;
 using System;
 using UnityEngine.Events;
 using Cinemachine;
@@ -27,6 +26,7 @@ public class DCMoveVin : MonoBehaviour
     [Header("Movement Attributes")]
     [Tooltip("Minimum Forward Velocity")]
     [SerializeField] float minForwardSpeed;
+    [SerializeField] float deceleration;
     [Tooltip("Maximum threshold before slowly rotating to front")]
     [SerializeField] float rotationThreshold;
     [Tooltip("Max Speed you can accelerate to")]
@@ -57,6 +57,8 @@ public class DCMoveVin : MonoBehaviour
     [Header("Audio Attributes")]
     [Tooltip("The name of the FMOD Parameter function")]
     public  UnityEvent parameterName;
+
+    [SerializeField] public bool isAlive = true;
 
     private void Awake()
     {
@@ -130,7 +132,6 @@ public class DCMoveVin : MonoBehaviour
             rb.AddForce(Vector3.up * Mathf.Clamp(jumpforce, minJump, maxJump), ForceMode.Impulse);
             jumping = false;
             jumpforce = 0;
-            RuntimeManager.PlayOneShot("event:/SFX/Jump", this.transform.position);
         }
        
     }
@@ -144,7 +145,6 @@ public class DCMoveVin : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheckPos.position, groundDistance, groundMask);
     }
 
-
     private void UpdateSound(){
         velo = rb.velocity.magnitude/maxSpeed*4;
         AudioManager.instance.SetAmbienceParameter("wind_intensity", velo);
@@ -152,6 +152,7 @@ public class DCMoveVin : MonoBehaviour
 
     public void PlayerDeath()
     {
+        isAlive = false;
         rb.isKinematic = true;
         inManager.OnDisable();
         DissolveScript.OnPlayerDeath();

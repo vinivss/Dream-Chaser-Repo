@@ -25,9 +25,8 @@ public class AudioManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(instance);
-            if(gameManager != null)
-            { 
-            gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
+            if(gameManager == null) { 
+                gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
             }
             pause = FindObjectOfType<pause_scene>();
             controls = FindObjectOfType<DCMoveVin>();
@@ -45,10 +44,8 @@ public class AudioManager : MonoBehaviour
     {
 
         //Level Complete
-        if (gameManager != null)
-        {
-            if (gameManager.cpCount >= 6)
-            {
+        if (gameManager != null) {
+            if (gameManager.cpCount >= 6) {
                 ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 InitializeMusic(FMODEvents.instance.vnOST);
@@ -127,6 +124,15 @@ public class AudioManager : MonoBehaviour
         resumeEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);        
         pauseEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);        
+        ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        DestroyImmediate(gameObject);
+    }
+
+    public void killAudioManager()
+    {
+        resumeEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        pauseEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         DestroyImmediate(gameObject);
     }
