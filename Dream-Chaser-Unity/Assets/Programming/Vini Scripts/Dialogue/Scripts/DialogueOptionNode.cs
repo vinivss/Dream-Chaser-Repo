@@ -8,6 +8,7 @@ namespace Tools.Trees.Dialogue
     {
         [HideInInspector]public DialogueNode child;
         [HideInInspector] public List<DialogueNode> DialogueActions;
+        
 
 
         public override void OnStart()

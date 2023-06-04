@@ -215,6 +215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38cfd33021904b44590b8f06619f63a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasRecipe: 1
+  WantedRecipe: {fileID: 11400000, guid: 933f105a9b625d544bb51ac2624960f2, type: 2}
 --- !u!114 &44065185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -944,6 +946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 0}
   TwoDScene: 0
+  Unlocked: 0
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
   dialogueStarted: 0
@@ -957,6 +960,7 @@ MonoBehaviour:
   EndEvent:
     m_PersistentCalls:
       m_Calls: []
+  CheckingEvents: []
 --- !u!4 &573908868
 Transform:
   m_ObjectHideFlags: 0
@@ -1005,6 +1009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38cfd33021904b44590b8f06619f63a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasRecipe: 0
+  WantedRecipe: {fileID: 0}
 --- !u!114 &623321258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1929,6 +1935,75 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6475540463699357072, guid: f5539797ccee35b489ea98cdc9084b10, type: 3}
+--- !u!1001 &1328885064
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1453739380426671849, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671855, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671855, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.954629
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671855, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.0465088
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671855, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.295828
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671855, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671855, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671855, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671855, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671855, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671855, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671855, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ef19e7c18a9fe94a83008b996438b4d, type: 3}
 --- !u!1 &1335455347 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6314046295882885173, guid: f5539797ccee35b489ea98cdc9084b10,
@@ -2021,6 +2096,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38cfd33021904b44590b8f06619f63a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasRecipe: 0
+  WantedRecipe: {fileID: 0}
 --- !u!114 &1385771485
 MonoBehaviour:
   m_ObjectHideFlags: 0
