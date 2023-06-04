@@ -102,10 +102,11 @@ public class MenuAudioManager : MonoBehaviour
     }
 
 
-    private void StopEvent()
+    public void thanos()
     {
         // Stop the event
         musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
     public EventInstance CreateInstance(EventReference eventReference){

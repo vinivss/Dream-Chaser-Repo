@@ -17,7 +17,13 @@ public class Clickndrag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     public float timeBeforeFadein;
     public GameObject HoverBox;
     public Vector2 Offset;
-    
+    bool entered;
+    [HideInInspector]public bool Starting;
+    [HideInInspector] public Vector3 startPos;
+
+    private PointerEventData _lastPointerData;
+    public bool isDraggin;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -35,34 +41,45 @@ public class Clickndrag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        
+        if (!Starting)
+        {
+            startPos = eventData.position;
+            Starting = true;
+        }
         //Debug.Log("Dragon");
+        _lastPointerData = eventData;
         canvasGroup.blocksRaycasts = false;
+        isDraggin = true;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         //spriteRenderer.sprite = sprites[1];
         //Debug.Log("Dragging");
+        if(isDraggin)
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
     public void OnEndDrag(PointerEventData eventData)
     {
+
         if (sprites.Length > 0)
         {
             spriteRenderer.sprite = sprites[1];
         }
         //Debug.Log("Dragoff");
+        _lastPointerData.pointerDrag = null;
         canvasGroup.blocksRaycasts = true;
+        isDraggin = false;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("enter");
-
-            Debug.Log(eventData.hovered.Count);
+        
+       if(entered != true)
         if (eventData.pointerEnter.GetComponent<IngredientManager>().ingredient != null)
         {
+                entered = true;
+
             Ingredients currentIngred = eventData.pointerEnter.GetComponent<IngredientManager>().ingredient;
 
 
@@ -80,11 +97,13 @@ public class Clickndrag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        StartCoroutine(DescriptionTimer(timeBeforeFadein));
-        HoverBox.SetActive(false);
-        
+        if (entered == true)
+        {
+            StartCoroutine(DescriptionTimer(timeBeforeFadein));
+            HoverBox.SetActive(false);
+            entered = false;
+        }
     }
-
     IEnumerator DescriptionTimer(float timer)
     {
         yield return new WaitForSecondsRealtime(timer);
