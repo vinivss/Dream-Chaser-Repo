@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class CoffeeManager : MonoBehaviour
 {
@@ -17,6 +17,9 @@ public class CoffeeManager : MonoBehaviour
     public GameObject[] Arrows;
     public GameObject WinningBanner;
     public TextMeshProUGUI WinningNameText;
+    public Image bannerimg;
+   
+    
 
     private void Awake()
     {
@@ -38,7 +41,7 @@ public class CoffeeManager : MonoBehaviour
                     Debug.Log(CookedRecipe.name);
                     manager.CurrentCarryingRecipe = CookedRecipe;
                     WinningBanner.SetActive(true);
-                    WinningBanner.GetComponentInChildren<Image>().sprite = CookedRecipe.Sprite;
+                    bannerimg.sprite = CookedRecipe.Sprite;
                     WinningNameText.text = CookedRecipe.name;
                     
                     break;
@@ -53,29 +56,34 @@ public class CoffeeManager : MonoBehaviour
         {
             return false;
         }
-        recipeToCheck.RecipeIngreds.Sort();
-        currentRecipe.RecipeIngreds.Sort();
+
 
         for (int i = 0; i < recipeToCheck.RecipeIngreds.Count; i++)
         {
-            if (recipeToCheck.RecipeIngreds[i].ingredientsNeeded != currentRecipe.RecipeIngreds[i].ingredientsNeeded || recipeToCheck.RecipeIngreds[i].ingredientsCount != currentRecipe.RecipeIngreds[i].ingredientsCount)
+            if (currentRecipe.RecipeIngreds.Contains(recipeToCheck.RecipeIngreds[i]))
             {
-                return false;
+                Recipe.RecipeIngredients temp = recipeToCheck.RecipeIngreds[i];
+                if (currentRecipe.RecipeIngreds[currentRecipe.RecipeIngreds.IndexOf(temp)].ingredientsCount == temp.ingredientsCount)
+                {
+                    return true;
+                }
+                
             }
         }
-        return true;
+        return false;
 
     }
 
     public void AddIngredient(Ingredients ingredient)
     {
-
         foreach(Recipe.RecipeIngredients i in currentRecipe.RecipeIngreds)
         {
-            if(i.ingredientsNeeded.GetType() == ingredient.GetType())
+            if(i.ingredientsNeeded.IngredientName == ingredient.IngredientName)
             {
-                var ingredneed = i;
-                ingredneed.ingredientsCount += 1;
+                Recipe.RecipeIngredients temp = i;
+                temp.ingredientsCount++;
+                currentRecipe.RecipeIngreds.RemoveAt(currentRecipe.RecipeIngreds.IndexOf(i));
+                currentRecipe.RecipeIngreds.Add(temp);
                 return;
             }
         }
@@ -84,5 +92,10 @@ public class CoffeeManager : MonoBehaviour
         recipeIngredients.ingredientsCount += 1;
         currentRecipe.RecipeIngreds.Add(recipeIngredients);
         Debug.Log(currentRecipe.RecipeIngreds.Count);
+    }
+
+    private  void AddNewIngred(int i)
+    {
+        
     }
 }
