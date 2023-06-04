@@ -339,6 +339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 8408df24b5c2cf744aeef58b01153b37, type: 2}
   TwoDScene: 0
+  Unlocked: 0
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
   dialogueStarted: 0
@@ -364,6 +365,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+  CheckingEvents: []
   NextButton: {fileID: 0}
 --- !u!4 &417052120
 Transform:
