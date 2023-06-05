@@ -20,7 +20,7 @@ public class EnemyProjectile : MonoBehaviour
         rb.velocity = transform.forward * lanuchForce; // set the bullet velocity
         rb.useGravity = false;
     }
-
+    
     // Update is called once per frame
     void Update()
     {

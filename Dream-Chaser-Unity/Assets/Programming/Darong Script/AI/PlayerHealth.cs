@@ -19,4 +19,9 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log(hp);
         return hp > 10 ? true : false;
     }
+
+    public int currentHealth()
+    {
+        return hp;
+    }
 }

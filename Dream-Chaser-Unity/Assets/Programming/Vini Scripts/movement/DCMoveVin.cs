@@ -179,4 +179,9 @@ public class DCMoveVin : MonoBehaviour
         }
 
     }
+
+    public Vector3 getCurrentVelocity()
+    {
+        return rb.velocity;
+    }
 }
