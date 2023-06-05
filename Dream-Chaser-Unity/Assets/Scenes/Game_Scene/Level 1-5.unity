@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15673213, g: 0.18860334, b: 0.2206476, a: 1}
+  m_IndirectSpecularColor: {r: 0.15671813, g: 0.1885796, b: 0.2206494, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2079,7 +2079,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.24361502, y: 0.038222756, z: -0.009608829, w: 0.9690709}
+  m_LocalRotation: {x: 0.24324448, y: 0.06569256, z: -0.016514473, w: 0.967597}
   m_LocalPosition: {x: 1.9, y: 626.3, z: -1080}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4851,6 +4851,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 917061405197882374, guid: fde3f451fc2af2f449581880508c3690,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fde3f451fc2af2f449581880508c3690, type: 3}
 --- !u!4 &662371808 stripped
@@ -5637,7 +5642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &747962706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6332,7 +6337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &832575518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8007,7 +8012,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.24361502, y: 0.038222756, z: -0.009608829, w: 0.9690709}
+  m_LocalRotation: {x: 0.24324448, y: 0.06569256, z: -0.016514473, w: 0.967597}
   m_LocalPosition: {x: 1.9, y: 626.3, z: -1080}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10360,6 +10365,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 917061405197882374, guid: fde3f451fc2af2f449581880508c3690,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 917061405197882374, guid: fde3f451fc2af2f449581880508c3690,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fde3f451fc2af2f449581880508c3690, type: 3}
@@ -13326,6 +13341,7 @@ MonoBehaviour:
   cpPoints: 1
   lastCheckpointPosition: {x: 1.9, y: 351.1, z: -687.6}
   cpCount: 0
+  CurrentCarryingRecipe: {fileID: 0}
   sceneStarted: 0
 --- !u!4 &1882801867
 Transform:
@@ -13786,6 +13802,7 @@ GameObject:
   - component: {fileID: 5056017516929436353}
   - component: {fileID: 7296703713121833986}
   - component: {fileID: 7296703713121833987}
+  - component: {fileID: 7296703713121833988}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -62093,6 +62110,7 @@ MonoBehaviour:
   parameterName:
     m_PersistentCalls:
       m_Calls: []
+  isAlive: 1
 --- !u!54 &5056017516929436356
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -72495,6 +72513,20 @@ MonoBehaviour:
   audio: {fileID: 0}
   pauseMenu: {fileID: 1668462159}
   pauseFlag: 0
+--- !u!114 &7296703713121833988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950309741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13bb37289d3eb354288ef8f526fc1562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BossProjectileSpawnerPrefab: {fileID: 2681891814929693065, guid: bf17ef42a63e7da4a990dc2d40dc17e5,
+    type: 3}
 --- !u!1 &7307546136614889985
 GameObject:
   m_ObjectHideFlags: 0
@@ -91414,6 +91446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VnScene: VN_SadieScene2_Ryan
+  LoadingScreen: {fileID: 0}
 --- !u!114 &9140340354073807916
 MonoBehaviour:
   m_ObjectHideFlags: 0
