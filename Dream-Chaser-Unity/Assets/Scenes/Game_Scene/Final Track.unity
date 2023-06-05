@@ -4246,7 +4246,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66562129}
-  m_LocalRotation: {x: 0.46903974, y: 0.07777878, z: -0.0415143, w: 0.8787655}
+  m_LocalRotation: {x: 0.46882474, y: 0.082202904, z: -0.043875672, w: 0.8783627}
   m_LocalPosition: {x: 47.8, y: 700.38, z: -1016.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4809,7 +4809,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79737261}
-  m_LocalRotation: {x: 0.46903974, y: 0.07777878, z: -0.0415143, w: 0.8787655}
+  m_LocalRotation: {x: 0.46882474, y: 0.082202904, z: -0.043875672, w: 0.8783627}
   m_LocalPosition: {x: 47.8, y: 700.38, z: -1016.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5482,6 +5482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VnScene: VN_SadieScene2_Ryan
+  LoadingScreen: {fileID: 0}
 --- !u!65 &88811083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21260,7 +21261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &461813832
 Transform:
   m_ObjectHideFlags: 0
@@ -42477,7 +42478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &950832242
 Transform:
   m_ObjectHideFlags: 0
@@ -92201,6 +92202,7 @@ MonoBehaviour:
   parameterName:
     m_PersistentCalls:
       m_Calls: []
+  isAlive: 1
 --- !u!54 &2115140982
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93665,7 +93667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &602320054639712709
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -93972,7 +93974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2431821863496106255
 Transform:
   m_ObjectHideFlags: 0
