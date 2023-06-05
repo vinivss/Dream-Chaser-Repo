@@ -19,7 +19,7 @@ public class CoffeeMaker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("IN");
+        
         if (collision.CompareTag("Cup"))
         {
             foreach (GameObject arrow in Arrows)
@@ -37,15 +37,6 @@ public class CoffeeMaker : MonoBehaviour
             if (Coll != null)
                 Coll.interactable = false;
             return;
-        }
-        else
-        {
-            Ingredients ingredients = collision.GetComponent<IngredientManager>().ingredient;
-            if (ingredients != null)
-            {
-                manager.AddIngredient(ingredients);
-                Destroy(collision.gameObject);
-            }
         }
     }
 }

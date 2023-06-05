@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.Events;
-
+using UnityEditor;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     public DialogueTree dialogue;
     [Tooltip("Is this a 2.5D Scene?")]
     public bool TwoDScene = false;
+    [HideInInspector] public bool Unlocked;
     DialogueNode currentNode;
     [Header("Dialogue Box Attributes")]
     [Tooltip("Name Of Speaker")]
@@ -31,13 +32,18 @@ public class DialogueManager : MonoBehaviour
     public GameObject ButtonPrefab;
     [Tooltip("Vertical transform")]
     public Transform LayoutTrans;
+    [Header("Events")]
     [Tooltip("what will happen at the end of the dialogue")]
     public UnityEvent EndEvent;
 
+    [Tooltip("List of Preconditions that will appear this dialogue")]
+    public List<UnityEvent> CheckingEvents = new List<UnityEvent>();
+
+    
 
    
     GameObject runtimeSceneLayout;
-    Button NextButton;  
+    public Button NextButton;  
     GameObject runTimeWindow;
     ControlsManager controlVN;
     // Start is called before the first frame update
@@ -87,6 +93,7 @@ public class DialogueManager : MonoBehaviour
                     n.OnStart();
                 }
             }
+            return;
         }
         DialogueChoiceNode choiceNode = currentNode as DialogueChoiceNode;
         if (choiceNode)
@@ -97,6 +104,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     n.OnStart();
                 }
+                return;
             }
         }
         DialogueOptionNode optionNode = currentNode as DialogueOptionNode;
@@ -108,6 +116,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     n.OnStart();
                 }
+                return;
             }
         }
     }
@@ -191,9 +200,24 @@ public class DialogueManager : MonoBehaviour
         {
             int x = i;
             Button OptionButton = Instantiate(ButtonPrefab, LayoutTrans).GetComponent<Button>();
-            Debug.Log(i);
-            OptionButton.GetComponent<Button>().onClick.AddListener(delegate {SelectedOption(x);});
-            OptionButton.GetComponentInChildren<TextMeshProUGUI>().text = Node.Dialogue;
+            //Debug.Log(i);
+            if (Node is DialogueGatedOption)
+            {
+                DialogueGatedOption temp = Node as DialogueGatedOption;
+                TwoDDialogueBottle coffee = FindObjectOfType<TwoDDialogueBottle>();
+                Unlocked = coffee.FindRecipe();
+
+                if(Unlocked == true)
+                {
+                    OptionButton.GetComponent<Button>().onClick.AddListener(delegate { SelectedOption(x); });
+                    OptionButton.GetComponentInChildren<TextMeshProUGUI>().text = Node.Dialogue;
+                }
+            }
+            else
+            {
+                OptionButton.GetComponent<Button>().onClick.AddListener(delegate { SelectedOption(x); });
+                OptionButton.GetComponentInChildren<TextMeshProUGUI>().text = Node.Dialogue;
+            }
             i++;
         }
     }
@@ -203,6 +227,7 @@ public class DialogueManager : MonoBehaviour
     //event that will be called upon the clicking of a button
     public void SelectedOption(int index)
     {
+
         Debug.Log(index);
         //get index from button
         List<DialogueNode> Children =  dialogue.GetChildren(currentNode);
