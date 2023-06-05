@@ -82,7 +82,7 @@ public class BossBeetlesBehavior : MonoBehaviour
         if(collisionTagsToCheck.Contains(other.tag) && !isDead)
         {
             // in the Future the player would die and you would restart from a checkpoint
-            Destroy(other.gameObject);
+            // Destroy(other.gameObject);
             Explode();
         }
     }

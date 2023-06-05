@@ -7,6 +7,7 @@ public class BossBeetles : MonoBehaviour
     public LayerMask layerMask;
     public Transform target;
     public GameObject beetlesPrefab;
+    public GameObject boss;
     [SerializeField] int amount;
     [SerializeField] float spawnInterval, destroyDelay;
 
@@ -18,13 +19,14 @@ public class BossBeetles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        boss = GameObject.Find("Boss");
         ps = transform.Find("BeetlesLoop").GetComponent<ParticleSystem>();
         timer = spawnInterval;
 
         RaycastHit hit;
-        if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, Mathf.Infinity, layerMask))
+        if(Physics.Raycast(boss.transform.position, boss.transform.forward, out hit, Mathf.Infinity, layerMask))
         {
-            if(hit.transform.tag == "Enemy") 
+            if(hit.transform.tag == "Player") 
             {
                 target = hit.transform;
             }

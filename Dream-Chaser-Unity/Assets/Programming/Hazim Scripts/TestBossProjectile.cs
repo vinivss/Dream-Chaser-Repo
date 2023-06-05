@@ -6,12 +6,10 @@ public class TestBossProjectile : MonoBehaviour
 {
     [SerializeField] GameObject BossProjectileSpawnerPrefab;
 
-    private Transform cam;
-
     // Start is called before the first frame update
     void Start()
     {
-        cam = Camera.main.transform;
+
     }
 
     // Update is called once per frame
@@ -19,7 +17,7 @@ public class TestBossProjectile : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Instantiate(BossProjectileSpawnerPrefab, cam.position + cam.forward, cam.rotation);
+            Instantiate(BossProjectileSpawnerPrefab, transform.position + transform.forward, transform.rotation);
         }
     }
 }

@@ -9733,13 +9733,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   collisionTagsToCheck:
-  - Enemy
+  - Player
   duration: 8
   rotationSpeed: 50
   beforeTurnSpeed: 20
   afterTurnSpeed: 25
-  defaultDestinationDistance: 50
-  distanceBeforeTurn: 5
+  defaultDestinationDistance: -50
+  distanceBeforeTurn: 6
   destroyDelay: 3
 --- !u!135 &5679979734395633643
 SphereCollider:
