@@ -58,6 +58,8 @@ public class DCMoveVin : MonoBehaviour
     [Tooltip("The name of the FMOD Parameter function")]
     public  UnityEvent parameterName;
 
+    [SerializeField] public bool isAlive = true;
+
     private void Awake()
     {
         inManager = GetComponent<ControlsManager>();
@@ -143,7 +145,6 @@ public class DCMoveVin : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheckPos.position, groundDistance, groundMask);
     }
 
-
     private void UpdateSound(){
         velo = rb.velocity.magnitude/maxSpeed*4;
         AudioManager.instance.SetAmbienceParameter("wind_intensity", velo);
@@ -151,6 +152,7 @@ public class DCMoveVin : MonoBehaviour
 
     public void PlayerDeath()
     {
+        isAlive = false;
         rb.isKinematic = true;
         inManager.OnDisable();
         DissolveScript.OnPlayerDeath();

@@ -8,17 +8,24 @@ public class CoffeeMaker : MonoBehaviour
     CoffeeManager manager;
     public Transform CompleteWaypoint;
 
+    public GameObject[] Arrows;
+
     // Start is called before the first frame update
     void Start()
     {
         manager = FindObjectOfType<CoffeeManager>();
+        Arrows = manager.Arrows;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("IN");
+        
         if (collision.CompareTag("Cup"))
         {
+            foreach (GameObject arrow in Arrows)
+            {
+                arrow.SetActive(false);
+            }
             manager.currentRecipe.cookingMethod = cookingMethod;
             Clickndrag clickndrag = collision.GetComponent<Clickndrag>();
             clickndrag.enabled = false;
@@ -30,15 +37,6 @@ public class CoffeeMaker : MonoBehaviour
             if (Coll != null)
                 Coll.interactable = false;
             return;
-        }
-        else
-        {
-            Ingredients ingredients = collision.GetComponent<IngredientManager>().ingredient;
-            if (ingredients != null)
-            {
-                manager.AddIngredient(ingredients);
-                Destroy(collision.gameObject);
-            }
         }
     }
 }

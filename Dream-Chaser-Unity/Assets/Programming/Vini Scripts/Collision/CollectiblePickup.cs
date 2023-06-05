@@ -20,7 +20,6 @@ public class CollectiblePickup : MonoBehaviour
         {
             gameManager.AddPoints(pointsWorth);
             Destroy(gameObject);
-            Debug.Log("collect");
         }
     }
 
