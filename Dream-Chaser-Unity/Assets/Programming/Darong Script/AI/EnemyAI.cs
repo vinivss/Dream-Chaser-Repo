@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -15,13 +16,19 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] public CheckpointIndex checkpoint;
     [SerializeField] public Transform[] checkpointLocation;
 
+    [SerializeField] public NavMeshAgent meshAgent;
+
     public float currentHealth;
 
     void Start()
     {
         currentHealth = startingHealth;
+        /*
         player = GetComponent<DCMoveVin>();
+        player_health = GetComponent<PlayerHealth>();
         checkpoint = GetComponent<CheckpointIndex>();
+        meshAgent = GetComponent<NavMeshAgent>();
+        */
     }
 
     public float GetCurrentHealth()
@@ -43,7 +50,7 @@ public class EnemyAI : MonoBehaviour
 
     public void attack()
     {
-        if (player_health.healthCheck() && Input.GetKeyDown(KeyCode.Space))
+        if (player_health.healthCheck())
         {
             foreach (Transform SpawnBullets in projectileSpawnLocation)
             {
@@ -59,4 +66,6 @@ public class EnemyAI : MonoBehaviour
              */
         }
     }
+
+
 }

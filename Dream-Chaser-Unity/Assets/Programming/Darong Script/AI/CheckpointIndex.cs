@@ -24,4 +24,9 @@ public class CheckpointIndex : MonoBehaviour
             finishLevel = true;
         }
     }
+
+    public bool isFinish()
+    {
+        return finishLevel;
+    }
 }

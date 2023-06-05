@@ -58,7 +58,8 @@ public class DCMoveVin : MonoBehaviour
     [Tooltip("The name of the FMOD Parameter function")]
     public  UnityEvent parameterName;
 
-    [SerializeField] public bool isAlive = true;
+    public bool isAlive = true;
+    [SerializeField] public int playerHp;
 
     private void Awake()
     {
@@ -183,5 +184,22 @@ public class DCMoveVin : MonoBehaviour
     public Vector3 getCurrentVelocity()
     {
         return rb.velocity;
+    }
+
+    // set up health
+    public void underAttack()
+    {
+        playerHp -= 10;
+    }
+
+    public bool healthCheck()
+    {
+        Debug.Log(playerHp);
+        return playerHp > 10 ? true : false;
+    }
+
+    public int currentHealth()
+    {
+        return playerHp;
     }
 }

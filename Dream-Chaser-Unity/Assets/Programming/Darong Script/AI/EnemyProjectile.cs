@@ -13,6 +13,8 @@ public class EnemyProjectile : MonoBehaviour
 
     [SerializeField] private float destroyTime; // destory time after lanuch
 
+    [SerializeField] private PlayerHealth player_health;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +32,16 @@ public class EnemyProjectile : MonoBehaviour
     // check for collision with player
     private void OnCollisionEnter(Collision other)
     {
+        Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Player") // check if hit player
         {
-            PlayerHealth player_health = other.transform.GetComponent<PlayerHealth>();
+            
+            //PlayerHealth player_health = other.transform.GetComponent<PlayerHealth>();
+
+            if (!player_health)
+            {
+                Debug.Log("null");
+            }
 
             player_health.underAttack();
 
