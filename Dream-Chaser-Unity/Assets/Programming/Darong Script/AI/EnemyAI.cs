@@ -1,24 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] private float startingHealth;
-    [SerializeField] private float lowHealthThreshHold;
-    [SerializeField] private DCMoveVin player;
+    [SerializeField] public float startingHealth;
+    [SerializeField] public float lowHealthThreshHold;
+    [SerializeField] public DCMoveVin player;
     [SerializeField] public PlayerHealth player_health;
 
-    [SerializeField] private Transform[] projectileSpawnLocation;
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] public Transform[] projectileSpawnLocation;
+    [SerializeField] public GameObject bulletPrefab;
 
-    private float currentHealth;
+    [SerializeField] public CheckpointIndex checkpoint;
+    [SerializeField] public Transform[] checkpointLocation;
+
+    [SerializeField] public NavMeshAgent meshAgent;
+
+    public float currentHealth;
 
     void Start()
     {
         currentHealth = startingHealth;
+        /*
         player = GetComponent<DCMoveVin>();
-        
+        player_health = GetComponent<PlayerHealth>();
+        checkpoint = GetComponent<CheckpointIndex>();
+        meshAgent = GetComponent<NavMeshAgent>();
+        */
     }
 
     public float GetCurrentHealth()
@@ -40,7 +50,7 @@ public class EnemyAI : MonoBehaviour
 
     public void attack()
     {
-        if (player_health.healthCheck() && Input.GetKeyDown(KeyCode.Space))
+        if (player_health.healthCheck())
         {
             foreach (Transform SpawnBullets in projectileSpawnLocation)
             {
@@ -56,4 +66,6 @@ public class EnemyAI : MonoBehaviour
              */
         }
     }
+
+
 }

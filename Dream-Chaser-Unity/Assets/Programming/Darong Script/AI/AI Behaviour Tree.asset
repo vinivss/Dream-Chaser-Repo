@@ -34,14 +34,18 @@ MonoBehaviour:
   m_Name: checkAlive
   m_EditorClassIdentifier: 
   state: 0
-  started: 0
+  started: 1
   GUID: 68ab085342c999942a78bd902450298b
-  position: {x: 229, y: 238}
+  position: {x: 229, y: 245}
   blackboard:
     isAlive: 0
   agent: {fileID: 0}
-  description: 
-  children: []
+  description: 'Composite Note
+
+    Use to check if player is alive'
+  children:
+  - {fileID: 6156855442437642881}
+  - {fileID: 811575796635376302}
   player: {fileID: 1956533657298159486, guid: 57cc3faf8e62e2e40a28c3fb6b5d4d8b, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -61,8 +65,31 @@ MonoBehaviour:
   - {fileID: -8712624798858107918}
   - {fileID: 3391025374330627703}
   - {fileID: -2213706476399603509}
+  - {fileID: 6156855442437642881}
+  - {fileID: 811575796635376302}
   board:
     isAlive: 0
+--- !u!114 &811575796635376302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a9f52604a2f18e48aa5b623ef886cd3, type: 3}
+  m_Name: AIAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  GUID: 28a0ea610a2a35d459f84a88582266c8
+  position: {x: 353, y: 385}
+  blackboard:
+    isAlive: 0
+  agent: {fileID: 0}
+  description: 
+  player: {fileID: 0}
 --- !u!114 &3391025374330627703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,11 +103,31 @@ MonoBehaviour:
   m_Name: RepeatNode
   m_EditorClassIdentifier: 
   state: 0
-  started: 0
+  started: 1
   GUID: b8ad8407f2353fc47ba4dba3c6af5cd2
-  position: {x: 229, y: 93}
+  position: {x: 229, y: 105}
   blackboard:
     isAlive: 0
   agent: {fileID: 0}
   description: 
   child: {fileID: -2213706476399603509}
+--- !u!114 &6156855442437642881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b45030a6f6e6a342b414435f224b61f, type: 3}
+  m_Name: EnemyNav
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  GUID: 7bd4335f9fd37ff41b0b37261aadfe4a
+  position: {x: 117, y: 385}
+  blackboard:
+    isAlive: 0
+  agent: {fileID: 0}
+  description: 
