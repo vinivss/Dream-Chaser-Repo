@@ -16,7 +16,7 @@ public class ChangeToFullFilter : MonoBehaviour
     void Start()
     {
         manager = FindObjectOfType<CoffeeManager>();
-        curr = Filter.GetComponent<Sprite>();
+        curr = Filter.GetComponent<Image>().sprite;
     }
 
     // Update is called once per frame
