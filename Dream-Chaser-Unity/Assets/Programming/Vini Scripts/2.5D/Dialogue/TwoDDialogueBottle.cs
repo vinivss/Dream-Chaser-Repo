@@ -10,6 +10,7 @@ public class TwoDDialogueBottle : MonoBehaviour
 
     DialogueManager dialogueManager;
     public bool hasRecipe = false;
+    bool Alternate = false;
     public Recipe WantedRecipe;
     GameManager gameManager;
     public DialogueTree Alternatetree;
@@ -22,9 +23,13 @@ public class TwoDDialogueBottle : MonoBehaviour
 
     public void StartDialogue(DialogueTree Tree)
     {
-        dialogueManager.dialogue = Tree;
-        if(dialogueManager.dialogueStarted == false)
-        dialogueManager.DisplayDialogue();
+
+        if (Alternate == false)
+        {
+            Alternate = true;
+            dialogueManager.dialogue = Tree;
+            dialogueManager.DisplayDialogue();
+        }
 
         else
         {
@@ -42,15 +47,13 @@ public class TwoDDialogueBottle : MonoBehaviour
         {
             if (WantedRecipe == gameManager.CurrentCarryingRecipe)
             {
-                hasRecipe = true;
-            }
-            else
-            {
-                hasRecipe = false;
+               gameManager.CurrentCarryingRecipe = null;
+               return true;
             }
         }
 
-       return hasRecipe;
+        
+       return false;
     }
 
 }

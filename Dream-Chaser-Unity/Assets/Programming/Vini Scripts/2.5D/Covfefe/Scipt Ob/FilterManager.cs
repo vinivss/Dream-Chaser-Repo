@@ -22,7 +22,7 @@ public class FilterManager : MonoBehaviour
         {
             manager.AddIngredient(ingredients);
             Clickndrag drag = collision.GetComponent<Clickndrag>();
-            collision.transform.position = drag.startPos;
+            collision.transform.position = collision.transform.parent.transform.position;
             drag.Starting = false;
             drag.isDraggin = false;
 
