@@ -56,6 +56,8 @@ public class CoffeeManager : MonoBehaviour
         CookingFailure();
         currentRecipe = null;
         currentRecipe = ScriptableObject.CreateInstance("Recipe") as Recipe;
+        CoffeeMaker coffee = FindObjectOfType<CoffeeMaker>();
+        coffee.ResetMachine();
     }
 
     private void CookingFailure()
