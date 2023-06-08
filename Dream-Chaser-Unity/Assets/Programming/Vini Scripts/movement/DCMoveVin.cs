@@ -58,7 +58,10 @@ public class DCMoveVin : MonoBehaviour
     [Tooltip("The name of the FMOD Parameter function")]
     public  UnityEvent parameterName;
 
-    [SerializeField] public bool isAlive = true;
+    public bool isAlive = true;
+    [SerializeField] public int playerHp;
+
+    [SerializeField] public PlayerHealth player_health;
 
     private void Awake()
     {
@@ -67,6 +70,7 @@ public class DCMoveVin : MonoBehaviour
         Cam = FindObjectOfType<CinemachineVirtualCamera>();
         //startFOV = Cam.m_Lens.FieldOfView;
         DissolveScript = GetComponent<OnDeathDissolve>();
+        player_health = GetComponent<PlayerHealth>();
     }
 
     //physics management
@@ -87,6 +91,7 @@ public class DCMoveVin : MonoBehaviour
                 rb.drag = normDrag;
             }
         }
+        respawn();
         UpdateSound();
     }
 
@@ -179,4 +184,24 @@ public class DCMoveVin : MonoBehaviour
         }
 
     }
+
+    public Transform currentPlayerPos()
+    {
+        return transform;
+    }
+
+    public Vector3 getCurrentVelocity()
+    {
+        return rb.velocity;
+    }
+
+    public void respawn()
+    {
+        // if player is not alive, call playerdeath()
+        if (!player_health.healthCheck())
+        {
+            PlayerDeath();
+        }
+    }
+
 }
