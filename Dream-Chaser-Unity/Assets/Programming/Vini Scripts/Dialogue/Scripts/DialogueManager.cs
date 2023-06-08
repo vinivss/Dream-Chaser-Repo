@@ -199,7 +199,7 @@ public class DialogueManager : MonoBehaviour
         foreach (DialogueOptionNode Node in children)
         {
             int x = i;
-            Button OptionButton = Instantiate(ButtonPrefab, LayoutTrans).GetComponent<Button>();
+            
             //Debug.Log(i);
             if (Node is DialogueGatedOption)
             {
@@ -209,14 +209,17 @@ public class DialogueManager : MonoBehaviour
 
                 if(Unlocked == true)
                 {
+                    Button OptionButton = Instantiate(ButtonPrefab, LayoutTrans).GetComponent<Button>();
                     OptionButton.GetComponent<Button>().onClick.AddListener(delegate { SelectedOption(x); });
                     OptionButton.GetComponentInChildren<TextMeshProUGUI>().text = Node.Dialogue;
                 }
             }
             else
             {
+                Button OptionButton = Instantiate(ButtonPrefab, LayoutTrans).GetComponent<Button>();
                 OptionButton.GetComponent<Button>().onClick.AddListener(delegate { SelectedOption(x); });
                 OptionButton.GetComponentInChildren<TextMeshProUGUI>().text = Node.Dialogue;
+
             }
             i++;
         }

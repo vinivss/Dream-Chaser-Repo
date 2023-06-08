@@ -14,12 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   started: 0
   GUID: f1d31c45cff207d4b8ef02221589f064
-  position: {x: 632, y: -77}
+  position: {x: 826, y: -141}
   state: 1
   Speaker: 'possum '
   Dialogue: Liver
   SceneLayout: {fileID: 0}
   child: {fileID: 243958959123416714}
+  DialogueActions: []
+--- !u!114 &-4491150087950490585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ca86122f814e040b6be55c4c1287b2, type: 3}
+  m_Name: DialogueChoiceNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: e8c76f5f33987bc47a3f68d066758d32
+  position: {x: 496, y: 178}
+  state: 1
+  Speaker: 
+  Dialogue: What ?
+  SceneLayout: {fileID: 0}
+  children:
+  - {fileID: 7255012852683634345}
+  - {fileID: 4824275231102110176}
   DialogueActions: []
 --- !u!114 &-4438105249835160391
 MonoBehaviour:
@@ -41,6 +64,27 @@ MonoBehaviour:
   Dialogue: 
   SceneLayout: {fileID: 0}
   child: {fileID: 3687505093051343596}
+--- !u!114 &-1445279239888561606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 0728cba927c01574ba7e28ea79eb4297
+  position: {x: 1010, y: 16}
+  state: 1
+  Speaker: 
+  Dialogue: poopoo
+  SceneLayout: {fileID: 0}
+  child: {fileID: 2328021789433775998}
+  DialogueActions: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,7 +105,12 @@ MonoBehaviour:
   - {fileID: 3749450661727800236}
   - {fileID: -9047513649683785803}
   - {fileID: 243958959123416714}
-  - {fileID: 8307690999981498465}
+  - {fileID: 7255012852683634345}
+  - {fileID: 4824275231102110176}
+  - {fileID: -1445279239888561606}
+  - {fileID: -4491150087950490585}
+  - {fileID: 2328021789433775998}
+  - {fileID: 3771024825339415968}
 --- !u!114 &243958959123416714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,13 +125,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   started: 0
   GUID: d473e580b845e23479cf2dedd0f41e10
-  position: {x: 906, y: -172}
+  position: {x: 1100, y: -236}
   state: 1
   Speaker: mossum
   Dialogue: '*Goblin Noises*'
   SceneLayout: {fileID: 0}
-  child: {fileID: 8307690999981498465}
+  child: {fileID: 3771024825339415968}
   DialogueActions: []
+--- !u!114 &2328021789433775998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 9d38db16fdd92d44c855a03fe2ab5b2c
+  position: {x: 1227, y: 8}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
 --- !u!114 &3687505093051343596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,14 +186,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   started: 0
   GUID: 06d3032bbdbc25a41aa204f76ca8a909
-  position: {x: 435, y: -42}
+  position: {x: 379, y: -35}
   state: 1
   Speaker: shadie
   Dialogue: your...
   SceneLayout: {fileID: 0}
-  child: {fileID: -9047513649683785803}
+  child: {fileID: -4491150087950490585}
   DialogueActions: []
---- !u!114 &8307690999981498465
+--- !u!114 &3771024825339415968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,9 +206,52 @@ MonoBehaviour:
   m_Name: DialogueEndNode
   m_EditorClassIdentifier: 
   started: 0
-  GUID: 9ad2e0dceb6bb734194576c2e7edd2c5
-  position: {x: 1089, y: -164}
-  state: 1
+  GUID: 1821cdeec12412c44b041e7439adf467
+  position: {x: 1331, y: -228}
+  state: 0
   Speaker: 
   Dialogue: 
   SceneLayout: {fileID: 0}
+--- !u!114 &4824275231102110176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4c6bf7ef376844da75767892754c98, type: 3}
+  m_Name: DialogueGatedOption
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 7420737fe64025149bdda3cb13f58669
+  position: {x: 638, y: 59}
+  state: 1
+  Speaker: 
+  Dialogue: Cappuccino
+  SceneLayout: {fileID: 0}
+  child: {fileID: -1445279239888561606}
+  DialogueActions: []
+  eventCheck: 0
+--- !u!114 &7255012852683634345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 8a4a1ac47873bf64085216ab1a4a0191
+  position: {x: 579, y: -90}
+  state: 1
+  Speaker: 
+  Dialogue: Liver?
+  SceneLayout: {fileID: 0}
+  child: {fileID: -9047513649683785803}
+  DialogueActions: []
