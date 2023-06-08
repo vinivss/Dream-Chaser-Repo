@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15673213, g: 0.18860334, b: 0.2206476, a: 1}
+  m_IndirectSpecularColor: {r: 0.1565221, g: 0.18838228, b: 0.22054446, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2079,7 +2079,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.46882632, y: 0.082170874, z: -0.043858577, w: 0.8783657}
+  m_LocalRotation: {x: 0.469349, y: 0.07092835, z: -0.037857894, w: 0.87934494}
   m_LocalPosition: {x: 3.77, y: 643.5, z: -1078.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8007,7 +8007,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.46882632, y: 0.082170874, z: -0.043858577, w: 0.8783657}
+  m_LocalRotation: {x: 0.469349, y: 0.07092835, z: -0.037857894, w: 0.87934494}
   m_LocalPosition: {x: 3.77, y: 643.5, z: -1078.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13787,6 +13787,7 @@ GameObject:
   - component: {fileID: 5056017516929436353}
   - component: {fileID: 7296703713121833986}
   - component: {fileID: 7296703713121833987}
+  - component: {fileID: 7296703713121833988}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -62096,6 +62097,7 @@ MonoBehaviour:
       m_Calls: []
   isAlive: 1
   playerHp: 0
+  player_health: {fileID: 0}
 --- !u!54 &5056017516929436356
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -72498,6 +72500,19 @@ MonoBehaviour:
   audio: {fileID: 0}
   pauseMenu: {fileID: 1668462159}
   pauseFlag: 0
+--- !u!114 &7296703713121833988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950309741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa7e85685567e314db2030b9263f3332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalCheckpoints: 0
 --- !u!1 &7307546136614889985
 GameObject:
   m_ObjectHideFlags: 0
