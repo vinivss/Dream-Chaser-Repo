@@ -61,6 +61,8 @@ public class DCMoveVin : MonoBehaviour
     public bool isAlive = true;
     [SerializeField] public int playerHp;
 
+    [SerializeField] public PlayerHealth player_health;
+
     private void Awake()
     {
         inManager = GetComponent<ControlsManager>();
@@ -68,6 +70,7 @@ public class DCMoveVin : MonoBehaviour
         Cam = FindObjectOfType<CinemachineVirtualCamera>();
         //startFOV = Cam.m_Lens.FieldOfView;
         DissolveScript = GetComponent<OnDeathDissolve>();
+        player_health = GetComponent<PlayerHealth>();
     }
 
     //physics management
@@ -88,6 +91,7 @@ public class DCMoveVin : MonoBehaviour
                 rb.drag = normDrag;
             }
         }
+        respawn();
         UpdateSound();
     }
 
@@ -181,25 +185,23 @@ public class DCMoveVin : MonoBehaviour
 
     }
 
+    public Transform currentPlayerPos()
+    {
+        return transform;
+    }
+
     public Vector3 getCurrentVelocity()
     {
         return rb.velocity;
     }
 
-    // set up health
-    public void underAttack()
+    public void respawn()
     {
-        playerHp -= 10;
+        // if player is not alive, call playerdeath()
+        if (!player_health.healthCheck())
+        {
+            PlayerDeath();
+        }
     }
 
-    public bool healthCheck()
-    {
-        Debug.Log(playerHp);
-        return playerHp > 10 ? true : false;
-    }
-
-    public int currentHealth()
-    {
-        return playerHp;
-    }
 }

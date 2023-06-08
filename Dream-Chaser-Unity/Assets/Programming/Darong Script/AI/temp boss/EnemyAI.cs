@@ -5,24 +5,28 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    [Header("enemy health start")]
     [SerializeField] public float startingHealth;
-    [SerializeField] public float lowHealthThreshHold;
+    [SerializeField] public int currentHealth;
+
+    [Header("Player components")]
     [SerializeField] public DCMoveVin player;
     [SerializeField] public PlayerHealth player_health;
 
+    [Header("bullet prefabs and spawn location")]
     [SerializeField] public Transform[] projectileSpawnLocation;
     [SerializeField] public GameObject bulletPrefab;
 
+    [Header("checkpoint locations and checkpoint track")]
     [SerializeField] public CheckpointIndex checkpoint;
     [SerializeField] public Transform[] checkpointLocation;
 
-    [SerializeField] public NavMeshAgent meshAgent;
-
-    public float currentHealth;
+    private float countDownTime = 0f;
+    [SerializeField] private float firerate;
 
     void Start()
     {
-        currentHealth = startingHealth;
+        //currentHealth = startingHealth;
         /*
         player = GetComponent<DCMoveVin>();
         player_health = GetComponent<PlayerHealth>();
@@ -39,12 +43,12 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        attack();
-        Debug.Log(player_health.healthCheck());
-        if (!player_health.healthCheck())
+        // if player is alive, enemy attack
+        if (player_health.healthCheck())
         {
-            Destroy(gameObject);
+            attack();
         }
+        
     }
 
 
@@ -52,20 +56,20 @@ public class EnemyAI : MonoBehaviour
     {
         if (player_health.healthCheck())
         {
-            foreach (Transform SpawnBullets in projectileSpawnLocation)
-            {
-                Instantiate(bulletPrefab, SpawnBullets.position, transform.rotation);
-            }
-             // check for player collision;
+            if (countDownTime <= 0f) {
 
-        }
-        else
-        {
-            /*
-             stop
-             */
+                Instantiate(bulletPrefab, projectileSpawnLocation[0].position, transform.rotation);
+
+                countDownTime = 1f / firerate;
+            }
+            countDownTime -= Time.deltaTime;
         }
     }
 
+    // teleport boss between checkpoints
+    private void teleport()
+    {
+
+    }
 
 }

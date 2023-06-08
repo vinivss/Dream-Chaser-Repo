@@ -7,23 +7,33 @@ namespace Tools.Trees.AI
 {
     public class AIAgent : MonoBehaviour
     {
+        [Header("enemy health start")]
         [SerializeField] public float startingHealth;
-        [SerializeField] public float lowHealthThreshHold;
         [SerializeField] public DCMoveVin player;
         [SerializeField] public PlayerHealth player_health;
 
+        [Header("Player components")]
         [SerializeField] public Transform[] projectileSpawnLocation;
         [SerializeField] public GameObject bulletPrefab;
 
+        [Header("bullet prefabs and spawn location")]
         [SerializeField] public CheckpointIndex checkpoint;
         [SerializeField] public Transform[] checkpointLocation;
 
+        [Header("NavMesh Agent")]
         [SerializeField] public NavMeshAgent meshAgent;
 
+        // enemy current health
         public float currentHealth;
 
+        // fire rate
         private float fireRate;
         private float countDownFire = 2;
+
+        // checkpoint track temp
+        public bool checkpoint1;
+        public bool checkpoint2;
+        public bool checkpoint3;
 
         void Start()
         {
@@ -52,6 +62,7 @@ namespace Tools.Trees.AI
 
         public void attack()
         {
+            // enemy fire
             if (player_health.healthCheck())
             {
                 if (countDownFire <= 0f) {
@@ -68,6 +79,15 @@ namespace Tools.Trees.AI
                 /*
                  stop
                  */
+            }
+        }
+        
+        private void OnCollisionEnter(Collision other)
+        {
+            if (other.gameObject.tag == "Checkpoint")
+            {
+                Debug.Log("enter checkpoint");
+                checkpoint1 = true;
             }
         }
     }

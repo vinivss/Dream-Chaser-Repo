@@ -5,15 +5,14 @@ using Tools.Trees.AI;
 
 public class AIAttack : AIActionNode
 {
-    private AIAgent boss;
-    [SerializeField] private GameObject player;
 
+    private DCMoveVin player;
     private float _attackTime = 1f;
     private float _attackCounter = 0f;
 
     protected override void OnStart()
     {
-
+        player = agent.player;
     }
     protected override void OnStop()
     {
@@ -22,27 +21,18 @@ public class AIAttack : AIActionNode
 
     protected override State OnUpdate()
     {
-        Debug.Log("calling aiattack");
-        Transform player_position = player.transform;
-        DCMoveVin p = player.GetComponentInChildren<DCMoveVin>();
-        _attackCounter += Time.deltaTime;
-        if (_attackCounter >= _attackTime)
-        {
-            boss.attack();
-            _attackCounter = 0f;
-        }
 
-        if (!p)
-        {
-            Debug.Log("null");
-        }
+        agent.attack();
+        _attackCounter = 0f;
 
-        if (p.isAlive)
+        if (agent.player_health.healthCheck())
         {
+            Debug.Log("keep running attack");
             return State.RUN;
         }
         else
         {
+            Debug.Log("attack succ");
             return State.SUCC;
         }
     }

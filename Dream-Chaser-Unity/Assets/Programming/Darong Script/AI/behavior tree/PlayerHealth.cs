@@ -11,16 +11,18 @@ public class PlayerHealth : MonoBehaviour
 
     public void underAttack()
     {
+        Debug.Log("hit");
         hp -= 10;
     }
 
     public bool healthCheck()
     {
-        return hp > 10 ? true : false;
+        return hp > 0 ? true : false;
     }
 
     public int currentHealth()
     {
         return hp;
     }
+
 }
