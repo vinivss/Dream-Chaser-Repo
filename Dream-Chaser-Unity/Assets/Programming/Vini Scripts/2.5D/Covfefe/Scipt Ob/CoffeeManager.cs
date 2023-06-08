@@ -18,11 +18,15 @@ public class CoffeeManager : MonoBehaviour
     public GameObject WinningBanner;
     public TextMeshProUGUI WinningNameText;
     public Image bannerimg;
-   
+    [Header("Cam Shake")]
+    Camera cam;
+    public AnimationCurve curve;
+    public float duration = 1f;
     
 
     private void Awake()
     {
+        cam = Camera.main;
         currentRecipe =  ScriptableObject.CreateInstance("Recipe") as Recipe;
         manager = FindObjectOfType<GameManager>();
        
@@ -44,12 +48,36 @@ public class CoffeeManager : MonoBehaviour
                     bannerimg.sprite = CookedRecipe.Sprite;
                     WinningNameText.text = CookedRecipe.name;
                     
-                    break;
+                    return;
                 }
             }
         }
+
+        CookingFailure();
+        currentRecipe = null;
+        currentRecipe = ScriptableObject.CreateInstance("Recipe") as Recipe;
+        CoffeeMaker coffee = FindObjectOfType<CoffeeMaker>();
+        coffee.ResetMachine();
     }
 
+    private void CookingFailure()
+    {
+        StartCoroutine(Shakin());
+    }
+    IEnumerator Shakin()
+    {
+        Vector3 startPos = cam.transform.position;
+        float elapsedTime = 0f;
+        while(elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float strength = curve.Evaluate(elapsedTime / duration);
+            cam.transform.position = startPos + UnityEngine.Random.insideUnitSphere * strength;
+            yield return null;
+        }
+
+        cam.transform.position = startPos;
+    }
     private bool CheckIngredients(Recipe recipeToCheck)
     {
         if(recipeToCheck.RecipeIngreds.Count != currentRecipe.RecipeIngreds.Count)
