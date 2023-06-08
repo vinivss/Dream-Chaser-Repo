@@ -10,9 +10,11 @@ public class TwoDDialogueBottle : MonoBehaviour
 
     DialogueManager dialogueManager;
     public bool hasRecipe = false;
+    bool Alternate = false;
     public Recipe WantedRecipe;
     GameManager gameManager;
     public DialogueTree Alternatetree;
+    public DialogueTree CorrectGuessTree;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,14 +24,28 @@ public class TwoDDialogueBottle : MonoBehaviour
 
     public void StartDialogue(DialogueTree Tree)
     {
-        dialogueManager.dialogue = Tree;
-        if(dialogueManager.dialogueStarted == false)
-        dialogueManager.DisplayDialogue();
 
-        else
+        if (Alternate == false)
         {
-            dialogueManager.dialogue = Alternatetree;
+            Alternate = true;
+            dialogueManager.dialogue = Tree;
             dialogueManager.DisplayDialogue();
+        }
+
+        else if (Alternate == true)
+        {
+           if (dialogueManager.Unlocked == false || hasRecipe == false)
+           {
+                dialogueManager.dialogue = Alternatetree;
+                dialogueManager.DisplayDialogue();
+           }
+
+           else if(dialogueManager.Unlocked == true)
+            {
+                dialogueManager.dialogue = CorrectGuessTree;
+                dialogueManager.DisplayDialogue();
+            }
+           
         }
 
         
@@ -42,15 +58,13 @@ public class TwoDDialogueBottle : MonoBehaviour
         {
             if (WantedRecipe == gameManager.CurrentCarryingRecipe)
             {
-                hasRecipe = true;
-            }
-            else
-            {
-                hasRecipe = false;
+               gameManager.CurrentCarryingRecipe = null;
+               return true;
             }
         }
 
-       return hasRecipe;
+        
+       return false;
     }
 
 }
