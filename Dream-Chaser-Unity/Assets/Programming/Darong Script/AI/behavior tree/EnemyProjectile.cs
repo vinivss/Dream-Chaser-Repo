@@ -36,13 +36,14 @@ public class EnemyProjectile : MonoBehaviour
     void FixedUpdate()
     {
         // homing
-        if (player_health.healthCheck())
+        if (player_health.healthCheck() )
         {
             Vector3 direction = player.position - rb.position;
             direction.Normalize();
             Vector3 rotationAmount = Vector3.Cross(transform.forward,direction);
             rb.angularVelocity = rotationAmount * rotationForce;
             rb.velocity = transform.forward * lanuchForce;
+            
         }
         
         Destroy(gameObject, destroyTime); // destroy bullet if not hit
@@ -57,7 +58,6 @@ public class EnemyProjectile : MonoBehaviour
             if (other.gameObject.tag == "Player") // check if hit player
             {
 
-                //PlayerHealth player_health = other.transform.GetComponent<PlayerHealth>();
                 // if player still alive, take damage
                 if (player_health.healthCheck())
                 {
@@ -70,6 +70,5 @@ public class EnemyProjectile : MonoBehaviour
             Destroy(gameObject);
         }
         
-        //Debug.Log("destroy at collision");
     }
 }

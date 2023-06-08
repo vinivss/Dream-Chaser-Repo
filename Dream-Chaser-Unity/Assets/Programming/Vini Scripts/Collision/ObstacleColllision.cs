@@ -16,6 +16,7 @@ public class ObstacleColllision : MonoBehaviour
     {
         if (this.tag != "Collectible") {
             AudioManager.instance.PlayOneShot(FMODEvents.instance.ambience, this.transform.position);
+            Debug.Log(other.tag);
             FindObjectOfType<DCMoveVin>().PlayerDeath();
             StartCoroutine(ResetScene());
         }
