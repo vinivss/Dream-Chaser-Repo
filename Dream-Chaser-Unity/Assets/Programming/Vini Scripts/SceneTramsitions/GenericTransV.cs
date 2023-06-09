@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class GenericTransV : MonoBehaviour
 {
-    public Object GenScene;
+    public string GenScene;
     public GameObject LoadingScreen;
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class GenericTransV : MonoBehaviour
     IEnumerator LoadSceneAsync()
     {
         LoadingScreen = Instantiate(LoadingScreen, GameObject.FindObjectOfType<Canvas>().transform);
-        AsyncOperation op = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        AsyncOperation op = SceneManager.LoadSceneAsync(GenScene);
         while (!op.isDone)
         {
             yield return null;
