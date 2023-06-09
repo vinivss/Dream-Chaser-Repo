@@ -9,6 +9,7 @@ public class MainMenuTransfer : MonoBehaviour
 {
     MenuAudioManager menuAudio;
     public GameObject LoadingScreen;
+    public string Scene;
     private void Awake()
     {
         menuAudio = FindObjectOfType<MenuAudioManager>();
@@ -21,13 +22,13 @@ public class MainMenuTransfer : MonoBehaviour
             menuAudio.musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             DestroyImmediate(menuAudio);
         }
-        StartCoroutine(LoadSceneAsync());
+       StartCoroutine(LoadSceneAsync());
     }
 
     IEnumerator LoadSceneAsync()
     {
         LoadingScreen = Instantiate(LoadingScreen, GameObject.FindObjectOfType<Canvas>().transform);
-        AsyncOperation op = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        AsyncOperation op = SceneManager.LoadSceneAsync(Scene);
         while (!op.isDone)
         {
             yield return null;
