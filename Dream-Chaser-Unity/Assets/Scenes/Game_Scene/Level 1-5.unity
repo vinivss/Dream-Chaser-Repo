@@ -1910,7 +1910,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.46934593, y: 0.07099927, z: -0.03789575, w: 0.8793392}
+  m_LocalRotation: {x: 0.46934855, y: 0.070938505, z: -0.037863318, w: 0.8793441}
   m_LocalPosition: {x: 3.77, y: 643.5, z: -1078.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6379,7 +6379,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.46934593, y: 0.07099927, z: -0.03789575, w: 0.8793392}
+  m_LocalRotation: {x: 0.46934855, y: 0.070938505, z: -0.037863318, w: 0.8793441}
   m_LocalPosition: {x: 3.77, y: 643.5, z: -1078.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -89366,7 +89366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VnScene: VN_SadieScene2_Ryan
-  LoadingScreen: {fileID: 0}
+  LoadingScreen: {fileID: 1766085658587118468, guid: 355264c603f94534093814dfd6d8daf6,
+    type: 3}
 --- !u!114 &9140340354073807916
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1843,7 +1843,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VnScene: VN_SadieScene3_Ryan
-  LoadingScreen: {fileID: 0}
+  LoadingScreen: {fileID: 1766085658587118468, guid: 355264c603f94534093814dfd6d8daf6,
+    type: 3}
 --- !u!65 &88811083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4826,7 +4827,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461813831}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: -1, y: 240, z: -434}
+  m_LocalPosition: {x: 7.5, y: -8, z: -76}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -14260,7 +14261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488344549}
   m_LocalRotation: {x: 0.2588191, y: -0, z: -0, w: 0.9659258}
-  m_LocalPosition: {x: -1, y: 240, z: -434}
+  m_LocalPosition: {x: 7.5, y: -8, z: -76}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15864,17 +15865,17 @@ PrefabInstance:
     - target: {fileID: 7687618664854982722, guid: 4200e1b75a2ae3149b31443aef818d45,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 292.5
+      value: 301
       objectReference: {fileID: 0}
     - target: {fileID: 7687618664854982722, guid: 4200e1b75a2ae3149b31443aef818d45,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 627
+      value: 379
       objectReference: {fileID: 0}
     - target: {fileID: 7687618664854982722, guid: 4200e1b75a2ae3149b31443aef818d45,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1106
+      value: -748
       objectReference: {fileID: 0}
     - target: {fileID: 7687618664854982722, guid: 4200e1b75a2ae3149b31443aef818d45,
         type: 3}
@@ -19373,7 +19374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029791108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 96, y: -996.1998, z: 2366.8}
+  m_LocalPosition: {x: 104.5, y: -1244.1998, z: 2724.8}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:

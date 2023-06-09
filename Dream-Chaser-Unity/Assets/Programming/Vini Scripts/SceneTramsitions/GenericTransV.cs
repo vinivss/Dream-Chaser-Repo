@@ -17,23 +17,11 @@ public class GenericTransV : MonoBehaviour
     // Update is called once per frame
     public void Awake()
     {
-        if(instance == null)
-        {
-            VNaudio = FindObjectOfType<VNAudioManager>();
-            instance = this;
-            DontDestroyOnLoad(instance);
-            if (instance != null){
-                //Debug.LogError("Found more than one Audio Manager in scene");
-            }
-        }
-        else
-        {
-            DestroyImmediate(gameObject);
-        }   
+        VNaudio = FindObjectOfType<VNAudioManager>();
     }
     public void ChangeScene()
     {
-        //VNaudio.musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        VNaudio.thanos();
         StartCoroutine(LoadSceneAsync());
 
 
