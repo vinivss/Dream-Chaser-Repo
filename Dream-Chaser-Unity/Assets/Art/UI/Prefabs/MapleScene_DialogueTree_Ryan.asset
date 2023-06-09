@@ -1,0 +1,1608 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8798283249013146088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: a294d45240e42a04c9d932d44806f766
+  position: {x: 81, y: 278}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Like, to the point where I can\u2019t help but wanna do something to
+    pay you back. Like, is there anything I could help you with maybe lol?"
+  SceneLayout: {fileID: 5223557329996340103, guid: ebf298adeecf6364f8ab8f25fcfac158,
+    type: 3}
+  child: {fileID: 787792554146379471}
+  DialogueActions: []
+--- !u!114 &-8491375728860154669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 6839a691e0fb7314e9ada63c2c4a56e8
+  position: {x: 1049, y: 1}
+  state: 1
+  Speaker: 
+  Dialogue: Going to school?
+  SceneLayout: {fileID: 0}
+  child: {fileID: 1106577240413444292}
+  DialogueActions: []
+--- !u!114 &-8411766584514092983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 3c630afd25851b34697981be2204dc65
+  position: {x: 1012, y: 272}
+  state: 1
+  Speaker: 
+  Dialogue: "It\u2019s fine."
+  SceneLayout: {fileID: 0}
+  child: {fileID: -6635459565017131311}
+  DialogueActions: []
+--- !u!114 &-8038788895781212347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ca86122f814e040b6be55c4c1287b2, type: 3}
+  m_Name: DialogueChoiceNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 1fd97c47f65704547a6b1a3f7e3a528f
+  position: {x: 812, y: -240}
+  state: 1
+  Speaker: Ash
+  Dialogue: "(Nowadays, things are better, and I haven\u2019t been seeing her around
+    as much. I wonder what she could be getting up to?)"
+  SceneLayout: {fileID: 5223557329996340103, guid: 8be64ae596b9cc24d9d3e2657f3aed7a,
+    type: 3}
+  children:
+  - {fileID: -1441537195449940472}
+  - {fileID: 1283770656398607869}
+  - {fileID: -8491375728860154669}
+  DialogueActions: []
+--- !u!114 &-7846222531081839384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ca86122f814e040b6be55c4c1287b2, type: 3}
+  m_Name: DialogueChoiceNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: ed70f097d9ff8a6439fd5189c144c6d9
+  position: {x: 821, y: 280}
+  state: 1
+  Speaker: Ash, the Dream Chaser
+  Dialogue: "(But\u2026she sincerely wants to help me. So\u2026)"
+  SceneLayout: {fileID: 5223557329996340103, guid: 82b67b83a16410346afd3dabc4ad76ac,
+    type: 3}
+  children:
+  - {fileID: -8411766584514092983}
+  - {fileID: -3983560823173014807}
+  - {fileID: -697042694112084705}
+  DialogueActions: []
+--- !u!114 &-7658363513724129140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 928552c9d67621847a2e6ece422deb02
+  position: {x: 1424.1599, y: -166}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Oh no way, that\u2019d be impossible. I doubt I could run more than
+    a few steps before feeling tired lmao. Maybe future Maple will finally try more
+    physical activity\u2026but I\u2019m not there yet."
+  SceneLayout: {fileID: 5223557329996340103, guid: fa17b4fdd572b6642a3613fe5c8a8bbd,
+    type: 3}
+  child: {fileID: -4710599403334818572}
+  DialogueActions: []
+--- !u!114 &-7617655102851186870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 7afb6c9762be830488c2a06f33037809
+  position: {x: 1742.0503, y: 241.15001}
+  state: 1
+  Speaker: Ash
+  Dialogue: "(Yeah, she\u2019s a little disappointed. Sorry! It\u2019s just\u2026probably
+    for the best.)"
+  SceneLayout: {fileID: 5223557329996340103, guid: b068bee5bbc1a2345af9ce23df2aac85,
+    type: 3}
+  child: {fileID: -4881779210183912870}
+  DialogueActions: []
+--- !u!114 &-7531946309799878016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: a31b14e9976e9e14399354b1f61310b4
+  position: {x: -139.2522, y: 159.26122}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Actually, I\u2019ve started working a job. A little, small one that\u2019s
+    only a few hours on a few days of the week\u2026but yeah\u2026guess my NEET card\u2019s
+    been revoked lol."
+  SceneLayout: {fileID: 5223557329996340103, guid: 8b77532525161124ba5353d3ec0ef3de,
+    type: 3}
+  child: {fileID: -4503082574155021008}
+  DialogueActions: []
+--- !u!114 &-7338831176175542240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: acd761200825a264e9f50d7dc8b76591
+  position: {x: 1198.8451, y: 631.5587}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Nah, I\u2019m probably just imagining things. But anyways, if you really
+    do want to be a good barista, you should probably stop talking to me and go handle
+    some other people\u2019s orders lmao."
+  SceneLayout: {fileID: 5223557329996340103, guid: d33625f4e5b19824ea561aa4f413db7e,
+    type: 3}
+  child: {fileID: 4944041840215886778}
+  DialogueActions: []
+--- !u!114 &-7098704603698304330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: c486113de76d3ef42a8a07532651b918
+  position: {x: 816, y: 154}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Sometimes I\u2019m still not sure, but I\u2019m definitely doing better
+    now than I was when you first came around."
+  SceneLayout: {fileID: 5223557329996340103, guid: 230218915dee9474886c4a93b526b237,
+    type: 3}
+  child: {fileID: -4204600723947993046}
+  DialogueActions: []
+--- !u!114 &-6635459565017131311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 86b954d2eebb22c418b42624ae3974e5
+  position: {x: 1200, y: 265}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Honestly, I\u2019m doing fine. You don\u2019t need to pay me back anything. "
+  SceneLayout: {fileID: 5223557329996340103, guid: 8b77532525161124ba5353d3ec0ef3de,
+    type: 3}
+  child: {fileID: 7997945006496447402}
+  DialogueActions: []
+--- !u!114 &-6531099060194470601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 3d6877f6b84633d4e80a7221475cb62c
+  position: {x: 1389.1501, y: 360.63602}
+  state: 0
+  Speaker: Maple
+  Dialogue: "Jeez, that was almost disgustingly cheesy. \r\n"
+  SceneLayout: {fileID: 5223557329996340103, guid: 1369cc39c69b23c4fa69b57a7de9a693,
+    type: 3}
+  child: {fileID: 3130218741442468324}
+  DialogueActions: []
+--- !u!114 &-5835496714259699073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: fb699fae5b9a70a41b8495d838951e71
+  position: {x: 447.53287, y: 669.5806}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Damn, you\u2019ve infected me with the habit of saying stupid cheesy
+    things. \r\n"
+  SceneLayout: {fileID: 5223557329996340103, guid: ebf298adeecf6364f8ab8f25fcfac158,
+    type: 3}
+  child: {fileID: 3210215588342602873}
+  DialogueActions: []
+--- !u!114 &-4881779210183912870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 7855676bb6c9cfe4e978f5451121184e
+  position: {x: -119.80002, y: 706.95013}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Although, I guess I\u2019m sort of paying you back through all the coffee
+    I get lol.\r\n"
+  SceneLayout: {fileID: 5223557329996340103, guid: c9c57a617b6bb9f4a8c2f1cdc0c809c6,
+    type: 3}
+  child: {fileID: 5403756063234524103}
+  DialogueActions: []
+--- !u!114 &-4722731018967111993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 52b5ea1916eb4bc45a1fbb944415b5b9
+  position: {x: 54, y: -203}
+  state: 1
+  Speaker: Ash
+  Dialogue: "(It was\u2026a disaster\u2026Yet somehow Maple always drinks it with
+    a smile. Not that I\u2019ve been able to ever get a straight answer on whether
+    it\u2019s actually good or she just finds some kind of twisted satisfaction in
+    it.)"
+  SceneLayout: {fileID: 5223557329996340103, guid: 8be64ae596b9cc24d9d3e2657f3aed7a,
+    type: 3}
+  child: {fileID: 2883328273100634213}
+  DialogueActions: []
+--- !u!114 &-4710599403334818572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 5db260211afc89b4d81d030f22f0b036
+  position: {x: 1621.8, y: -186}
+  state: 1
+  Speaker: Ash
+  Dialogue: "I\u2019m sure you could if you tried, but if you\u2019re not ready yet
+    that\u2019s ok too."
+  SceneLayout: {fileID: 5223557329996340103, guid: b068bee5bbc1a2345af9ce23df2aac85,
+    type: 3}
+  child: {fileID: -7531946309799878016}
+  DialogueActions: []
+--- !u!114 &-4592673775075922192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 307505b7a455214419e3578453673c33
+  position: {x: 1611.0022, y: 610.2665}
+  state: 1
+  Speaker: Ash
+  Dialogue: 'Well, if you need anything else, let me know! '
+  SceneLayout: {fileID: 5223557329996340103, guid: 0e8b76cd357216749a356ee9f7d305df,
+    type: 3}
+  child: {fileID: -4076207693865088586}
+  DialogueActions: []
+--- !u!114 &-4503082574155021008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 05f53377059d0e643831c7e1df7141f9
+  position: {x: 81, y: 142}
+  state: 1
+  Speaker: Ash
+  Dialogue: "That\u2019s great, Maple! Even if it is something small, that\u2019s
+    a big step forward. So, what\u2019s the job? \r\n"
+  SceneLayout: {fileID: 5223557329996340103, guid: 0e8b76cd357216749a356ee9f7d305df,
+    type: 3}
+  child: {fileID: -215340275374652578}
+  DialogueActions: []
+--- !u!114 &-4204600723947993046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 7687ff5a84bf70f488c3c640b239bdcb
+  position: {x: 1013, y: 154}
+  state: 1
+  Speaker: Ash
+  Dialogue: Seems like things are the same way with you too, though.
+  SceneLayout: {fileID: 5223557329996340103, guid: c9c57a617b6bb9f4a8c2f1cdc0c809c6,
+    type: 3}
+  child: {fileID: -2262799786753383188}
+  DialogueActions: []
+--- !u!114 &-4130319515072972960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: fd1709e402825754781ce0b719427ab2
+  position: {x: 832.3142, y: 657.41364}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Ehehe, I think you go a little bit above and beyond that. There\u2019s
+    just\u2026something about you that makes me wonder tbh\u2026"
+  SceneLayout: {fileID: 5223557329996340103, guid: 1369cc39c69b23c4fa69b57a7de9a693,
+    type: 3}
+  child: {fileID: -2935795827230889110}
+  DialogueActions: []
+--- !u!114 &-4076207693865088586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: eb64edb05fdf73f4f9c2b4caa47bd529
+  position: {x: 1812.1873, y: 589.2822}
+  state: 1
+  Speaker: Maple
+  Dialogue: I will.
+  SceneLayout: {fileID: 5223557329996340103, guid: bc444733755713947907eb03251a4484,
+    type: 3}
+  child: {fileID: 7960702708765227292}
+  DialogueActions: []
+--- !u!114 &-3983560823173014807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 5409175439aac804b9e032ccb6a6424d
+  position: {x: 1009, y: 393}
+  state: 0
+  Speaker: 
+  Dialogue: "She\u2019s already paid me back\r\n"
+  SceneLayout: {fileID: 0}
+  child: {fileID: -2479221629943600450}
+  DialogueActions: []
+--- !u!114 &-3695124316587516648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: bb424479d3e4be7478b3a2cf98464455
+  position: {x: 246.05005, y: 693.4001}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Ehehe, that does seem very possible. I mean, there\u2019s quite a few
+    regulars coming these days. Myself included. It\u2019s like you brighten up the
+    whole cafe.\r\n"
+  SceneLayout: {fileID: 5223557329996340103, guid: aa24f29742472f74c972e264626b589f,
+    type: 3}
+  child: {fileID: -5835496714259699073}
+  DialogueActions: []
+--- !u!114 &-2935795827230889110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 63861b7d100b7db4c8605a0c6a09b8fe
+  position: {x: 1014.8192, y: 636.1214}
+  state: 1
+  Speaker: Ash, the Dream Chaser
+  Dialogue: "(She hasn\u2019t figured me out, right?! I didn\u2019t interfere too
+    much back then, right?)\r\n"
+  SceneLayout: {fileID: 5223557329996340103, guid: 089f12c663d835d448d50fd872d7e1c9,
+    type: 3}
+  child: {fileID: -7338831176175542240}
+  DialogueActions: []
+--- !u!114 &-2917030439025690238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 62daa845633dadb489c46605b1d198c6
+  position: {x: 1622, y: -53}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Even if that was true, which I doubt\u2026I\u2019m sure you could catch
+    up.\r\n"
+  SceneLayout: {fileID: 5223557329996340103, guid: b068bee5bbc1a2345af9ce23df2aac85,
+    type: 3}
+  child: {fileID: 6131445727965696956}
+  DialogueActions: []
+--- !u!114 &-2479221629943600450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 65e56f5ff23f3b64d900bcd779ba26d8
+  position: {x: 1200.1001, y: 384.05002}
+  state: 0
+  Speaker: Ash
+  Dialogue: Honestly, seeing you doing well like this is all I need. That alone is
+    worth more than any payment.
+  SceneLayout: {fileID: 5223557329996340103, guid: 0e8b76cd357216749a356ee9f7d305df,
+    type: 3}
+  child: {fileID: -6531099060194470601}
+  DialogueActions: []
+--- !u!114 &-2262799786753383188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 42c84e9fe0c891546ba5b82e12a91c08
+  position: {x: 1180, y: 134}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Yeah, I guess so. I didn\u2019t even think it was possible I\u2019d
+    have a job back then. "
+  SceneLayout: {fileID: 5223557329996340103, guid: b068bee5bbc1a2345af9ce23df2aac85,
+    type: 3}
+  child: {fileID: 361739416230372247}
+  DialogueActions: []
+--- !u!114 &-1566361513583627511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: eedc6cee8758ee843a5026b27b5e0756
+  position: {x: 1430, y: -29}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Eep\u2026no, not yet. I still get terrified imagining what people might
+    think\u2026I\u2019d be years older than everyone else in my grade, and probably
+    way worse than them at everything too\u2026"
+  SceneLayout: {fileID: 5223557329996340103, guid: fa17b4fdd572b6642a3613fe5c8a8bbd,
+    type: 3}
+  child: {fileID: -2917030439025690238}
+  DialogueActions: []
+--- !u!114 &-1524650693703601563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 9ad37ce9c3764d142a3de70156144df6
+  position: {x: 50, y: -353.88}
+  state: 1
+  Speaker: 
+  Dialogue: (As per usual during her visits, Maple sits alone at a table. She is
+    fiddling with her phone with a slight smile, as she waits for her coffee to arrive.)
+  SceneLayout: {fileID: 286440002977407716, guid: 9ce4dd67283818c46800297acfae40b4,
+    type: 3}
+  child: {fileID: 4686266964670819067}
+  DialogueActions: []
+--- !u!114 &-1511286573442933866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: e0af54166f97923499153039a8878e6b
+  position: {x: 434, y: -374}
+  state: 1
+  Speaker: Ash
+  Dialogue: Maple! Nice to see you around again.
+  SceneLayout: {fileID: 5223557329996340103, guid: bc444733755713947907eb03251a4484,
+    type: 3}
+  child: {fileID: -430958900579086}
+  DialogueActions: []
+--- !u!114 &-1441537195449940472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: a47211e71ad55c645ac3d83e33403356
+  position: {x: 1045, y: -285}
+  state: 1
+  Speaker: 
+  Dialogue: Playing a Game?
+  SceneLayout: {fileID: 0}
+  child: {fileID: 1311586027056529408}
+  DialogueActions: []
+--- !u!114 &-892557951119821706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 78b821012592b7a4699ac7c2bea78d24
+  position: {x: -136, y: -211}
+  state: 1
+  Speaker: Ash
+  Dialogue: "(She ordered a Chai Latte, but I ended up accidentally adding espresso,
+    and then I saw Maple on the order and thought that meant it needed Maple syrup
+    too\u2026)"
+  SceneLayout: {fileID: 5223557329996340103, guid: c9c57a617b6bb9f4a8c2f1cdc0c809c6,
+    type: 3}
+  child: {fileID: -4722731018967111993}
+  DialogueActions: []
+--- !u!114 &-697042694112084705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 9693a18fed760ba4a98a50fcf924711c
+  position: {x: 1002, y: 515.6}
+  state: 1
+  Speaker: 
+  Dialogue: She can help another time
+  SceneLayout: {fileID: 0}
+  child: {fileID: 4766524786734797145}
+  DialogueActions: []
+--- !u!114 &-215340275374652578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 507492ad8b80f664593effac121627b3
+  position: {x: 260, y: 160}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Well, there\u2019s this little candy store a few blocks away that I\u2019ve
+    gone to for like my whole life. I can probably blame it for my massive sweet
+    tooth tbh."
+  SceneLayout: {fileID: 5223557329996340103, guid: bc444733755713947907eb03251a4484,
+    type: 3}
+  child: {fileID: 4765998287283054283}
+  DialogueActions: []
+--- !u!114 &-157402208638984156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 932a44135b284974d80d9fd948bc90a7
+  position: {x: 444, y: -235}
+  state: 1
+  Speaker: Ash
+  Dialogue: "I\u2019m glad you did too. And it looks like you\u2019re doing well.
+    But I'm a little curious..."
+  SceneLayout: {fileID: 5223557329996340103, guid: c9c57a617b6bb9f4a8c2f1cdc0c809c6,
+    type: 3}
+  child: {fileID: 4810205592647632946}
+  DialogueActions: []
+--- !u!114 &-41425151933584219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 74385812e558ac642ba2b7d40d5abac5
+  position: {x: 1187, y: -411.88}
+  state: 1
+  Speaker: Ash
+  Dialogue: "(The concoction in front of Maple is something that was certainly not
+    on the cafe\u2019s menu\u2026at least the first time I made it.)\r\n"
+  SceneLayout: {fileID: 5223557329996340103, guid: c9c57a617b6bb9f4a8c2f1cdc0c809c6,
+    type: 3}
+  child: {fileID: -892557951119821706}
+  DialogueActions: []
+--- !u!114 &-430958900579086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: a19c5dc69770f09409fb909c79e632cc
+  position: {x: 616, y: -395.88}
+  state: 1
+  Speaker: Maple
+  Dialogue: Oh, hey Ash. How have you been doing, you mastered the art of coffee
+    making yet?
+  SceneLayout: {fileID: 5223557329996340103, guid: 1369cc39c69b23c4fa69b57a7de9a693,
+    type: 3}
+  child: {fileID: 1309355947893435858}
+  DialogueActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37aa8c975bd8e0f49848dc44b360140a, type: 3}
+  m_Name: MapleScene_DialogueTree_Ryan
+  m_EditorClassIdentifier: 
+  RootNode: {fileID: 1794864961712253629}
+  treeState: 0
+  nodes:
+  - {fileID: 1794864961712253629}
+  - {fileID: -1524650693703601563}
+  - {fileID: 4686266964670819067}
+  - {fileID: -1511286573442933866}
+  - {fileID: -430958900579086}
+  - {fileID: 1309355947893435858}
+  - {fileID: 2416097798682183747}
+  - {fileID: -41425151933584219}
+  - {fileID: -892557951119821706}
+  - {fileID: -4722731018967111993}
+  - {fileID: 2883328273100634213}
+  - {fileID: -157402208638984156}
+  - {fileID: 4810205592647632946}
+  - {fileID: -8038788895781212347}
+  - {fileID: -1441537195449940472}
+  - {fileID: 1283770656398607869}
+  - {fileID: -8491375728860154669}
+  - {fileID: 1311586027056529408}
+  - {fileID: 7186630422963661804}
+  - {fileID: 6010145760567134033}
+  - {fileID: 1106577240413444292}
+  - {fileID: -7658363513724129140}
+  - {fileID: -1566361513583627511}
+  - {fileID: -4710599403334818572}
+  - {fileID: -2917030439025690238}
+  - {fileID: 6131445727965696956}
+  - {fileID: -7531946309799878016}
+  - {fileID: -4503082574155021008}
+  - {fileID: -215340275374652578}
+  - {fileID: 4765998287283054283}
+  - {fileID: 7320040790413057308}
+  - {fileID: -7098704603698304330}
+  - {fileID: -4204600723947993046}
+  - {fileID: -2262799786753383188}
+  - {fileID: 128131214293896944}
+  - {fileID: 7417595999693826560}
+  - {fileID: -8798283249013146088}
+  - {fileID: 787792554146379471}
+  - {fileID: 3276164707367964923}
+  - {fileID: 4577413091698650843}
+  - {fileID: -7846222531081839384}
+  - {fileID: -8411766584514092983}
+  - {fileID: -3983560823173014807}
+  - {fileID: -697042694112084705}
+  - {fileID: -6635459565017131311}
+  - {fileID: 7997945006496447402}
+  - {fileID: -7617655102851186870}
+  - {fileID: -2479221629943600450}
+  - {fileID: -6531099060194470601}
+  - {fileID: 3130218741442468324}
+  - {fileID: 4766524786734797145}
+  - {fileID: 5892797054886134211}
+  - {fileID: 3550988510298294560}
+  - {fileID: -4881779210183912870}
+  - {fileID: 5403756063234524103}
+  - {fileID: -3695124316587516648}
+  - {fileID: -5835496714259699073}
+  - {fileID: 3210215588342602873}
+  - {fileID: -4130319515072972960}
+  - {fileID: -2935795827230889110}
+  - {fileID: -7338831176175542240}
+  - {fileID: 4944041840215886778}
+  - {fileID: -4592673775075922192}
+  - {fileID: -4076207693865088586}
+  - {fileID: 7960702708765227292}
+  - {fileID: 1553027362847341296}
+  - {fileID: 361739416230372247}
+--- !u!114 &128131214293896944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: c8c20423c29316041be55e348eb856b9
+  position: {x: 1552.28, y: 123}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Surely it wasn\u2019t just the coffee that caused that\u2026"
+  SceneLayout: {fileID: 5223557329996340103, guid: 230218915dee9474886c4a93b526b237,
+    type: 3}
+  child: {fileID: 7417595999693826560}
+  DialogueActions: []
+--- !u!114 &361739416230372247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 533ef5043cb79d844bdf63834817cd38
+  position: {x: 1368.08, y: 114.40077}
+  state: 1
+  Speaker: Maple
+  Dialogue: Somehow this incredible coffee disaster you created helped me see some
+    things are just a little less impossible than I thought.
+  SceneLayout: {fileID: 5223557329996340103, guid: 8b77532525161124ba5353d3ec0ef3de,
+    type: 3}
+  child: {fileID: 128131214293896944}
+  DialogueActions: []
+--- !u!114 &787792554146379471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 62135b3f477bd8346aff06fe31f98838
+  position: {x: 261, y: 269}
+  state: 1
+  Speaker: Ash
+  Dialogue: '(Huh?) '
+  SceneLayout: {fileID: 5223557329996340103, guid: b6bc32eb6dfd4d846abadd05f2ae7716,
+    type: 3}
+  child: {fileID: 3276164707367964923}
+  DialogueActions: []
+--- !u!114 &1106577240413444292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: edda24e7d39b77844ad0fb5ad875e6ac
+  position: {x: 1239, y: -19}
+  state: 1
+  Speaker: Ash
+  Dialogue: Have you started going to school again?
+  SceneLayout: {fileID: 5223557329996340103, guid: 8be64ae596b9cc24d9d3e2657f3aed7a,
+    type: 3}
+  child: {fileID: -1566361513583627511}
+  DialogueActions: []
+--- !u!114 &1283770656398607869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b605166376f4b14e8046c44d4583c59, type: 3}
+  m_Name: DialogueOptionNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 3ccc33379646b01479e74f4d352fdca9
+  position: {x: 1043, y: -138}
+  state: 1
+  Speaker: 
+  Dialogue: Doing a hobby?
+  SceneLayout: {fileID: 0}
+  child: {fileID: 6010145760567134033}
+  DialogueActions: []
+--- !u!114 &1309355947893435858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: ccc28af2415243a43950b6ba0edb172a
+  position: {x: 807, y: -395}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Well, if you\u2019re curious, here is your order. Feel free to enjoy
+    it or hate it as much as usual. "
+  SceneLayout: {fileID: 5223557329996340103, guid: 1369cc39c69b23c4fa69b57a7de9a693,
+    type: 3}
+  child: {fileID: 2416097798682183747}
+  DialogueActions: []
+--- !u!114 &1311586027056529408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: db9d66d1e3ef20b45ac93b796e21a1f8
+  position: {x: 1250, y: -285}
+  state: 1
+  Speaker: Ash
+  Dialogue: "You\u2019re busy? Have you been no-lifing a game or something?"
+  SceneLayout: {fileID: 5223557329996340103, guid: 8be64ae596b9cc24d9d3e2657f3aed7a,
+    type: 3}
+  child: {fileID: 7186630422963661804}
+  DialogueActions: []
+--- !u!114 &1553027362847341296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: b84556cc06edc8546bd76ebf037d3437
+  position: {x: 2200.3792, y: 593.30493}
+  state: 1
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+--- !u!114 &1794864961712253629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47f7753ababa6141bc7adf96c693c02, type: 3}
+  m_Name: DialogueRootNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 280d9d123094a9b408cae0d0334dd674
+  position: {x: -149, y: -356.88}
+  state: 1
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+  child: {fileID: -1524650693703601563}
+--- !u!114 &2416097798682183747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 0d1d1970c08db0d42ab12d43f6bea78d
+  position: {x: 991, y: -413.92}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Alright, guess I\u2019ll have to see. Then again, I suppose to anyone
+    other than me this drink might be undrinkable lol."
+  SceneLayout: {fileID: 5223557329996340103, guid: 1369cc39c69b23c4fa69b57a7de9a693,
+    type: 3}
+  child: {fileID: -41425151933584219}
+  DialogueActions: []
+--- !u!114 &2883328273100634213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 41feb396b00cb984e800750df6ad5312
+  position: {x: 233, y: -219}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Ah! You really can\u2019t get a drink like this anywhere else. I\u2019ve
+    been a little busy recently, but I\u2019m glad I took the time to come back."
+  SceneLayout: {fileID: 5223557329996340103, guid: c9c57a617b6bb9f4a8c2f1cdc0c809c6,
+    type: 3}
+  child: {fileID: -157402208638984156}
+  DialogueActions: []
+--- !u!114 &3130218741442468324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 127451df44f525c4bbe37db6fce2b1b2
+  position: {x: 1570.7502, y: 379.85007}
+  state: 0
+  Speaker: Maple
+  Dialogue: "But if you really don\u2019t need anything else though, that\u2019s
+    that, I guess.\r"
+  SceneLayout: {fileID: 5223557329996340103, guid: fbc415fe3923ff24db74df12a2a46bc3,
+    type: 3}
+  child: {fileID: -7617655102851186870}
+  DialogueActions: []
+--- !u!114 &3210215588342602873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: f0aa45770c1c2cd4fb33a3c25df447ae
+  position: {x: 640.684, y: 665.018}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Thank you, Maple. Stupid and cheesy or not, that was nice to hear. I\u2019m
+    just doing my best to be a good barista."
+  SceneLayout: {fileID: 5223557329996340103, guid: 0e8b76cd357216749a356ee9f7d305df,
+    type: 3}
+  child: {fileID: -4130319515072972960}
+  DialogueActions: []
+--- !u!114 &3276164707367964923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 967eaea12f2eac947bf51e7a1d0d95f8
+  position: {x: 445, y: 297}
+  state: 1
+  Speaker: Ash
+  Dialogue: (How should I respond?)
+  SceneLayout: {fileID: 5223557329996340103, guid: b6bc32eb6dfd4d846abadd05f2ae7716,
+    type: 3}
+  child: {fileID: 4577413091698650843}
+  DialogueActions: []
+--- !u!114 &3550988510298294560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: a9ac642ca8837ab439f4567754d6f889
+  position: {x: 1568.5502, y: 478.35007}
+  state: 1
+  Speaker: Ash
+  Dialogue: "(Huh\u2026it is sort of nice to know someone wants to help me\u2026)"
+  SceneLayout: {fileID: 5223557329996340103, guid: bc444733755713947907eb03251a4484,
+    type: 3}
+  child: {fileID: -4881779210183912870}
+  DialogueActions: []
+--- !u!114 &4577413091698650843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: c90b315d9c4d918478fc3c48e948771e
+  position: {x: 649, y: 284}
+  state: 1
+  Speaker: Ash, the Dream Chaser
+  Dialogue: "(I mean, I don\u2019t need anything in return. I\u2019m the Dream Chaser.
+    I help humans. It\u2019s that simple, right?)\r\n"
+  SceneLayout: {fileID: 5223557329996340103, guid: 82b67b83a16410346afd3dabc4ad76ac,
+    type: 3}
+  child: {fileID: -7846222531081839384}
+  DialogueActions: []
+--- !u!114 &4686266964670819067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: c42b4f838eec2e14f87c02040cab784b
+  position: {x: 233, y: -350.88}
+  state: 1
+  Speaker: Ash
+  Dialogue: "(Once I\u2019ve finished it, I head over to her and give a quick greeting.)"
+  SceneLayout: {fileID: 5223557329996340103, guid: 09c9f59e9aa7efa409ee63b22223dd72,
+    type: 3}
+  child: {fileID: -1511286573442933866}
+  DialogueActions: []
+--- !u!114 &4765998287283054283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: bea7dd6bef1b0fc42a66f529444bfa40
+  position: {x: 457, y: 155}
+  state: 1
+  Speaker: Maple
+  Dialogue: "But yeah, they needed more people, and I figured, if there was anywhere
+    I could feel comfy working at, it\u2019d be there."
+  SceneLayout: {fileID: 5223557329996340103, guid: bc444733755713947907eb03251a4484,
+    type: 3}
+  child: {fileID: 7320040790413057308}
+  DialogueActions: []
+--- !u!114 &4766524786734797145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: c3acbc6dd66f1a246be5d420de451556
+  position: {x: 1197.1001, y: 488.70007}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Well, I\u2019m doing fine right now. But if I ever do need help, I\u2019ll
+    let you know."
+  SceneLayout: {fileID: 5223557329996340103, guid: 8b77532525161124ba5353d3ec0ef3de,
+    type: 3}
+  child: {fileID: 5892797054886134211}
+  DialogueActions: []
+--- !u!114 &4810205592647632946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: cbf7fb8942784a94e8e58517d5827ecb
+  position: {x: 620, y: -231}
+  state: 1
+  Speaker: Ash
+  Dialogue: "(Back when Maple first started coming, she\u2019d dropped out of school,
+    had no job, and hardly even left her room. This cafe was one of the only places
+    outside she was even willing to go, so I had to try to help!)"
+  SceneLayout: {fileID: 5223557329996340103, guid: c9c57a617b6bb9f4a8c2f1cdc0c809c6,
+    type: 3}
+  child: {fileID: -8038788895781212347}
+  DialogueActions: []
+--- !u!114 &4944041840215886778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: c3068e8d6993c18468cb353f275a211a
+  position: {x: 1411.7676, y: 628.51697}
+  state: 1
+  Speaker: Ash
+  Dialogue: 'Oh. Right. Yeah. That is my job. '
+  SceneLayout: {fileID: 5223557329996340103, guid: ebf298adeecf6364f8ab8f25fcfac158,
+    type: 3}
+  child: {fileID: -4592673775075922192}
+  DialogueActions: []
+--- !u!114 &5403756063234524103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: b252731c934ea2e44bca9a4642ee8cc5
+  position: {x: 63.600014, y: 712.5}
+  state: 1
+  Speaker: Ash
+  Dialogue: "Maybe. I mean, keeping people coming has probably been the main reason
+    I haven\u2019t been fired. "
+  SceneLayout: {fileID: 5223557329996340103, guid: 230218915dee9474886c4a93b526b237,
+    type: 3}
+  child: {fileID: -3695124316587516648}
+  DialogueActions: []
+--- !u!114 &5892797054886134211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 864fa635d0643a545b71b9eb0ab2c01c
+  position: {x: 1391.4502, y: 479.50006}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Good. It wouldn\u2019t be fair if you helped me so much and I could
+    never do anything for you."
+  SceneLayout: {fileID: 5223557329996340103, guid: 09c9f59e9aa7efa409ee63b22223dd72,
+    type: 3}
+  child: {fileID: 3550988510298294560}
+  DialogueActions: []
+--- !u!114 &6010145760567134033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 51dfc0f17cf34cc429d36a037625a9d1
+  position: {x: 1230, y: -158}
+  state: 1
+  Speaker: Ash
+  Dialogue: 'Have you started some kind of new hobby? Like running or something.
+
+'
+  SceneLayout: {fileID: 5223557329996340103, guid: 8be64ae596b9cc24d9d3e2657f3aed7a,
+    type: 3}
+  child: {fileID: -7658363513724129140}
+  DialogueActions: []
+--- !u!114 &6131445727965696956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 75dd5ad208ae7024fbbea1ac96f0c28a
+  position: {x: 1803.16, y: -64}
+  state: 1
+  Speaker: Maple
+  Dialogue: Right. Sorry, I was getting really negative there again. Still stuck
+    with that bad habit lol. But I am making a little progress.
+  SceneLayout: {fileID: 5223557329996340103, guid: 8b77532525161124ba5353d3ec0ef3de,
+    type: 3}
+  child: {fileID: -7531946309799878016}
+  DialogueActions: []
+--- !u!114 &7186630422963661804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 6544440e29594804da5e71da6b82445d
+  position: {x: 1432, y: -298}
+  state: 1
+  Speaker: Maple
+  Dialogue: "Ehehe, yeah I\u2019m not surprised you\u2019d think something like that
+    lmao. I mean, I\u2019ve been playing a few things as usual, but that\u2019s not
+    the big thing I\u2019ve been doing.\r\n"
+  SceneLayout: {fileID: 5223557329996340103, guid: 82b67b83a16410346afd3dabc4ad76ac,
+    type: 3}
+  child: {fileID: -7531946309799878016}
+  DialogueActions: []
+--- !u!114 &7320040790413057308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: f9ba3b5de12144b4da12286623215b2e
+  position: {x: 645, y: 157}
+  state: 1
+  Speaker: Maple
+  Dialogue: 'Or here I guess, but you seem to have things pretty much covered at
+    this point. '
+  SceneLayout: {fileID: 5223557329996340103, guid: 1369cc39c69b23c4fa69b57a7de9a693,
+    type: 3}
+  child: {fileID: -7098704603698304330}
+  DialogueActions: []
+--- !u!114 &7417595999693826560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 3499e4425767e114c98a6de92049da17
+  position: {x: -130, y: 262}
+  state: 1
+  Speaker: Maple
+  Dialogue: 'Ehehe, yeah, that might be a bit of an exaggeration. But really, you
+    helped me so much. '
+  SceneLayout: {fileID: 5223557329996340103, guid: ebf298adeecf6364f8ab8f25fcfac158,
+    type: 3}
+  child: {fileID: -8798283249013146088}
+  DialogueActions: []
+--- !u!114 &7960702708765227292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: c0f090ef6ffb92d46b74bc033c870031
+  position: {x: 2001.2549, y: 567.1573}
+  state: 1
+  Speaker: Ash
+  Dialogue: "(Oh no, hopefully I haven\u2019t gotten too far behind because of that
+    talk!)\r"
+  SceneLayout: {fileID: 5223557329996340103, guid: aa24f29742472f74c972e264626b589f,
+    type: 3}
+  child: {fileID: 1553027362847341296}
+  DialogueActions: []
+--- !u!114 &7997945006496447402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 771bc960f4dda5c479ee788177d90853
+  position: {x: 1385, y: 263}
+  state: 1
+  Speaker: Maple
+  Dialogue: 'Well, ok, if you say so. '
+  SceneLayout: {fileID: 5223557329996340103, guid: b068bee5bbc1a2345af9ce23df2aac85,
+    type: 3}
+  child: {fileID: -7617655102851186870}
+  DialogueActions: []

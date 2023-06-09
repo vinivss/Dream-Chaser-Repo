@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15673213, g: 0.18860334, b: 0.2206476, a: 1}
+  m_IndirectSpecularColor: {r: 0.1565221, g: 0.18838228, b: 0.22054446, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2079,14 +2079,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.24361502, y: 0.038222756, z: -0.009608829, w: 0.9690709}
-  m_LocalPosition: {x: 1.9, y: 626.3, z: -1080}
+  m_LocalRotation: {x: 0.469349, y: 0.07092835, z: -0.037857894, w: 0.87934494}
+  m_LocalPosition: {x: 3.77, y: 643.5, z: -1078.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10}
+  m_LocalEulerAnglesHint: {x: 50.342, y: 10.41, z: 0.385}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8007,15 +8007,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.24361502, y: 0.038222756, z: -0.009608829, w: 0.9690709}
-  m_LocalPosition: {x: 1.9, y: 626.3, z: -1080}
+  m_LocalRotation: {x: 0.469349, y: 0.07092835, z: -0.037857894, w: 0.87934494}
+  m_LocalPosition: {x: 3.77, y: 643.5, z: -1078.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1160839781}
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 19.698, z: 0}
+  m_LocalEulerAnglesHint: {x: 49.623, y: 10.254, z: 0.181}
 --- !u!1 &1150598600
 GameObject:
   m_ObjectHideFlags: 0
@@ -8200,7 +8200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damping: {x: 0.1, y: 0.5, z: 0.3}
-  ShoulderOffset: {x: 0.5, y: 3, z: 0}
+  ShoulderOffset: {x: 0.5, y: 10, z: 0}
   VerticalArmLength: 0.5
   CameraSide: 0.5
   CameraDistance: 4
@@ -13326,6 +13326,7 @@ MonoBehaviour:
   cpPoints: 1
   lastCheckpointPosition: {x: 1.9, y: 351.1, z: -687.6}
   cpCount: 0
+  CurrentCarryingRecipe: {fileID: 0}
   sceneStarted: 0
 --- !u!4 &1882801867
 Transform:
@@ -13786,6 +13787,7 @@ GameObject:
   - component: {fileID: 5056017516929436353}
   - component: {fileID: 7296703713121833986}
   - component: {fileID: 7296703713121833987}
+  - component: {fileID: 7296703713121833988}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -62029,7 +62031,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950309741}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9, y: 622.8, z: -1076}
+  m_LocalPosition: {x: 3.77, y: 633, z: -1074.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -62079,7 +62081,7 @@ MonoBehaviour:
   deceleration: -10
   rotationThreshold: 180
   maxSpeed: 100
-  minJump: 20
+  minJump: 25
   maxJump: 100
   groundCheckPos: {fileID: 1294946545}
   groundDistance: 3
@@ -62087,12 +62089,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   airDrag: 0.25
-  normDrag: 0.25
+  normDrag: 0.125
   turnSpeed: 0.075
   height: 2
   parameterName:
     m_PersistentCalls:
       m_Calls: []
+  isAlive: 1
+  playerHp: 0
+  player_health: {fileID: 0}
 --- !u!54 &5056017516929436356
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -72495,6 +72500,19 @@ MonoBehaviour:
   audio: {fileID: 0}
   pauseMenu: {fileID: 1668462159}
   pauseFlag: 0
+--- !u!114 &7296703713121833988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950309741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa7e85685567e314db2030b9263f3332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalCheckpoints: 0
 --- !u!1 &7307546136614889985
 GameObject:
   m_ObjectHideFlags: 0
@@ -91414,6 +91432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VnScene: VN_SadieScene2_Ryan
+  LoadingScreen: {fileID: 0}
 --- !u!114 &9140340354073807916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91822,7 +91841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9140340354378888721}
   m_LocalRotation: {x: 0.2588191, y: -0, z: -0, w: 0.9659258}
-  m_LocalPosition: {x: 56, y: -876, z: 1396}
+  m_LocalPosition: {x: 56, y: -861.2, z: 1404.5}
   m_LocalScale: {x: 288.54, y: 4.014, z: 580}
   m_ConstrainProportionsScale: 0
   m_Children: []

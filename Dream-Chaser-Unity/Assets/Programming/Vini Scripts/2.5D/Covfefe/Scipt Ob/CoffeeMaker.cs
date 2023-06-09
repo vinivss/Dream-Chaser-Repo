@@ -39,4 +39,25 @@ public class CoffeeMaker : MonoBehaviour
             return;
         }
     }
+
+    public void ResetMachine()
+    {
+        foreach (GameObject arrow in Arrows)
+        {
+            arrow.SetActive(true);
+        }
+        GameObject coffeeCup = GameObject.FindGameObjectWithTag("Cup");
+        Clickndrag clickndrag = coffeeCup.GetComponent<Clickndrag>();
+        clickndrag.enabled = true;
+        
+        coffeeCup.transform.position = coffeeCup.transform.parent.transform.position;
+        CanvasGroup Coll = coffeeCup.GetComponent<CanvasGroup>();
+
+        if (Coll != null)
+        {
+            Coll.interactable = true;
+            Coll.blocksRaycasts = true;
+        }
+            
+    }
 }
