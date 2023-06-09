@@ -10,8 +10,7 @@ public class PlayerRespawn : MonoBehaviour
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
-
-        if(gameManager.sceneStarted)
+        if (gameManager.sceneStarted)
         {
             transform.position = gameManager.lastCheckpointPosition;
         }
