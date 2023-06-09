@@ -12,7 +12,7 @@ public class AIAttack : AIActionNode
 
     protected override void OnStart()
     {
-        player = agent.player;
+        
     }
     protected override void OnStop()
     {
@@ -21,7 +21,7 @@ public class AIAttack : AIActionNode
 
     protected override State OnUpdate()
     {
-
+        player = agent.player;
         agent.attack();
         _attackCounter = 0f;
 

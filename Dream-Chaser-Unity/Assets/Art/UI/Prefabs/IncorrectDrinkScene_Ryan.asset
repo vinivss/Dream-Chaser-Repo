@@ -1,0 +1,243 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7471060561106461488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 376aefb977aa4094284822db99c1db2c
+  position: {x: 221, y: -53.160004}
+  state: 1
+  Speaker: Ash
+  Dialogue: Sorry for the wait Eri, here's your drink.
+  SceneLayout: {fileID: 5223557329996340103, guid: 6e14841860409354abc3f55452bf75cf,
+    type: 3}
+  child: {fileID: 5238313667683716422}
+  DialogueActions: []
+--- !u!114 &-3958377227319924748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 7a7f906a8e3cd9f469137e8f22c53b6a
+  position: {x: 1752, y: -113.76001}
+  state: 1
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+--- !u!114 &-2268683433073948328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 1cfd636c61bb75440b71f6c56ed54cb7
+  position: {x: 1572.48, y: -100}
+  state: 1
+  Speaker: Ash
+  Dialogue: (Ok, I've got to get it right this time. Let me look over the recipe
+    one more time...)
+  SceneLayout: {fileID: 5223557329996340103, guid: 6e14841860409354abc3f55452bf75cf,
+    type: 3}
+  child: {fileID: -3958377227319924748}
+  DialogueActions: []
+--- !u!114 &-1694501110118129383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 59c88df4e253f1f4d945712d7339db8a
+  position: {x: 831, y: -67.44}
+  state: 1
+  Speaker: Eri
+  Dialogue: Oh, it's fine, I'm sure it'll still taste good.
+  SceneLayout: {fileID: 3426172272630945159, guid: 40c056cf92b891a40a47b064f7e5337b,
+    type: 3}
+  child: {fileID: 8158531529574406086}
+  DialogueActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37aa8c975bd8e0f49848dc44b360140a, type: 3}
+  m_Name: IncorrectDrinkScene_Ryan
+  m_EditorClassIdentifier: 
+  RootNode: {fileID: 8833522196454443336}
+  treeState: 0
+  nodes:
+  - {fileID: 8833522196454443336}
+  - {fileID: -7471060561106461488}
+  - {fileID: 5238313667683716422}
+  - {fileID: 2749719642249249359}
+  - {fileID: -1694501110118129383}
+  - {fileID: 8158531529574406086}
+  - {fileID: 2880240585308568244}
+  - {fileID: 8623937165104112369}
+  - {fileID: -2268683433073948328}
+  - {fileID: -3958377227319924748}
+--- !u!114 &2749719642249249359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: d626d9acf5495a54c81461c179b3a7a3
+  position: {x: 639, y: -51}
+  state: 1
+  Speaker: Ash
+  Dialogue: Oh no! Wait, sorry, I just realized I messed up the recipe!
+  SceneLayout: {fileID: 7618117717971990536, guid: 76e46a67f7fe36e44b15d2450b369e86,
+    type: 3}
+  child: {fileID: -1694501110118129383}
+  DialogueActions: []
+--- !u!114 &2880240585308568244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 935923a2402dda0469858f65bdae2bb1
+  position: {x: 1201, y: -95.92}
+  state: 1
+  Speaker: Ash
+  Dialogue: Give me one more chance, I'll get it right this time.
+  SceneLayout: {fileID: 4013209074157953501, guid: 73f79cb0b14b30641bacb71b9f70ee86,
+    type: 3}
+  child: {fileID: 8623937165104112369}
+  DialogueActions: []
+--- !u!114 &5238313667683716422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 2ea6d823dc01498438ebaafc5a2fe414
+  position: {x: 436, y: -40}
+  state: 1
+  Speaker: Eri
+  Dialogue: Thanks.
+  SceneLayout: {fileID: 5223557329996340103, guid: 6e14841860409354abc3f55452bf75cf,
+    type: 3}
+  child: {fileID: 2749719642249249359}
+  DialogueActions: []
+--- !u!114 &8158531529574406086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 8f2a57b7333dbba499bfdd0ebf552158
+  position: {x: 1024, y: -88}
+  state: 1
+  Speaker: Ash
+  Dialogue: No, I'm going to make you exactly the coffee you ordered.
+  SceneLayout: {fileID: 2370849162716052838, guid: 8e6077c3a61dd784b9ac84f2fa76378c,
+    type: 3}
+  child: {fileID: 2880240585308568244}
+  DialogueActions: []
+--- !u!114 &8623937165104112369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 9678910f83a47604c9d085fb46f67270
+  position: {x: 1386, y: -87}
+  state: 1
+  Speaker: Eri
+  Dialogue: Ok, if you insist...I'm sure you can do it this time.
+  SceneLayout: {fileID: 5260117832283239804, guid: e623b6cc338cbda488efda35c486957b,
+    type: 3}
+  child: {fileID: -2268683433073948328}
+  DialogueActions: []
+--- !u!114 &8833522196454443336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47f7753ababa6141bc7adf96c693c02, type: 3}
+  m_Name: DialogueRootNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 699c4a0be9b1ee746bbc79fb28636364
+  position: {x: 0, y: 0}
+  state: 1
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+  child: {fileID: -7471060561106461488}

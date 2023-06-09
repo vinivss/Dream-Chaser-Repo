@@ -49,10 +49,15 @@ public class CoffeeMaker : MonoBehaviour
         GameObject coffeeCup = GameObject.FindGameObjectWithTag("Cup");
         Clickndrag clickndrag = coffeeCup.GetComponent<Clickndrag>();
         clickndrag.enabled = true;
+        
         coffeeCup.transform.position = coffeeCup.transform.parent.transform.position;
         CanvasGroup Coll = coffeeCup.GetComponent<CanvasGroup>();
 
         if (Coll != null)
+        {
             Coll.interactable = true;
+            Coll.blocksRaycasts = true;
+        }
+            
     }
 }

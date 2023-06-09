@@ -47,6 +47,62 @@ MonoBehaviour:
   - 21
   - 22
   Exists: 1
+--- !u!114 &-7767211149372095653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2.5D-JohnJingle
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2.5D-JohnJingle
+  Guid:
+    Data1: 867520913
+    Data2: 1198662362
+    Data3: 2067898523
+    Data4: 1190194147
+  Banks:
+  - {fileID: 1435342658030176151}
+  - {fileID: 7302839062769828310}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5394
+--- !u!114 &-7323807771653736412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/3D-BossLevel
+  m_EditorClassIdentifier: 
+  Path: event:/Music/3D-BossLevel
+  Guid:
+    Data1: -701304753
+    Data2: 1113360808
+    Data3: 385072795
+    Data4: 928699863
+  Banks:
+  - {fileID: 1435342658030176151}
+  - {fileID: 7302839062769828310}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42068
 --- !u!114 &-6383713890075030965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,11 +198,39 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638215049839459879
+  lastModified: 638218306821784882
   FileSizes:
   - Name: Desktop
-    Value: 1858
+    Value: 2206
   Exists: 1
+--- !u!114 &-4750023305957881825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2.5D-SpencerJingle
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2.5D-SpencerJingle
+  Guid:
+    Data1: -314694381
+    Data2: 1308025721
+    Data3: 698694819
+    Data4: 813599308
+  Banks:
+  - {fileID: 1435342658030176151}
+  - {fileID: 7302839062769828310}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4786
 --- !u!114 &-2812362282075462281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +274,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638215049839480168
+  lastModified: 638218306825683014
   FileSizes:
   - Name: Desktop
     Value: 84832
@@ -225,6 +309,34 @@ MonoBehaviour:
   - Checkpoint4
   - Checkpoint5
   Exists: 1
+--- !u!114 &-1863896066178026036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2D-TitleTheme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2D-TitleTheme
+  Guid:
+    Data1: -1226013185
+    Data2: 1278988270
+    Data3: -1958295386
+    Data4: 1343902134
+  Banks:
+  - {fileID: 1435342658030176151}
+  - {fileID: 7302839062769828310}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 128198
 --- !u!114 &-1608938495117679802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,12 +509,19 @@ MonoBehaviour:
   - {fileID: 2421812008988042859}
   - {fileID: -5734077326184553534}
   - {fileID: -265908115004069433}
+  - {fileID: 918326645963156107}
+  - {fileID: -4750023305957881825}
+  - {fileID: -7323807771653736412}
+  - {fileID: 645902079080186129}
+  - {fileID: 1775478519986621823}
+  - {fileID: -7767211149372095653}
+  - {fileID: -1863896066178026036}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1435342658030176151}
   StringsBanks:
   - {fileID: -5104551956935264596}
-  cacheTime: 638215049839480168
+  cacheTime: 638218306825683014
   cacheVersion: 131601
 --- !u!114 &4308309468533420
 MonoBehaviour:
@@ -446,11 +565,67 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638195023066315397
+  lastModified: 638218306820728798
   FileSizes:
   - Name: Desktop
     Value: 85632
   Exists: 1
+--- !u!114 &645902079080186129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2.5D-CafeTheme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2.5D-CafeTheme
+  Guid:
+    Data1: 34278273
+    Data2: 1201618051
+    Data3: -1822077310
+    Data4: 1872776690
+  Banks:
+  - {fileID: 1435342658030176151}
+  - {fileID: 7302839062769828310}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 184000
+--- !u!114 &918326645963156107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2.5D-AmandaJingle
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2.5D-AmandaJingle
+  Guid:
+    Data1: -741330932
+    Data2: 1101148561
+    Data3: -1386800493
+    Data4: 1470018482
+  Banks:
+  - {fileID: 1435342658030176151}
+  - {fileID: 7302839062769828310}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5384
 --- !u!114 &1435342658030176151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,11 +641,39 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638195023066845418
+  lastModified: 638218306821774888
   FileSizes:
   - Name: Desktop
-    Value: 9667232
+    Value: 16407552
   Exists: 1
+--- !u!114 &1775478519986621823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2D-Maple's_Theme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2D-Maple's_Theme
+  Guid:
+    Data1: -1317636223
+    Data2: 1274130379
+    Data3: -2061042299
+    Data4: 500282908
+  Banks:
+  - {fileID: 1435342658030176151}
+  - {fileID: 7302839062769828310}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 137647
 --- !u!114 &2142625820096240699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,10 +874,10 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638195023069696201
+  lastModified: 638218306825648034
   FileSizes:
   - Name: Desktop
-    Value: 54066496
+    Value: 60806816
   Exists: 1
 --- !u!114 &7752340262165647403
 MonoBehaviour:
