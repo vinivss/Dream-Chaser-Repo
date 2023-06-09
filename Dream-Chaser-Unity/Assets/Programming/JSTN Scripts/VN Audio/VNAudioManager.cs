@@ -43,7 +43,7 @@ public class VNAudioManager : MonoBehaviour
     private void FixedUpdate()
     {
         //Play sound upon clicking next
-        dManager.NextButton.GetComponent<Button>().onClick.AddListener(ClickNextButton);
+        //dManager.NextButton.GetComponent<Button>().onClick.AddListener(ClickNextButton);
         
     }
 

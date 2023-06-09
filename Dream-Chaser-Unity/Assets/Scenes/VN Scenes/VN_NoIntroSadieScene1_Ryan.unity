@@ -295,7 +295,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: Level 1-5
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
   CheckingEvents: []
   NextButton: {fileID: 0}
 --- !u!4 &417052120
@@ -414,6 +414,55 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!1 &850148477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 850148479}
+  - component: {fileID: 850148478}
+  m_Layer: 0
+  m_Name: Gamemgr
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &850148478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850148477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1d90d251865ea4f8e653270d0c79f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cpPoints: 0
+  lastCheckpointPosition: {x: 0, y: 0, z: 0}
+  cpCount: 0
+  CurrentCarryingRecipe: {fileID: 0}
+  sceneStarted: 0
+--- !u!4 &850148479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850148477}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &877010368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -978,7 +1027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8078e84f58f1844ab4fb884beae53d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GenScene: Level 1-5
+  GenScene: 2.5Test
   LoadingScreen: {fileID: 497050463429123888, guid: fde17fd46f6556b4ba0674656340e65a,
     type: 3}
 --- !u!1001 &8542677207874847942

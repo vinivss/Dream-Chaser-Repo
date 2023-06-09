@@ -130,25 +130,6 @@ MonoBehaviour:
     type: 3}
   child: {fileID: -3370395151832039790}
   DialogueActions: []
---- !u!114 &-7454615305994728507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
-  m_Name: DialogueEndNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: 03e47d2214b1add46a9955e09076c5a8
-  position: {x: 1666.1111, y: 705.88885}
-  state: 1
-  Speaker: 
-  Dialogue: 
-  SceneLayout: {fileID: 0}
 --- !u!114 &-5528964241518029803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,9 +486,9 @@ MonoBehaviour:
   - {fileID: 6204868274395477201}
   - {fileID: -5436861685716122522}
   - {fileID: 2253602552801157925}
-  - {fileID: -7454615305994728507}
   - {fileID: 8008167083096878563}
   - {fileID: -9014597581593591665}
+  - {fileID: 6835717996309354098}
 --- !u!114 &242187080314863902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,7 +643,7 @@ MonoBehaviour:
   Dialogue: (Guess I should go check out his dreams.)
   SceneLayout: {fileID: 5773956935742706572, guid: ce01de7b5ca8b5d41ad5bf7f598b51e6,
     type: 3}
-  child: {fileID: -7454615305994728507}
+  child: {fileID: 6835717996309354098}
   DialogueActions: []
 --- !u!114 &2280398317274850194
 MonoBehaviour:
@@ -1047,6 +1028,25 @@ MonoBehaviour:
     type: 3}
   child: {fileID: 6197866413177194720}
   DialogueActions: []
+--- !u!114 &6835717996309354098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e46e6c43ac724c8c67796f3180408, type: 3}
+  m_Name: DialogueEndNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 7ef0793160b85214c86b4a2fef826aa7
+  position: {x: 1775.9828, y: 800.47473}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
 --- !u!114 &7061785406782886894
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,8 +33,10 @@ public class GenericTransV : MonoBehaviour
     }
     public void ChangeScene()
     {
-        VNaudio.musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //VNaudio.musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         StartCoroutine(LoadSceneAsync());
+
+
     }
     IEnumerator LoadSceneAsync()
     {
@@ -44,5 +46,8 @@ public class GenericTransV : MonoBehaviour
         {
             yield return null;
         }
+        if(op.isDone)
+        StopAllCoroutines();
+        
     }
 }
