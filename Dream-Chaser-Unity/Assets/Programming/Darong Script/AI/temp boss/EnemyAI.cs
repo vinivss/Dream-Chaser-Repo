@@ -59,6 +59,10 @@ public class EnemyAI : MonoBehaviour
         {
             attack();
         }
+        else
+        {
+            FindObjectOfType<DCMoveVin>().PlayerDeath();
+        }
 
     }
 

@@ -91,7 +91,7 @@ public class DCMoveVin : MonoBehaviour
                 rb.drag = normDrag;
             }
         }
-        respawn();
+
         UpdateSound();
     }
 
@@ -198,6 +198,7 @@ public class DCMoveVin : MonoBehaviour
     public void respawn()
     {
         // if player is not alive, call playerdeath()
+        Debug.Log(player_health.healthCheck());
         if (!player_health.healthCheck())
         {
             PlayerDeath();

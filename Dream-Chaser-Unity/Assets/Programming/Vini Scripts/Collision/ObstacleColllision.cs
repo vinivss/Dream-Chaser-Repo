@@ -14,6 +14,7 @@ public class ObstacleColllision : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(this.tag + " " + other.tag);
         if (this.tag != "Collectible") {
             AudioManager.instance.PlayOneShot(FMODEvents.instance.ambience, this.transform.position);
             Debug.Log(other.tag);
