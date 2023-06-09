@@ -291,7 +291,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 2.5Test
+          m_StringArgument: VN_IntroScene_Ryan
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &601295566
@@ -563,6 +563,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9229162bbfcbd154181a562902282956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoadingScreen: {fileID: 1766085658587118468, guid: 355264c603f94534093814dfd6d8daf6,
+    type: 3}
+  Scene: VN_IntroScene_Ryan
 --- !u!1 &1256091499
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,10 +851,10 @@ MonoBehaviour:
     Path: event:/Ambience/Cricket
   <menuMusic>k__BackingField:
     Guid:
-      Data1: -1800905296
-      Data2: 1157350774
-      Data3: 766976919
-      Data4: -39068787
+      Data1: 1096436639
+      Data2: 1078069986
+      Data3: 101871767
+      Data4: 1624167353
     Path: event:/Music/Main Menu
 --- !u!1 &2080810005
 GameObject:

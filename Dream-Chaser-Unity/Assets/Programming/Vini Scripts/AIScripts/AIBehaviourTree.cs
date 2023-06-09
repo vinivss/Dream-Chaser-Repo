@@ -103,6 +103,7 @@ namespace Tools.Trees.AI
                 EditorUtility.SetDirty(composite);
             }
         }
+#endif
         public List<AINode> GetChildren(AINode parent)
         {
             List<AINode> children = new List<AINode> ();
@@ -127,7 +128,7 @@ namespace Tools.Trees.AI
 
             return children;
         }
-#endif
+
         public void Traverse(AINode node, System.Action<AINode> visitor)
         {
             if(node)

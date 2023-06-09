@@ -270,6 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: dd9776d6dd07c4c429dbe14c9beb27e8, type: 2}
   TwoDScene: 0
+  Unlocked: 0
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
   dialogueStarted: 0
@@ -295,6 +296,7 @@ MonoBehaviour:
           m_StringArgument: Level 1-5
           m_BoolArgument: 0
         m_CallState: 1
+  CheckingEvents: []
   NextButton: {fileID: 0}
 --- !u!4 &417052120
 Transform:
@@ -976,8 +978,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8078e84f58f1844ab4fb884beae53d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GenScene: {fileID: 102900000, guid: 71a340edfac58e346bd21994b2620ef4, type: 3}
-  LoadingScreen: {fileID: 0}
+  GenScene: Level 1-5
+  LoadingScreen: {fileID: 497050463429123888, guid: fde17fd46f6556b4ba0674656340e65a,
+    type: 3}
 --- !u!1001 &8542677207874847942
 PrefabInstance:
   m_ObjectHideFlags: 0
