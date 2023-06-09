@@ -3,9 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using Tools.Trees.AI;
 
-public class checkNav : SequencerNode
+public class checkNav : AICompositeNode
 {
     private int index = 0;
+
+    protected override void OnStart()
+    {
+        
+    }
+
+    protected override void OnStop()
+    {
+       
+    }
 
     // Update is called once per frame
     protected override State OnUpdate()

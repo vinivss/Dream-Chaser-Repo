@@ -19,7 +19,7 @@ public class GenericTransV : MonoBehaviour
     }
     IEnumerator LoadSceneAsync()
     {
-        LoadingScreen = Instantiate(LoadingScreen);
+        LoadingScreen = Instantiate(LoadingScreen, GameObject.FindObjectOfType<Canvas>().transform);
         AsyncOperation op = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         while (!op.isDone)
         {

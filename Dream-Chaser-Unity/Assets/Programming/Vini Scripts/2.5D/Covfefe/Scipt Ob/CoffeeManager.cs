@@ -122,8 +122,4 @@ public class CoffeeManager : MonoBehaviour
         Debug.Log(currentRecipe.RecipeIngreds.Count);
     }
 
-    private  void AddNewIngred(int i)
-    {
-        
-    }
 }

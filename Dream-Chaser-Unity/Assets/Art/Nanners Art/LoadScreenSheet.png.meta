@@ -113,20 +113,252 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: LoadScreenSheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 500
+        width: 499
+        height: 500
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e569fbb34a46547a85a36fd7f81b8e
+      internalID: 426642520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadScreenSheet_1
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 501
+        width: 498
+        height: 499
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bf066cd42cd394fb1a8f8432059877
+      internalID: -2095458085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadScreenSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 501
+        width: 500
+        height: 499
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503edf656ca19db48b4d6ae73ec53c93
+      internalID: -661325980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadScreenSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 501
+        width: 498
+        height: 499
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d10783718101c7468d1fb7a96254686
+      internalID: 625535351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadScreenSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 499
+        height: 500
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a6c7d48109fca4bbcbb66983d61a4a
+      internalID: 1661561989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadScreenSheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 499
+        height: 499
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0446ab09d77e54a96cf044cd04a28d
+      internalID: -1731394281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadScreenSheet_6
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 0
+        width: 496
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be7db857fbfa314485c2192fad075a1
+      internalID: 1741004028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadScreenSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 0
+        width: 499
+        height: 497
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11710c225e4d3024fb48ca5d72a11cc2
+      internalID: 725046812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadScreenSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 0
+        width: 497
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f9e7283c39dd34ea853882909b8605
+      internalID: 819205857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadScreenSheet_9
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 500
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e658870696b58af4782261a39cbf7e6a
+      internalID: 1257669805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b6dbfdff75f0bed428fbeb92859a8228
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LoadScreenSheet_6: 1741004028
+      LoadScreenSheet_3: 625535351
+      LoadScreenSheet_8: 819205857
+      LoadScreenSheet_7: 725046812
+      LoadScreenSheet_9: 1257669805
+      LoadScreenSheet_5: -1731394281
+      LoadScreenSheet_2: -661325980
+      LoadScreenSheet_1: -2095458085
+      LoadScreenSheet_4: 1661561989
+      LoadScreenSheet_0: 426642520
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
