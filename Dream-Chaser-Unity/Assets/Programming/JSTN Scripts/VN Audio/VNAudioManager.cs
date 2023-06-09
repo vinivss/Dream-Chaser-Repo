@@ -60,6 +60,13 @@ public class VNAudioManager : MonoBehaviour
         musicEventInstances.start();
     }
 
+    public IEnumerator fadeOut()
+    {
+        musicEventInstances.setParameterByName("pause", 1);
+        yield return new WaitForSeconds(5.5f);
+        musicEventInstances.setParameterByName("pause", 0);
+    }
+
     public void thanos(){
         musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         sfxEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
