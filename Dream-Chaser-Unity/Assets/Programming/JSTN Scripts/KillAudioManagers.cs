@@ -9,7 +9,7 @@ public class KillAudioManagers : MonoBehaviour
     AudioManager gManager;
     
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         mmManager = FindObjectOfType<MenuAudioManager>().GetComponent<MenuAudioManager>();
         vManager = FindObjectOfType<VNAudioManager>().GetComponent<VNAudioManager>();
