@@ -7,7 +7,6 @@ using Tools.Trees.AI;
 public class EnemyNav : AIActionNode
 {
     private Transform[] checkpoints;
-    private NavMeshAgent meshAgent;
     private bool flag;
     //private DCMoveVin player;
     Transform destination;
@@ -16,9 +15,8 @@ public class EnemyNav : AIActionNode
     {
         Debug.Log("nav start");
         checkpoints = agent.checkpointLocation;
-        meshAgent = agent.meshAgent;
         //player = agent.player;
-        updateDestination();
+       // updateDestination();
     }
 
     protected override void OnStop()
@@ -26,7 +24,7 @@ public class EnemyNav : AIActionNode
     }
 
     protected override State OnUpdate()
-    {
+    {/*
         Debug.Log(agent.checkpoint.totalCheckpoints + " at on update");
         Debug.Log("current: " + agent.checkpoint.currentCheckpoint() + " at on update");
         float distance = Vector3.Distance(destination.position, agent.transform.position);
@@ -56,8 +54,10 @@ public class EnemyNav : AIActionNode
             return State.SUCC;
         }
         return State.RUN;
+        */
+        return State.RUN;
     }
-
+    /*
     void updateDestination()
     {
 
@@ -74,10 +74,10 @@ public class EnemyNav : AIActionNode
         {
             meshAgent.velocity = player.getCurrentVelocity();
         }
-        */
+        
         agent.checkpoint.arriveCheckpoint();
         meshAgent.SetDestination(destination.position);
     }
-
+    */
 
 }

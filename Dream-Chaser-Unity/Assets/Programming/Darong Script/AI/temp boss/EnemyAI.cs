@@ -5,9 +5,6 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    [Header("enemy health start")]
-    [SerializeField] public float startingHealth;
-    [SerializeField] public int currentHealth;
 
     [Header("Player components")]
     [SerializeField] public DCMoveVin player;
@@ -43,10 +40,6 @@ public class EnemyAI : MonoBehaviour
         playerObject = GameObject.Find("Player");
     }
 
-    public float GetCurrentHealth()
-    {
-        return currentHealth;
-    }
 
     // Update is called once per frame
     void Update()
@@ -58,10 +51,6 @@ public class EnemyAI : MonoBehaviour
         if (player_health.healthCheck())
         {
             attack();
-        }
-        else
-        {
-            FindObjectOfType<DCMoveVin>().PlayerDeath();
         }
 
     }

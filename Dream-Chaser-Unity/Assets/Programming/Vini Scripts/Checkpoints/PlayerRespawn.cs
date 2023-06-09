@@ -13,6 +13,7 @@ public class PlayerRespawn : MonoBehaviour
         if (gameManager.sceneStarted)
         {
             transform.position = gameManager.lastCheckpointPosition;
+            transform.position = new Vector3(transform.position.x, transform.position.y+50, transform.position.z);
         }
         else
         {

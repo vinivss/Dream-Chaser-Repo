@@ -7,20 +7,22 @@ public class ObstacleColllision : MonoBehaviour
 {
     GameManager gameManager;
     GameObject player;
+    PlayerHealth player_hp;
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
         player = GameObject.FindGameObjectWithTag("Player");
+        player_hp = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(this.tag + " " + other.tag);
-        if (this.tag != "Collectible") {
+        if (this.tag != "Collectible" || !player_hp.healthCheck()) {
             AudioManager.instance.PlayOneShot(FMODEvents.instance.ambience, this.transform.position);
             Debug.Log(other.tag);
             FindObjectOfType<DCMoveVin>().PlayerDeath();
             StartCoroutine(ResetScene());
         }
+
     }
 
     IEnumerator ResetScene()

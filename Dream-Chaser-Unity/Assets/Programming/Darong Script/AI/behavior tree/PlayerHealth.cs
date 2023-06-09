@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -13,6 +14,12 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("hit");
         hp -= 10;
+        if (!healthCheck())
+        {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.ambience, this.transform.position);
+            FindObjectOfType<DCMoveVin>().PlayerDeath();
+            StartCoroutine(ResetScene());
+        }
     }
 
     public bool healthCheck()
@@ -25,4 +32,10 @@ public class PlayerHealth : MonoBehaviour
         return hp;
     }
 
+
+    IEnumerator ResetScene()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

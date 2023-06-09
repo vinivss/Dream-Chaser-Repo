@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 
 // attach this once the projectile prefab is made and create a game object using rb
@@ -16,6 +17,7 @@ public class EnemyProjectile : MonoBehaviour
 
     [SerializeField] private float destroyTime; // destory time after lanuch
 
+
     private PlayerHealth player_health;
 
     private Transform player;
@@ -25,8 +27,6 @@ public class EnemyProjectile : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        //transform.position = Vector3.MoveTowards(transform.position, player.position, 10000f);
-        //rb.velocity = transform.forward * lanuchForce;
         rb.useGravity = false;
         player_health = GameObject.Find("Player").GetComponent<PlayerHealth>();
         player = GameObject.Find("Player").transform;
@@ -71,4 +71,6 @@ public class EnemyProjectile : MonoBehaviour
         }
         
     }
+
+    
 }

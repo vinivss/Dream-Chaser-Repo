@@ -7,88 +7,91 @@ namespace Tools.Trees.AI
 {
     public class AIAgent : MonoBehaviour
     {
-        [Header("enemy health start")]
-        [SerializeField] public float startingHealth;
+        [Header("Player components")]
         [SerializeField] public DCMoveVin player;
         [SerializeField] public PlayerHealth player_health;
 
-        [Header("Player components")]
-        [SerializeField] public Transform[] projectileSpawnLocation;
+        [Header("bullet prefabs and spawn location")]
+        [SerializeField] public Transform projectileSpawnLocation;
         [SerializeField] public GameObject bulletPrefab;
 
-        [Header("bullet prefabs and spawn location")]
+        [Header("checkpoint locations and checkpoint track")]
         [SerializeField] public CheckpointIndex checkpoint;
         [SerializeField] public Transform[] checkpointLocation;
 
-        [Header("NavMesh Agent")]
-        [SerializeField] public NavMeshAgent meshAgent;
+        private float countDownTime = 0f;
+        [SerializeField] private float firerate;
 
-        // enemy current health
-        public float currentHealth;
+        private GameManager gameManager;
 
-        // fire rate
-        private float fireRate;
-        private float countDownFire = 2;
-
-        // checkpoint track temp
-        public bool checkpoint1;
-        public bool checkpoint2;
-        public bool checkpoint3;
+        [Header("enemy gameobject")]
+        [SerializeField] GameObject enemyObject;
+        private GameObject playerObject;
 
         void Start()
         {
-            currentHealth = startingHealth;
+            //currentHealth = startingHealth;
             /*
             player = GetComponent<DCMoveVin>();
             player_health = GetComponent<PlayerHealth>();
             checkpoint = GetComponent<CheckpointIndex>();
             meshAgent = GetComponent<NavMeshAgent>();
             */
+            gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
+            playerObject = GameObject.Find("Player");
         }
+
 
         // Update is called once per frame
         void Update()
         {
-            if (!player_health.healthCheck())
-            {
-                Destroy(gameObject);
-            }
-        }
-
-        public float GetCurrentHealth()
-        {
-            return currentHealth;
-        }
-
-        public void attack()
-        {
-            // enemy fire
+            teleport();
+            //transform.LookAt(playerObject.transform);
+            // if player is alive, enemy attack
+            enemyObject.transform.LookAt(playerObject.transform);
             if (player_health.healthCheck())
             {
-                if (countDownFire <= 0f) {
-                    foreach (Transform SpawnBullets in projectileSpawnLocation)
-                    {
-                        Instantiate(bulletPrefab, SpawnBullets.position, transform.rotation);
-                    }
-                    countDownFire = 1f / fireRate;
-                }
-                countDownFire -= Time.deltaTime;
+                attack();
             }
             else
             {
-                /*
-                 stop
-                 */
+                FindObjectOfType<DCMoveVin>().PlayerDeath();
+            }
+
+        }
+
+
+        public void attack()
+        {
+            if (player_health.healthCheck())
+            {
+                if (countDownTime <= 0f)
+                {
+
+                    Instantiate(bulletPrefab, projectileSpawnLocation.position, transform.rotation);
+                    countDownTime = 1f / firerate;
+                }
+                countDownTime -= Time.deltaTime;
             }
         }
-        
-        private void OnCollisionEnter(Collision other)
+
+        // teleport boss between checkpoints
+        private void teleport()
         {
-            if (other.gameObject.tag == "Checkpoint")
+            if (checkpoint.currentCheckpoint() != gameManager.cpCount && checkpoint.totalCheckpoints > gameManager.cpCount)
             {
-                Debug.Log("enter checkpoint");
-                checkpoint1 = true;
+                StartCoroutine("attackCooldown");
+                checkpoint.arriveCheckpoint();
+                enemyObject.transform.position = checkpointLocation[checkpoint.currentCheckpoint() + 1].position;
+                enemyObject.transform.position = new Vector3(enemyObject.transform.position.x, enemyObject.transform.position.y + 100, enemyObject.transform.position.z);
+                Debug.Log("tp to " + checkpoint.currentCheckpoint());
             }
+
+        }
+
+        IEnumerator attackCooldown()
+        {
+            yield return new WaitForSecondsRealtime(1f);
         }
     }
 }
