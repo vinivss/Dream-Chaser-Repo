@@ -52,8 +52,9 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         teleport();
-        transform.LookAt(playerObject.transform);
+        //transform.LookAt(playerObject.transform);
         // if player is alive, enemy attack
+        enemyObject.transform.LookAt(playerObject.transform);
         if (player_health.healthCheck())
         {
             attack();

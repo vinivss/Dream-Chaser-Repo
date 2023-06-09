@@ -9691,12 +9691,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3082779126971880757}
-  - component: {fileID: 1269240910507031279}
-  - component: {fileID: 5679979734395633643}
-  - component: {fileID: 8650256155899216520}
+  - component: {fileID: -7993450489094183335}
+  - component: {fileID: 3985186695288588346}
+  - component: {fileID: 2068815370918873620}
   m_Layer: 0
-  m_Name: BossBeetles
-  m_TagString: Untagged
+  m_Name: BossBeetles 1
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9710,7 +9710,7 @@ Transform:
   m_GameObject: {fileID: 7147862955372201002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.56, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 25, y: 25, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8277744383984987774}
@@ -9719,7 +9719,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1269240910507031279
+--- !u!114 &-7993450489094183335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9728,20 +9728,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7147862955372201002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 243eb6274c5e0ec43856d3018e999bc6, type: 3}
+  m_Script: {fileID: 11500000, guid: aed0d6ae179603c41ad778f85da1a7c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  collisionTagsToCheck:
-  - Player
-  duration: 8
-  rotationSpeed: 50
-  beforeTurnSpeed: 20
-  afterTurnSpeed: 25
-  defaultDestinationDistance: -50
-  distanceBeforeTurn: 6
-  destroyDelay: 3
---- !u!135 &5679979734395633643
+  rb: {fileID: 2068815370918873620}
+  lanuchForce: 100
+  rotationForce: 300
+  destroyTime: 10
+--- !u!135 &3985186695288588346
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9749,12 +9743,12 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7147862955372201002}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &8650256155899216520
+--- !u!54 &2068815370918873620
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9766,7 +9760,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0

@@ -91560,6 +91560,7 @@ MonoBehaviour:
       m_Calls: []
   isAlive: 1
   playerHp: 0
+  player_health: {fileID: 0}
 --- !u!54 &2115140982
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -98124,9 +98125,8 @@ GameObject:
   - component: {fileID: 9222043320405522538}
   - component: {fileID: 9222043320405522541}
   - component: {fileID: 9222043320405522540}
-  - component: {fileID: 9222043320405522539}
   m_Layer: 0
-  m_Name: Final_Boss_Checkpoint1
+  m_Name: Final_Boss
   m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98698,7 +98698,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8408386695958405840}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 48.37, y: 431, z: -719}
+  m_LocalPosition: {x: 30.1, y: 431, z: -719}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -98712,19 +98712,6 @@ Transform:
   m_Father: {fileID: 802807884}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &9222043320405522539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8408386695958405840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8bf428c78450694c90210e2a7330d78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 9222043320405522540}
 --- !u!114 &9222043320405522540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98738,17 +98725,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 50
-  lowHealthThreshHold: 0
+  currentHealth: 0
   player: {fileID: 2115140981}
   player_health: {fileID: 2115140986}
-  projectileSpawnLocation:
-  - {fileID: 2968933617027546897}
+  projectileSpawnLocation: {fileID: 2968933617027546897}
   bulletPrefab: {fileID: 1835040142836462390, guid: 0af839a1b35feaf44aac055840ae0975,
     type: 3}
   checkpoint: {fileID: 9222043320405522541}
-  checkpointLocation: []
-  currentHealth: 0
-  attackOrder: {fileID: 9222043320405522539}
+  checkpointLocation:
+  - {fileID: 275125245}
+  - {fileID: 1514631604}
+  - {fileID: 1376658611}
+  - {fileID: 1096190954}
+  - {fileID: 775225001}
+  - {fileID: 540929353}
+  firerate: 0.5
+  enemyObject: {fileID: 8408386695958405840}
 --- !u!114 &9222043320405522541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98761,4 +98753,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7e85685567e314db2030b9263f3332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalCheckpoints: 5
+  totalCheckpoints: 6
