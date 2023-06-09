@@ -13,6 +13,7 @@ public class VNAudioManager : MonoBehaviour
     public EventInstance musicEventInstances;
     public EventInstance sfxEventInstances;
     DialogueManager dManager;
+    KillAudioManagers kill;
     public Button button;
     public static VNAudioManager instance { get; private set;}
 
@@ -21,7 +22,7 @@ public class VNAudioManager : MonoBehaviour
         {
             //For NextButton clicks
             dManager = FindObjectOfType<DialogueManager>().GetComponent<DialogueManager>();
-
+            kill = FindObjectOfType<KillAudioManagers>();
             instance = this;
             DontDestroyOnLoad(instance);
             if (instance != null){
@@ -44,6 +45,7 @@ public class VNAudioManager : MonoBehaviour
     {
         //Play sound upon clicking next
         dManager.NextButton.GetComponent<Button>().onClick.AddListener(ClickNextButton);
+        
     }
 
     public void ClickNextButton()

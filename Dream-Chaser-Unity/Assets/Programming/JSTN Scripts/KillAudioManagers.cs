@@ -11,12 +11,15 @@ public class KillAudioManagers : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        mmManager = FindObjectOfType<MenuAudioManager>().GetComponent<MenuAudioManager>();
+        //mmManager = FindObjectOfType<MenuAudioManager>().GetComponent<MenuAudioManager>();
         vManager = FindObjectOfType<VNAudioManager>().GetComponent<VNAudioManager>();
-        gManager = FindObjectOfType<AudioManager>().GetComponent<AudioManager>();
+        //gManager = FindObjectOfType<AudioManager>().GetComponent<AudioManager>();
+        kill();
+    }
 
-        mmManager.thanos();
+    public void kill(){
+        //mmManager.thanos();
         vManager.thanos();
-        gManager.thanos();
+        //gManager.thanos();
     }
 }
