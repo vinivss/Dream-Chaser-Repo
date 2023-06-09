@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1565221, g: 0.18838228, b: 0.22054446, a: 1}
+  m_IndirectSpecularColor: {r: 0.1575691, g: 0.1894093, b: 0.22131309, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2466,7 +2466,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.24301518, y: 0.077973224, z: -0.01960171, w: 0.9666849}
+  m_LocalRotation: {x: 0.24298102, y: 0.0796398, z: -0.020020673, w: 0.966549}
   m_LocalPosition: {x: 1.9, y: 377.8, z: 1963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4560,6 +4560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 491359141}
+  - component: {fileID: 491359142}
   m_Layer: 0
   m_Name: checkpoint3
   m_TagString: Untagged
@@ -4582,6 +4583,18 @@ Transform:
   m_Father: {fileID: 261849561}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &491359142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491359140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a6ed21d5714434d8dce72b5c016dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &493235245
 GameObject:
   m_ObjectHideFlags: 0
@@ -5743,6 +5756,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 679195980}
+  - component: {fileID: 679195981}
   m_Layer: 0
   m_Name: checkpoint1
   m_TagString: Untagged
@@ -5765,6 +5779,18 @@ Transform:
   m_Father: {fileID: 261849561}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &679195981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679195979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a6ed21d5714434d8dce72b5c016dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &679761431
 GameObject:
   m_ObjectHideFlags: 0
@@ -9682,7 +9708,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.24301518, y: 0.077973224, z: -0.01960171, w: 0.9666849}
+  m_LocalRotation: {x: 0.24298102, y: 0.0796398, z: -0.020020673, w: 0.966549}
   m_LocalPosition: {x: 1.9, y: 377.8, z: 1963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13096,7 +13122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 50
-  lowHealthThreshHold: 0
+  currentHealth: 30
   player: {fileID: 5056017516929436355}
   player_health: {fileID: 5056017516929436363}
   projectileSpawnLocation:
@@ -13104,8 +13130,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8684799264777565513}
   checkpoint: {fileID: 1453533223}
   checkpointLocation: []
-  currentHealth: 30
-  attackOrder: {fileID: 1453533233}
+  firerate: 0
 --- !u!114 &1453533233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14713,6 +14738,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1702564505}
+  - component: {fileID: 1702564506}
   m_Layer: 0
   m_Name: checkpoint2
   m_TagString: Untagged
@@ -14735,6 +14761,18 @@ Transform:
   m_Father: {fileID: 261849561}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1702564506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702564504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a6ed21d5714434d8dce72b5c016dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1706345758
 GameObject:
   m_ObjectHideFlags: 0
@@ -68030,6 +68068,7 @@ MonoBehaviour:
       m_Calls: []
   isAlive: 1
   playerHp: 0
+  player_health: {fileID: 0}
 --- !u!54 &5056017516929436356
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -78583,7 +78622,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 30
-  lowHealthThreshHold: 0
   player: {fileID: 5056017516929436355}
   player_health: {fileID: 5056017516929436363}
   projectileSpawnLocation:
@@ -86238,7 +86276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 50
-  lowHealthThreshHold: 0
+  currentHealth: 50
   player: {fileID: 5056017516929436355}
   player_health: {fileID: 5056017516929436363}
   projectileSpawnLocation:
@@ -86247,8 +86285,7 @@ MonoBehaviour:
     type: 3}
   checkpoint: {fileID: 7531826144080383010}
   checkpointLocation: []
-  currentHealth: 50
-  attackOrder: {fileID: 0}
+  firerate: 0
 --- !u!33 &7568068244504689366
 MeshFilter:
   m_ObjectHideFlags: 0
