@@ -8,15 +8,30 @@ using FMOD.Studio;
 public class MainMenuTransfer : MonoBehaviour
 {
     MenuAudioManager menuAudio;
+    public GameObject LoadingScreen;
+    public string Scene;
     private void Awake()
     {
-        menuAudio = FindObjectOfType<MenuAudioManager>().GetComponent<MenuAudioManager>();
+        menuAudio = FindObjectOfType<MenuAudioManager>();
     }
     public void TransferScene(string SceneName)
-    {    
-        menuAudio.ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        menuAudio.musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        DestroyImmediate(menuAudio);
-        SceneManager.LoadScene(SceneName);
+    {
+        if (menuAudio != null)
+        {
+            menuAudio.ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            menuAudio.musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            DestroyImmediate(menuAudio);
+        }
+       StartCoroutine(LoadSceneAsync());
+    }
+
+    IEnumerator LoadSceneAsync()
+    {
+        LoadingScreen = Instantiate(LoadingScreen, GameObject.FindObjectOfType<Canvas>().transform);
+        AsyncOperation op = SceneManager.LoadSceneAsync(Scene);
+        while (!op.isDone)
+        {
+            yield return null;
+        }
     }
 }

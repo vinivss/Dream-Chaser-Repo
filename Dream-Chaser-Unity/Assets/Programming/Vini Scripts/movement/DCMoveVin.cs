@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 using FMOD.Studio;
-using FMODUnity;
 using System;
 using UnityEngine.Events;
 using Cinemachine;
@@ -27,6 +26,7 @@ public class DCMoveVin : MonoBehaviour
     [Header("Movement Attributes")]
     [Tooltip("Minimum Forward Velocity")]
     [SerializeField] float minForwardSpeed;
+    [SerializeField] float deceleration;
     [Tooltip("Maximum threshold before slowly rotating to front")]
     [SerializeField] float rotationThreshold;
     [Tooltip("Max Speed you can accelerate to")]
@@ -58,6 +58,11 @@ public class DCMoveVin : MonoBehaviour
     [Tooltip("The name of the FMOD Parameter function")]
     public  UnityEvent parameterName;
 
+    public bool isAlive = true;
+    [SerializeField] public int playerHp;
+
+    [SerializeField] public PlayerHealth player_health;
+
     private void Awake()
     {
         inManager = GetComponent<ControlsManager>();
@@ -65,6 +70,7 @@ public class DCMoveVin : MonoBehaviour
         Cam = FindObjectOfType<CinemachineVirtualCamera>();
         //startFOV = Cam.m_Lens.FieldOfView;
         DissolveScript = GetComponent<OnDeathDissolve>();
+        player_health = GetComponent<PlayerHealth>();
     }
 
     //physics management
@@ -85,6 +91,7 @@ public class DCMoveVin : MonoBehaviour
                 rb.drag = normDrag;
             }
         }
+        respawn();
         UpdateSound();
     }
 
@@ -130,7 +137,6 @@ public class DCMoveVin : MonoBehaviour
             rb.AddForce(Vector3.up * Mathf.Clamp(jumpforce, minJump, maxJump), ForceMode.Impulse);
             jumping = false;
             jumpforce = 0;
-            RuntimeManager.PlayOneShot("event:/SFX/Jump", this.transform.position);
         }
        
     }
@@ -144,7 +150,6 @@ public class DCMoveVin : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheckPos.position, groundDistance, groundMask);
     }
 
-
     private void UpdateSound(){
         velo = rb.velocity.magnitude/maxSpeed*4;
         AudioManager.instance.SetAmbienceParameter("wind_intensity", velo);
@@ -152,6 +157,7 @@ public class DCMoveVin : MonoBehaviour
 
     public void PlayerDeath()
     {
+        isAlive = false;
         rb.isKinematic = true;
         inManager.OnDisable();
         DissolveScript.OnPlayerDeath();
@@ -178,4 +184,24 @@ public class DCMoveVin : MonoBehaviour
         }
 
     }
+
+    public Transform currentPlayerPos()
+    {
+        return transform;
+    }
+
+    public Vector3 getCurrentVelocity()
+    {
+        return rb.velocity;
+    }
+
+    public void respawn()
+    {
+        // if player is not alive, call playerdeath()
+        if (!player_health.healthCheck())
+        {
+            PlayerDeath();
+        }
+    }
+
 }

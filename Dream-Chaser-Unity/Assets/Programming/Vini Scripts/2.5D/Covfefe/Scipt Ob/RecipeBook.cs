@@ -1,4 +1,5 @@
 using Coffee;
+using FMOD;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,12 @@ public class RecipeBook : ScriptableObject
 {
     public List<Recipe> recipes;
 #if UNITY_EDITOR
-    private void OnEnable()
+    private void Awake()
     {
         recipes = GetAllInstances<Recipe>();
     }
 
+   
     public static List<T> GetAllInstances<T>() where T : Recipe
     {
         string[] guids = AssetDatabase.FindAssets("t:" + typeof(T).Name);  //FindAssets uses tags check documentation for more info
@@ -24,8 +26,10 @@ public class RecipeBook : ScriptableObject
         {
             string path = AssetDatabase.GUIDToAssetPath(guids[i]);
             a[i] = AssetDatabase.LoadAssetAtPath<T>(path);
+            
         }
 
+       
         return a.ToList<T>();
 
 

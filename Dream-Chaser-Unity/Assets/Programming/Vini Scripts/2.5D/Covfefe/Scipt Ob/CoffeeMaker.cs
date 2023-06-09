@@ -8,17 +8,24 @@ public class CoffeeMaker : MonoBehaviour
     CoffeeManager manager;
     public Transform CompleteWaypoint;
 
+    public GameObject[] Arrows;
+
     // Start is called before the first frame update
     void Start()
     {
         manager = FindObjectOfType<CoffeeManager>();
+        Arrows = manager.Arrows;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("IN");
+        
         if (collision.CompareTag("Cup"))
         {
+            foreach (GameObject arrow in Arrows)
+            {
+                arrow.SetActive(false);
+            }
             manager.currentRecipe.cookingMethod = cookingMethod;
             Clickndrag clickndrag = collision.GetComponent<Clickndrag>();
             clickndrag.enabled = false;
@@ -31,14 +38,26 @@ public class CoffeeMaker : MonoBehaviour
                 Coll.interactable = false;
             return;
         }
-        else
+    }
+
+    public void ResetMachine()
+    {
+        foreach (GameObject arrow in Arrows)
         {
-            Ingredients ingredients = collision.GetComponent<IngredientManager>().ingredient;
-            if (ingredients != null)
-            {
-                manager.AddIngredient(ingredients);
-                Destroy(collision.gameObject);
-            }
+            arrow.SetActive(true);
         }
+        GameObject coffeeCup = GameObject.FindGameObjectWithTag("Cup");
+        Clickndrag clickndrag = coffeeCup.GetComponent<Clickndrag>();
+        clickndrag.enabled = true;
+        
+        coffeeCup.transform.position = coffeeCup.transform.parent.transform.position;
+        CanvasGroup Coll = coffeeCup.GetComponent<CanvasGroup>();
+
+        if (Coll != null)
+        {
+            Coll.interactable = true;
+            Coll.blocksRaycasts = true;
+        }
+            
     }
 }

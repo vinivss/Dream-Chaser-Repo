@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7208d0f81e86434ba7b5a9e7c5cb246, type: 3}
+  m_Name: Cappuccino
+  m_EditorClassIdentifier: 
+  RecipeIngreds:
+  - ingredientsNeeded: {fileID: 11400000, guid: 3365923a35ffda148a6279563a3fe626,
+      type: 2}
+    ingredientsCount: 1
+  - ingredientsNeeded: {fileID: 11400000, guid: 7d413e459f2afcd4784fe5fc501b753a,
+      type: 2}
+    ingredientsCount: 1
+  - ingredientsNeeded: {fileID: 11400000, guid: a8efd00b8fcda164ab132e475e192d1d,
+      type: 2}
+    ingredientsCount: 1
+  - ingredientsNeeded: {fileID: 11400000, guid: d10b574b697ce4b46acfe44151165670,
+      type: 2}
+    ingredientsCount: 2
+  cookingMethod: 1
+  Sprite: {fileID: 21300000, guid: 984b1510330d4be44b6184e4eb801224, type: 3}
