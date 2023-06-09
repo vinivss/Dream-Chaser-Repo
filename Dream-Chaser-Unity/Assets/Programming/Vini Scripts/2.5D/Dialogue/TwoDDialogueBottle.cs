@@ -79,6 +79,7 @@ public class TwoDDialogueBottle : MonoBehaviour
     }
     IEnumerator LoadSceneAsync(string sceneName)
     {
+        audioM.thanos();
         LoadingScreen = Instantiate(LoadingScreen, GameObject.FindObjectOfType<Canvas>().transform);
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
         while (!op.isDone)

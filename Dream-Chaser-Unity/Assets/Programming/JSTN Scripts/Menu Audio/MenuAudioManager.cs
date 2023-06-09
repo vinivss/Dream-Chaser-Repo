@@ -43,7 +43,7 @@ public class MenuAudioManager : MonoBehaviour
     }
 
     private void Start(){
-        fadeOut = 8;
+        fadeOut = 4;
         parameterCount = 0;
         InitializeAmbience(MenuEvents.instance.ambience);
         InitializeMusic(MenuEvents.instance.menuMusic);
@@ -67,9 +67,9 @@ public class MenuAudioManager : MonoBehaviour
             //Debug.Log(length);
             if(currentTime >= length - fadeOut){
                 musicEventInstances.setTimelinePosition(0);
-                newNum = Random.Range(0,22);
+                newNum = Random.Range(0,4);
                 if(parameterCount != newNum){
-                    newNum = Random.Range(0,22);
+                    newNum = Random.Range(0,4);
                 }                    
                 SetMusic(newNum);
                 length = subEventTimes.getSubTime(newNum);

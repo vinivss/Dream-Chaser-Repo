@@ -1298,13 +1298,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.22298968, y: 0.000000018752935, z: -0.0000000042897232, w: 0.9748208}
-  m_LocalPosition: {x: -11.63, y: 14.539999, z: -10}
+  m_LocalRotation: {x: 0.2229897, y: 0.000000018752937, z: -0.0000000042897237, w: 0.97482085}
+  m_LocalPosition: {x: -11.629997, y: 14.539993, z: -10.0000305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -1597,7 +1597,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
@@ -2364,7 +2364,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &549029365
 MonoBehaviour:
@@ -2403,7 +2403,7 @@ MonoBehaviour:
       Data2: 1259529088
       Data3: -1029958743
       Data4: 1703026419
-    Path: event:/Background
+    Path: event:/Music/Background
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -3055,7 +3055,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &747962708
 MonoBehaviour:
@@ -3390,7 +3390,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &881882612 stripped
 GameObject:
@@ -4365,8 +4365,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1618371921}
-  m_Follow: {fileID: 1618371921}
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
@@ -5584,7 +5584,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!1 &1548699880
 GameObject:
@@ -5680,7 +5680,7 @@ RectTransform:
   m_Children:
   - {fileID: 1551412320}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6011,12 +6011,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5a26a81036a4944c9163f2f76b18aea, type: 3}
---- !u!4 &1618371921 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5056017516493003300, guid: b8095beb53d919941b417b9b5467a509,
-    type: 3}
-  m_PrefabInstance: {fileID: 920733397}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1636599888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7110,6 +7104,7 @@ MonoBehaviour:
   cpPoints: 1
   lastCheckpointPosition: {x: 0, y: 0, z: 2}
   cpCount: 0
+  CurrentCarryingRecipe: {fileID: 0}
   sceneStarted: 0
 --- !u!4 &1882801867
 Transform:
@@ -7124,7 +7119,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2}
 --- !u!1001 &1908683139
 PrefabInstance:

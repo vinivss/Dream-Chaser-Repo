@@ -1083,7 +1083,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.2229897, y: -0.000000009761978, z: 0.000000002233046, w: 0.9748208}
+  m_LocalRotation: {x: 0.22298972, y: 0.000000049156213, z: -0.000000011244457, w: 0.9748208}
   m_LocalPosition: {x: 1.9, y: 237.6, z: -406.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2270,7 +2270,7 @@ MonoBehaviour:
       Data2: 1259529088
       Data3: -1029958743
       Data4: 1703026419
-    Path: event:/Background
+    Path: event:/Music/Background
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -3103,9 +3103,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f978b7cae34ce04ebc4ecf358bf3a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   minForwardSpeed: 10
+  deceleration: 0
   rotationThreshold: 180
   maxSpeed: 0
+  minJump: 0
+  maxJump: 0
+  groundCheckPos: {fileID: 0}
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  airDrag: 0
+  normDrag: 0
+  turnSpeed: 0
+  height: 0
+  parameterName:
+    m_PersistentCalls:
+      m_Calls: []
+  isAlive: 1
+  playerHp: 0
+  player_health: {fileID: 0}
 --- !u!54 &771362526
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4210,7 +4229,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.2229897, y: -0.000000009761978, z: 0.000000002233046, w: 0.9748208}
+  m_LocalRotation: {x: 0.22298972, y: 0.000000049156213, z: -0.000000011244457, w: 0.9748208}
   m_LocalPosition: {x: 1.9, y: 237.6, z: -406.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6547,6 +6566,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cpPoints: 1
   lastCheckpointPosition: {x: 100, y: 2, z: 2}
+  cpCount: 0
+  CurrentCarryingRecipe: {fileID: 0}
   sceneStarted: 0
 --- !u!4 &1882801867
 Transform:

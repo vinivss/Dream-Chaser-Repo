@@ -14,12 +14,11 @@ public class VNAudioManager : MonoBehaviour
     public EventInstance sfxEventInstances;
     DialogueManager dManager;
     KillAudioManagers kill;
-    public Button button;
     public static VNAudioManager instance { get; private set;}
 
     private void Awake(){
-        if(instance == null)
-        {
+        // if(instance == null)
+        // {
             //For NextButton clicks
             dManager = FindObjectOfType<DialogueManager>().GetComponent<DialogueManager>();
             kill = FindObjectOfType<KillAudioManagers>();
@@ -28,11 +27,11 @@ public class VNAudioManager : MonoBehaviour
             if (instance != null){
                 //Debug.LogError("Found more than one Audio Manager in scene");
             }
-        }
-        else
-        {
-            DestroyImmediate(gameObject);
-        }        
+        // }
+        // else
+        // {
+        //     DestroyImmediate(gameObject);
+        // }        
     }
 
     private void Start(){
