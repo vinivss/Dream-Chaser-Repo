@@ -217,6 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasRecipe: 1
   WantedRecipe: {fileID: 11400000, guid: 933f105a9b625d544bb51ac2624960f2, type: 2}
+  LoadingScreen: {fileID: 0}
   Alternatetree: {fileID: 0}
   CorrectGuessTree: {fileID: 0}
   CorrectScene: 
@@ -650,6 +651,7 @@ GameObject:
   - component: {fileID: 339909177}
   - component: {fileID: 339909176}
   - component: {fileID: 339909175}
+  - component: {fileID: 339909179}
   m_Layer: 0
   m_Name: Eri Portrait
   m_TagString: Untagged
@@ -671,10 +673,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasRecipe: 1
   WantedRecipe: {fileID: 11400000, guid: 13e6ba57b0b38af4cb436007a85ad33c, type: 2}
+  LoadingScreen: {fileID: 1766085658587118468, guid: 355264c603f94534093814dfd6d8daf6,
+    type: 3}
   Alternatetree: {fileID: 0}
   CorrectGuessTree: {fileID: 0}
   CorrectScene: VN_NoIntroSadieScene1_Ryan
-  IncorrectScene: 
+  IncorrectScene: VN_IncorrectDrink_Ryan
 --- !u!114 &339909176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,6 +775,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &339909179
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339909174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 23.041174, y: 19.2, z: 12.944536}
+  m_Center: {x: -6.1205873, y: 0, z: 1.2630014}
 --- !u!1001 &369411398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1149,6 +1166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasRecipe: 0
   WantedRecipe: {fileID: 0}
+  LoadingScreen: {fileID: 0}
   Alternatetree: {fileID: 0}
   CorrectGuessTree: {fileID: 0}
   CorrectScene: 
@@ -2185,6 +2203,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1453739380426671848, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: sceneStarted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453739380426671848, guid: 4ef19e7c18a9fe94a83008b996438b4d,
+        type: 3}
+      propertyPath: CurrentCarryingRecipe
+      value: 
+      objectReference: {fileID: 11400000, guid: 13e6ba57b0b38af4cb436007a85ad33c,
+        type: 2}
     - target: {fileID: 1453739380426671849, guid: 4ef19e7c18a9fe94a83008b996438b4d,
         type: 3}
       propertyPath: m_Name
@@ -2341,6 +2370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasRecipe: 0
   WantedRecipe: {fileID: 0}
+  LoadingScreen: {fileID: 0}
   Alternatetree: {fileID: 0}
   CorrectGuessTree: {fileID: 0}
   CorrectScene: 
@@ -4086,6 +4116,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6556044744520520569, guid: 17dfc4791808bb14abbdcb126e43a297,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6556044744520520570, guid: 17dfc4791808bb14abbdcb126e43a297,
         type: 3}
       propertyPath: m_Pivot.x

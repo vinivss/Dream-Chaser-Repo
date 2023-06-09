@@ -14,7 +14,7 @@ public class TwoDDialogueBottle : MonoBehaviour
     bool Alternate = false;
     public Recipe WantedRecipe;
     GameManager gameManager;
-     GameObject LoadingScreen;
+    public GameObject LoadingScreen;
     [Header("Guests Things")]
     public DialogueTree Alternatetree;
     public DialogueTree CorrectGuessTree;
@@ -27,7 +27,7 @@ public class TwoDDialogueBottle : MonoBehaviour
     {
         dialogueManager = FindObjectOfType<DialogueManager>();
         gameManager = FindObjectOfType<GameManager>();
-        LoadingScreen = GameObject.FindGameObjectWithTag("Loading");
+        
     }
 
     public void StartDialogue(DialogueTree Tree)
@@ -60,7 +60,7 @@ public class TwoDDialogueBottle : MonoBehaviour
     }
     public void VNScenePlay()
     {
-        if(dialogueManager.Unlocked == true)
+        if(dialogueManager.Unlocked == true || FindRecipe())
         {
             StartCoroutine(LoadSceneAsync(CorrectScene));
         }
@@ -71,7 +71,7 @@ public class TwoDDialogueBottle : MonoBehaviour
     }
     IEnumerator LoadSceneAsync(string sceneName)
     {
-        LoadingScreen = Instantiate(LoadingScreen);
+        LoadingScreen = Instantiate(LoadingScreen, GameObject.FindObjectOfType<Canvas>().transform);
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
         while (!op.isDone)
         {
