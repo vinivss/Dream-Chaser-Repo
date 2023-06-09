@@ -28,8 +28,8 @@ public class EnemyProjectile : MonoBehaviour
         //transform.position = Vector3.MoveTowards(transform.position, player.position, 10000f);
         //rb.velocity = transform.forward * lanuchForce;
         rb.useGravity = false;
-        player_health = GameObject.Find("Player").GetComponent<PlayerHealth>();
-        player = GameObject.Find("Player").transform;
+        player_health = GameObject.Find("TruePlayer").GetComponent<PlayerHealth>();
+        player = GameObject.Find("TruePlayer").transform;
     }
     
     // Update is called once per frame
@@ -59,6 +59,7 @@ public class EnemyProjectile : MonoBehaviour
 
                 //PlayerHealth player_health = other.transform.GetComponent<PlayerHealth>();
                 // if player still alive, take damage
+                Debug.Log(player_health.healthCheck());
                 if (player_health.healthCheck())
                 {
                     player_health.underAttack();
