@@ -21,6 +21,26 @@ MonoBehaviour:
   agent: {fileID: 0}
   description: 
   child: {fileID: 3391025374330627703}
+--- !u!114 &-5107367192645861676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b45030a6f6e6a342b414435f224b61f, type: 3}
+  m_Name: EnemyNav
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  GUID: a62d9a72a6f58204caefad2486075b54
+  position: {x: 154, y: 382}
+  blackboard:
+    isAlive: 0
+  agent: {fileID: 0}
+  description: 
 --- !u!114 &-2213706476399603509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,16 +53,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6d412439c509004da5ee7d0c1b6b797, type: 3}
   m_Name: checkAlive
   m_EditorClassIdentifier: 
-  state: 0
-  started: 0
+  state: 2
+  started: 1
   GUID: 68ab085342c999942a78bd902450298b
-  position: {x: 229, y: 238}
+  position: {x: 229, y: 249}
   blackboard:
     isAlive: 0
   agent: {fileID: 0}
-  description: 
-  children: []
-  player: {fileID: 1956533657298159486, guid: 57cc3faf8e62e2e40a28c3fb6b5d4d8b, type: 3}
+  description: 'Composite Note
+
+    Use to check if player is alive'
+  children:
+  - {fileID: 6472611169045843747}
+  - {fileID: -5107367192645861676}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +84,8 @@ MonoBehaviour:
   - {fileID: -8712624798858107918}
   - {fileID: 3391025374330627703}
   - {fileID: -2213706476399603509}
+  - {fileID: -5107367192645861676}
+  - {fileID: 6472611169045843747}
   board:
     isAlive: 0
 --- !u!114 &3391025374330627703
@@ -76,11 +101,31 @@ MonoBehaviour:
   m_Name: RepeatNode
   m_EditorClassIdentifier: 
   state: 0
-  started: 0
+  started: 1
   GUID: b8ad8407f2353fc47ba4dba3c6af5cd2
-  position: {x: 229, y: 93}
+  position: {x: 229, y: 105}
   blackboard:
     isAlive: 0
   agent: {fileID: 0}
   description: 
   child: {fileID: -2213706476399603509}
+--- !u!114 &6472611169045843747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a9f52604a2f18e48aa5b623ef886cd3, type: 3}
+  m_Name: AIAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  GUID: 1b219a325b477f24da332bf7a99ffaf2
+  position: {x: 344, y: 382}
+  blackboard:
+    isAlive: 0
+  agent: {fileID: 0}
+  description: 

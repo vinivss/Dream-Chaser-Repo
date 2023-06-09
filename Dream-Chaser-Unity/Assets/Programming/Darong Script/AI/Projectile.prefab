@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -7595106234824405752}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1835040142836462390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.7642498, y: 430.32617, z: 1986.3734}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -128,7 +128,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 87992091651571704}
-  lanuchForce: 10
-  destroyTime: 2
-  player_health: {fileID: 5462914601404321353, guid: 707758e30d8a94b41afc534722f2089c,
-    type: 3}
+  lanuchForce: 90
+  rotationForce: 300
+  destroyTime: 20
