@@ -22,6 +22,28 @@ MonoBehaviour:
     type: 3}
   child: {fileID: 2252568968735985861}
   DialogueActions: []
+--- !u!114 &-9014597581593591665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: e34eadd8977ae614ba0dd5da5fb077f0
+  position: {x: 574, y: -17}
+  state: 0
+  Speaker: Ash
+  Dialogue: And sorry again that I had to remake it.
+  SceneLayout: {fileID: 7618117717971990536, guid: 76e46a67f7fe36e44b15d2450b369e86,
+    type: 3}
+  child: {fileID: -8959344014219776515}
+  DialogueActions: []
 --- !u!114 &-8959344014219776515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,7 +61,7 @@ MonoBehaviour:
   position: {x: 892, y: 2}
   state: 1
   Speaker: Eri
-  Dialogue: "Oh, no worries. It\u2019s no problem\u2026 take your time."
+  Dialogue: "Oh, no worries. It\u2019s no problem, I wasn't waiting long..."
   SceneLayout: {fileID: 3426172272630945159, guid: 40c056cf92b891a40a47b064f7e5337b,
     type: 3}
   child: {fileID: -4616238756728671428}
@@ -63,7 +85,7 @@ MonoBehaviour:
   Speaker: 
   Dialogue: 
   SceneLayout: {fileID: 0}
-  child: {fileID: 7792594917107288008}
+  child: {fileID: 8008167083096878563}
 --- !u!114 &-8568525081480394350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,29 +194,6 @@ MonoBehaviour:
     type: 3}
   child: {fileID: 2253602552801157925}
   DialogueActions: []
---- !u!114 &-5290096751104546157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: a15b97c789ca8e546aafa03f9eae8d06
-  position: {x: 522, y: -26}
-  state: 1
-  Speaker: Ash
-  Dialogue: (Unfortunately...that happiness didn't last long as I ended up cleaning
-    up yet another coffee spill on the floor...)
-  SceneLayout: {fileID: 9089698906391432586, guid: 8430040efe8910f43b9b7ccca2973f93,
-    type: 3}
-  child: {fileID: 8008167083096878563}
-  DialogueActions: []
 --- !u!114 &-5031098323728105069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,7 +236,7 @@ MonoBehaviour:
   position: {x: 575.58746, y: 216.13173}
   state: 1
   Speaker: Ash
-  Dialogue: "While the coffee is brewing, how\u2019s your day been?"
+  Dialogue: "While the coffee's brewing, how\u2019s your day been?"
   SceneLayout: {fileID: 4013209074157953501, guid: 73f79cb0b14b30641bacb71b9f70ee86,
     type: 3}
   child: {fileID: 7061785406782886894}
@@ -259,8 +258,8 @@ MonoBehaviour:
   position: {x: 14.996026, y: 231.87279}
   state: 1
   Speaker: Ash
-  Dialogue: "Thank you so much for your patience. I swear this one won\u2019t have
-    coffee grounds in it."
+  Dialogue: Thank you so much for your patience. I swear this one won't have coffee
+    grounds in it.
   SceneLayout: {fileID: 3426172272630945159, guid: 40c056cf92b891a40a47b064f7e5337b,
     type: 3}
   child: {fileID: 8969782577876773543}
@@ -507,9 +506,8 @@ MonoBehaviour:
   - {fileID: -5436861685716122522}
   - {fileID: 2253602552801157925}
   - {fileID: -7454615305994728507}
-  - {fileID: 7792594917107288008}
-  - {fileID: -5290096751104546157}
   - {fileID: 8008167083096878563}
+  - {fileID: -9014597581593591665}
 --- !u!114 &242187080314863902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1138,29 +1136,6 @@ MonoBehaviour:
     type: 3}
   child: {fileID: -5528964241518029803}
   DialogueActions: []
---- !u!114 &7792594917107288008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
-  m_Name: DialogueSpeechNode
-  m_EditorClassIdentifier: 
-  started: 0
-  GUID: f8f22dba79ea8694da8fc8de4711921a
-  position: {x: 285, y: -30}
-  state: 1
-  Speaker: Ash
-  Dialogue: '(Today, as we opened up, I was happy to see one of our regular customers,
-    Eri, come in.) '
-  SceneLayout: {fileID: 5773956935742706572, guid: 6830f1024234169488231454a25ec890,
-    type: 3}
-  child: {fileID: -5290096751104546157}
-  DialogueActions: []
 --- !u!114 &7930649620633966309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1198,13 +1173,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   started: 0
   GUID: 9892df21e9fb2fa478107483049656c0
-  position: {x: 683, y: -15}
+  position: {x: 353, y: -6}
   state: 1
   Speaker: Ash
-  Dialogue: I'm so sorry! I'll make it again right now!
-  SceneLayout: {fileID: 886175008765266246, guid: 6bb3d8a991769c348bba968112c31f87,
+  Dialogue: Alright, got the recipe right this time, your coffee will be done in
+    a bit!
+  SceneLayout: {fileID: 5260117832283239804, guid: e623b6cc338cbda488efda35c486957b,
     type: 3}
-  child: {fileID: -8959344014219776515}
+  child: {fileID: -9014597581593591665}
   DialogueActions: []
 --- !u!114 &8783885137310559384
 MonoBehaviour:
