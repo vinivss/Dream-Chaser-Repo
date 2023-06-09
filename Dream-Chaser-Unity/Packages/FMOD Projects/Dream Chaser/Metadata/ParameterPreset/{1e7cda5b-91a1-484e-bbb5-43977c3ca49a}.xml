@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{1e7cda5b-91a1-484e-bbb5-43977c3ca49a}">
+		<property name="name">
+			<value>Jingle</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5d9d5d25-1d6a-45b2-80a1-c805055d75fc}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{72db5e86-2c2c-47cd-aba4-8880e55934b6}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{72db5e86-2c2c-47cd-aba4-8880e55934b6}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
