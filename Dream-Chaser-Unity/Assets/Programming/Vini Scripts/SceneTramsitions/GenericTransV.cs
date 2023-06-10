@@ -17,11 +17,11 @@ public class GenericTransV : MonoBehaviour
     // Update is called once per frame
     public void Awake()
     {
-
+        VNaudio = FindObjectOfType<VNAudioManager>();
     }
     public void ChangeScene()
     {
-        //VNaudio.musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        VNaudio.thanos();
         StartCoroutine(LoadSceneAsync());
 
 
