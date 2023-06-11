@@ -72,13 +72,12 @@ public class EnemyAI : MonoBehaviour
     // teleport boss between checkpoints
     private void teleport()
     {
-        if (checkpoint.currentCheckpoint() != player.cpcount.currentCheckpoint() && checkpoint.totalCheckpoints > player.cpcount.totalCheckpoints)
+        if (checkpoint.currentCheckpoint() != player.cpcount.currentCheckpoint() && checkpoint.totalCheckpoints > player.cpcount.currentCheckpoint())
         {
             StartCoroutine("attackCooldown");
             checkpoint.arriveCheckpoint();
-            enemyObject.transform.position = checkpointLocation[checkpoint.currentCheckpoint()+1].position;
+            enemyObject.transform.position = checkpointLocation[checkpoint.currentCheckpoint()].position;
             enemyObject.transform.position = new Vector3(enemyObject.transform.position.x, enemyObject.transform.position.y + 100, enemyObject.transform.position.z);
-            Debug.Log("tp to " + checkpoint.currentCheckpoint());
         }
 
     }

@@ -23882,7 +23882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7e85685567e314db2030b9263f3332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalCheckpoints: 3
+  totalCheckpoints: 4
 --- !u!114 &9222043320405522542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23902,6 +23902,7 @@ MonoBehaviour:
     type: 3}
   checkpoint: {fileID: 9222043320405522541}
   checkpointLocation:
+  - {fileID: 1958519080}
   - {fileID: 275125245}
   - {fileID: 1514631604}
   - {fileID: 1376658611}
