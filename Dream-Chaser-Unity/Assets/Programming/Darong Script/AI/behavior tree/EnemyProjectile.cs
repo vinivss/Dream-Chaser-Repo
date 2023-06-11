@@ -43,6 +43,7 @@ public class EnemyProjectile : MonoBehaviour
             Vector3 rotationAmount = Vector3.Cross(transform.forward,direction);
             rb.angularVelocity = rotationAmount * rotationForce;
             rb.velocity = transform.forward * lanuchForce;
+            transform.LookAt(player.position);
         }
         
         Destroy(gameObject, destroyTime); // destroy bullet if not hit
@@ -68,6 +69,7 @@ public class EnemyProjectile : MonoBehaviour
 
 
             }
+            Debug.Log("destroy at " + other.gameObject.tag);
             Destroy(gameObject);
         }
         
