@@ -1,185 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9191760075065634750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Main Menu/Menu
-  m_EditorClassIdentifier: 
-  Name: Menu
-  StudioPath: 
-  Min: 0
-  Max: 22
-  Default: 0
-  ID:
-    data1: 289523703
-    data2: 390305682
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - 0
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
-  - 13
-  - 14
-  - 15
-  - 16
-  - 17
-  - 18
-  - 19
-  - 20
-  - 21
-  - 22
-  Exists: 1
---- !u!114 &-8167518612154619760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Temp Main Menu
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Temp Main Menu
-  Guid:
-    Data1: -1800905296
-    Data2: 1157350774
-    Data3: 766976919
-    Data4: -39068787
-  Banks:
-  - {fileID: 7302839062769828310}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -4733948980764046442}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-7767211149372095653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/2.5D-JohnJingle
-  m_EditorClassIdentifier: 
-  Path: event:/Music/2.5D-JohnJingle
-  Guid:
-    Data1: 867520913
-    Data2: 1198662362
-    Data3: 2067898523
-    Data4: 1190194147
-  Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5394
---- !u!114 &-7628555400154078116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/2.5D-CafeTheme/Jingle
-  m_EditorClassIdentifier: 
-  Name: Jingle
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 960622880
-    data2: 962624062
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-7323807771653736412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/3D-BossLevel
-  m_EditorClassIdentifier: 
-  Path: event:/Music/3D-BossLevel
-  Guid:
-    Data1: -701304753
-    Data2: 1113360808
-    Data3: 385072795
-    Data4: 928699863
-  Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 42068
---- !u!114 &-6383713890075030965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PrebossLevel/pause
-  m_EditorClassIdentifier: 
-  Name: pause
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3076259516
-    data2: 695595044
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-6366675326653119088
+--- !u!114 &-9110413785908534333
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,187 +19,17 @@ MonoBehaviour:
     Data3: 272426674
     Data4: -1905252202
   Banks:
-  - {fileID: 7302839062769828310}
+  - {fileID: 6033402430906017670}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -6383713890075030965}
-  - {fileID: 7752340262165647403}
+  - {fileID: -1107273736228710193}
+  - {fileID: -6058854888533052772}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-5734077326184553534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/OnDeath
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/OnDeath
-  Guid:
-    Data1: -45974116
-    Data2: 1319878154
-    Data3: 637883576
-    Data4: -1402116632
-  Banks:
-  - {fileID: -2143727860889413904}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4101
---- !u!114 &-5104551956935264596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODBanks/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638219214781688490
-  FileSizes:
-  - Name: Desktop
-    Value: 2296
-  Exists: 1
---- !u!114 &-4750023305957881825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/2.5D-SpencerJingle
-  m_EditorClassIdentifier: 
-  Path: event:/Music/2.5D-SpencerJingle
-  Guid:
-    Data1: -314694381
-    Data2: 1308025721
-    Data3: 698694819
-    Data4: 813599308
-  Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4786
---- !u!114 &-4733948980764046442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Temp Main Menu/Menu
-  m_EditorClassIdentifier: 
-  Name: Menu
-  StudioPath: 
-  Min: 0
-  Max: 22
-  Default: 0
-  ID:
-    data1: 289523703
-    data2: 390305682
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - 0
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
-  - 13
-  - 14
-  - 15
-  - 16
-  - 17
-  - 18
-  - 19
-  - 20
-  - 21
-  - 22
-  Exists: 1
---- !u!114 &-2812362282075462281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/TempMainLevelMusic
-  m_EditorClassIdentifier: 
-  Path: event:/Music/TempMainLevelMusic
-  Guid:
-    Data1: 1214216235
-    Data2: 1139853314
-    Data3: 1069253004
-    Data4: 311632088
-  Banks:
-  - {fileID: 7302839062769828310}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -1467117139105030627}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2143727860889413904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODBanks/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638219214784758490
-  FileSizes:
-  - Name: Desktop
-    Value: 84832
-  Exists: 1
---- !u!114 &-1900414604225562802
+--- !u!114 &-8454984392921482924
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -408,399 +59,7 @@ MonoBehaviour:
   - Checkpoint4
   - Checkpoint5
   Exists: 1
---- !u!114 &-1863896066178026036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/2D-TitleTheme
-  m_EditorClassIdentifier: 
-  Path: event:/Music/2D-TitleTheme
-  Guid:
-    Data1: -1226013185
-    Data2: 1278988270
-    Data3: -1958295386
-    Data4: 1343902134
-  Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 128198
---- !u!114 &-1608938495117679802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/MUS-Eri's_Theme
-  m_EditorClassIdentifier: 
-  Path: event:/Music/MUS-Eri's_Theme
-  Guid:
-    Data1: -75123881
-    Data2: 1113100890
-    Data3: 296328833
-    Data4: -791276211
-  Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 160000
---- !u!114 &-1467117139105030627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/TempMainLevelMusic/checkpoint
-  m_EditorClassIdentifier: 
-  Name: checkpoint
-  StudioPath: 
-  Min: 0
-  Max: 5
-  Default: 1
-  ID:
-    data1: 4016449167
-    data2: 2620829399
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Intro
-  - Checkpoint1
-  - Checkpoint2
-  - Checkpoint3
-  - Checkpoint4
-  - Checkpoint5
-  Exists: 1
---- !u!114 &-1417923093680573031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wind/wind_intensity
-  m_EditorClassIdentifier: 
-  Name: wind_intensity
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1667737536
-    data2: 2705890472
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-684723900213487986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Background
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Background
-  Guid:
-    Data1: -1182773388
-    Data2: 1259529088
-    Data3: -1029958743
-    Data4: 1703026419
-  Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 2142625820096240699}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 346174
---- !u!114 &-265908115004069433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/OnResume
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/OnResume
-  Guid:
-    Data1: -2077909081
-    Data2: 1272813767
-    Data3: -1551397224
-    Data4: 1075404695
-  Banks:
-  - {fileID: -2143727860889413904}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1124
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -5104551956935264596}
-  - {fileID: 451773293135556019}
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
-  - {fileID: -2143727860889413904}
-  EditorEvents:
-  - {fileID: 6315489373106589348}
-  - {fileID: 4308309468533420}
-  - {fileID: -1608938495117679802}
-  - {fileID: 8237917853001851009}
-  - {fileID: -684723900213487986}
-  - {fileID: 5079604008482260743}
-  - {fileID: 6043416293734288575}
-  - {fileID: -2812362282075462281}
-  - {fileID: -6366675326653119088}
-  - {fileID: 8882844842017985255}
-  - {fileID: 8519751380926152536}
-  - {fileID: 3579016684172622951}
-  - {fileID: 2421812008988042859}
-  - {fileID: -5734077326184553534}
-  - {fileID: -265908115004069433}
-  - {fileID: 918326645963156107}
-  - {fileID: -4750023305957881825}
-  - {fileID: -7323807771653736412}
-  - {fileID: 645902079080186129}
-  - {fileID: 1775478519986621823}
-  - {fileID: -7767211149372095653}
-  - {fileID: -1863896066178026036}
-  - {fileID: -8167518612154619760}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 1435342658030176151}
-  StringsBanks:
-  - {fileID: -5104551956935264596}
-  cacheTime: 638219214784758490
-  cacheVersion: 131601
---- !u!114 &4308309468533420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience/Cricket
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/Cricket
-  Guid:
-    Data1: -871341868
-    Data2: 1255529031
-    Data3: 1846287244
-    Data4: -1787105488
-  Banks:
-  - {fileID: 451773293135556019}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6706
---- !u!114 &189255628010561554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/2.5D-CafeTheme/pause
-  m_EditorClassIdentifier: 
-  Name: pause
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3076259516
-    data2: 695595044
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &451773293135556019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambience.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODBanks/Desktop/Ambience.bank
-  Name: Ambience
-  StudioPath: bank:/Ambience
-  lastModified: 638219214780618496
-  FileSizes:
-  - Name: Desktop
-    Value: 85632
-  Exists: 1
---- !u!114 &645902079080186129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/2.5D-CafeTheme
-  m_EditorClassIdentifier: 
-  Path: event:/Music/2.5D-CafeTheme
-  Guid:
-    Data1: 34278273
-    Data2: 1201618051
-    Data3: -1822077310
-    Data4: 1872776690
-  Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7628555400154078116}
-  - {fileID: 189255628010561554}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 184000
---- !u!114 &918326645963156107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/2.5D-AmandaJingle
-  m_EditorClassIdentifier: 
-  Path: event:/Music/2.5D-AmandaJingle
-  Guid:
-    Data1: -741330932
-    Data2: 1101148561
-    Data3: -1386800493
-    Data4: 1470018482
-  Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5384
---- !u!114 &1435342658030176151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODBanks/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638219214781668485
-  FileSizes:
-  - Name: Desktop
-    Value: 16408480
-  Exists: 1
---- !u!114 &1775478519986621823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/2D-Maple's_Theme
-  m_EditorClassIdentifier: 
-  Path: event:/Music/2D-Maple's_Theme
-  Guid:
-    Data1: -1317636223
-    Data2: 1274130379
-    Data3: -2061042299
-    Data4: 500282908
-  Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 137647
---- !u!114 &2142625820096240699
+--- !u!114 &-8143128198088643318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -847,7 +106,31 @@ MonoBehaviour:
   - 21
   - 22
   Exists: 1
---- !u!114 &2421812008988042859
+--- !u!114 &-8139327653701923052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/2.5D-CafeTheme/pause
+  m_EditorClassIdentifier: 
+  Name: pause
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3076259516
+    data2: 695595044
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6690235619449242729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -866,7 +149,7 @@ MonoBehaviour:
     Data3: 574705575
     Data4: 73943710
   Banks:
-  - {fileID: -2143727860889413904}
+  - {fileID: -2580620892165949591}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -874,118 +157,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 320
---- !u!114 &3579016684172622951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/OnPause
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/OnPause
-  Guid:
-    Data1: 1023206685
-    Data2: 1334976358
-    Data3: 49336212
-    Data4: 456605170
-  Banks:
-  - {fileID: -2143727860889413904}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1969
---- !u!114 &5079604008482260743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/MUS-PrebossLevel_Section1Only
-  m_EditorClassIdentifier: 
-  Path: event:/Music/MUS-PrebossLevel_Section1Only
-  Guid:
-    Data1: -1966657342
-    Data2: 1304401125
-    Data3: -1102155083
-    Data4: -846236515
-  Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 40975
---- !u!114 &6043416293734288575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/HitObject
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/HitObject
-  Guid:
-    Data1: 366761934
-    Data2: 1309970896
-    Data3: -1154113628
-    Data4: 276779348
-  Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: -2143727860889413904}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &6315489373106589348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience/Wind
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/Wind
-  Guid:
-    Data1: -1302213113
-    Data2: 1256571277
-    Data3: -748400978
-    Data4: 696840385
-  Banks:
-  - {fileID: 451773293135556019}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -1417923093680573031}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6706
---- !u!114 &7302839062769828310
+--- !u!114 &-6664752285119294574
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -995,17 +167,132 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMODBanks/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 638219214784728491
+  Path: Assets/FMODBanks/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638218755369000247
   FileSizes:
   - Name: Desktop
-    Value: 60813536
+    Value: 2296
   Exists: 1
---- !u!114 &7752340262165647403
+--- !u!114 &-6651184050511071229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/3D-BossLevel
+  m_EditorClassIdentifier: 
+  Path: event:/Music/3D-BossLevel
+  Guid:
+    Data1: -701304753
+    Data2: 1113360808
+    Data3: 385072795
+    Data4: 928699863
+  Banks:
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42068
+--- !u!114 &-6507349390861308446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2.5D-AmandaJingle
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2.5D-AmandaJingle
+  Guid:
+    Data1: -741330932
+    Data2: 1101148561
+    Data3: -1386800493
+    Data4: 1470018482
+  Banks:
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5384
+--- !u!114 &-6486793054083724577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Background
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Background
+  Guid:
+    Data1: -1182773388
+    Data2: 1259529088
+    Data3: -1029958743
+    Data4: 1703026419
+  Banks:
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8143128198088643318}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 346174
+--- !u!114 &-6169592032548938445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TempMainLevelMusic/checkpoint
+  m_EditorClassIdentifier: 
+  Name: checkpoint
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 1
+  ID:
+    data1: 4016449167
+    data2: 2620829399
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Intro
+  - Checkpoint1
+  - Checkpoint2
+  - Checkpoint3
+  - Checkpoint4
+  - Checkpoint5
+  Exists: 1
+--- !u!114 &-6058854888533052772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1035,7 +322,7 @@ MonoBehaviour:
   - Checkpoint4
   - Checkpoint5
   Exists: 1
---- !u!114 &8237917853001851009
+--- !u!114 &-3898367497621105348
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1054,17 +341,481 @@ MonoBehaviour:
     Data3: -790107989
     Data4: 2011872163
   Banks:
-  - {fileID: 1435342658030176151}
-  - {fileID: 7302839062769828310}
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -1900414604225562802}
+  - {fileID: -8454984392921482924}
   MinDistance: 1
   MaxDistance: 20
   Length: 185071
---- !u!114 &8519751380926152536
+--- !u!114 &-2889471534840843484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/HitObject
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/HitObject
+  Guid:
+    Data1: 366761934
+    Data2: 1309970896
+    Data3: -1154113628
+    Data4: 276779348
+  Banks:
+  - {fileID: 7744133280292577929}
+  - {fileID: -2580620892165949591}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2821892468061107409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Wind/wind_intensity
+  m_EditorClassIdentifier: 
+  Name: wind_intensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1667737536
+    data2: 2705890472
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2580620892165949591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638218755377800804
+  FileSizes:
+  - Name: Desktop
+    Value: 84832
+  Exists: 1
+--- !u!114 &-2096434212242595436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638218755367276811
+  FileSizes:
+  - Name: Desktop
+    Value: 85632
+  Exists: 1
+--- !u!114 &-1650331850263293497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/OnDeath
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/OnDeath
+  Guid:
+    Data1: -45974116
+    Data2: 1319878154
+    Data3: 637883576
+    Data4: -1402116632
+  Banks:
+  - {fileID: -2580620892165949591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4101
+--- !u!114 &-1486345181583855474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2.5D-SpencerJingle
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2.5D-SpencerJingle
+  Guid:
+    Data1: -314694381
+    Data2: 1308025721
+    Data3: 698694819
+    Data4: 813599308
+  Banks:
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4786
+--- !u!114 &-1107273736228710193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PrebossLevel/pause
+  m_EditorClassIdentifier: 
+  Name: pause
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3076259516
+    data2: 695595044
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-366181295188477692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2.5D-CafeTheme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2.5D-CafeTheme
+  Guid:
+    Data1: 34278273
+    Data2: 1201618051
+    Data3: -1822077310
+    Data4: 1872776690
+  Banks:
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8549933276234285253}
+  - {fileID: -8139327653701923052}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 184000
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -6664752285119294574}
+  - {fileID: -2096434212242595436}
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
+  - {fileID: -2580620892165949591}
+  EditorEvents:
+  - {fileID: 8379062378776699034}
+  - {fileID: 7264059757164551685}
+  - {fileID: -6507349390861308446}
+  - {fileID: -1486345181583855474}
+  - {fileID: -6651184050511071229}
+  - {fileID: 9123507866373065888}
+  - {fileID: -3898367497621105348}
+  - {fileID: -6486793054083724577}
+  - {fileID: -366181295188477692}
+  - {fileID: 3408448548879754442}
+  - {fileID: 3437413792415668591}
+  - {fileID: 2798072569314601026}
+  - {fileID: -2889471534840843484}
+  - {fileID: 747744258815784987}
+  - {fileID: 1029331229916981379}
+  - {fileID: -9110413785908534333}
+  - {fileID: 4396689585064714059}
+  - {fileID: 4056601352833235636}
+  - {fileID: 4047503094684544707}
+  - {fileID: 1583379594877944309}
+  - {fileID: -6690235619449242729}
+  - {fileID: -1650331850263293497}
+  - {fileID: 7189333245795904606}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 7744133280292577929}
+  StringsBanks:
+  - {fileID: -6664752285119294574}
+  cacheTime: 638218755377800804
+  cacheVersion: 131601
+--- !u!114 &747744258815784987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2D-TitleTheme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2D-TitleTheme
+  Guid:
+    Data1: -1226013185
+    Data2: 1278988270
+    Data3: -1958295386
+    Data4: 1343902134
+  Banks:
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 128198
+--- !u!114 &1029331229916981379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/TempMainLevelMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/TempMainLevelMusic
+  Guid:
+    Data1: 1214216235
+    Data2: 1139853314
+    Data3: 1069253004
+    Data4: 311632088
+  Banks:
+  - {fileID: 6033402430906017670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6169592032548938445}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1583379594877944309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/OnPause
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/OnPause
+  Guid:
+    Data1: 1023206685
+    Data2: 1334976358
+    Data3: 49336212
+    Data4: 456605170
+  Banks:
+  - {fileID: -2580620892165949591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1969
+--- !u!114 &2798072569314601026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MUS-PrebossLevel_Section1Only
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MUS-PrebossLevel_Section1Only
+  Guid:
+    Data1: -1966657342
+    Data2: 1304401125
+    Data3: -1102155083
+    Data4: -846236515
+  Banks:
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40975
+--- !u!114 &3408448548879754442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2D-Maple's_Theme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2D-Maple's_Theme
+  Guid:
+    Data1: -1317636223
+    Data2: 1274130379
+    Data3: -2061042299
+    Data4: 500282908
+  Banks:
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 137647
+--- !u!114 &3437413792415668591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2.5D-JohnJingle
+  m_EditorClassIdentifier: 
+  Path: event:/Music/2.5D-JohnJingle
+  Guid:
+    Data1: 867520913
+    Data2: 1198662362
+    Data3: 2067898523
+    Data4: 1190194147
+  Banks:
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5394
+--- !u!114 &4018038463777748456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Menu/Menu
+  m_EditorClassIdentifier: 
+  Name: Menu
+  StudioPath: 
+  Min: 0
+  Max: 22
+  Default: 0
+  ID:
+    data1: 289523703
+    data2: 390305682
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  Exists: 1
+--- !u!114 &4047503094684544707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1083,7 +834,7 @@ MonoBehaviour:
     Data3: 1763897770
     Data4: -2111898211
   Banks:
-  - {fileID: -2143727860889413904}
+  - {fileID: -2580620892165949591}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1091,7 +842,35 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 770
---- !u!114 &8882844842017985255
+--- !u!114 &4056601352833235636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Temp Main Menu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Temp Main Menu
+  Guid:
+    Data1: -1800905296
+    Data2: 1157350774
+    Data3: 766976919
+    Data4: -39068787
+  Banks:
+  - {fileID: 6033402430906017670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6662291719422226024}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4396689585064714059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1110,12 +889,233 @@ MonoBehaviour:
     Data3: 101871767
     Data4: 1624167353
   Banks:
-  - {fileID: 7302839062769828310}
+  - {fileID: 6033402430906017670}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -9191760075065634750}
+  - {fileID: 4018038463777748456}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6033402430906017670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638218755377720957
+  FileSizes:
+  - Name: Desktop
+    Value: 60813536
+  Exists: 1
+--- !u!114 &6662291719422226024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Temp Main Menu/Menu
+  m_EditorClassIdentifier: 
+  Name: Menu
+  StudioPath: 
+  Min: 0
+  Max: 22
+  Default: 0
+  ID:
+    data1: 289523703
+    data2: 390305682
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  Exists: 1
+--- !u!114 &7189333245795904606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/OnResume
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/OnResume
+  Guid:
+    Data1: -2077909081
+    Data2: 1272813767
+    Data3: -1551397224
+    Data4: 1075404695
+  Banks:
+  - {fileID: -2580620892165949591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1124
+--- !u!114 &7264059757164551685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Cricket
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Cricket
+  Guid:
+    Data1: -871341868
+    Data2: 1255529031
+    Data3: 1846287244
+    Data4: -1787105488
+  Banks:
+  - {fileID: -2096434212242595436}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6706
+--- !u!114 &7744133280292577929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638218755368985154
+  FileSizes:
+  - Name: Desktop
+    Value: 16408480
+  Exists: 1
+--- !u!114 &8379062378776699034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Wind
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Wind
+  Guid:
+    Data1: -1302213113
+    Data2: 1256571277
+    Data3: -748400978
+    Data4: 696840385
+  Banks:
+  - {fileID: -2096434212242595436}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2821892468061107409}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6706
+--- !u!114 &8549933276234285253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/2.5D-CafeTheme/Jingle
+  m_EditorClassIdentifier: 
+  Name: Jingle
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 960622880
+    data2: 962624062
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &9123507866373065888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MUS-Eri's_Theme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MUS-Eri's_Theme
+  Guid:
+    Data1: -75123881
+    Data2: 1113100890
+    Data3: 296328833
+    Data4: -791276211
+  Banks:
+  - {fileID: 7744133280292577929}
+  - {fileID: 6033402430906017670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 160000

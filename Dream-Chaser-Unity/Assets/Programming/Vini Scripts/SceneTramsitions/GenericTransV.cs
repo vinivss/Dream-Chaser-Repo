@@ -21,7 +21,10 @@ public class GenericTransV : MonoBehaviour
     }
     public void ChangeScene()
     {
-        VNaudio.thanos();
+        if (VNaudio != null)
+        {
+            VNaudio.thanos();
+        }
         StartCoroutine(LoadSceneAsync());
 
 

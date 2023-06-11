@@ -62,7 +62,7 @@ MonoBehaviour:
   Dialogue: (Just got to make sure I don't mess it up this time. You got this, Ash!)
   SceneLayout: {fileID: 5223557329996340103, guid: 6e14841860409354abc3f55452bf75cf,
     type: 3}
-  child: {fileID: -2392094601472354937}
+  child: {fileID: -5205102071903400473}
   DialogueActions: []
 --- !u!114 &-6626387422917718525
 MonoBehaviour:
@@ -104,7 +104,7 @@ MonoBehaviour:
   position: {x: 1159, y: 73}
   state: 1
   Speaker: Ash
-  Dialogue: You wanted an Matcha Delgona, right?
+  Dialogue: You wanted a Matcha Delgona, right?
   SceneLayout: {fileID: 5773956935742706572, guid: f1e238173c3edc748897c3ec765f2dff,
     type: 3}
   child: {fileID: -8866373303929269756}
@@ -131,6 +131,29 @@ MonoBehaviour:
   SceneLayout: {fileID: 0}
   child: {fileID: 8793680898974015499}
   DialogueActions: []
+--- !u!114 &-5205102071903400473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: a65e052b7096de9469560875863772de
+  position: {x: 1549.1948, y: 193.68935}
+  state: 1
+  Speaker: Ash
+  Dialogue: (I should go to the coffee machine behind to counter to start making
+    coffee.)
+  SceneLayout: {fileID: 5773956935742706572, guid: ce01de7b5ca8b5d41ad5bf7f598b51e6,
+    type: 3}
+  child: {fileID: -3253407112740740431}
+  DialogueActions: []
 --- !u!114 &-4574548778418306659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +174,28 @@ MonoBehaviour:
   Dialogue: (The Dream Chaser.)
   SceneLayout: {fileID: 0}
   child: {fileID: 8515137264094672602}
+  DialogueActions: []
+--- !u!114 &-3253407112740740431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 0a00498409cb3e8459bcae29235b22f5
+  position: {x: 1746.512, y: 179.40256}
+  state: 1
+  Speaker: Ash
+  Dialogue: (And to make Eri's drink, I believe the recipe was...)
+  SceneLayout: {fileID: 5773956935742706572, guid: ce01de7b5ca8b5d41ad5bf7f598b51e6,
+    type: 3}
+  child: {fileID: -2152506460110316522}
   DialogueActions: []
 --- !u!114 &-2861959353448552767
 MonoBehaviour:
@@ -189,11 +234,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   started: 0
   GUID: 731501bab6c68354b8e7262dfbace974
-  position: {x: 1889.9412, y: 90.99993}
+  position: {x: 2153.8042, y: 200.9483}
   state: 1
   Speaker: 
   Dialogue: 
   SceneLayout: {fileID: 0}
+--- !u!114 &-2152506460110316522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 6e04a5c78e771b545a951f6d92e8934b
+  position: {x: 1907.4208, y: 151.41846}
+  state: 1
+  Speaker: Ash
+  Dialogue: (Double ice, milk, matcha, whipped cream, and arabica beans made using
+    the machine.)
+  SceneLayout: {fileID: 5773956935742706572, guid: ce01de7b5ca8b5d41ad5bf7f598b51e6,
+    type: 3}
+  child: {fileID: -2392094601472354937}
+  DialogueActions: []
 --- !u!114 &-1171819843961670723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,6 +406,9 @@ MonoBehaviour:
   - {fileID: 1203300896269666765}
   - {fileID: -6978944366050077541}
   - {fileID: -2392094601472354937}
+  - {fileID: -5205102071903400473}
+  - {fileID: -3253407112740740431}
+  - {fileID: -2152506460110316522}
 --- !u!114 &1009479084034699459
 MonoBehaviour:
   m_ObjectHideFlags: 0

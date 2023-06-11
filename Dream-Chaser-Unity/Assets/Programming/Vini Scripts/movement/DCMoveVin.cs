@@ -59,9 +59,9 @@ public class DCMoveVin : MonoBehaviour
     public  UnityEvent parameterName;
 
     public bool isAlive = true;
-    [SerializeField] public int playerHp;
+    //[SerializeField] public int playerHp;
 
-    [SerializeField] public PlayerHealth player_health;
+    //[SerializeField] public PlayerHealth player_health;
 
     private void Awake()
     {
@@ -70,7 +70,7 @@ public class DCMoveVin : MonoBehaviour
         Cam = FindObjectOfType<CinemachineVirtualCamera>();
         //startFOV = Cam.m_Lens.FieldOfView;
         DissolveScript = GetComponent<OnDeathDissolve>();
-        player_health = GetComponent<PlayerHealth>();
+        //player_health = GetComponent<PlayerHealth>();
     }
 
     //physics management
@@ -91,7 +91,7 @@ public class DCMoveVin : MonoBehaviour
                 rb.drag = normDrag;
             }
         }
-        respawn();
+        //respawn();
         UpdateSound();
     }
 
@@ -195,13 +195,13 @@ public class DCMoveVin : MonoBehaviour
         return rb.velocity;
     }
 
-    public void respawn()
-    {
-        // if player is not alive, call playerdeath()
-        if (!player_health.healthCheck())
-        {
-            PlayerDeath();
-        }
-    }
+    // public void respawn()
+    // {
+    //     // if player is not alive, call playerdeath()
+    //     if (!player_health.healthCheck())
+    //     {
+    //         PlayerDeath();
+    //     }
+    // }
 
 }
