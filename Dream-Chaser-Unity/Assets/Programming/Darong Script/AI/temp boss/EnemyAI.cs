@@ -36,7 +36,6 @@ public class EnemyAI : MonoBehaviour
         checkpoint = GetComponent<CheckpointIndex>();
         meshAgent = GetComponent<NavMeshAgent>();
         */
-        gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
         playerObject = GameObject.Find("TruePlayer");
     }
 
@@ -73,11 +72,11 @@ public class EnemyAI : MonoBehaviour
     // teleport boss between checkpoints
     private void teleport()
     {
-        if (checkpoint.currentCheckpoint() != gameManager.cpCount && checkpoint.totalCheckpoints > gameManager.cpCount)
+        if (checkpoint.currentCheckpoint() != player.cpcount.currentCheckpoint() && checkpoint.totalCheckpoints > player.cpcount.totalCheckpoints)
         {
             StartCoroutine("attackCooldown");
             checkpoint.arriveCheckpoint();
-            enemyObject.transform.position = checkpointLocation[checkpoint.currentCheckpoint()].position;
+            enemyObject.transform.position = checkpointLocation[checkpoint.currentCheckpoint()+1].position;
             enemyObject.transform.position = new Vector3(enemyObject.transform.position.x, enemyObject.transform.position.y + 100, enemyObject.transform.position.z);
             Debug.Log("tp to " + checkpoint.currentCheckpoint());
         }

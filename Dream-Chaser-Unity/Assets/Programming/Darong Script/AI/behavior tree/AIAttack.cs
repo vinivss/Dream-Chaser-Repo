@@ -7,8 +7,6 @@ public class AIAttack : AIActionNode
 {
 
     private DCMoveVin player;
-    private float _attackTime = 1f;
-    private float _attackCounter = 0f;
 
     protected override void OnStart()
     {
@@ -23,7 +21,6 @@ public class AIAttack : AIActionNode
     {
         player = agent.player;
         agent.attack();
-        _attackCounter = 0f;
 
         if (agent.player_health.healthCheck())
         {

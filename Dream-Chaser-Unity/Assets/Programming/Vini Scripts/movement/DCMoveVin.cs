@@ -61,7 +61,7 @@ public class DCMoveVin : MonoBehaviour
     public bool isAlive = true;
     //[SerializeField] public int playerHp;
 
-    //[SerializeField] public PlayerHealth player_health;
+    [SerializeField] public CheckpointIndex cpcount;
 
     private void Awake()
     {
@@ -163,6 +163,7 @@ public class DCMoveVin : MonoBehaviour
         DissolveScript.OnPlayerDeath();
     }
 
+    // Darong : FixBouncing(), currentPlayerPos(), getCurrentVelocity(), check collision
     private void FixBouncing()
     {
 
@@ -195,13 +196,9 @@ public class DCMoveVin : MonoBehaviour
         return rb.velocity;
     }
 
-    // public void respawn()
-    // {
-    //     // if player is not alive, call playerdeath()
-    //     if (!player_health.healthCheck())
-    //     {
-    //         PlayerDeath();
-    //     }
-    // }
+    private void OnCollisionEnter(Collision other)
+    {
+        Debug.Log(other.gameObject.tag + " " + other.gameObject.transform.position);
+    }
 
 }

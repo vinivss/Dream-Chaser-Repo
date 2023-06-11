@@ -21,6 +21,7 @@ public class Checkpoint : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            Debug.Log("arrive checkpoint");
             if(gameManager.lastCheckpointPosition != transform.position){
                 gameManager.lastCheckpointPosition = transform.position;
                 pointsAtCheckpoint = gameManager.cpPoints;
