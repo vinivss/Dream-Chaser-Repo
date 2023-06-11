@@ -22,6 +22,29 @@ MonoBehaviour:
     type: 3}
   child: {fileID: 5238313667683716422}
   DialogueActions: []
+--- !u!114 &-6389099801569088003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 602f8101d4aaa4d48a0a9ca4e626e37e
+  position: {x: 1763.4207, y: -129.9007}
+  state: 0
+  Speaker: Ash
+  Dialogue: (I should go to the coffee machine behind to counter to start making
+    coffee.)
+  SceneLayout: {fileID: 5773956935742706572, guid: ce01de7b5ca8b5d41ad5bf7f598b51e6,
+    type: 3}
+  child: {fileID: 0}
+  DialogueActions: []
 --- !u!114 &-3958377227319924748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   started: 0
   GUID: 7a7f906a8e3cd9f469137e8f22c53b6a
-  position: {x: 1752, y: -113.76001}
+  position: {x: 2529.093, y: -28.878593}
   state: 1
   Speaker: 
   Dialogue: 
@@ -62,7 +85,7 @@ MonoBehaviour:
     one more time...)
   SceneLayout: {fileID: 5223557329996340103, guid: 6e14841860409354abc3f55452bf75cf,
     type: 3}
-  child: {fileID: -3958377227319924748}
+  child: {fileID: -6389099801569088003}
   DialogueActions: []
 --- !u!114 &-1694501110118129383
 MonoBehaviour:
@@ -111,6 +134,9 @@ MonoBehaviour:
   - {fileID: 8623937165104112369}
   - {fileID: -2268683433073948328}
   - {fileID: -3958377227319924748}
+  - {fileID: 6629585216009467695}
+  - {fileID: -6389099801569088003}
+  - {fileID: 7658442393193312421}
 --- !u!114 &2749719642249249359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +202,50 @@ MonoBehaviour:
   SceneLayout: {fileID: 5223557329996340103, guid: 6e14841860409354abc3f55452bf75cf,
     type: 3}
   child: {fileID: 2749719642249249359}
+  DialogueActions: []
+--- !u!114 &6629585216009467695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: 5c283a96984e57f44924a4a55831bcd2
+  position: {x: 2267, y: -35}
+  state: 0
+  Speaker: Ash
+  Dialogue: (Double ice, milk, matcha, whipped cream, and arabica beans made using
+    the machine.)
+  SceneLayout: {fileID: 5773956935742706572, guid: ce01de7b5ca8b5d41ad5bf7f598b51e6,
+    type: 3}
+  child: {fileID: -3958377227319924748}
+  DialogueActions: []
+--- !u!114 &7658442393193312421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5af3c21d24d2442ba15c0475c1c3a0, type: 3}
+  m_Name: DialogueSpeechNode
+  m_EditorClassIdentifier: 
+  started: 0
+  GUID: e5d2072eb643ef844934a85b17f148be
+  position: {x: 0, y: 0}
+  state: 0
+  Speaker: 
+  Dialogue: 
+  SceneLayout: {fileID: 0}
+  child: {fileID: 0}
   DialogueActions: []
 --- !u!114 &8158531529574406086
 MonoBehaviour:
