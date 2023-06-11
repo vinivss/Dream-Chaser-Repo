@@ -91,14 +91,14 @@ public class CoffeeManager : MonoBehaviour
             if (currentRecipe.RecipeIngreds.Contains(recipeToCheck.RecipeIngreds[i]))
             {
                 Recipe.RecipeIngredients temp = recipeToCheck.RecipeIngreds[i];
-                if (currentRecipe.RecipeIngreds[currentRecipe.RecipeIngreds.IndexOf(temp)].ingredientsCount == temp.ingredientsCount)
+                if (currentRecipe.RecipeIngreds[currentRecipe.RecipeIngreds.IndexOf(temp)].ingredientsCount != temp.ingredientsCount)
                 {
-                    return true;
+                    return false;
                 }
                 
             }
         }
-        return false;
+        return true;
 
     }
 

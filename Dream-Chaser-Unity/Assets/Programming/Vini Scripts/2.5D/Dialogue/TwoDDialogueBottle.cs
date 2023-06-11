@@ -4,10 +4,16 @@ using System.Collections.Generic;
 using Tools.Trees.Dialogue;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
+using FMOD.Studio;
 
 public class TwoDDialogueBottle : MonoBehaviour
 {
-    
+    //Jingles
+    [field: Header("Jingle")]
+    [field: SerializeField] public EventReference jingle {get; private set; }
+    EventInstance jingleInstance;
+    VNAudioManager audioM;
 
     DialogueManager dialogueManager;
     public bool hasRecipe = false;
@@ -27,12 +33,14 @@ public class TwoDDialogueBottle : MonoBehaviour
     {
         dialogueManager = FindObjectOfType<DialogueManager>();
         gameManager = FindObjectOfType<GameManager>();
-        
+        audioM = FindObjectOfType<VNAudioManager>();
+        jingleInstance = RuntimeManager.CreateInstance(jingle);
     }
 
     public void StartDialogue(DialogueTree Tree)
     {
-
+        jingleInstance.start();
+        audioM.fadeOut();
         if (Alternate == false)
         {
             Alternate = true;
@@ -71,6 +79,7 @@ public class TwoDDialogueBottle : MonoBehaviour
     }
     IEnumerator LoadSceneAsync(string sceneName)
     {
+        audioM.thanos();
         LoadingScreen = Instantiate(LoadingScreen, GameObject.FindObjectOfType<Canvas>().transform);
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
         while (!op.isDone)

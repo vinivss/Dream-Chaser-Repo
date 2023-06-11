@@ -11,11 +11,20 @@ public class GenericTransV : MonoBehaviour
 {
     public string GenScene;
     public GameObject LoadingScreen;
+    VNAudioManager VNaudio;
 
+    public static GenericTransV instance { get; private set;}
     // Update is called once per frame
+    public void Awake()
+    {
+        VNaudio = FindObjectOfType<VNAudioManager>();
+    }
     public void ChangeScene()
     {
+        VNaudio.thanos();
         StartCoroutine(LoadSceneAsync());
+
+
     }
     IEnumerator LoadSceneAsync()
     {
@@ -25,5 +34,8 @@ public class GenericTransV : MonoBehaviour
         {
             yield return null;
         }
+        if(op.isDone)
+        StopAllCoroutines();
+        
     }
 }
