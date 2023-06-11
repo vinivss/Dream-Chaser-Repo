@@ -6,9 +6,15 @@ public class Checkpoint : MonoBehaviour
 {
     GameManager gameManager;
     int pointsAtCheckpoint;
+    DCMoveVin player;
 
     private void Awake()
     {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<DCMoveVin>();
+        if (player == null)
+        {
+            Debug.Log("cant find player");
+        }
         gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
     }
     private void OnDrawGizmos()
@@ -21,12 +27,14 @@ public class Checkpoint : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Debug.Log("arrive checkpoint");
+            player.incrementCp();
+            
             if(gameManager.lastCheckpointPosition != transform.position){
                 gameManager.lastCheckpointPosition = transform.position;
                 pointsAtCheckpoint = gameManager.cpPoints;
                 gameManager.cpCount++;
-            }            
+            }        
+            
         }
     }
 }

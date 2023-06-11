@@ -23,6 +23,7 @@ public class CheckpointIndex : MonoBehaviour
         {
             finishLevel = true;
         }
+        Debug.Log(currentIndex);
     }
 
     public bool isFinish()

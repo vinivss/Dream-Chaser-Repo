@@ -59,7 +59,6 @@ public class DCMoveVin : MonoBehaviour
     public  UnityEvent parameterName;
 
     public bool isAlive = true;
-    //[SerializeField] public int playerHp;
 
     [SerializeField] public CheckpointIndex cpcount;
 
@@ -70,7 +69,7 @@ public class DCMoveVin : MonoBehaviour
         Cam = FindObjectOfType<CinemachineVirtualCamera>();
         //startFOV = Cam.m_Lens.FieldOfView;
         DissolveScript = GetComponent<OnDeathDissolve>();
-        //player_health = GetComponent<PlayerHealth>();
+        cpcount = GetComponent<CheckpointIndex>();
     }
 
     //physics management
@@ -196,9 +195,9 @@ public class DCMoveVin : MonoBehaviour
         return rb.velocity;
     }
 
-    private void OnCollisionEnter(Collision other)
+    public void incrementCp()
     {
-        Debug.Log(other.gameObject.tag + " " + other.gameObject.transform.position);
+        cpcount.arriveCheckpoint();
     }
 
 }
