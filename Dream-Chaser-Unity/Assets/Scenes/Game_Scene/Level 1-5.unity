@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15673213, g: 0.18860334, b: 0.2206476, a: 1}
+  m_IndirectSpecularColor: {r: 0.15671813, g: 0.1885796, b: 0.2206494, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1910,7 +1910,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.46934593, y: 0.07099927, z: -0.03789575, w: 0.8793392}
+  m_LocalRotation: {x: 0.4692975, y: 0.07211485, z: -0.03849119, w: 0.87924844}
   m_LocalPosition: {x: 3.77, y: 643.5, z: -1078.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6379,7 +6379,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131605041}
-  m_LocalRotation: {x: 0.46934593, y: 0.07099927, z: -0.03789575, w: 0.8793392}
+  m_LocalRotation: {x: 0.4692975, y: 0.07211485, z: -0.03849119, w: 0.87924844}
   m_LocalPosition: {x: 3.77, y: 643.5, z: -1078.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -89366,7 +89366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VnScene: VN_SadieScene2_Ryan
-  LoadingScreen: {fileID: 0}
+  LoadingScreen: {fileID: 497050463429123888, guid: fde17fd46f6556b4ba0674656340e65a,
+    type: 3}
 --- !u!114 &9140340354073807916
 MonoBehaviour:
   m_ObjectHideFlags: 0
