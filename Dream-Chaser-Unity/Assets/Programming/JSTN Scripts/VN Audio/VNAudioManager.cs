@@ -71,7 +71,7 @@ public class VNAudioManager : MonoBehaviour
     public void thanos(){
         musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         sfxEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        DestroyImmediate(gameObject);
+        Destroy(gameObject);
     }
 
     public EventInstance CreateInstance(EventReference eventReference){
