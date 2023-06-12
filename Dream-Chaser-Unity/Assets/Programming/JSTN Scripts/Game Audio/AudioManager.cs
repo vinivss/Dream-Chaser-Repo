@@ -125,7 +125,7 @@ public class AudioManager : MonoBehaviour
         pauseEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         musicEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);        
         ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        DestroyImmediate(gameObject);
+        Destroy(gameObject);
     }
 
     public EventInstance CreateInstance(EventReference eventReference){
