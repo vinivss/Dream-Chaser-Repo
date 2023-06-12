@@ -31,7 +31,6 @@ public class LeveltoVNTransV : MonoBehaviour
         Gm.sceneStarted = false;
         //DestroyImmediate(Gm);
         DestroyImmediate(AudioMgr);
-        AudioMgr.thanos();
         StartCoroutine(LoadSceneAsync());
     }
     IEnumerator LoadSceneAsync()
