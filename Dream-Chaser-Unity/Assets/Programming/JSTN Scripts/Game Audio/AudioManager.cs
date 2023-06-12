@@ -44,14 +44,14 @@ public class AudioManager : MonoBehaviour
     {
 
         //Level Complete
-        if (gameManager != null) {
-            if (gameManager.cpCount >= 6) {
-                ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                InitializeMusic(FMODEvents.instance.vnOST);
-                gameManager.cpCount = 0;
-            }
-        }
+        // if (gameManager != null) {
+        //     if (gameManager.cpCount >= 6) {
+        //         ambienceEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //         musicEventInstances.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //         InitializeMusic(FMODEvents.instance.vnOST);
+        //         gameManager.cpCount = 0;
+        //     }
+        // }
         resequenceMusic();
         if(Input.GetKeyDown(KeyCode.Space) /*&& controls.isGrounded*/){
             RuntimeManager.PlayOneShot("event:/SFX/Jump", this.transform.position);
